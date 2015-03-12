@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加了iOS Background Tasks的page：<https://github.com/ming1016/study/wiki/iOS-Background-Tasks>
 * 增加了NSURLSession的page：<https://github.com/ming1016/study/wiki/NSURLSession>
 * 增加了NSURLConnection的page：<https://github.com/ming1016/study/wiki/NSURLConnection>
 * 增加了View Controller转场page：<https://github.com/ming1016/study/wiki/View-Controller%E8%BD%AC%E5%9C%BA>
