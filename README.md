@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加了UICollectionView的page：<https://github.com/ming1016/study/wiki/UICollectionView>
 * 增加了Core Data的page：<https://github.com/ming1016/study/wiki/Core-Data>
 * 增加了iOS Background Tasks的page：<https://github.com/ming1016/study/wiki/iOS-Background-Tasks>
 * 增加了NSURLSession的page：<https://github.com/ming1016/study/wiki/NSURLSession>
