@@ -2,6 +2,8 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加了iOS并发编程的page：<https://github.com/ming1016/study/wiki/iOS%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B>
+* 增加了Auto Layout的page：<https://github.com/ming1016/study/wiki/Auto-Layout>
 * 增加了UIView的page：<https://github.com/ming1016/study/wiki/UIView>
 * 增加了UICollectionView的page：<https://github.com/ming1016/study/wiki/UICollectionView>
 * 增加了Core Data的page：<https://github.com/ming1016/study/wiki/Core-Data>
