@@ -2,6 +2,8 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加了Objc Runtime的page: <https://github.com/ming1016/study/wiki/Objc-Runtime>
+* 增加了RSS分类整理的page：<https://github.com/ming1016/study/wiki/RSS%E5%88%86%E7%B1%BB%E6%95%B4%E7%90%86>
 * 增加了CFRunLoop的page：<https://github.com/ming1016/study/wiki/CFRunLoop>
 * 增加了iOS并发编程的page：<https://github.com/ming1016/study/wiki/iOS%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B>
 * 增加了Auto Layout的page：<https://github.com/ming1016/study/wiki/Auto-Layout>
