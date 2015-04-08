@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加了算法的page：<https://github.com/ming1016/study/wiki/%E7%AE%97%E6%B3%95>
 * 增加了Objc Runtime的page: <https://github.com/ming1016/study/wiki/Objc-Runtime>
 * 增加了RSS分类整理的page：<https://github.com/ming1016/study/wiki/RSS%E5%88%86%E7%B1%BB%E6%95%B4%E7%90%86>
 * 增加了CFRunLoop的page：<https://github.com/ming1016/study/wiki/CFRunLoop>
