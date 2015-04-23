@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加Core Image的page：<https://github.com/ming1016/study/wiki/Core-Image>
 * 增加PhotoKit的page：<https://github.com/ming1016/study/wiki/PhotoKit>
 * 增加Camera的page：<https://github.com/ming1016/study/wiki/Camera>
 * 更新了Block的page，添加了block的创建，不带参数的block，block闭包，修改非局部变量，block作为函数参数，定义block类型的内容：<https://github.com/ming1016/study/wiki/Block>
