@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加OpenCV的page：<https://github.com/ming1016/study/wiki/OpenCV>
 * 增加GPU处理图像的page：<https://github.com/ming1016/study/wiki/GPU%E5%A4%84%E7%90%86%E5%9B%BE%E5%83%8F>
 * 增加Core Image的page：<https://github.com/ming1016/study/wiki/Core-Image>
 * 增加PhotoKit的page：<https://github.com/ming1016/study/wiki/PhotoKit>
