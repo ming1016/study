@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加iOS书籍推荐的page：<https://github.com/ming1016/study/wiki/iOS书籍推荐>
 * 增加iOS性能优化的page：<https://github.com/ming1016/study/wiki/iOS性能优化>
 * 增加iOS设计模式的page：<https://github.com/ming1016/study/wiki/iOS设计模式>
 * 增加iOS视频的page：<https://github.com/ming1016/study/wiki/iOS视频>
