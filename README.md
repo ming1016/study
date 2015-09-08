@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加Masonry的page：<https://github.com/ming1016/study/wiki/Masonry>
 * 增加如何将自己的库或控件通过制作podspec提交到Cocoapods官方git上供所有人用或者设置为私有库给自己团队来使用的page：<https://github.com/ming1016/study/wiki/如何将自己的库或控件通过制作podspec提交到Cocoapods官方git上供所有人用或者设置为私有库给自己团队来使用>
 * 增加iOS书籍推荐的page：<https://github.com/ming1016/study/wiki/iOS书籍推荐>
 * 增加iOS性能优化的page：<https://github.com/ming1016/study/wiki/iOS性能优化>
