@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加构建iOS稳定应用架构时方案选择的思考：<https://github.com/ming1016/study/wiki/构建iOS稳定应用架构时方案选择的思考>
 * 增加校招iOS面试题：<https://github.com/ming1016/study/wiki/校招iOS面试题>
 * 增加Masonry的page：<https://github.com/ming1016/study/wiki/Masonry>
 * 增加如何将自己的库或控件通过制作podspec提交到Cocoapods官方git上供所有人用或者设置为私有库给自己团队来使用的page：<https://github.com/ming1016/study/wiki/如何将自己的库或控件通过制作podspec提交到Cocoapods官方git上供所有人用或者设置为私有库给自己团队来使用>
