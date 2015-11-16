@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加WWDC Session的page：<https://github.com/ming1016/study/wiki/WWDC-Session>
 * 增加深入剖析Auto Layout，分析iOS各版本新增特性：<https://github.com/ming1016/study/wiki/深入剖析Auto-Layout，分析iOS各版本新增特性>
 * 增加构建iOS稳定应用架构时方案选择的思考：<https://github.com/ming1016/study/wiki/构建iOS稳定应用架构时方案选择的思考>
 * 增加校招iOS面试题：<https://github.com/ming1016/study/wiki/校招iOS面试题>
