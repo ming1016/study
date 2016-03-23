@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加一篇关于解耦实践的文章：<https://github.com/ming1016/study/wiki/竭尽全力的去解耦的一次实践，封装一个TableView和一些功能组合的控件>
 * 增加iOS新人指引：<https://github.com/ming1016/study/wiki/给未接触iOS开发的同学推荐的入门资料，不多，但都是精华>
 * 增加WWDC Session的page：<https://github.com/ming1016/study/wiki/WWDC-Session>
 * 增加深入剖析Auto Layout，分析iOS各版本新增特性：<https://github.com/ming1016/study/wiki/深入剖析Auto-Layout，分析iOS各版本新增特性>
