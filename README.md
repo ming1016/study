@@ -2,6 +2,8 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加iOS页面响应电量流量监测文章：<https://github.com/ming1016/study/wiki/iOS页面响应、电量、流量分析>
+* 增加iOS性能监测文章：<https://github.com/ming1016/study/wiki/检测iOS的APP性能的一些方法>
 * 增加一篇关于解耦实践的文章：<https://github.com/ming1016/study/wiki/竭尽全力的去解耦的一次实践，封装一个TableView和一些功能组合的控件>
 * 增加iOS新人指引：<https://github.com/ming1016/study/wiki/给未接触iOS开发的同学推荐的入门资料，不多，但都是精华>
 * 增加WWDC Session的page：<https://github.com/ming1016/study/wiki/WWDC-Session>
