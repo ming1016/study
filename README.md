@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加制作一个类似苹果VFL(Visual Format Language)的格式化语言来描述类似UIStackView那种布局思路，并解析生成页面：<https://github.com/ming1016/study/wiki/制作一个类似苹果VFL%28Visual-Format-Language%29的格式化语言来描述类似UIStackView那种布局思路，并解析生成页面>
 * 增加从ReactiveCocoa中能学到什么？不用此库也能学以致用文章：<https://github.com/ming1016/study/wiki/从ReactiveCocoa中能学到什么？不用此库也能学以致用>
 * 增加iOS页面响应电量流量监测文章：<https://github.com/ming1016/study/wiki/iOS页面响应、电量、流量分析>
 * 增加iOS性能监测文章：<https://github.com/ming1016/study/wiki/检测iOS的APP性能的一些方法>
