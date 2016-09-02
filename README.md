@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加使用ReactiveCocoa开发RSS阅读器：<https://github.com/ming1016/study/wiki/使用ReactiveCocoa开发RSS阅读器>
 * 增加iOS多线程操作时一些要注意的安全问题：<https://github.com/ming1016/study/wiki/iOS多线程操作时一些要注意的安全问题>
 * 增加iOS函数响应式编程以及ReactiveCocoa的使用：<https://github.com/ming1016/study/wiki/iOS函数响应式编程以及ReactiveCocoa的使用>
 * 增加制作一个类似苹果VFL(Visual Format Language)的格式化语言来描述类似UIStackView那种布局思路，并解析生成页面：<https://github.com/ming1016/study/wiki/制作一个类似苹果VFL%28Visual-Format-Language%29的格式化语言来描述类似UIStackView那种布局思路，并解析生成页面>
