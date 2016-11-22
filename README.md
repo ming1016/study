@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加iOS预加载Web页面方案：<https://github.com/ming1016/study/wiki/iOS预加载Web页面方案>
 * 增加使用Swift3开发了个macOS的程序可以检测出objc项目中无用方法，然后一键全部清理：<https://github.com/ming1016/study/wiki/使用Swift3开发了个macOS的程序可以检测出objc项目中无用方法，然后一键全部清理>
 * 增加使用ReactiveCocoa开发RSS阅读器：<https://github.com/ming1016/study/wiki/使用ReactiveCocoa开发RSS阅读器>
 * 增加iOS多线程操作时一些要注意的安全问题：<https://github.com/ming1016/study/wiki/iOS多线程操作时一些要注意的安全问题>
