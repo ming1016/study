@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加感叹在开发中冥思苦想后灵光一现的那些思路：<https://github.com/ming1016/study/wiki/感叹在开发中冥思苦想后灵光一现的那些思路>
 * 增加iOS预加载Web页面方案：<https://github.com/ming1016/study/wiki/iOS预加载Web页面方案>
 * 增加使用Swift3开发了个macOS的程序可以检测出objc项目中无用方法，然后一键全部清理：<https://github.com/ming1016/study/wiki/使用Swift3开发了个macOS的程序可以检测出objc项目中无用方法，然后一键全部清理>
 * 增加使用ReactiveCocoa开发RSS阅读器：<https://github.com/ming1016/study/wiki/使用ReactiveCocoa开发RSS阅读器>
