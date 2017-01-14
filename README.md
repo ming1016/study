@@ -1,5 +1,5 @@
 # 笔记
-所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
+wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
 * 增加深入剖析 iOS 编译 Clang / LLVM：<https://github.com/ming1016/study/wiki/深入剖析-iOS-编译-Clang---LLVM>
