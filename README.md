@@ -1,7 +1,8 @@
 # 笔记
-wiki查看：<https://github.com/ming1016/study/wiki>
+所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加了用 Swift 编写的工程代码静态分析命令行工具 smck：<https://github.com/ming1016/study/wiki/用-Swift-编写的工程代码静态分析命令行工具-smck>
 * 增加深入剖析 iOS 编译 Clang / LLVM：<https://github.com/ming1016/study/wiki/深入剖析-iOS-编译-Clang---LLVM>
 * 增加感叹在开发中冥思苦想后灵光一现的那些思路：<https://github.com/ming1016/study/wiki/感叹在开发中冥思苦想后灵光一现的那些思路>
 * 增加iOS预加载Web页面方案：<https://github.com/ming1016/study/wiki/iOS预加载Web页面方案>
