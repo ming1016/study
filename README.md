@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加Why Swift? Generics(泛型), Collection(集合类型), POP(协议式编程), Memory Management(内存管理)：<https://github.com/ming1016/study/wiki/Why-Swift%3F-Generics(泛型),-Collection(集合类型),-POP(协议式编程),-Memory-Management(内存管理)>
 * 增加HTML 转原生 HTN 项目开发记录：<https://github.com/ming1016/study/wiki/HTML-转原生-HTN-项目开发记录>
 * 增加深入剖析 WebKit ：<https://github.com/ming1016/study/wiki/深入剖析-WebKit>
 * 增加深入剖析 iOS 性能优化：<https://github.com/ming1016/study/wiki/深入剖析-iOS-性能优化>
@@ -58,4 +59,3 @@
 * 增加Xcode调试之LLDB的page<https://github.com/ming1016/study/wiki/Xcode%E8%B0%83%E8%AF%95%E4%B9%8BLLDB>
 * 增加Markdown实用的page<https://github.com/ming1016/study/wiki/MarkDown>
 * 添加wiki首页<https://github.com/ming1016/study/wiki>
-
