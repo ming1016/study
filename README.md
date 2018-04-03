@@ -2,6 +2,7 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加Swift 项目中涉及到 JSONDecoder，网络请求，泛型协议式编程的一些记录和想法：<https://github.com/ming1016/study/wiki/Swift-项目中涉及到-JSONDecoder，网络请求，泛型协议式编程的一些记录和想法>
 * 增加Why Swift? Generics(泛型), Collection(集合类型), POP(协议式编程), Memory Management(内存管理)：<https://github.com/ming1016/study/wiki/Why-Swift%3F-Generics(泛型),-Collection(集合类型),-POP(协议式编程),-Memory-Management(内存管理)>
 * 增加HTML 转原生 HTN 项目开发记录：<https://github.com/ming1016/study/wiki/HTML-转原生-HTN-项目开发记录>
 * 增加深入剖析 WebKit ：<https://github.com/ming1016/study/wiki/深入剖析-WebKit>
