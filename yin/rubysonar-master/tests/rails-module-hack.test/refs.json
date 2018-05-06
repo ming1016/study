@@ -1,0 +1,50 @@
+[
+  {
+    "ref": {
+      "name": "ActiveModel",
+      "file": "test2.rb",
+      "start": 28,
+      "end": 39
+    },
+    "dests": [
+      {
+        "name": "ActiveModel",
+        "file": "test1.rb",
+        "start": 7,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "SecurePassword",
+      "file": "test2.rb",
+      "start": 41,
+      "end": 55
+    },
+    "dests": [
+      {
+        "name": "SecurePassword",
+        "file": "test1.rb",
+        "start": 28,
+        "end": 42
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "has_secure_password",
+      "file": "test2.rb",
+      "start": 58,
+      "end": 77
+    },
+    "dests": [
+      {
+        "name": "has_secure_password",
+        "file": "test1.rb",
+        "start": 78,
+        "end": 97
+      }
+    ]
+  }
+]

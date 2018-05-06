@@ -1,0 +1,82 @@
+[
+  {
+    "ref": {
+      "name": "self",
+      "file": "class-only.rb",
+      "start": 66,
+      "end": 70
+    },
+    "dests": [
+      {
+        "name": "A",
+        "file": "class-only.rb",
+        "start": 53,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "A",
+      "file": "class-only.rb",
+      "start": 132,
+      "end": 133
+    },
+    "dests": [
+      {
+        "name": "A",
+        "file": "class-only.rb",
+        "start": 53,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "foo",
+      "file": "class-only.rb",
+      "start": 134,
+      "end": 137
+    },
+    "dests": [
+      {
+        "name": "foo",
+        "file": "class-only.rb",
+        "start": 79,
+        "end": 82
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "A",
+      "file": "class-only.rb",
+      "start": 143,
+      "end": 144
+    },
+    "dests": [
+      {
+        "name": "A",
+        "file": "class-only.rb",
+        "start": 53,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "ao",
+      "file": "class-only.rb",
+      "start": 154,
+      "end": 156
+    },
+    "dests": [
+      {
+        "name": "ao",
+        "file": "class-only.rb",
+        "start": 138,
+        "end": 140
+      }
+    ]
+  }
+]

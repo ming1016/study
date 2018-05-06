@@ -1,0 +1,34 @@
+[
+  {
+    "ref": {
+      "name": "A",
+      "file": "test1.rb",
+      "start": 29,
+      "end": 30
+    },
+    "dests": [
+      {
+        "name": "A",
+        "file": "test1.rb",
+        "start": 6,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "FOO",
+      "file": "test1.rb",
+      "start": 32,
+      "end": 35
+    },
+    "dests": [
+      {
+        "name": "FOO",
+        "file": "test1.rb",
+        "start": 10,
+        "end": 13
+      }
+    ]
+  }
+]

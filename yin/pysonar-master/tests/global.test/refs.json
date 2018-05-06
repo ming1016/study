@@ -1,0 +1,66 @@
+[
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.py",
+      "start": 69,
+      "end": 70
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "test1.py",
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.py",
+      "start": 88,
+      "end": 89
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "test1.py",
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.py",
+      "start": 33,
+      "end": 34
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "test1.py",
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.py",
+      "start": 52,
+      "end": 53
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "test1.py",
+        "start": 0,
+        "end": 1
+      }
+    ]
+  }
+]

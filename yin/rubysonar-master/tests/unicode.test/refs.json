@@ -1,0 +1,66 @@
+[
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.rb",
+      "start": 30,
+      "end": 31
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "test1.rb",
+        "start": 17,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "猪头",
+      "file": "test1.rb",
+      "start": 44,
+      "end": 46
+    },
+    "dests": [
+      {
+        "name": "猪头",
+        "file": "test1.rb",
+        "start": 33,
+        "end": 35
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "test2.rb",
+      "start": 30,
+      "end": 31
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "test2.rb",
+        "start": 17,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "猪头",
+      "file": "test2.rb",
+      "start": 44,
+      "end": 46
+    },
+    "dests": [
+      {
+        "name": "猪头",
+        "file": "test2.rb",
+        "start": 33,
+        "end": 35
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "ref": {
+      "name": "A",
+      "file": "operator.rb",
+      "start": 42,
+      "end": 43
+    },
+    "dests": [
+      {
+        "name": "A",
+        "file": "operator.rb",
+        "start": 6,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "o",
+      "file": "operator.rb",
+      "start": 53,
+      "end": 54
+    },
+    "dests": [
+      {
+        "name": "o",
+        "file": "operator.rb",
+        "start": 38,
+        "end": 39
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "[]",
+      "file": "operator.rb",
+      "start": 55,
+      "end": 57
+    },
+    "dests": [
+      {
+        "name": "[]",
+        "file": "operator.rb",
+        "start": 14,
+        "end": 16
+      }
+    ]
+  }
+]

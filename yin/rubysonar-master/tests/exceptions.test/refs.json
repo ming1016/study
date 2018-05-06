@@ -1,0 +1,114 @@
+[
+  {
+    "ref": {
+      "name": "x",
+      "file": "begin.rb",
+      "start": 36,
+      "end": 37
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "begin.rb",
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "begin.rb",
+      "start": 53,
+      "end": 54
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "begin.rb",
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "begin.rb",
+      "start": 19,
+      "end": 20
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "begin.rb",
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "begin.rb",
+      "start": 68,
+      "end": 69
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "begin.rb",
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "y",
+      "file": "single-rescue.rb",
+      "start": 12,
+      "end": 13
+    },
+    "dests": [
+      {
+        "name": "y",
+        "file": "single-rescue.rb",
+        "start": 7,
+        "end": 8
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "ok",
+      "file": "single-rescue.rb",
+      "start": 47,
+      "end": 49
+    },
+    "dests": [
+      {
+        "name": "ok",
+        "file": "single-rescue.rb",
+        "start": 4,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "single-rescue.rb",
+      "start": 37,
+      "end": 38
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "single-rescue.rb",
+        "start": 28,
+        "end": 29
+      }
+    ]
+  }
+]

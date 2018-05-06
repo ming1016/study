@@ -1,0 +1,98 @@
+[
+  {
+    "ref": {
+      "name": "Italy",
+      "file": "include.rb",
+      "start": 76,
+      "end": 81
+    },
+    "dests": [
+      {
+        "name": "Italy",
+        "file": "include.rb",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Table",
+      "file": "include.rb",
+      "start": 130,
+      "end": 135
+    },
+    "dests": [
+      {
+        "name": "Table",
+        "file": "include.rb",
+        "start": 62,
+        "end": 67
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "food",
+      "file": "include.rb",
+      "start": 140,
+      "end": 144
+    },
+    "dests": [
+      {
+        "name": "food",
+        "file": "include.rb",
+        "start": 125,
+        "end": 129
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "pizza",
+      "file": "include.rb",
+      "start": 145,
+      "end": 150
+    },
+    "dests": [
+      {
+        "name": "pizza",
+        "file": "include.rb",
+        "start": 20,
+        "end": 25
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "food",
+      "file": "include.rb",
+      "start": 151,
+      "end": 155
+    },
+    "dests": [
+      {
+        "name": "food",
+        "file": "include.rb",
+        "start": 125,
+        "end": 129
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "sushi",
+      "file": "include.rb",
+      "start": 156,
+      "end": 161
+    },
+    "dests": [
+      {
+        "name": "sushi",
+        "file": "include.rb",
+        "start": 89,
+        "end": 94
+      }
+    ]
+  }
+]

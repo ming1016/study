@@ -1,0 +1,44 @@
+-- (define f
+--   (fun (x y)
+--     (declare [x :type Int :default 1]
+--              [y :type Bool :default true])
+--     [x y]))
+
+-- necessary to be able to refer to a var's type
+-- (define f
+--   (fun ([x Any] [y Bool] [-> x.type])
+--     x))
+
+(define f
+  (fun ([x Int] [y Bool] [-> String])
+    [x y]))
+
+-- (define f
+--   (fun ([x Int]
+--         [y Bool]
+--         [-> String])
+--     [x y]))
+
+-- (define f
+--   (fun ([x :type Int :default 10]
+--         [y :type Bool :default true])
+--     [x y]))
+
+(f :x 1 :y false)
+-- (f 3 5)
+
+
+-- (record A
+--   [x Int :default 1]
+--   [y Bool :default true])
+
+-- (A :x 10 :y false)
+
+
+(define list-of
+  (fun (T)
+    (record Pair
+      [first T]
+      [rest (list-of T)])))
+
+(list-of Int)

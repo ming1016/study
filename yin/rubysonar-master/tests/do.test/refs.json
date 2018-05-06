@@ -1,0 +1,194 @@
+[
+  {
+    "ref": {
+      "name": "line",
+      "file": "test1.rb",
+      "start": 49,
+      "end": 53
+    },
+    "dests": [
+      {
+        "name": "line",
+        "file": "test1.rb",
+        "start": 15,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "words",
+      "file": "test1.rb",
+      "start": 385,
+      "end": 390
+    },
+    "dests": [
+      {
+        "name": "words",
+        "file": "test1.rb",
+        "start": 23,
+        "end": 28
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "garbage",
+      "file": "test1.rb",
+      "start": 250,
+      "end": 257
+    },
+    "dests": [
+      {
+        "name": "garbage",
+        "file": "test1.rb",
+        "start": 166,
+        "end": 173
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "line",
+      "file": "test1.rb",
+      "start": 232,
+      "end": 236
+    },
+    "dests": [
+      {
+        "name": "line",
+        "file": "test1.rb",
+        "start": 15,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "field",
+      "file": "test1.rb",
+      "start": 262,
+      "end": 267
+    },
+    "dests": [
+      {
+        "name": "field",
+        "file": "test1.rb",
+        "start": 36,
+        "end": 41
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "word",
+      "file": "test1.rb",
+      "start": 272,
+      "end": 276
+    },
+    "dests": [
+      {
+        "name": "word",
+        "file": "test1.rb",
+        "start": 147,
+        "end": 151
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "sq",
+      "file": "test1.rb",
+      "start": 280,
+      "end": 282
+    },
+    "dests": [
+      {
+        "name": "sq",
+        "file": "test1.rb",
+        "start": 153,
+        "end": 155
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "dq",
+      "file": "test1.rb",
+      "start": 287,
+      "end": 289
+    },
+    "dests": [
+      {
+        "name": "dq",
+        "file": "test1.rb",
+        "start": 157,
+        "end": 159
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "esc",
+      "file": "test1.rb",
+      "start": 293,
+      "end": 296
+    },
+    "dests": [
+      {
+        "name": "esc",
+        "file": "test1.rb",
+        "start": 161,
+        "end": 164
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "sep",
+      "file": "test1.rb",
+      "start": 327,
+      "end": 330
+    },
+    "dests": [
+      {
+        "name": "sep",
+        "file": "test1.rb",
+        "start": 175,
+        "end": 178
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "words",
+      "file": "test1.rb",
+      "start": 337,
+      "end": 342
+    },
+    "dests": [
+      {
+        "name": "words",
+        "file": "test1.rb",
+        "start": 23,
+        "end": 28
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "field",
+      "file": "test1.rb",
+      "start": 346,
+      "end": 351
+    },
+    "dests": [
+      {
+        "name": "field",
+        "file": "test1.rb",
+        "start": 36,
+        "end": 41
+      }
+    ]
+  }
+]

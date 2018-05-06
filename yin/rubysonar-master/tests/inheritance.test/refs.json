@@ -1,0 +1,175 @@
+[
+  {
+    "ref": {
+      "name": "A",
+      "file": "test1.rb",
+      "start": 73,
+      "end": 74
+    },
+    "dests": [
+      {
+        "name": "A",
+        "file": "test1.rb",
+        "start": 6,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "new",
+      "file": "test1.rb",
+      "start": 75,
+      "end": 78
+    },
+    "dests": [
+      {
+        "name": "initialize",
+        "file": "test1.rb",
+        "start": 14,
+        "end": 24
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "o1",
+      "file": "test1.rb",
+      "start": 84,
+      "end": 86
+    },
+    "dests": [
+      {
+        "name": "o1",
+        "file": "test1.rb",
+        "start": 68,
+        "end": 70
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.rb",
+      "start": 87,
+      "end": 88
+    },
+    "dests": [
+      {
+        "file": "test1.rb",
+        "start": 29,
+        "end": 31
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "A",
+      "file": "test1.rb",
+      "start": 101,
+      "end": 102
+    },
+    "dests": [
+      {
+        "name": "A",
+        "file": "test1.rb",
+        "start": 6,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "B",
+      "file": "test1.rb",
+      "start": 178,
+      "end": 179
+    },
+    "dests": [
+      {
+        "name": "B",
+        "file": "test1.rb",
+        "start": 97,
+        "end": 98
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "new",
+      "file": "test1.rb",
+      "start": 180,
+      "end": 183
+    },
+    "dests": [
+      {
+        "name": "initialize",
+        "file": "test1.rb",
+        "start": 109,
+        "end": 119
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "o2",
+      "file": "test1.rb",
+      "start": 189,
+      "end": 191
+    },
+    "dests": [
+      {
+        "name": "o2",
+        "file": "test1.rb",
+        "start": 173,
+        "end": 175
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.rb",
+      "start": 192,
+      "end": 193
+    },
+    "dests": [
+      {
+        "file": "test1.rb",
+        "start": 29,
+        "end": 31
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "o2",
+      "file": "test1.rb",
+      "start": 199,
+      "end": 201
+    },
+    "dests": [
+      {
+        "name": "o2",
+        "file": "test1.rb",
+        "start": 173,
+        "end": 175
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "y",
+      "file": "test1.rb",
+      "start": 202,
+      "end": 203
+    },
+    "dests": [
+      {
+        "file": "test1.rb",
+        "start": 134,
+        "end": 136
+      }
+    ]
+  }
+]

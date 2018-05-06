@@ -1,0 +1,156 @@
+[
+  {
+    "ref": {
+      "name": "FieldTest1",
+      "file": "test1.rb",
+      "start": 93,
+      "end": 103
+    },
+    "dests": [
+      {
+        "name": "FieldTest1",
+        "file": "test1.rb",
+        "start": 6,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "new",
+      "file": "test1.rb",
+      "start": 104,
+      "end": 107
+    },
+    "dests": [
+      {
+        "name": "initialize",
+        "file": "test1.rb",
+        "start": 23,
+        "end": 33
+      }
+    ]
+  },
+  {
+    "ref": {
+      "file": "test1.rb",
+      "start": 55,
+      "end": 57
+    },
+    "dests": [
+      {
+        "file": "test1.rb",
+        "start": 38,
+        "end": 40
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "o1",
+      "file": "test1.rb",
+      "start": 113,
+      "end": 115
+    },
+    "dests": [
+      {
+        "name": "o1",
+        "file": "test1.rb",
+        "start": 88,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.rb",
+      "start": 116,
+      "end": 117
+    },
+    "dests": [
+      {
+        "file": "test1.rb",
+        "start": 38,
+        "end": 40
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "FieldTest2",
+      "file": "test2.rb",
+      "start": 96,
+      "end": 106
+    },
+    "dests": [
+      {
+        "name": "FieldTest2",
+        "file": "test2.rb",
+        "start": 6,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "new",
+      "file": "test2.rb",
+      "start": 107,
+      "end": 110
+    },
+    "dests": [
+      {
+        "name": "initialize",
+        "file": "test2.rb",
+        "start": 23,
+        "end": 33
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "o",
+      "file": "test2.rb",
+      "start": 116,
+      "end": 117
+    },
+    "dests": [
+      {
+        "name": "o",
+        "file": "test2.rb",
+        "start": 92,
+        "end": 93
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "data",
+      "file": "test2.rb",
+      "start": 118,
+      "end": 122
+    },
+    "dests": [
+      {
+        "file": "test2.rb",
+        "start": 38,
+        "end": 43
+      }
+    ]
+  },
+  {
+    "ref": {
+      "file": "test2.rb",
+      "start": 75,
+      "end": 80
+    },
+    "dests": [
+      {
+        "file": "test2.rb",
+        "start": 38,
+        "end": 43
+      }
+    ]
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "ref": {
+      "name": "Italy",
+      "file": "italy.rb",
+      "start": 7,
+      "end": 12
+    },
+    "dests": [
+      {
+        "name": "Italy",
+        "file": "italy.rb",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Italy",
+      "file": "pepperoni.rb",
+      "start": 26,
+      "end": 31
+    },
+    "dests": [
+      {
+        "name": "Italy",
+        "file": "italy.rb",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Italy",
+      "file": "sausage.rb",
+      "start": 26,
+      "end": 31
+    },
+    "dests": [
+      {
+        "name": "Italy",
+        "file": "italy.rb",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pizza",
+      "file": "sausage.rb",
+      "start": 33,
+      "end": 38
+    },
+    "dests": [
+      {
+        "name": "Pizza",
+        "file": "pepperoni.rb",
+        "start": 33,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pizza",
+      "file": "pepperoni.rb",
+      "start": 33,
+      "end": 38
+    },
+    "dests": [
+      {
+        "name": "Pizza",
+        "file": "pepperoni.rb",
+        "start": 33,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pepperoni",
+      "file": "pepperoni.rb",
+      "start": 47,
+      "end": 56
+    },
+    "dests": [
+      {
+        "name": "Pepperoni",
+        "file": "pepperoni.rb",
+        "start": 47,
+        "end": 56
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Sausage",
+      "file": "sausage.rb",
+      "start": 47,
+      "end": 54
+    },
+    "dests": [
+      {
+        "name": "Sausage",
+        "file": "sausage.rb",
+        "start": 47,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Italy",
+      "file": "tommy.rb",
+      "start": 48,
+      "end": 53
+    },
+    "dests": [
+      {
+        "name": "Italy",
+        "file": "italy.rb",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pizza",
+      "file": "tommy.rb",
+      "start": 55,
+      "end": 60
+    },
+    "dests": [
+      {
+        "name": "Pizza",
+        "file": "pepperoni.rb",
+        "start": 33,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pepperoni",
+      "file": "tommy.rb",
+      "start": 62,
+      "end": 71
+    },
+    "dests": [
+      {
+        "name": "Pepperoni",
+        "file": "pepperoni.rb",
+        "start": 47,
+        "end": 56
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "p1",
+      "file": "tommy.rb",
+      "start": 76,
+      "end": 78
+    },
+    "dests": [
+      {
+        "name": "p1",
+        "file": "tommy.rb",
+        "start": 43,
+        "end": 45
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "eat",
+      "file": "tommy.rb",
+      "start": 79,
+      "end": 82
+    },
+    "dests": [
+      {
+        "name": "eat",
+        "file": "pepperoni.rb",
+        "start": 65,
+        "end": 68
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "pepperoni.rb",
+      "start": 78,
+      "end": 79
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "pepperoni.rb",
+        "start": 69,
+        "end": 70
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Italy",
+      "file": "tommy.rb",
+      "start": 93,
+      "end": 98
+    },
+    "dests": [
+      {
+        "name": "Italy",
+        "file": "italy.rb",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pizza",
+      "file": "tommy.rb",
+      "start": 100,
+      "end": 105
+    },
+    "dests": [
+      {
+        "name": "Pizza",
+        "file": "pepperoni.rb",
+        "start": 33,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Sausage",
+      "file": "tommy.rb",
+      "start": 107,
+      "end": 114
+    },
+    "dests": [
+      {
+        "name": "Sausage",
+        "file": "sausage.rb",
+        "start": 47,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "p2",
+      "file": "tommy.rb",
+      "start": 119,
+      "end": 121
+    },
+    "dests": [
+      {
+        "name": "p2",
+        "file": "tommy.rb",
+        "start": 88,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "eat",
+      "file": "tommy.rb",
+      "start": 122,
+      "end": 125
+    },
+    "dests": [
+      {
+        "name": "eat",
+        "file": "sausage.rb",
+        "start": 63,
+        "end": 66
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "sausage.rb",
+      "start": 76,
+      "end": 77
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "sausage.rb",
+        "start": 67,
+        "end": 68
+      }
+    ]
+  }
+]

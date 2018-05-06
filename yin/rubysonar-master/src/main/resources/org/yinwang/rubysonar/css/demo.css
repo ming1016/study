@@ -1,0 +1,20 @@
+body { color: #666666; border: 1px solid #dddddd; padding: 1in; }
+a {text-decoration: none; color: #5AA2A7; border-radius: 1px}
+table, th, td { border: 1px solid lightgrey; padding: 5px; corner: rounded; }
+.builtin {color: #B17E41;}
+.comment, .block-comment {color: #aaaaaa; font-style: italic;}
+.constant {color: #888888;}
+.decorator {color: #778899;}
+.doc-string {color: #aaaaaa;}
+.error {border-bottom: 1px solid red;}
+.field-name {color: #2e8b57;}
+.function {color: #4682b4;}
+.identifier {color: #8b7765;}
+.info {border-bottom: 1px dotted RoyalBlue;}
+.keyword {color: #0000cd;}
+.lineno {color: #dddddd;}
+.number {color: #483d8b;}
+.parameter {color: #777777;}
+.string {color: #999999;}
+.type-name {color: #4682b4;}
+.warning {border-bottom: 1px dotted orange;}

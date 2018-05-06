@@ -1,0 +1,29 @@
+#x101385793A7593745F92735972394E572394752c974D59275
+100.123456
+
+
+(define (f x) (  +      x 1     )
+
+    )
+
+
+(test
+
+ "default ' argument 你好 \"in "expression"
+ (vec 2 8)
+     你好
+ (seq
+   (: f (fun ((: x (vec 2 (+ 3 5)))) x))
+   (f)))
+
+{
+    x  :  1
+    y  :  2
+}
+
+<<< 1 >>>
+
+if (< x 1) then 2 else 3 end
+
+
+(f a.b.c)

@@ -1,0 +1,146 @@
+[
+  {
+    "ref": {
+      "name": "kitchen",
+      "file": "bedroom.py",
+      "start": 29,
+      "end": 36
+    },
+    "dests": [
+      {
+        "name": "kitchen",
+        "file": "bedroom.py",
+        "start": -1,
+        "end": -1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "oven",
+      "file": "bedroom.py",
+      "start": 37,
+      "end": 41
+    },
+    "dests": [
+      {
+        "name": "oven",
+        "file": "bedroom.py",
+        "start": -1,
+        "end": -1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pizza",
+      "file": "bedroom.py",
+      "start": 42,
+      "end": 47
+    },
+    "dests": [
+      {
+        "name": "Pizza",
+        "file": "kitchen/oven.py",
+        "start": 6,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "toppings",
+      "file": "kitchen/oven.py",
+      "start": 65,
+      "end": 73
+    },
+    "dests": [
+      {
+        "name": "toppings",
+        "file": "kitchen/oven.py",
+        "start": 34,
+        "end": 42
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "self",
+      "file": "kitchen/oven.py",
+      "start": 49,
+      "end": 53
+    },
+    "dests": [
+      {
+        "name": "self",
+        "file": "kitchen/oven.py",
+        "start": 28,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "pizza",
+      "file": "bedroom.py",
+      "start": 88,
+      "end": 93
+    },
+    "dests": [
+      {
+        "name": "pizza",
+        "file": "bedroom.py",
+        "start": 21,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "get_toppings",
+      "file": "bedroom.py",
+      "start": 94,
+      "end": 106
+    },
+    "dests": [
+      {
+        "name": "get_toppings",
+        "file": "kitchen/oven.py",
+        "start": 81,
+        "end": 93
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "self",
+      "file": "kitchen/oven.py",
+      "start": 112,
+      "end": 116
+    },
+    "dests": [
+      {
+        "name": "self",
+        "file": "kitchen/oven.py",
+        "start": 94,
+        "end": 98
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "toppings",
+      "file": "kitchen/oven.py",
+      "start": 117,
+      "end": 125
+    },
+    "dests": [
+      {
+        "name": "toppings",
+        "file": "kitchen/oven.py",
+        "start": 54,
+        "end": 62
+      }
+    ]
+  }
+]

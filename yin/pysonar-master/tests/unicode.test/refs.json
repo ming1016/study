@@ -1,0 +1,18 @@
+[
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.py",
+      "start": 30,
+      "end": 31
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "test1.py",
+        "start": 17,
+        "end": 18
+      }
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+-- nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+-- enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+-- lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+-- dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+-- dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+-- dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+-- feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option
+-- congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi
+-- non habent claritatem insitam; est usus legentis in iis qui facit eorum
+-- claritatem. Investigationes demonstraverunt lectores legere me lius quod ii
+-- legunt saepius.
+
+
+-- factorial
+(define fact
+  (fun (x)
+    (declare (: x Int))                  -- declare x to be an integer
+    (if (= x 0) 1 (* x (fact (- x 1))))))
+
+(fact 5)
+
+
+------------- mutural recursive functions -------------
+(define even
+  (fun (x)
+    (declare (: x Int))
+    (if (= x 0)
+        true
+        (if (= x 1)
+            false
+            (not (odd (- x 1)))))))
+
+(define odd
+  (fun (x)
+    (declare (: x Int))
+    (if (= x 0)
+        false
+        (if (= x 1)
+            true
+            (not (even (- x 1)))))))
+
+(odd 10)
+
+
+------------ records -----------
+(record A
+  [:x 10] y)
+
+-- B inherits A's fields
+(record B (A)
+        z)
+
+(B :y 20 :z 30)
+
+
+(define f
+  (fun ([:x (+ 1 2)] y)
+    (declare (: x (U Int Float))
+             (: y Int))
+    (+ x y)))
+
+(f :y 2)
+
+
+(define f
+  (fun ([:x (+ 1 2)] y)
+    (declare (: x (U Int Float))
+             (: y Int))
+    (+ x y)))
+
+
+(define f
+  (fun (x y)
+    (declare [x :type (U Int Float)
+                :default 10]
+             [y :type Int
+                :default 20
+                :escape true])
+    (+ x y)))
+
+
+(record A (B C)
+        [x :type Int :default 10 :mutable true]
+        [y :type Bool :default 20])

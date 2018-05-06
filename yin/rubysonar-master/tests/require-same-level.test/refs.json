@@ -1,0 +1,114 @@
+[
+  {
+    "ref": {
+      "name": "Italy",
+      "file": "italy.rb",
+      "start": 7,
+      "end": 12
+    },
+    "dests": [
+      {
+        "name": "Italy",
+        "file": "italy.rb",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pizza",
+      "file": "italy.rb",
+      "start": 21,
+      "end": 26
+    },
+    "dests": [
+      {
+        "name": "Pizza",
+        "file": "italy.rb",
+        "start": 21,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Italy",
+      "file": "tommy.rb",
+      "start": 23,
+      "end": 28
+    },
+    "dests": [
+      {
+        "name": "Italy",
+        "file": "italy.rb",
+        "start": 7,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "Pizza",
+      "file": "tommy.rb",
+      "start": 30,
+      "end": 35
+    },
+    "dests": [
+      {
+        "name": "Pizza",
+        "file": "italy.rb",
+        "start": 21,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "p",
+      "file": "tommy.rb",
+      "start": 40,
+      "end": 41
+    },
+    "dests": [
+      {
+        "name": "p",
+        "file": "tommy.rb",
+        "start": 19,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "eat",
+      "file": "tommy.rb",
+      "start": 42,
+      "end": 45
+    },
+    "dests": [
+      {
+        "name": "eat",
+        "file": "italy.rb",
+        "start": 35,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "italy.rb",
+      "start": 48,
+      "end": 49
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "italy.rb",
+        "start": 39,
+        "end": 40
+      }
+    ]
+  }
+]

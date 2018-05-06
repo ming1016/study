@@ -1,0 +1,54 @@
+(define aa [1 2 3])
+(set! aa#0 10)
+(define bb {:x 1 :y 2})
+(set! bb.x 10)
+[aa bb]
+
+
+(define [x y] [1 2])
+[x y]
+
+(set! [x y] [y x])
+[x y]
+
+(set! {:a x :b y} {:a 7 :b 8})
+[x y]
+
+
+(define
+  {
+    :a xx
+    :b [uu vv]
+  }
+  {
+   :b [8 9]
+   :a 7
+  }
+)
+
+[xx uu vv]
+
+(if (< 3 2) 10 (seq (define notthere 24) (+ 1 notthere)))
+
+(seq (define x 19) x)
+
+(define ok (fun (x) (set! x 10) x))
+[(ok 8) x]
+
+(define arr [1 2 3])
+(define [t1 t2 t3] arr)
+[t1 t2 t3]
+
+(define [u1 [v1 v2] u2] [2 [3 5] 7])
+[u1 u2 v1 v2]
+
+
+-- (define (record A :a a1 :b b1) (record A :a 10 :b 20))
+-- [a1 b1]
+
+
+(record A :a (Int 1) :b Float)
+(A)
+
+(define a:Int 1)
+

@@ -1,0 +1,66 @@
+[
+  {
+    "ref": {
+      "name": "B2",
+      "file": "instance-only.rb",
+      "start": 61,
+      "end": 63
+    },
+    "dests": [
+      {
+        "name": "B2",
+        "file": "instance-only.rb",
+        "start": 6,
+        "end": 8
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "B2",
+      "file": "instance-only.rb",
+      "start": 93,
+      "end": 95
+    },
+    "dests": [
+      {
+        "name": "B2",
+        "file": "instance-only.rb",
+        "start": 6,
+        "end": 8
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "bo",
+      "file": "instance-only.rb",
+      "start": 105,
+      "end": 107
+    },
+    "dests": [
+      {
+        "name": "bo",
+        "file": "instance-only.rb",
+        "start": 88,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "foo",
+      "file": "instance-only.rb",
+      "start": 108,
+      "end": 111
+    },
+    "dests": [
+      {
+        "name": "foo",
+        "file": "instance-only.rb",
+        "start": 15,
+        "end": 18
+      }
+    ]
+  }
+]

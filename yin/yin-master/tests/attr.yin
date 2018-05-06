@@ -1,0 +1,10 @@
+(record A :x 1 :y 2)
+(record B :u 12 :v 2)
+(define b (B :v 20))
+(define a (A :x b :y 4))
+a.x.u
+
+(record C (A B) :t 42)
+(define c (C))
+c
+

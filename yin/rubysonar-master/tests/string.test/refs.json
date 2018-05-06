@@ -1,0 +1,66 @@
+[
+  {
+    "ref": {
+      "name": "ordinalize",
+      "file": "embed.rb",
+      "start": 94,
+      "end": 104
+    },
+    "dests": [
+      {
+        "name": "ordinalize",
+        "file": "embed.rb",
+        "start": 4,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "number",
+      "file": "embed.rb",
+      "start": 28,
+      "end": 34
+    },
+    "dests": [
+      {
+        "name": "number",
+        "file": "embed.rb",
+        "start": 15,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "ordinal",
+      "file": "embed.rb",
+      "start": 37,
+      "end": 44
+    },
+    "dests": [
+      {
+        "name": "ordinal",
+        "file": "embed.rb",
+        "start": 65,
+        "end": 72
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "number",
+      "file": "embed.rb",
+      "start": 45,
+      "end": 51
+    },
+    "dests": [
+      {
+        "name": "number",
+        "file": "embed.rb",
+        "start": 15,
+        "end": 21
+      }
+    ]
+  }
+]

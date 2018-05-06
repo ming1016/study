@@ -1,0 +1,178 @@
+[
+  {
+    "ref": {
+      "name": "bar",
+      "file": "blockarg.rb",
+      "start": 96,
+      "end": 99
+    },
+    "dests": [
+      {
+        "name": "bar",
+        "file": "blockarg.rb",
+        "start": 59,
+        "end": 62
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "foo",
+      "file": "blockarg.rb",
+      "start": 76,
+      "end": 79
+    },
+    "dests": [
+      {
+        "name": "foo",
+        "file": "blockarg.rb",
+        "start": 4,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "blockarg.rb",
+      "start": 80,
+      "end": 81
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "blockarg.rb",
+        "start": 63,
+        "end": 64
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "block",
+      "file": "blockarg.rb",
+      "start": 84,
+      "end": 89
+    },
+    "dests": [
+      {
+        "name": "block",
+        "file": "blockarg.rb",
+        "start": 67,
+        "end": 72
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "block",
+      "file": "blockarg.rb",
+      "start": 21,
+      "end": 26
+    },
+    "dests": [
+      {
+        "name": "block",
+        "file": "blockarg.rb",
+        "start": 12,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "blockarg.rb",
+      "start": 110,
+      "end": 111
+    },
+    "dests": [
+      {
+        "name": "x",
+        "file": "blockarg.rb",
+        "start": 107,
+        "end": 108
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "foo",
+      "file": "blockarg.rb",
+      "start": 141,
+      "end": 144
+    },
+    "dests": [
+      {
+        "name": "foo",
+        "file": "star.rb",
+        "start": 4,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "args",
+      "file": "blockarg.rb",
+      "start": 146,
+      "end": 150
+    },
+    "dests": [
+      {
+        "name": "args",
+        "file": "blockarg.rb",
+        "start": 125,
+        "end": 129
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "block",
+      "file": "blockarg.rb",
+      "start": 153,
+      "end": 158
+    },
+    "dests": [
+      {
+        "name": "block",
+        "file": "blockarg.rb",
+        "start": 132,
+        "end": 137
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "f",
+      "file": "star.rb",
+      "start": 20,
+      "end": 21
+    },
+    "dests": [
+      {
+        "name": "f",
+        "file": "star.rb",
+        "start": 8,
+        "end": 9
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "rest",
+      "file": "star.rb",
+      "start": 23,
+      "end": 27
+    },
+    "dests": [
+      {
+        "name": "rest",
+        "file": "star.rb",
+        "start": 12,
+        "end": 16
+      }
+    ]
+  }
+]

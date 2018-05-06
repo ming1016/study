@@ -1,0 +1,55 @@
+-- factorial
+(define fact
+  (fun ([:x Int])
+    (if (= x 0) 1 (* x (fact (- x 1))))))
+
+(fact 5)
+
+
+------------- mutural recursive functions -------------
+(define even
+  (fun ([:x Int])
+    (if (= x 0)
+        true
+        (if (= x 1)
+            false
+            (not (odd (- x 1)))))))
+
+(define odd
+  (fun ([:x Int])
+    (if (= x 0)
+        false
+        (if (= x 1)
+            true
+            (not (even (- x 1)))))))
+
+(odd 10)
+
+
+------------ records -----------
+(record A
+  [:x Int 10]
+  [:y Bool])
+
+-- B inherits A's fields
+(record B (A)
+  [:z Int])
+
+(B :y 20 :z 30)
+
+
+(define f
+  (fun ([:x (U Int Float) (+ 1 2)]
+        [:y Int])
+    (+ x y)))
+
+(f :y 2)
+
+(define 我是
+  (fun ([:x Int] [:n Int])
+    ["我是" x n]))
+
+(define 三 3)
+
+(我是 "猪头" 三)
+

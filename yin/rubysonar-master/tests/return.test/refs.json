@@ -1,0 +1,81 @@
+[
+  {
+    "ref": {
+      "name": "f",
+      "file": "test1.rb",
+      "start": 106,
+      "end": 107
+    },
+    "dests": [
+      {
+        "name": "f",
+        "file": "test1.rb",
+        "start": 72,
+        "end": 73
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "A",
+      "file": "test1.rb",
+      "start": 90,
+      "end": 91
+    },
+    "dests": [
+      {
+        "name": "A",
+        "file": "test1.rb",
+        "start": 6,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "new",
+      "file": "test1.rb",
+      "start": 92,
+      "end": 95
+    },
+    "dests": [
+      {
+        "name": "initialize",
+        "file": "test1.rb",
+        "start": 14,
+        "end": 24
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "o1",
+      "file": "test1.rb",
+      "start": 113,
+      "end": 115
+    },
+    "dests": [
+      {
+        "name": "o1",
+        "file": "test1.rb",
+        "start": 101,
+        "end": 103
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "x",
+      "file": "test1.rb",
+      "start": 116,
+      "end": 117
+    },
+    "dests": [
+      {
+        "file": "test1.rb",
+        "start": 29,
+        "end": 31
+      }
+    ]
+  }
+]

@@ -1,0 +1,418 @@
+<html><head title="D:\eclipse-workspace\jython\tests\java\org\python\indexer\data\presentation.py"><style type='text/css'>
+.builtin {color: #5b4eaf;}
+.comment, .block-comment {color: #005000; font-style: italic;}
+.constant {color: #888888;}
+.decorator {color: #778899;}
+.doc-string {color: #005000;}
+.error {border-bottom: 1px solid red;}
+.field-name {color: #2e8b57;}
+.function {color: #880000;}
+.identifier {color: #8b7765;}
+.info {border-bottom: 1px dotted RoyalBlue;}
+.keyword {color: #0000cd;}
+.lineno {color: #aaaaaa;}
+.number {color: #483d8b;}
+.parameter {color: #2e8b57;}
+.string {color: #4169e1;}
+.type-name {color: #4682b4;}
+.warning {border-bottom: 1px dotted orange;}
+</style>
+<script language="JavaScript" type="text/javascript">
+var highlighted = new Array();
+function highlight()
+{
+    // clear existing highlights
+    for (var i = 0; i < highlighted.length; i++) {
+        var elm = document.getElementById(highlighted[i]);
+        if (elm != null) {
+            elm.style.backgroundColor = 'white';
+        }
+    }
+    highlighted = new Array();
+    for (var i = 0; i < arguments.length; i++) {
+        var elm = document.getElementById(arguments[i]);
+        if (elm != null) {
+            elm.style.backgroundColor='lightblue';
+        }
+        highlighted.push(arguments[i]);
+    }
+} </script>
+</head>
+<body>
+<table width=100% border='1px solid gray'><tr><td valign='top'><ul>
+<li><a href='#presentation.A1', onmouseover='highlight("presentation_A1")'><span class='type-name'>A1</span></a><ul>
+<li><a href='#presentation.A1.z', onmouseover='highlight("presentation_A1_z")'><span class='identifier'>z</span></a></li></ul>
+</li><li><a href='#presentation.B1', onmouseover='highlight("presentation_B1")'><span class='type-name'>B1</span></a><ul>
+<li><a href='#presentation.B1.z', onmouseover='highlight("presentation_B1_z")'><span class='identifier'>z</span></a></li></ul>
+</li><li><a href='#presentation.C1', onmouseover='highlight("presentation_C1")'><span class='type-name'>C1</span></a><ul>
+<li><a href='#presentation.C1.z', onmouseover='highlight("presentation_C1_z")'><span class='identifier'>z</span></a></li></ul>
+</li><li><a href='#presentation.o1', onmouseover='highlight("presentation_o1")'><span class='identifier'>o1</span></a></li><li><a href='#presentation.f1', onmouseover='highlight("presentation_f1")'><span class='function'>f1</span></a></li><li><a href='#presentation.g1', onmouseover='highlight("presentation_g1")'><span class='function'>g1</span></a></li><li><a href='#presentation.h1', onmouseover='highlight("presentation_h1")'><span class='function'>h1</span></a></li><li><a href='#presentation.A2', onmouseover='highlight("presentation_A2")'><span class='type-name'>A2</span></a><ul>
+<li><a href='#presentation.A2.w', onmouseover='highlight("presentation_A2_w")'><span class='identifier'>w</span></a></li></ul>
+</li><li><a href='#presentation.B2', onmouseover='highlight("presentation_B2")'><span class='type-name'>B2</span></a><ul>
+<li><a href='#presentation.B2.w', onmouseover='highlight("presentation_B2_w")'><span class='identifier'>w</span></a></li></ul>
+</li><li><a href='#presentation.f2', onmouseover='highlight("presentation_f2")'><span class='function'>f2</span></a></li><li><a href='#presentation.map', onmouseover='highlight("presentation_map")'><span class='function'>map</span></a></li><li><a href='#presentation.a', onmouseover='highlight("presentation_a")'><span class='identifier'>a</span></a></li><li><a href='#presentation.b', onmouseover='highlight("presentation_b")'><span class='identifier'>b</span></a></li><li><a href='#presentation.curr', onmouseover='highlight("presentation_curr")'><span class='function'>curr</span></a></li><li><a href='#presentation.curr1', onmouseover='highlight("presentation_curr1")'><span class='identifier'>curr1</span></a></li><li><a href='#presentation.curr2', onmouseover='highlight("presentation_curr2")'><span class='identifier'>curr2</span></a></li><li><a href='#presentation.curr3', onmouseover='highlight("presentation_curr3")'><span class='identifier'>curr3</span></a></li><li><a href='#presentation.A3', onmouseover='highlight("presentation_A3")'><span class='type-name'>A3</span></a><ul>
+<li><a href='#presentation.A3.w', onmouseover='highlight("presentation_A3_w")'><span class='identifier'>w</span></a></li></ul>
+</li><li><a href='#presentation.B3', onmouseover='highlight("presentation_B3")'><span class='type-name'>B3</span></a><ul>
+<li><a href='#presentation.B3.w', onmouseover='highlight("presentation_B3_w")'><span class='identifier'>w</span></a></li></ul>
+</li><li><a href='#presentation.Foo', onmouseover='highlight("presentation_Foo")'><span class='function'>Foo</span></a></li><li><a href='#presentation.Type1', onmouseover='highlight("presentation_Type1")'><span class='identifier'>Type1</span></a></li><li><a href='#presentation.obj1', onmouseover='highlight("presentation_obj1")'><span class='identifier'>obj1</span></a></li><li><a href='#presentation.A5', onmouseover='highlight("presentation_A5")'><span class='type-name'>A5</span></a><ul>
+<li><a href='#presentation.A5.w', onmouseover='highlight("presentation_A5_w")'><span class='identifier'>w</span></a></li></ul>
+</li><li><a href='#presentation.B5', onmouseover='highlight("presentation_B5")'><span class='type-name'>B5</span></a><ul>
+<li><a href='#presentation.B5.w', onmouseover='highlight("presentation_B5_w")'><span class='identifier'>w</span></a></li></ul>
+</li><li><a href='#presentation.ls', onmouseover='highlight("presentation_ls")'><span class='identifier'>ls</span></a></li><li><a href='#presentation.StrangeLoop', onmouseover='highlight("presentation_StrangeLoop")'><span class='function'>StrangeLoop</span></a></li><li><a href='#presentation.tup', onmouseover='highlight("presentation_tup")'><span class='identifier'>tup</span></a></li><li><a href='#presentation.WhatEverWithAB', onmouseover='highlight("presentation_WhatEverWithAB")'><span class='function'>WhatEverWithAB</span></a></li><li><a href='#presentation.A6', onmouseover='highlight("presentation_A6")'><span class='type-name'>A6</span></a><ul>
+<li><a href='#presentation.A6.w', onmouseover='highlight("presentation_A6_w")'><span class='identifier'>w</span></a></li></ul>
+</li><li><a href='#presentation.o2', onmouseover='highlight("presentation_o2")'><span class='identifier'>o2</span></a></li><li><a href='#presentation.A7', onmouseover='highlight("presentation_A7")'><span class='type-name'>A7</span></a><ul>
+<li><a href='#presentation.A7.w', onmouseover='highlight("presentation_A7_w")'><span class='identifier'>w</span></a></li></ul>
+</li><li><a href='#presentation.o7', onmouseover='highlight("presentation_o7")'><span class='identifier'>o7</span></a></li><li><a href='#presentation.AC', onmouseover='highlight("presentation_AC")'><span class='type-name'>AC</span></a><ul>
+<li><a href='#presentation.AC.f14', onmouseover='highlight("presentation_AC_f14")'><span class='identifier'>f14</span></a></li></ul>
+</li><li><a href='#presentation.lincoln', onmouseover='highlight("presentation_lincoln")'><span class='identifier'>lincoln</span></a></li><li><a href='#presentation.TopSecret', onmouseover='highlight("presentation_TopSecret")'><span class='function'>TopSecret</span></a></li><li><a href='#presentation.raptor', onmouseover='highlight("presentation_raptor")'><span class='identifier'>raptor</span></a></li><li><a href='#presentation.icecream', onmouseover='highlight("presentation_icecream")'><span class='identifier'>icecream</span></a></li><li><a href='#presentation.F', onmouseover='highlight("presentation_F")'><span class='function'>F</span></a></li><li><a href='#presentation.G', onmouseover='highlight("presentation_G")'><span class='function'>G</span></a></li><li><a href='#presentation.H', onmouseover='highlight("presentation_H")'><span class='function'>H</span></a></li><li><a href='#presentation.Google', onmouseover='highlight("presentation_Google")'><span class='function'>Google</span></a></li><li><a href='#presentation.Halting', onmouseover='highlight("presentation_Halting")'><span class='type-name'>Halting</span></a><ul>
+<li><a href='#presentation.Halting.z', onmouseover='highlight("presentation_Halting_z")'><span class='identifier'>z</span></a></li></ul>
+</li><li><a href='#presentation.Problem', onmouseover='highlight("presentation_Problem")'><span class='type-name'>Problem</span></a><ul>
+<li><a href='#presentation.Problem.z', onmouseover='highlight("presentation_Problem_z")'><span class='identifier'>z</span></a></li></ul>
+</li><li><a href='#presentation.Solved', onmouseover='highlight("presentation_Solved")'><span class='type-name'>Solved</span></a><ul>
+<li><a href='#presentation.Solved.z', onmouseover='highlight("presentation_Solved_z")'><span class='identifier'>z</span></a></li></ul>
+</li><li><a href='#presentation.o3', onmouseover='highlight("presentation_o3")'><span class='identifier'>o3</span></a></li><li><a href='#presentation.f', onmouseover='highlight("presentation_f")'><span class='function'>f</span></a></li></ul>
+</td><td><pre><span class='lineno'>1</span> <a name='presentation', id ='1386534504', title='presentation : presentation'><span class='comment'></a>#########################################
+<span class='lineno'>2</span> </span><span class='comment'>#            PySonar Demo               #
+<span class='lineno'>3</span> <span class='comment'></span>#########################################
+<span class='lineno'>4</span> 
+<span class='lineno'>5</span> </span><span class='comment'>################
+<span class='lineno'>6</span> </span><span class='comment'># Introduction #
+<span class='lineno'>7</span> <span class='comment'></span>################
+<span class='lineno'>8</span> 
+<span class='lineno'>9</span> 
+<span class='lineno'>10</span> <span class='comment'></span># PySonar is a static analyzer for Python. By using a type system and type
+<span class='lineno'>11</span> <span class='comment'></span># inference engine that matches Python&#39;s semantics, it detects type errors
+<span class='lineno'>12</span> </span><span class='comment'># and some other bugs without running the program. Meanwhile, it builds
+<span class='lineno'>13</span> </span><span class='comment'># semantic indexes for IDEs and other tools so that programmers can
+<span class='lineno'>14</span> </span><span class='comment'># accurately &quot;jump to definitions&quot; and find cross-references. It also adds
+<span class='lineno'>15</span> </span><span class='comment'># type hints to help programmers understand code.
+<span class='lineno'>16</span> 
+<span class='lineno'>17</span> 
+<span class='lineno'>18</span> 
+<span class='lineno'>19</span> <span class='comment'></span>######################
+<span class='lineno'>20</span> <span class='comment'></span># How the demo works #
+<span class='lineno'>21</span> </span><span class='comment'>######################
+<span class='lineno'>22</span> 
+<span class='lineno'>23</span> </span><span class='comment'># This file is an interactive HTML generated by PySonar&#39;s demo program to
+<span class='lineno'>24</span> </span><span class='comment'># show what it does. To use it, just look at the programs, try your best to
+<span class='lineno'>25</span> <span class='comment'></span># understand what they do, and feel free to move the mouse cursor to names
+<span class='lineno'>26</span> <span class='comment'></span># of variables, functions, classes etc. Definitions and cross-references
+<span class='lineno'>27</span> <span class='comment'></span># will be highlighted when you move the cursor over names. Type hints will
+<span class='lineno'>28</span> </span><span class='comment'># appear as tooltips. Errors will be underlined and moving the cursor to
+<span class='lineno'>29</span> <span class='comment'></span># the underlines will show you the error messages.
+<span class='lineno'>30</span> 
+<span class='lineno'>31</span> <span class='comment'></span># Because of our primitive UI, it may be tricky to show the error message
+<span class='lineno'>32</span> </span><span class='comment'># when both an error message and a type hint are present for the same name.
+<span class='lineno'>33</span> <span class='comment'></span># Improvements are on the way.
+<span class='lineno'>34</span> 
+<span class='lineno'>35</span> <span class='comment'></span># Some of the examples are extremely convoluted code and shouldn&#39;t be
+<span class='lineno'>36</span> <span class='comment'></span># written by any reasonable programmer. They are only here to demonstrate
+<span class='lineno'>37</span> <span class='comment'></span># PySonar&#39;s capabilities. Please feel free to skip them.
+<span class='lineno'>38</span> 
+<span class='lineno'>39</span> 
+<span class='lineno'>40</span> 
+<span class='lineno'>41</span> <span class='comment'></span>#############################
+<span class='lineno'>42</span> </span><span class='comment'># Type syntax (provisional) #
+<span class='lineno'>43</span> <span class='comment'></span>#############################
+<span class='lineno'>44</span> </span><span class='comment'>### Typing judgement:
+<span class='lineno'>45</span> </span><span class='comment'># name : type
+<span class='lineno'>46</span> 
+<span class='lineno'>47</span> </span><span class='comment'>### Classic type system:
+<span class='lineno'>48</span> </span><span class='comment'>#- class types: int, float, str, ClassA, ClassB, ...
+<span class='lineno'>49</span> <span class='comment'></span>#- classes themselves: &lt;int&gt;, &lt;float&gt;, &lt;str&gt;, &lt;ClassA&gt;, &lt;ClassB&gt;, ...
+<span class='lineno'>50</span> </span><span class='comment'>#- function types: int -&gt; str, A -&gt; B, ...
+<span class='lineno'>51</span> <span class='comment'></span>#- tuple types: (int, float), (A, B, C), ...
+<span class='lineno'>52</span> </span><span class='comment'>#               single element tuples are considered scalar and no parenthese will be added.
+<span class='lineno'>53</span> <span class='comment'></span>#               so you have &quot;A -&gt; B&quot; instead of &quot;(A) -&gt; B&quot;.
+<span class='lineno'>54</span> </span><span class='comment'>#- list types: [int], [A], [(A, B)], ...
+<span class='lineno'>55</span> </span><span class='comment'>#- dict types: {int =&gt; str}, {A =&gt; B}
+<span class='lineno'>56</span> 
+<span class='lineno'>57</span> <span class='comment'></span>### Extended type system:
+<span class='lineno'>58</span> <span class='comment'></span>#- union types: {int | str}, {A | B | C}, ...
+<span class='lineno'>59</span> <span class='comment'></span>#- recursive types (types with components that are themselves): #1(int,1), #2(int -&gt; 2), ...
+<span class='lineno'>60</span> </span><span class='comment'>#- open types (we don&#39;t what it is, but we do know what fields it should have): ?[a : int, b : str], ...
+<span class='lineno'>61</span> <span class='comment'></span>#- error type (type error was found with this value): !
+<span class='lineno'>62</span> 
+<span class='lineno'>63</span> 
+<span class='lineno'>64</span> 
+<span class='lineno'>65</span> 
+<span class='lineno'>66</span> </span><span class='comment'>#################################
+<span class='lineno'>67</span> <span class='comment'></span># Inter-procedual flow-analysis #
+<span class='lineno'>68</span> </span><span class='comment'>#################################
+<span class='lineno'>69</span> </span><span class='comment'># Given a function with a parameter &#39;x&#39; and the function tries to access
+<span class='lineno'>70</span> </span><span class='comment'># the &#39;z&#39; field in this x. How would you know where &#39;z&#39; is defined? PySonar
+<span class='lineno'>71</span> </span><span class='comment'># accurately locates those fields by using inter-procedual control-flow
+<span class='lineno'>72</span> </span><span class='comment'># analysis.
+<span class='lineno'>73</span> 
+<span class='lineno'>74</span> </span><span class='keyword'>class</span> <span class='type-name'><a name='presentation.A1', id ='1548808036', onmouseover='highlight(1548807965)', title='presentation.A1 : <A1>'>A1</a></span>:
+<span class='lineno'>75</span>   <a name='presentation.A1.z', id ='1548808030', onmouseover='highlight(1548783819)', title='presentation.A1.z : int'>z</a> = <span class='number'>1</span>
+<span class='lineno'>76</span> 
+<span class='lineno'>77</span> <span class='keyword'>class</span> <a name='presentation.B1', id ='1548807996', onmouseover='highlight(1548807880)', title='presentation.B1 : <B1>'><span class='type-name'>B1</span></a>:
+<span class='lineno'>78</span>   <a name='presentation.B1.z', id ='1548807969', onmouseover='highlight("1548785712","1548783819")', title='presentation.B1.z : A1'>z</a> = <a href='#presentation.A1', id ='1548807965', onmouseover='highlight(1548808036)', title='presentation.A1 : <A1>'>A1</a>()
+<span class='lineno'>79</span> 
+<span class='lineno'>80</span> <span class='keyword'>class</span> <a name='presentation.C1', id ='1548807911', onmouseover='highlight(1548807848)', title='presentation.C1 : <C1>'><span class='type-name'>C1</a></span>:
+<span class='lineno'>81</span>   <a name='presentation.C1.z', id ='1548807905', onmouseover='highlight("1548807106","1548785712","1548783819")', title='presentation.C1.z : B1'>z</a> = <a href='#presentation.B1', id ='1548807880', onmouseover='highlight(1548807996)', title='presentation.B1 : <B1>'>B1</a>()
+<span class='lineno'>82</span> 
+<span class='lineno'>83</span> <a name='presentation.o1', id ='1548807874', onmouseover='highlight("1548806857","1548784813","1548782895")', title='presentation.o1 : C1'>o1</a> = <a href='#presentation.C1', id ='1548807848', onmouseover='highlight(1548807911)', title='presentation.C1 : <C1>'>C1</a>()
+<span class='lineno'>84</span> 
+<span class='lineno'>85</span> <span class='keyword'>def</span> <span class='function'><a name='presentation.f1', id ='1548807817', onmouseover='highlight(1548806881)', title='presentation.f1 : C1 -> B1'>f1</span></a>(<span class='parameter'><a name='presentation.f1@x', id ='1548807814', onmouseover='highlight(1548807129)', title='presentation.f1@x : C1'>x</a></span>):
+<span class='lineno'>86</span>   <span class='keyword'>return</span> <a href='#presentation.f1@x', id ='1548807129', onmouseover='highlight(1548807814)', title='presentation.f1@x : C1'>x</a>.<a href='#presentation.C1.z', id ='1548807106', onmouseover='highlight(1548807905)', title='presentation.C1.z : B1'>z</a>   <span class='comment'># Moving the cursor to &#39;z&#39; will highlight the z inside class C1 only ...</span>
+<span class='lineno'>87</span> 
+<span class='lineno'>88</span> <a href='#presentation.f1', id ='1548806881', onmouseover='highlight(1548807817)', title='presentation.f1 : C1 -> B1'>f1</a>(<a href='#presentation.o1', id ='1548806857', onmouseover='highlight(1548807874)', title='presentation.o1 : C1'>o1</a>)         <span class='comment'># ... because f1 tries to access the &#39;z&#39; field of o1 (type C1) only</span>
+<span class='lineno'>89</span> 
+<span class='lineno'>90</span> <span class='keyword'>def</span> <a name='presentation.g1', id ='1548785772', onmouseover='highlight("1548784840","1548784816")', title='presentation.g1 : {B1 | C1} -> {A1 | B1}'><span class='function'>g1</a></span>(<a name='presentation.g1@x', id ='1548785769', onmouseover='highlight(1548785714)', title='presentation.g1@x : {C1 | B1}'><span class='parameter'>x</a></span>):
+<span class='lineno'>91</span>   <span class='keyword'>return</span> <a href='#presentation.g1@x', id ='1548785714', onmouseover='highlight(1548785769)', title='presentation.g1@x : {C1 | B1}'>x</a>.<a href='#presentation.C1.z', id ='1548785712', onmouseover='highlight("1548807905","1548807969")', title='{presentation.C1.z : B1 | presentation.B1.z : A1}'>z</a>   <span class='comment'># Moving the cursor to &#39;z&#39; will highlight the z inside B1 and C1 ...</span>
+<span class='lineno'>92</span> 
+<span class='lineno'>93</span> <a href='#presentation.g1', id ='1548784840', onmouseover='highlight(1548785772)', title='presentation.g1 : {B1 | C1} -> {A1 | B1}'>g1</a>(<a href='#presentation.g1', id ='1548784816', onmouseover='highlight(1548785772)', title='presentation.g1 : {B1 | C1} -> {A1 | B1}'>g1</a>(<a href='#presentation.o1', id ='1548784813', onmouseover='highlight(1548807874)', title='presentation.o1 : C1'>o1</a>))     <span class='comment'># ... because g1 accesses C1.z which is a B1, then g1 accesses B1.z which is A1</span>
+<span class='lineno'>94</span> 
+<span class='lineno'>95</span> <span class='keyword'>def</span> <span class='function'><a name='presentation.h1', id ='1548783879', onmouseover='highlight("1548782925","1548782922","1548782919")', title='presentation.h1 : {B1 | A1 | C1} -> {int | A1 | B1}'>h1</span></a>(<span class='parameter'><a name='presentation.h1@x', id ='1548783855', onmouseover='highlight(1548783821)', title='presentation.h1@x : {C1 | B1 | A1}'>x</span></a>):
+<span class='lineno'>96</span>   <span class='keyword'>return</span> <a href='#presentation.h1@x', id ='1548783821', onmouseover='highlight(1548783855)', title='presentation.h1@x : {C1 | B1 | A1}'>x</a>.<a href='#presentation.C1.z', id ='1548783819', onmouseover='highlight("1548807905","1548807969","1548808030")', title='{presentation.C1.z : B1 | presentation.B1.z : A1 | presentation.A1.z : int}'>z</a>   <span class='comment'># Moving the cursor to &#39;z&#39; will highlight the z inside A1, B1, C1 ...</span>
+<span class='lineno'>97</span> 
+<span class='lineno'>98</span> <a href='#presentation.h1', id ='1548782925', onmouseover='highlight(1548783879)', title='presentation.h1 : {B1 | A1 | C1} -> {int | A1 | B1}'>h1</a>(<a href='#presentation.h1', id ='1548782922', onmouseover='highlight(1548783879)', title='presentation.h1 : {B1 | A1 | C1} -> {int | A1 | B1}'>h1</a>(<a href='#presentation.h1', id ='1548782919', onmouseover='highlight(1548783879)', title='presentation.h1 : {B1 | A1 | C1} -> {int | A1 | B1}'>h1</a>(<a href='#presentation.o1', id ='1548782895', onmouseover='highlight(1548807874)', title='presentation.o1 : C1'>o1</a>))) <span class='comment'># ... bacause h1 accesses C1.z which is a B1, then followed by B1.z, A1.z</span>
+<span class='lineno'>99</span> 
+<span class='lineno'>100</span> 
+<span class='lineno'>101</span> 
+<span class='lineno'>102</span> <span class='comment'>########################
+<span class='lineno'>103</span> </span><span class='comment'># High-order functions #
+<span class='lineno'>104</span> </span><span class='comment'>########################
+<span class='lineno'>105</span> </span><span class='comment'># Function f2 is &quot;mapped&quot; to a list containing A2 and B2 objects and access
+<span class='lineno'>106</span> <span class='comment'></span># their &#39;w&#39; fields. The map function below is a high-order function which
+<span class='lineno'>107</span> <span class='comment'></span># takes another function (f2) as an argument. PySonar will find both w&#39;s in
+<span class='lineno'>108</span> <span class='comment'></span># A2 and B2 when asked for it in f2.
+<span class='lineno'>109</span> 
+<span class='lineno'>110</span> <span class='keyword'></span>class</span> <a name='presentation.A2', id ='1548778981', onmouseover='highlight("1548756106","1548756073")', title='presentation.A2 : <A2>'><span class='type-name'>A2</span></a>:
+<span class='lineno'>111</span>   <a name='presentation.A2.w', id ='1548778303', onmouseover='highlight(1548778120)', title='presentation.A2.w : str'>w</a> = <span class='string'>&#39;Boeing&#39;</span>
+<span class='lineno'>112</span> 
+<span class='lineno'>113</span> <span class='keyword'>class</span> <span class='type-name'><a name='presentation.B2', id ='1548778241', onmouseover='highlight(1548756079)', title='presentation.B2 : <B2>'>B2</a></span>:
+<span class='lineno'>114</span>   <a name='presentation.B2.w', id ='1548778214', onmouseover='highlight(1548778120)', title='presentation.B2.w : int'>w</a> = <span class='number'>787</span>
+<span class='lineno'>115</span> 
+<span class='lineno'>116</span> <span class='keyword'>def</span> <a name='presentation.f2', id ='1548778180', onmouseover='highlight(1548756016)', title='presentation.f2 : {A2 | B2} -> {str | int}'><span class='function'>f2</span></a>(<a name='presentation.f2@y', id ='1548778177', onmouseover='highlight(1548778143)', title='presentation.f2@y : {A2 | B2}'><span class='parameter'>y</span></a>):
+<span class='lineno'>117</span>   <span class='keyword'>return</span> <a href='#presentation.f2@y', id ='1548778143', onmouseover='highlight(1548778177)', title='presentation.f2@y : {A2 | B2}'>y</a>.<a href='#presentation.A2.w', id ='1548778120', onmouseover='highlight("1548778303","1548778214")', title='{presentation.A2.w : str | presentation.B2.w : int}'>w</a>  <span class='comment'># Moving the cursor to &#39;w&#39; will highlight w inside both A2 and B2</span>
+<span class='lineno'>118</span> 
+<span class='lineno'>119</span> <span class='keyword'>def</span> <a name='presentation.map', id ='1548777248', onmouseover='highlight("1548756041","1548756169")', title='presentation.map : ({A2 | B2} -> {str | int}, [{A2 | B2}]) -> [{str | int}]'><span class='function'>map</a></span>(<a name='presentation.map@f', id ='1548777244', onmouseover='highlight("1548756202","1548756165")', title='presentation.map@f : {A2 | B2} -> {str | int}'><span class='parameter'>f</a></span>, <a name='presentation.map@ls', id ='1548777220', onmouseover='highlight("1548777184","1548756200","1548756141")', title='presentation.map@ls : [{A2 | B2}]'><span class='parameter'>ls</span></a>):
+<span class='lineno'>120</span>   <span class='keyword'>if</span> (<a href='http://docs.python.org/library/functions.html#len', id ='1548777188', onmouseover='highlight(281436336)', title='__builtin__.len : [{A2 | B2}] -> int'>len</a>(<a href='#presentation.map@ls', id ='1548777184', onmouseover='highlight(1548777220)', title='presentation.map@ls : [{A2 | B2}]'>ls</a>) == <span class='number'>0</span>):
+<span class='lineno'>121</span>     <span class='keyword'>return</span> []
+<span class='lineno'>122</span>   <span class='keyword'>else</span>:
+<span class='lineno'>123</span>     <span class='keyword'>return</span> [<a href='#presentation.map@f', id ='1548756202', onmouseover='highlight(1548777244)', title='presentation.map@f : {A2 | B2} -> {str | int}'>f</a>(<a href='#presentation.map@ls', id ='1548756200', onmouseover='highlight(1548777220)', title='presentation.map@ls : [{A2 | B2}]'>ls</a>[<span class='number'>0</span>])] + <a href='#presentation.map', id ='1548756169', onmouseover='highlight(1548777248)', title='presentation.map : ({A2 | B2} -> {str | int}, [{A2 | B2}]) -> [{str | int}]'>map</a>(<a href='#presentation.map@f', id ='1548756165', onmouseover='highlight(1548777244)', title='presentation.map@f : {A2 | B2} -> {str | int}'>f</a>, <a href='#presentation.map@ls', id ='1548756141', onmouseover='highlight(1548777220)', title='presentation.map@ls : [{A2 | B2}]'>ls</a>[<span class='number'>1</span>:])
+<span class='lineno'>124</span> 
+<span class='lineno'>125</span> <a name='presentation.a', id ='1548756111', onmouseover='highlight(1548756012)', title='presentation.a : [{A2 | B2}]'>a</a> = [<a href='#presentation.A2', id ='1548756106', onmouseover='highlight(1548778981)', title='presentation.A2 : <A2>'>A2</a>(), <a href='#presentation.B2', id ='1548756079', onmouseover='highlight(1548778241)', title='presentation.B2 : <B2>'>B2</a>(), <a href='#presentation.A2', id ='1548756073', onmouseover='highlight(1548778981)', title='presentation.A2 : <A2>'>A2</a>()]
+<span class='lineno'>126</span> 
+<span class='lineno'>127</span> <a name='presentation.b', id ='1548756045', onmouseover='highlight(1548755981)', title='presentation.b : [{str | int}]'>b</a> = <a href='#presentation.map', id ='1548756041', onmouseover='highlight(1548777248)', title='presentation.map : ({A2 | B2} -> {str | int}, [{A2 | B2}]) -> [{str | int}]'>map</a>(<a href='#presentation.f2', id ='1548756016', onmouseover='highlight(1548778180)', title='presentation.f2 : {A2 | B2} -> {str | int}'>f2</a>, <a href='#presentation.a', id ='1548756012', onmouseover='highlight(1548756111)', title='presentation.a : [{A2 | B2}]'>a</a>)
+<span class='lineno'>128</span> 
+<span class='lineno'>129</span> <span class='keyword'>print</span> <a href='#presentation.b', id ='1548755981', onmouseover='highlight(1548756045)', title='presentation.b : [{str | int}]'>b</a>
+<span class='lineno'>130</span> 
+<span class='lineno'>131</span> 
+<span class='lineno'>132</span> 
+<span class='lineno'>133</span> <span class='comment'>#####################
+<span class='lineno'>134</span> <span class='comment'></span># curried functions #
+<span class='lineno'>135</span> </span><span class='comment'>#####################
+<span class='lineno'>136</span> </span><span class='comment'># Move the cursor to curr, curr1, curr2, curr3 to show type hints.
+<span class='lineno'>137</span> </span><span class='comment'># Like ML or Haskell, the arrow operator is right-associative,
+<span class='lineno'>138</span> </span><span class='comment'># so you see &quot;int -&gt; int -&gt; int&quot; instead of &quot;int -&gt; (int -&gt; int)&quot;
+<span class='lineno'>139</span> 
+<span class='lineno'>140</span> <span class='keyword'></span>def</span> <span class='function'><a name='presentation.curr', id ='1548753189', onmouseover='highlight(1548752355)', title='presentation.curr : int -> int -> int -> int'>curr</a></span>(<span class='parameter'><a name='presentation.curr@x', id ='1548753163', onmouseover='highlight(1548753067)', title='presentation.curr@x : int'>x</span></a>):
+<span class='lineno'>141</span>   <span class='keyword'>return</span> <span class='keyword'><a name='presentation.curr&lambda%1', id ='1548753129', title='presentation.curr&lambda%1 : int -> int -> int'>lambda</a></span> <span class='parameter'><a name='presentation.curr&lambda%1@y', id ='1548753101', onmouseover='highlight(1548753042)', title='presentation.curr&lambda%1@y : int'>y</span></a>: <span class='keyword'><a name='presentation.curr&lambda%1&lambda%2', id ='1548753098', title='presentation.curr&lambda%1&lambda%2 : int -> int'>lambda</span></a> <a name='presentation.curr&lambda%1&lambda%2@z', id ='1548753070', onmouseover='highlight(1548753038)', title='presentation.curr&lambda%1&lambda%2@z : int'><span class='parameter'>z</a></span>: <a href='#presentation.curr@x', id ='1548753067', onmouseover='highlight(1548753163)', title='presentation.curr@x : int'>x</a> + <a href='#presentation.curr&lambda%1@y', id ='1548753042', onmouseover='highlight(1548753101)', title='presentation.curr&lambda%1@y : int'>y</a> + <a href='#presentation.curr&lambda%1&lambda%2@z', id ='1548753038', onmouseover='highlight(1548753070)', title='presentation.curr&lambda%1&lambda%2@z : int'>z</a>
+<span class='lineno'>142</span> 
+<span class='lineno'>143</span> <a name='presentation.curr1', id ='1548753035', onmouseover='highlight(1548752297)', title='presentation.curr1 : int -> int -> int'>curr1</a> = <a href='#presentation.curr', id ='1548752355', onmouseover='highlight(1548753189)', title='presentation.curr : int -> int -> int -> int'>curr</a>(<span class='number'>1</span>)
+<span class='lineno'>144</span> <a name='presentation.curr2', id ='1548752326', onmouseover='highlight(1548752259)', title='presentation.curr2 : int -> int'>curr2</a> = <a href='#presentation.curr1', id ='1548752297', onmouseover='highlight(1548753035)', title='presentation.curr1 : int -> int -> int'>curr1</a>(<span class='number'>2</span>)
+<span class='lineno'>145</span> <a name='presentation.curr3', id ='1548752267', title='presentation.curr3 : int'>curr3</a> = <a href='#presentation.curr2', id ='1548752259', onmouseover='highlight(1548752326)', title='presentation.curr2 : int -> int'>curr2</a>(<span class='number'>3</span>)
+<span class='lineno'>146</span> 
+<span class='lineno'>147</span> 
+<span class='lineno'>148</span> 
+<span class='lineno'>149</span> <span class='comment'>#####################
+<span class='lineno'>150</span> <span class='comment'></span># &quot;Dependent types&quot; #
+<span class='lineno'>151</span> </span><span class='comment'>#####################
+<span class='lineno'>152</span> </span><span class='comment'># Because types are first-class citizen in Python, it is natural for Python
+<span class='lineno'>153</span> </span><span class='comment'># programmers to use &quot;dependent types&quot;, which essentially are type-space
+<span class='lineno'>154</span> <span class='comment'></span># computations (use arbitrary computation to generate types, and then use
+<span class='lineno'>155</span> <span class='comment'></span># them). Here, the function Foo may output different types randomly.
+<span class='lineno'>156</span> <span class='keyword'></span>class</span> <a name='presentation.A3', id ='1548748481', onmouseover='highlight(1548747553)', title='presentation.A3 : <A3>'><span class='type-name'>A3</a></span>:
+<span class='lineno'>157</span>   <a name='presentation.A3.w', id ='1548748454', onmouseover='highlight(1548747336)', title='presentation.A3.w : str'>w</a> = <span class='string'>&#39;OTP&#39;</span>
+<span class='lineno'>158</span> 
+<span class='lineno'>159</span> <span class='keyword'>class</span> <span class='type-name'><a name='presentation.B3', id ='1548748416', onmouseover='highlight(1548747489)', title='presentation.B3 : <B3>'>B3</a></span>:
+<span class='lineno'>160</span>   <a name='presentation.B3.w', id ='1548748389', onmouseover='highlight(1548747336)', title='presentation.B3.w : int'>w</a> = <span class='number'>263950</span>
+<span class='lineno'>161</span> 
+<span class='lineno'>162</span> <span class='keyword'>def</span> <a name='presentation.Foo', id ='1548748352', onmouseover='highlight(1548747456)', title='presentation.Foo : int -> {<B3> | <A3>}'><span class='function'>Foo</span></a>(<span class='parameter'><a name='presentation.Foo@x', id ='1548748327', onmouseover='highlight(1548748268)', title='presentation.Foo@x : int'>x</span></a>):
+<span class='lineno'>163</span>   <span class='keyword'>if</span> (<span class='warning', title='unbound variable random'>random</span>(<a href='#presentation.Foo@x', id ='1548748268', onmouseover='highlight(1548748327)', title='presentation.Foo@x : int'>x</a>) &lt; <span class='number'>100</span>):
+<span class='lineno'>164</span>     <span class='keyword'>return</span> <a href='#presentation.A3', id ='1548747553', onmouseover='highlight(1548748481)', title='presentation.A3 : <A3>'>A3</a>
+<span class='lineno'>165</span>   <span class='keyword'>else</span>:
+<span class='lineno'>166</span>     <span class='keyword'>return</span> <a href='#presentation.B3', id ='1548747489', onmouseover='highlight(1548748416)', title='presentation.B3 : <B3>'>B3</a>
+<span class='lineno'>167</span> 
+<span class='lineno'>168</span> <a name='presentation.Type1', id ='1548747485', onmouseover='highlight(1548747398)', title='presentation.Type1 : {<B3> | <A3>}'>Type1</a> = <a href='#presentation.Foo', id ='1548747456', onmouseover='highlight(1548748352)', title='presentation.Foo : int -> {<B3> | <A3>}'>Foo</a>(<span class='number'>30</span>)
+<span class='lineno'>169</span> <a name='presentation.obj1', id ='1548747427', onmouseover='highlight(1548747362)', title='presentation.obj1 : {B3 | A3}'>obj1</a>  = <a href='#presentation.Type1', id ='1548747398', onmouseover='highlight(1548747485)', title='presentation.Type1 : {<B3> | <A3>}'>Type1</a>()
+<span class='lineno'>170</span> 
+<span class='lineno'>171</span> <span class='keyword'>print</span> <a href='#presentation.obj1', id ='1548747362', onmouseover='highlight(1548747427)', title='presentation.obj1 : {B3 | A3}'>obj1</a>.<a href='#presentation.B3.w', id ='1548747336', onmouseover='highlight("1548748389","1548748454")', title='{presentation.B3.w : int | presentation.A3.w : str}'>w</a>  <span class='comment'># Moving the cursor to &#39;w&#39; will highlight w in both A3 and B3</span>
+<span class='lineno'>172</span> 
+<span class='lineno'>173</span> 
+<span class='lineno'>174</span> 
+<span class='lineno'>175</span> <span class='comment'>###############################
+<span class='lineno'>176</span> </span><span class='comment'># parametric types (generics) #
+<span class='lineno'>177</span> </span><span class='comment'>###############################
+<span class='lineno'>178</span> <span class='comment'></span># PySonar handles common parametric types such as lists etc.
+<span class='lineno'>179</span> </span><span class='keyword'>class</span> <span class='type-name'><a name='presentation.A5', id ='1548724488', onmouseover='highlight("1548724359","1548724332")', title='presentation.A5 : <A5>'>A5</a></span>:
+<span class='lineno'>180</span>   <a name='presentation.A5.w', id ='1548724482', onmouseover='highlight(1548723335)', title='presentation.A5.w : int'>w</a> = <span class='number'>1</span>
+<span class='lineno'>181</span> 
+<span class='lineno'>182</span> <span class='keyword'>class</span> <a name='presentation.B5', id ='1548724427', onmouseover='highlight(1548724297)', title='presentation.B5 : <B5>'><span class='type-name'>B5</a></span>:
+<span class='lineno'>183</span>   <a name='presentation.B5.w', id ='1548724421', onmouseover='highlight(1548723335)', title='presentation.B5.w : str'>w</a> = <span class='string'>&#39;cherry&#39;</span>
+<span class='lineno'>184</span> 
+<span class='lineno'>185</span> <a name='presentation.ls', id ='1548724365', onmouseover='highlight("1548724305","1548723341")', title='presentation.ls : [{A5 | B5}]'>ls</a> = [<a href='#presentation.A5', id ='1548724359', onmouseover='highlight(1548724488)', title='presentation.A5 : <A5>'>A5</a>(), <a href='#presentation.A5', id ='1548724332', onmouseover='highlight(1548724488)', title='presentation.A5 : <A5>'>A5</a>()]
+<span class='lineno'>186</span> <a href='#presentation.ls', id ='1548724305', onmouseover='highlight(1548724365)', title='presentation.ls : [{A5 | B5}]'>ls</a>[<span class='number'>1</span>] = <a href='#presentation.B5', id ='1548724297', onmouseover='highlight(1548724427)', title='presentation.B5 : <B5>'>B5</a>()         <span class='comment'># Here the type of list &#39;ls&#39; is &quot;[{A5 | B5}]&quot; meaning &quot;a list of A5 or B5&quot;</span>
+<span class='lineno'>187</span> 
+<span class='lineno'>188</span> <span class='keyword'>print</span> <a href='#presentation.ls', id ='1548723341', onmouseover='highlight(1548724365)', title='presentation.ls : [{A5 | B5}]'>ls</a>[<span class='number'>0</span>].<a href='#presentation.A5.w', id ='1548723335', onmouseover='highlight("1548724482","1548724421")', title='{presentation.A5.w : int | presentation.B5.w : str}'>w</a>        <span class='comment'># Moving cursor to &#39;w&#39; will highlight both &#39;w&#39;s in A5 and B5</span>
+<span class='lineno'>189</span> 
+<span class='lineno'>190</span> 
+<span class='lineno'>191</span> 
+<span class='lineno'>192</span> <span class='comment'>###################
+<span class='lineno'>193</span> <span class='comment'></span># recursive types #
+<span class='lineno'>194</span> </span><span class='comment'>###################
+<span class='lineno'>195</span> <span class='comment'></span># PySonar&#39;s recursive types are equi-recursive types.
+<span class='lineno'>196</span> </span><span class='comment'># It uses a notation much like the mu-notation but more concise. For example,
+<span class='lineno'>197</span> </span><span class='comment'># #1(1-&gt;int) means (mu x. x-&gt;int).
+<span class='lineno'>198</span> 
+<span class='lineno'>199</span> </span><span class='comment'># Function which returns a tuple of itself
+<span class='lineno'>200</span> <span class='comment'></span># StrangeLoop : #1() -&gt; (1, 1)
+<span class='lineno'>201</span> <span class='comment'></span># Here #1 is an &quot;anchor&quot; denoting the function type itself, the two &quot;1&quot;s
+<span class='lineno'>202</span> <span class='comment'></span># inside the tuple &quot;reference&quot; the anchor, so that the tuple contains two
+<span class='lineno'>203</span> <span class='comment'></span># references to the function itself. Using ths notation we can denote any
+<span class='lineno'>204</span> </span><span class='comment'># recursive type.
+<span class='lineno'>205</span> </span><span class='keyword'>def</span> <span class='function'><a name='presentation.StrangeLoop', id ='1548696557', onmouseover='highlight("1548696490","1548696435")', title='presentation.StrangeLoop : #1: () -> (1, 1)'>StrangeLoop</span></a>():
+<span class='lineno'>206</span>   <span class='keyword'>return</span> (<a href='#presentation.StrangeLoop', id ='1548696490', onmouseover='highlight(1548696557)', title='presentation.StrangeLoop : #1: () -> (1, 1)'>StrangeLoop</a>, <a href='#presentation.StrangeLoop', id ='1548696435', onmouseover='highlight(1548696557)', title='presentation.StrangeLoop : #1: () -> (1, 1)'>StrangeLoop</a>)
+<span class='lineno'>207</span> 
+<span class='lineno'>208</span> <span class='comment'># A tuple containing itself as an element
+<span class='lineno'>209</span> </span><span class='comment'># tup : #1(str, str, 1)
+<span class='lineno'>210</span> <a name='presentation.tup', id ='1548695536', onmouseover='highlight("1548695410","1548695440")', title='presentation.tup : #1: (str, str, 1)'></span>tup</a> = (<span class='string'>&#39;kitty&#39;</span>, <span class='string'>&#39;chase&#39;</span>, <span class='string'>&#39;tail&#39;</span>)
+<span class='lineno'>211</span> <a href='#presentation.tup', id ='1548695440', onmouseover='highlight(1548695536)', title='presentation.tup : #1: (str, str, 1)'>tup</a>[<span class='number'>2</span>] = <a href='#presentation.tup', id ='1548695410', onmouseover='highlight(1548695536)', title='presentation.tup : #1: (str, str, 1)'>tup</a>
+<span class='lineno'>212</span> 
+<span class='lineno'>213</span> 
+<span class='lineno'>214</span> 
+<span class='lineno'>215</span> <span class='comment'>################################################
+<span class='lineno'>216</span> </span><span class='comment'># open types                                   #
+<span class='lineno'>217</span> <span class='comment'></span># (unknown types with certain required fields) #
+<span class='lineno'>218</span> <span class='comment'></span>################################################
+<span class='lineno'>219</span> <span class='comment'></span># The type of x below is displayed as ?[a : ?, b : ?], meaning that the
+<span class='lineno'>220</span> <span class='comment'></span># parameter x must have the fields a and b, but their types are unknown.
+<span class='lineno'>221</span> 
+<span class='lineno'>222</span> </span><span class='keyword'>def</span> <span class='function'><a name='presentation.WhatEverWithAB', id ='1548691718', title='presentation.WhatEverWithAB : ?[a : ?,b : ?] -> int'>WhatEverWithAB</a></span>(<span class='parameter'><a name='presentation.WhatEverWithAB@x', id ='1548691661', onmouseover='highlight("1548691628","1548691623")', title='presentation.WhatEverWithAB@x : ?[a : ?,b : ?]'>x</span></a>):
+<span class='lineno'>223</span>   <span class='keyword'>print</span> <a href='#presentation.WhatEverWithAB@x', id ='1548691628', onmouseover='highlight(1548691661)', title='presentation.WhatEverWithAB@x : ?[a : ?,b : ?]'>x</a>.<a name='presentation.WhatEverWithAB@x.a', id ='1548691626', title='presentation.WhatEverWithAB@x.a : ?'>a</a>, <a href='#presentation.WhatEverWithAB@x', id ='1548691623', onmouseover='highlight(1548691661)', title='presentation.WhatEverWithAB@x : ?[a : ?,b : ?]'>x</a>.<a name='presentation.WhatEverWithAB@x.b', id ='1548691600', title='presentation.WhatEverWithAB@x.b : ?'>b</a>
+<span class='lineno'>224</span>   <span class='keyword'>return</span> <span class='number'>0</span>
+<span class='lineno'>225</span> 
+<span class='lineno'>226</span> 
+<span class='lineno'>227</span> 
+<span class='lineno'>228</span> <span class='comment'>##########################
+<span class='lineno'>229</span> </span><span class='comment'># dynamic field creation #
+<span class='lineno'>230</span> </span><span class='comment'>##########################
+<span class='lineno'>231</span> </span><span class='comment'># PySonar can track down the dynamically created fields such as the &#39;y&#39;
+<span class='lineno'>232</span> </span><span class='comment'># field inside o2.
+<span class='lineno'>233</span> <span class='keyword'></span>class</span> <a name='presentation.A6', id ='1548689705', onmouseover='highlight(1548689645)', title='presentation.A6 : <A6>'><span class='type-name'>A6</span></a>:
+<span class='lineno'>234</span>   <a name='presentation.A6.w', id ='1548689678', onmouseover='highlight(1548688928)', title='presentation.A6.w : int'>w</a> = <span class='number'>1</span>
+<span class='lineno'>235</span> 
+<span class='lineno'>236</span> <a name='presentation.o2', id ='1548689671', onmouseover='highlight("1548689640","1548688931","1548688925")', title='presentation.o2 : A6'>o2</a> = <a href='#presentation.A6', id ='1548689645', onmouseover='highlight(1548689705)', title='presentation.A6 : <A6>'>A6</a>()
+<span class='lineno'>237</span> <a href='#presentation.o2', id ='1548689640', onmouseover='highlight(1548689671)', title='presentation.o2 : A6'>o2</a>.<a name='presentation.A6.y', id ='1548689616', onmouseover='highlight(1548688901)', title='presentation.A6.y : int'>y</a> = <span class='number'>3</span>
+<span class='lineno'>238</span> 
+<span class='lineno'>239</span> <span class='keyword'>print</span> <a href='#presentation.o2', id ='1548688931', onmouseover='highlight(1548689671)', title='presentation.o2 : A6'>o2</a>.<a href='#presentation.A6.w', id ='1548688928', onmouseover='highlight(1548689678)', title='presentation.A6.w : int'>w</a>, <a href='#presentation.o2', id ='1548688925', onmouseover='highlight(1548689671)', title='presentation.o2 : A6'>o2</a>.<a href='#presentation.A6.y', id ='1548688901', onmouseover='highlight(1548689616)', title='presentation.A6.y : int'>y</a>  <span class='comment'># move cursor to &#39;y&#39; and o2.y above should be highlighted</span>
+<span class='lineno'>240</span> 
+<span class='lineno'>241</span> 
+<span class='lineno'>242</span> 
+<span class='lineno'>243</span> <span class='comment'>########################
+<span class='lineno'>244</span> </span><span class='comment'># multiple definitions #
+<span class='lineno'>245</span> </span><span class='comment'>########################
+<span class='lineno'>246</span> </span><span class='comment'># In Python a name may have multiple locations of definitions. PySonar
+<span class='lineno'>247</span> <span class='comment'></span># tracks down all of them.
+<span class='lineno'>248</span> </span><span class='keyword'>if</span> (<span class='warning', title='unbound variable x'>x</span> &lt; <span class='number'>12</span>):
+<span class='lineno'>249</span>   <span class='keyword'>class</span> <a name='presentation.A7', id ='1548666614', onmouseover='highlight(1548665831)', title='presentation.A7 : {<A7> | <A7>}'><span class='type-name'>A7</a></span>:
+<span class='lineno'>250</span>     <a name='presentation.A7.w', id ='1548666606', onmouseover='highlight(1548665648)', title='presentation.A7.w : int'>w</a> = <span class='number'>1</span>
+<span class='lineno'>251</span> <span class='keyword'>else</span>:
+<span class='lineno'>252</span>   <span class='keyword'>class</span> <a name='presentation.A7', id ='1548666544', onmouseover='highlight(1548665831)', title='presentation.A7 : {<A7> | <A7>}'>A7</a>:
+<span class='lineno'>253</span>     <a name='presentation.A7.w', id ='1548665864', onmouseover='highlight(1548665648)', title='presentation.A7.w : int'>w</a> = <span class='number'>1</span>
+<span class='lineno'>254</span> 
+<span class='lineno'>255</span> <a name='presentation.o7', id ='1548665836', onmouseover='highlight(1548665651)', title='presentation.o7 : {A7 | A7}'>o7</a> = <a href='#presentation.A7', id ='1548665831', onmouseover='highlight("1548666614","1548666544")', title='presentation.A7 : {<A7> | <A7>}'>A7</a>()     <span class='comment'># highlights both A7 definitions above</span>
+<span class='lineno'>256</span> <span class='keyword'>print</span> <a href='#presentation.o7', id ='1548665651', onmouseover='highlight(1548665836)', title='presentation.o7 : {A7 | A7}'>o7</a>.<a href='#presentation.A7.w', id ='1548665648', onmouseover='highlight("1548665864","1548666606")', title='{presentation.A7.w : int | presentation.A7.w : int}'>w</a>    <span class='comment'># highlights both &#39;w&#39; fields in A7&#39;s definitions</span>
+<span class='lineno'>257</span> 
+<span class='lineno'>258</span> 
+<span class='lineno'>259</span> 
+<span class='lineno'>260</span> <span class='comment'>###############
+<span class='lineno'>261</span> <span class='comment'></span># Bug finding #
+<span class='lineno'>262</span> </span><span class='comment'>###############
+<span class='lineno'>263</span> 
+<span class='lineno'>264</span> </span><span class='comment'># &quot;Undefined fields&quot; and their consequences. This is probably the only
+<span class='lineno'>265</span> <span class='comment'></span># perceived phenomenon when &quot;type errors&quot; happen in Python. This uniformity
+<span class='lineno'>266</span> <span class='comment'></span># is a very nice property of Python.
+<span class='lineno'>267</span> </span><span class='keyword'>class</span> <a name='presentation.AC', id ='1548662769', onmouseover='highlight(1548662023)', title='presentation.AC : <AC>'><span class='type-name'>AC</a></span>:
+<span class='lineno'>268</span>   <a name='presentation.AC.f14', id ='1548662763', title='presentation.AC.f14 : str'>f14</a> = <span class='string'>&#39;Tomcat&#39;</span>
+<span class='lineno'>269</span> 
+<span class='lineno'>270</span> <a name='presentation.lincoln', id ='1548662705', onmouseover='highlight(1548661000)', title='presentation.lincoln : AC'>lincoln</a> = <a href='#presentation.AC', id ='1548662023', onmouseover='highlight(1548662769)', title='presentation.AC : <AC>'>AC</a>()
+<span class='lineno'>271</span> 
+<span class='lineno'>272</span> <span class='keyword'>def</span> <span class='function'><a name='presentation.TopSecret', id ='1548661992', onmouseover='highlight(1548661031)', title='presentation.TopSecret : AC -> !'>TopSecret</a></span>(<a name='presentation.TopSecret@x', id ='1548661961', onmouseover='highlight(1548661927)', title='presentation.TopSecret@x : AC'><span class='parameter'>x</span></a>):
+<span class='lineno'>273</span>   <span class='keyword'>return</span> <a href='#presentation.TopSecret@x', id ='1548661927', onmouseover='highlight(1548661961)', title='presentation.TopSecret@x : AC'>x</a>.<span class='warning', title='attribute not found in type: AC'>f22</span>                  <span class='comment'># &#39;f22&#39; is not defined in an instance of AC</span>
+<span class='lineno'>274</span> 
+<span class='lineno'>275</span> <a name='presentation.raptor', id ='1548661061', onmouseover='highlight("1548660809","1548659825")', title='presentation.raptor : !'>raptor</a> = <a href='#presentation.TopSecret', id ='1548661031', onmouseover='highlight(1548661992)', title='presentation.TopSecret : AC -> !'>TopSecret</a>(<a href='#presentation.lincoln', id ='1548661000', onmouseover='highlight(1548662705)', title='presentation.lincoln : AC'>lincoln</a>)     <span class='comment'># raptor is not defined as a consequence</span>
+<span class='lineno'>276</span> <a name='presentation.icecream', id ='1548660841', onmouseover='highlight(1548660005)', title='presentation.icecream : !'>icecream</a> = <a href='#presentation.raptor', id ='1548660809', onmouseover='highlight(1548661061)', title='presentation.raptor : !'>raptor</a>.<span class='warning', title='attribute not found in type: !'>missle</span>        <span class='comment'># icecream is not a missle</span>
+<span class='lineno'>277</span> <a href='#presentation.icecream', id ='1548660005', onmouseover='highlight(1548660841)', title='presentation.icecream : !'><span class='warning', title='calling non-function and non-class: !'>icecream</a>.<span class='warning', title='attribute not found in type: !'>fire</span>()</span>                 <span class='comment'># Can&#39;t fire icecream</span>
+<span class='lineno'>278</span> <a href='#presentation.raptor', id ='1548659825', onmouseover='highlight(1548661061)', title='presentation.raptor : !'>raptor</a>.<span class='warning', title='Cannot set attribute because the type contains errors'>gun</span> = <span class='string'>&#39;M61&#39;</span>              <span class='comment'># Can&#39;t install a gun in a nonexistent aircraft</span>
+<span class='lineno'>279</span> 
+<span class='lineno'>280</span> 
+<span class='lineno'>281</span> 
+<span class='lineno'>282</span> <span class='comment'># Function not always return a value. One branched conditional returns a
+<span class='lineno'>283</span> </span><span class='comment'># string if the condition is true, but no return value otherwise.
+<span class='lineno'>284</span> </span><span class='keyword'>def</span> <a name='presentation.F', id ='1548637003', onmouseover='highlight(1548635949)', title='presentation.F : int -> str'><span class='warning', title='Function not always return a value'><span class='function'>F</span></span></a>(<a name='presentation.F@x', id ='1548637001', onmouseover='highlight(1548636970)', title='presentation.F@x : int'><span class='parameter'>x</a></span>):
+<span class='lineno'>285</span>   <span class='keyword'>if</span> (<a href='#presentation.F@x', id ='1548636970', onmouseover='highlight(1548637001)', title='presentation.F@x : int'>x</a> &lt; <span class='number'>1</span>):
+<span class='lineno'>286</span>     <span class='keyword'>return</span> <span class='string'>&#39;B-2&#39;</span>
+<span class='lineno'>287</span> 
+<span class='lineno'>288</span> <span class='comment'># G is contaminated by F so it also misses return values
+<span class='lineno'>289</span> <span class='keyword'></span>def</span> <span class='function'><a name='presentation.G', id ='1548636043', onmouseover='highlight(1548635017)', title='presentation.G : int -> str'><span class='warning', title='Function not always return a value'>G</a></span></span>(<span class='parameter'><a name='presentation.G@y', id ='1548636041', onmouseover='highlight("1548636010","1548635947")', title='presentation.G@y : int'>y</a></span>):
+<span class='lineno'>290</span>   <span class='keyword'>if</span> (<a href='#presentation.G@y', id ='1548636010', onmouseover='highlight(1548636041)', title='presentation.G@y : int'>y</a> &lt; <span class='number'>2</span>):
+<span class='lineno'>291</span>     <span class='keyword'>return</span> <a href='#presentation.F', id ='1548635949', onmouseover='highlight(1548637003)', title='presentation.F : int -> str'><span class='warning', title='Call not always return a value'>F</a>(<a href='#presentation.G@y', id ='1548635947', onmouseover='highlight(1548636041)', title='presentation.G@y : int'>y</a> + <span class='number'>1</span>)</span>             <span class='comment'># F may not return a value, thus G.</span>
+<span class='lineno'>292</span>   <span class='keyword'>else</span>:
+<span class='lineno'>293</span>     <span class='keyword'>return</span> <span class='string'>&#39;H-bomb&#39;</span>
+<span class='lineno'>294</span> 
+<span class='lineno'>295</span> <span class='keyword'>print</span> <span class='warning', title='Call not always return a value'><a href='#presentation.G', id ='1548635017', onmouseover='highlight(1548636043)', title='presentation.G : int -> str'>G</a>(<span class='number'>5</span>)</span>
+<span class='lineno'>296</span> 
+<span class='lineno'>297</span> <span class='comment'># No problem for H because H doesn&#39;t return values in any case
+<span class='lineno'>298</span> <span class='keyword'></span>def</span> <a name='presentation.H', id ='1548634125', onmouseover='highlight(1548633064)', title='presentation.H : int -> None'><span class='function'>H</span></a>(<a name='presentation.H@x', id ='1548634123', onmouseover='highlight(1548633999)', title='presentation.H@x : int'><span class='parameter'>x</span></a>):
+<span class='lineno'>299</span>   <a name='presentation.H&y', id ='1548634117', title='presentation.H&y : str'><span class='identifier'>y</span></a> = <span class='string'>&#39;What am I doing here?&#39;</span>
+<span class='lineno'>300</span>   <span class='keyword'>if</span> (<a href='#presentation.H@x', id ='1548633999', onmouseover='highlight(1548634123)', title='presentation.H@x : int'>x</a> &lt; <span class='number'>1</span>):
+<span class='lineno'>301</span>     <span class='keyword'>print</span> <span class='string'>&#39;hard data is&#39;</span>        <span class='comment'># None</span>
+<span class='lineno'>302</span>   <span class='keyword'>else</span>:
+<span class='lineno'>303</span>     <span class='keyword'>print</span> <span class='string'>&#39;good to find&#39;</span>        <span class='comment'># None</span>
+<span class='lineno'>304</span> 
+<span class='lineno'>305</span> <a href='#presentation.H', id ='1548633064', onmouseover='highlight(1548634125)', title='presentation.H : int -> None'>H</a>(<span class='number'>3</span>)
+<span class='lineno'>306</span> 
+<span class='lineno'>307</span> <span class='comment'># Unreachable code
+<span class='lineno'>308</span> <span class='keyword'></span>def</span> <span class='function'><a name='presentation.Google', id ='1548632972', onmouseover='highlight(1548630995)', title='presentation.Google : {} -> str'>Google</span></a>(<span class='parameter'><a name='presentation.Google@hour', id ='1548632944', onmouseover='highlight("1548632910","1548632110","1548631987")', title='presentation.Google@hour : {}'>hour</a></span>):
+<span class='lineno'>309</span>   <span class='keyword'>if</span> (<a href='#presentation.Google@hour', id ='1548632910', onmouseover='highlight(1548632944)', title='presentation.Google@hour : {}'>hour</a> &lt;= <span class='number'>10</span>):
+<span class='lineno'>310</span>     <span class='keyword'>return</span> <span class='string'>&#39;breakfast&#39;</span>
+<span class='lineno'>311</span>   <span class='keyword'>elif</span> (<a href='#presentation.Google@hour', id ='1548632110', onmouseover='highlight(1548632944)', title='presentation.Google@hour : {}'>hour</a> &lt; <span class='number'>13</span>):
+<span class='lineno'>312</span>     <span class='keyword'>return</span> <span class='string'>&#39;lunch&#39;</span>
+<span class='lineno'>313</span>   <span class='keyword'>elif</span> (<a href='#presentation.Google@hour', id ='1548631987', onmouseover='highlight(1548632944)', title='presentation.Google@hour : {}'>hour</a> &lt; <span class='number'>20</span>):
+<span class='lineno'>314</span>     <span class='keyword'>return</span> <span class='string'>&#39;dinner&#39;</span>
+<span class='lineno'>315</span>   <span class='keyword'>else</span>:
+<span class='lineno'>316</span>     <span class='keyword'>return</span> <span class='string'>&#39;snack&#39;</span>
+<span class='lineno'>317</span>   <span class='keyword'><span class='warning', title='unreachable code'>return</span> <span class='string'>&#39;hungry&#39;</span></span>              <span class='comment'># unreachable code</span>
+<span class='lineno'>318</span> 
+<span class='lineno'>319</span> <a href='#presentation.Google', id ='1548630995', onmouseover='highlight(1548632972)', title='presentation.Google : {} -> str'>Google</a>(<span class='warning', title='unbound variable random'>random</span>(<span class='number'>24</span>))
+<span class='lineno'>320</span> 
+<span class='lineno'>321</span> 
+<span class='lineno'>322</span> 
+<span class='lineno'>323</span> <span class='comment'>#######
+<span class='lineno'>324</span> </span><span class='comment'># ;-) #
+<span class='lineno'>325</span> </span><span class='comment'>#######
+<span class='lineno'>326</span> </span><span class='comment'># A popular problem control-flow analysis may run into is the halting
+<span class='lineno'>327</span> <span class='comment'></span># problem. If calls are followed every time, there could be infinite loops
+<span class='lineno'>328</span> </span><span class='comment'># that cause the analyzer not to terminate. PySonar deals with this by
+<span class='lineno'>329</span> <span class='comment'></span># memorizing input types.
+<span class='lineno'>330</span> </span><span class='keyword'>class</span> <a name='presentation.Halting', id ='1548628139', onmouseover='highlight(1548607180)', title='presentation.Halting : <Halting>'><span class='type-name'>Halting</a></span>:
+<span class='lineno'>331</span>     <a name='presentation.Halting.z', id ='1548628105', onmouseover='highlight(1548606286)', title='presentation.Halting.z : int'>z</a> = <span class='number'>1</span>
+<span class='lineno'>332</span> 
+<span class='lineno'>333</span> <span class='keyword'>class</span> <a name='presentation.Problem', id ='1548607218', onmouseover='highlight(1548607063)', title='presentation.Problem : <Problem>'><span class='type-name'>Problem</span></a>:
+<span class='lineno'>334</span>     <a name='presentation.Problem.z', id ='1548607184', onmouseover='highlight(1548606286)', title='presentation.Problem.z : Halting'>z</a> = <a href='#presentation.Halting', id ='1548607180', onmouseover='highlight(1548628139)', title='presentation.Halting : <Halting>'>Halting</a>()
+<span class='lineno'>335</span> 
+<span class='lineno'>336</span> <span class='keyword'>class</span> <span class='type-name'><a name='presentation.Solved', id ='1548607121', onmouseover='highlight(1548607026)', title='presentation.Solved : <Solved>'>Solved</span></a>:
+<span class='lineno'>337</span>     <a name='presentation.Solved.z', id ='1548607088', onmouseover='highlight(1548606286)', title='presentation.Solved.z : Problem'>z</a> = <a href='#presentation.Problem', id ='1548607063', onmouseover='highlight(1548607218)', title='presentation.Problem : <Problem>'>Problem</a>()
+<span class='lineno'>338</span> 
+<span class='lineno'>339</span> <a name='presentation.o3', id ='1548607031', onmouseover='highlight(1548606006)', title='presentation.o3 : Solved'>o3</a> = <a href='#presentation.Solved', id ='1548607026', onmouseover='highlight(1548607121)', title='presentation.Solved : <Solved>'>Solved</a>()
+<span class='lineno'>340</span> 
+<span class='lineno'>341</span> <span class='keyword'>def</span> <span class='function'><a name='presentation.f', id ='1548606970', onmouseover='highlight("1548606008","1548606962")', title='presentation.f : {! | Problem | int | Halting | Solved} -> None'>f</span></a>(<a name='presentation.f@x', id ='1548606968', onmouseover='highlight(1548606288)', title='presentation.f@x : {Solved | Problem | Halting | int | !}'><span class='parameter'>x</span></a>):
+<span class='lineno'>342</span>   <a href='#presentation.f', id ='1548606962', onmouseover='highlight(1548606970)', title='presentation.f : {! | Problem | int | Halting | Solved} -> None'>f</a>(<a href='#presentation.f@x', id ='1548606288', onmouseover='highlight(1548606968)', title='presentation.f@x : {Solved | Problem | Halting | int | !}'>x</a>.<span class='warning', title='attribute not found in type: !'><span class='warning', title='attribute not found in type: int'><span class='warning', title='attribute not found in type: !'><a href='#presentation.Solved.z', id ='1548606286', onmouseover='highlight("1548607088","1548607184","1548628105")', title='{presentation.Solved.z : Problem | presentation.Problem.z : Halting | presentation.Halting.z : int}'><span class='warning', title='attribute not found in type: !'><span class='warning', title='attribute not found in type: !'>z</span></a></span></span></span></span>) <span class='comment'># move cursor to &#39;z&#39; will highlight all three &#39;z&#39; fields above and one error message</span>
+<span class='lineno'>343</span> 
+<span class='lineno'>344</span> <a href='#presentation.f', id ='1548606008', onmouseover='highlight(1548606970)', title='presentation.f : {! | Problem | int | Halting | Solved} -> None'>f</a>(<a href='#presentation.o3', id ='1548606006', onmouseover='highlight(1548607031)', title='presentation.o3 : Solved'>o3</a>)
+</pre></td></tr></table></body></html>

@@ -1,0 +1,47 @@
+(record F [x :default (fun (x) x.a)])
+(record A [a :default 42])
+(define d (F))
+(d.x (A))
+
+(define x [10 20 30 40])
+
+(define bar
+  (fun ()
+    (define v1 [0 1 2 3])
+    (define foo (fun (i) v1#i))
+    (foo 1)))
+
+(define idx (bar))
+x#idx
+
+
+(define mat
+    [[11 12 13 14]
+     [21 22 23 24]
+     [31 32 33 34]
+     [41 42 43 44]]
+)
+
+mat #0 #(+ 1 1)
+
+-- (define u 1)
+
+-- (define setU
+--  (fun (x)
+--   (set! u x)))
+
+-- (setU 10)
+-- u
+
+-- (define ^ (fun (x y) (* x y)))
+-- (^ 2 3.2)
+
+-- (define aa [1 2 3])
+-- (set! aa#1 10)
+-- aa#1
+
+
+(define v1 [1 2 3 4 5 6])
+(define v2 [1 2 3 4 5 6])
+
+v1#(v2#1)

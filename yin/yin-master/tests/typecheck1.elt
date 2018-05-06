@@ -1,0 +1,54 @@
+-- 10
+-- "ok"
+-- true
+
+-- (if true 10 "ok")
+
+-- (if true 10 (if false "ok" true))
+
+-- (define f (fun ([x Int] [y Int] [-> Int]) (+ x y)))
+
+-- (f 1)
+
+
+-- (define g (fun ([x Int] [y Bool]) (if true x y)))
+-- g
+
+-- (define fact
+--   (fun ([x Int] [-> Int])
+--     (if (= x 0) 1 (* x (fact (- x 1))))))
+
+-- (fact 5)
+
+
+-- (define even
+--   (fun ([x Int] [-> Bool])
+--     (define f (fun ([x Int] [-> (U Int Bool)]) (if true 1 false)))
+--     (f "ok")
+--     (if (= x 0)
+--         true
+--         (if (= x 1)
+--             false
+--             (odd (- x 1))))))
+
+-- (define odd
+--   (fun ([x Int] [-> Bool])
+--     (if (= x 0)
+--         false
+--         (if (= x 1)
+--             true
+--             (even (- x 1))))))
+
+(record A
+  [x Int]
+  [y String])
+
+-- (define o (A :x 1 :y "hi"))
+
+-- (+ 1 o.x)
+
+
+-- (define f (fun ([x Any]) x))
+-- (f "hi")
+
+(A :x 1 :y "hi")

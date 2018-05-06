@@ -1,0 +1,82 @@
+[
+  {
+    "ref": {
+      "name": "a",
+      "file": "names.rb",
+      "start": 31,
+      "end": 32
+    },
+    "dests": [
+      {
+        "name": "a",
+        "file": "names.rb",
+        "start": 11,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "self",
+      "file": "names.rb",
+      "start": 40,
+      "end": 44
+    },
+    "dests": [
+      {
+        "name": "Foo",
+        "file": "names.rb",
+        "start": 6,
+        "end": 9
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "a",
+      "file": "names.rb",
+      "start": 72,
+      "end": 73
+    },
+    "dests": [
+      {
+        "name": "a",
+        "file": "names.rb",
+        "start": 11,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "wow?",
+      "file": "names.rb",
+      "start": 155,
+      "end": 159
+    },
+    "dests": [
+      {
+        "name": "wow?",
+        "file": "names.rb",
+        "start": 131,
+        "end": 135
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "wow!",
+      "file": "names.rb",
+      "start": 189,
+      "end": 193
+    },
+    "dests": [
+      {
+        "name": "wow!",
+        "file": "names.rb",
+        "start": 165,
+        "end": 169
+      }
+    ]
+  }
+]

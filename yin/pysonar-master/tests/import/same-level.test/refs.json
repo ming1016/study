@@ -1,0 +1,66 @@
+[
+  {
+    "ref": {
+      "name": "mod2",
+      "file": "mod1.py",
+      "start": 17,
+      "end": 21
+    },
+    "dests": [
+      {
+        "name": "mod2",
+        "file": "mod1.py",
+        "start": -1,
+        "end": -1
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "B",
+      "file": "mod1.py",
+      "start": 22,
+      "end": 23
+    },
+    "dests": [
+      {
+        "name": "B",
+        "file": "mod2.py",
+        "start": 6,
+        "end": 7
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "o",
+      "file": "mod1.py",
+      "start": 32,
+      "end": 33
+    },
+    "dests": [
+      {
+        "name": "o",
+        "file": "mod1.py",
+        "start": 13,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "a",
+      "file": "mod1.py",
+      "start": 34,
+      "end": 35
+    },
+    "dests": [
+      {
+        "name": "a",
+        "file": "mod2.py",
+        "start": 11,
+        "end": 12
+      }
+    ]
+  }
+]

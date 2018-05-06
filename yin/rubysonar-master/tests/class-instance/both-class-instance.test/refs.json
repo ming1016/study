@@ -1,0 +1,98 @@
+[
+  {
+    "ref": {
+      "name": "self",
+      "file": "both-class-instance.rb",
+      "start": 95,
+      "end": 99
+    },
+    "dests": [
+      {
+        "name": "C",
+        "file": "both-class-instance.rb",
+        "start": 82,
+        "end": 83
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "C",
+      "file": "both-class-instance.rb",
+      "start": 204,
+      "end": 205
+    },
+    "dests": [
+      {
+        "name": "C",
+        "file": "both-class-instance.rb",
+        "start": 82,
+        "end": 83
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "foo",
+      "file": "both-class-instance.rb",
+      "start": 206,
+      "end": 209
+    },
+    "dests": [
+      {
+        "name": "foo",
+        "file": "both-class-instance.rb",
+        "start": 108,
+        "end": 111
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "C",
+      "file": "both-class-instance.rb",
+      "start": 242,
+      "end": 243
+    },
+    "dests": [
+      {
+        "name": "C",
+        "file": "both-class-instance.rb",
+        "start": 82,
+        "end": 83
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "co",
+      "file": "both-class-instance.rb",
+      "start": 253,
+      "end": 255
+    },
+    "dests": [
+      {
+        "name": "co",
+        "file": "both-class-instance.rb",
+        "start": 237,
+        "end": 239
+      }
+    ]
+  },
+  {
+    "ref": {
+      "name": "foo",
+      "file": "both-class-instance.rb",
+      "start": 256,
+      "end": 259
+    },
+    "dests": [
+      {
+        "name": "foo",
+        "file": "both-class-instance.rb",
+        "start": 158,
+        "end": 161
+      }
+    ]
+  }
+]
