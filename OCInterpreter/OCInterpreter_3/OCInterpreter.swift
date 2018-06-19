@@ -215,6 +215,8 @@ public class OCInterpreter {
         switch node {
         case let number as OCNumber:
             return eval(number: number)
+        case let unaryOperation as OCUnaryOperation:
+            return eval(unaryOperation: unaryOperation)
         case let binOp as OCBinOp:
             return eval(binOp: binOp)
         default:
@@ -241,7 +243,18 @@ public class OCInterpreter {
         case .intDiv:
             return .number(leftResult / rightResult)
         }
-        
+    }
+    
+    func eval(unaryOperation: OCUnaryOperation) -> OCValue {
+        guard case let .number(result) = eval(node: unaryOperation.operand) else {
+            fatalError("Error: eval unaryOperation")
+        }
+        switch unaryOperation.operation {
+        case .plus:
+            return .number(+result)
+        case .minus:
+            return .number(-result)
+        }
     }
     
     public func expr() -> OCAST {
@@ -278,6 +291,12 @@ public class OCInterpreter {
     private func factor() -> OCAST {
         let tk = currentTk
         switch tk {
+        case .operation(.plus):
+            eat(.operation(.plus))
+            return OCUnaryOperation(operation: .plus, operand: factor())
+        case .operation(.minus):
+            eat(.operation(.minus))
+            return OCUnaryOperation(operation: .minus, operand: factor())
         case let .constant(.integer(result)):
             eat(.constant(.integer(result)))
             return OCNumber.integer(result)

@@ -16,9 +16,24 @@ public enum OCBinOpType {
     case intDiv
 }
 
+public enum OCUnaryOperationType {
+    case plus
+    case minus
+}
+
 public enum OCNumber: OCAST {
     case integer(Int)
     case float(Float)
+}
+
+class OCUnaryOperation: OCAST {
+    let operation: OCUnaryOperationType
+    let operand: OCAST
+    
+    init(operation: OCUnaryOperationType, operand: OCAST) {
+        self.operation = operation
+        self.operand = operand
+    }
 }
 
 class OCBinOp: OCAST {

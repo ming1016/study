@@ -8,6 +8,26 @@
 import Foundation
 
 extension OCNumber {
+    // Unary
+    static prefix func + (left: OCNumber) -> OCNumber {
+        switch left {
+        case let .integer(value):
+            return .integer(+value)
+        case let .float(value):
+            return .float(+value)
+        }
+    }
+    
+    static prefix func - (left: OCNumber) -> OCNumber {
+        switch left {
+        case let .integer(value):
+            return .integer(-value)
+        case let .float(value):
+            return .float(-value)
+        }
+    }
+    
+    
     // binOp
     static func + (left: OCNumber, right: OCNumber) -> OCNumber {
         switch (left, right) {
