@@ -8,6 +8,7 @@
 
 #import "VCGeneratorCom.h"
 #import "FactoryMethodVC.h"
+#import "PublishVC.h"
 
 @implementation VCGeneratorCom
 
@@ -17,6 +18,14 @@
 }
 - (NSString *)factoryMethodVCTitle:(NSDictionary *)dic {
     return @"Factory";
+}
+
+- (UIViewController *)publishVC:(NSDictionary *)dic {
+    PublishVC *vc = [[PublishVC alloc] init];
+    return vc;
+}
+- (NSString *)publishVCTitle:(NSDictionary *)dic {
+    return @"Publish";
 }
 
 @end

@@ -18,8 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.ct configAop];
-    [self.ct FirstViewInVC:self];
+    [self.ct firstViewInVC:self];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.ct firstViewAppear];
 }
 
 // getter

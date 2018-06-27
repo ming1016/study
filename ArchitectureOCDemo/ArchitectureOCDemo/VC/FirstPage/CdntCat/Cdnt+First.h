@@ -11,8 +11,7 @@
 
 @interface Cdnt (First)
 
-- (void)configAop;
-- (UIViewController *)factoryMethodVC;
-- (void)FirstViewInVC:(UIViewController *)vc;
+- (void)firstViewInVC:(UIViewController *)vc;
+- (void)firstViewAppear;
 
 @end

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6E642B20D8D62000FFAD03 /* CdntAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E642A20D8D62000FFAD03 /* CdntAction.m */; };
+		0A6E642F20DA625000FFAD03 /* PublishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E642E20DA625000FFAD03 /* PublishVC.m */; };
+		0A6E643320DA628F00FFAD03 /* Cdnt+Publish.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E643220DA628F00FFAD03 /* Cdnt+Publish.m */; };
+		0A6E643720DA66D900FFAD03 /* PublishCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E643620DA66D900FFAD03 /* PublishCom.m */; };
+		0A6E644720DB959000FFAD03 /* LabelCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E644620DB959000FFAD03 /* LabelCom.m */; };
+		0A6E644A20DBB85800FFAD03 /* Dic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E644920DBB85800FFAD03 /* Dic.m */; };
+		0A6E644E20DDBA8000FFAD03 /* BridgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E644D20DDBA8000FFAD03 /* BridgeVC.m */; };
+		0A6E645220DDBC4500FFAD03 /* FieryDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E645120DDBC4500FFAD03 /* FieryDragon.m */; };
+		0A6E645520DDC00D00FFAD03 /* RedFieryDragonAbility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E645420DDC00D00FFAD03 /* RedFieryDragonAbility.m */; };
+		0A6E645820DDD3A800FFAD03 /* BlackFieryDragonAbility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E645720DDD3A800FFAD03 /* BlackFieryDragonAbility.m */; };
 		0A72617E20CE539900A5427E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72617D20CE539900A5427E /* AppDelegate.m */; };
 		0A72618420CE539900A5427E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A72618220CE539900A5427E /* Main.storyboard */; };
 		0A72618620CE539A00A5427E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A72618520CE539A00A5427E /* Assets.xcassets */; };
@@ -23,12 +33,36 @@
 		0A7261E120D0E86E00A5427E /* VCGeneratorCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7261E020D0E86E00A5427E /* VCGeneratorCom.m */; };
 		0A7261E420D0EDDF00A5427E /* TextGeneratorCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7261E320D0EDDF00A5427E /* TextGeneratorCom.m */; };
 		0A7261EC20D11AC000A5427E /* FirstListCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7261EB20D11AC000A5427E /* FirstListCom.m */; };
+		0A807CFF20E1E60F00E06A0A /* EmergeCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A807CFE20E1E60F00E06A0A /* EmergeCom.m */; };
+		0A807D0220E33C1500E06A0A /* DragonFight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A807D0120E33C1500E06A0A /* DragonFight.m */; };
 		0AA61FA320D35DFA0001F0C4 /* ButtonCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA61FA220D35DFA0001F0C4 /* ButtonCom.m */; };
 		0AA61FA720D3B43F0001F0C4 /* AopLogCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA61FA620D3B43F0001F0C4 /* AopLogCom.m */; };
+		0AA7F6CB20DF208400EAC3AA /* StateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7F6CA20DF208400EAC3AA /* StateVC.m */; };
 		87D2C76447E19A86B58B96D5 /* Pods_ArchitectureOCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0BA6702BE1A6C7A938EB0A /* Pods_ArchitectureOCDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A6E642920D8D62000FFAD03 /* CdntAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CdntAction.h; sourceTree = "<group>"; };
+		0A6E642A20D8D62000FFAD03 /* CdntAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CdntAction.m; sourceTree = "<group>"; };
+		0A6E642D20DA625000FFAD03 /* PublishVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublishVC.h; sourceTree = "<group>"; };
+		0A6E642E20DA625000FFAD03 /* PublishVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublishVC.m; sourceTree = "<group>"; };
+		0A6E643120DA628F00FFAD03 /* Cdnt+Publish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cdnt+Publish.h"; sourceTree = "<group>"; };
+		0A6E643220DA628F00FFAD03 /* Cdnt+Publish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Cdnt+Publish.m"; sourceTree = "<group>"; };
+		0A6E643520DA66D900FFAD03 /* PublishCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublishCom.h; sourceTree = "<group>"; };
+		0A6E643620DA66D900FFAD03 /* PublishCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublishCom.m; sourceTree = "<group>"; };
+		0A6E644520DB959000FFAD03 /* LabelCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelCom.h; sourceTree = "<group>"; };
+		0A6E644620DB959000FFAD03 /* LabelCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelCom.m; sourceTree = "<group>"; };
+		0A6E644820DBB85800FFAD03 /* Dic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dic.h; sourceTree = "<group>"; };
+		0A6E644920DBB85800FFAD03 /* Dic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dic.m; sourceTree = "<group>"; };
+		0A6E644C20DDBA8000FFAD03 /* BridgeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeVC.h; sourceTree = "<group>"; };
+		0A6E644D20DDBA8000FFAD03 /* BridgeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeVC.m; sourceTree = "<group>"; };
+		0A6E644F20DDBAEA00FFAD03 /* DragonAbility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragonAbility.h; sourceTree = "<group>"; };
+		0A6E645020DDBC4500FFAD03 /* FieryDragon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieryDragon.h; sourceTree = "<group>"; };
+		0A6E645120DDBC4500FFAD03 /* FieryDragon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieryDragon.m; sourceTree = "<group>"; };
+		0A6E645320DDC00D00FFAD03 /* RedFieryDragonAbility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedFieryDragonAbility.h; sourceTree = "<group>"; };
+		0A6E645420DDC00D00FFAD03 /* RedFieryDragonAbility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedFieryDragonAbility.m; sourceTree = "<group>"; };
+		0A6E645620DDD3A800FFAD03 /* BlackFieryDragonAbility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlackFieryDragonAbility.h; sourceTree = "<group>"; };
+		0A6E645720DDD3A800FFAD03 /* BlackFieryDragonAbility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackFieryDragonAbility.m; sourceTree = "<group>"; };
 		0A72617920CE539900A5427E /* ArchitectureOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectureOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A72617C20CE539900A5427E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A72617D20CE539900A5427E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,10 +95,17 @@
 		0A7261E320D0EDDF00A5427E /* TextGeneratorCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextGeneratorCom.m; sourceTree = "<group>"; };
 		0A7261EA20D11AC000A5427E /* FirstListCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstListCom.h; sourceTree = "<group>"; };
 		0A7261EB20D11AC000A5427E /* FirstListCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstListCom.m; sourceTree = "<group>"; };
+		0A807CFD20E1E60F00E06A0A /* EmergeCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmergeCom.h; sourceTree = "<group>"; };
+		0A807CFE20E1E60F00E06A0A /* EmergeCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmergeCom.m; sourceTree = "<group>"; };
+		0A807D0020E33C1500E06A0A /* DragonFight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragonFight.h; sourceTree = "<group>"; };
+		0A807D0120E33C1500E06A0A /* DragonFight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragonFight.m; sourceTree = "<group>"; };
 		0AA61FA120D35DFA0001F0C4 /* ButtonCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonCom.h; sourceTree = "<group>"; };
 		0AA61FA220D35DFA0001F0C4 /* ButtonCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonCom.m; sourceTree = "<group>"; };
 		0AA61FA520D3B43F0001F0C4 /* AopLogCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AopLogCom.h; sourceTree = "<group>"; };
 		0AA61FA620D3B43F0001F0C4 /* AopLogCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AopLogCom.m; sourceTree = "<group>"; };
+		0AA7F6C920DF208400EAC3AA /* StateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateVC.h; sourceTree = "<group>"; };
+		0AA7F6CA20DF208400EAC3AA /* StateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateVC.m; sourceTree = "<group>"; };
+		0AA7F6CF20DF217700EAC3AA /* DragonState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragonState.h; sourceTree = "<group>"; };
 		BFFCFBC477A772F0CDDE69E9 /* Pods-ArchitectureOCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureOCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureOCDemo/Pods-ArchitectureOCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D317A2E565A1AC59FC08288F /* Pods-ArchitectureOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureOCDemo/Pods-ArchitectureOCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DD0BA6702BE1A6C7A938EB0A /* Pods_ArchitectureOCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchitectureOCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +123,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6E642C20DA61E800FFAD03 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E643020DA626400FFAD03 /* CdntCat */,
+				0A6E642D20DA625000FFAD03 /* PublishVC.h */,
+				0A6E642E20DA625000FFAD03 /* PublishVC.m */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		0A6E643020DA626400FFAD03 /* CdntCat */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E643120DA628F00FFAD03 /* Cdnt+Publish.h */,
+				0A6E643220DA628F00FFAD03 /* Cdnt+Publish.m */,
+			);
+			path = CdntCat;
+			sourceTree = "<group>";
+		};
+		0A6E643420DA663A00FFAD03 /* PublishCom */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E643520DA66D900FFAD03 /* PublishCom.h */,
+				0A6E643620DA66D900FFAD03 /* PublishCom.m */,
+			);
+			path = PublishCom;
+			sourceTree = "<group>";
+		};
+		0A6E644420DB947D00FFAD03 /* LabelCom */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E644520DB959000FFAD03 /* LabelCom.h */,
+				0A6E644620DB959000FFAD03 /* LabelCom.m */,
+			);
+			path = LabelCom;
+			sourceTree = "<group>";
+		};
+		0A6E644B20DDBA5500FFAD03 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E644C20DDBA8000FFAD03 /* BridgeVC.h */,
+				0A6E644D20DDBA8000FFAD03 /* BridgeVC.m */,
+				0A6E644F20DDBAEA00FFAD03 /* DragonAbility.h */,
+				0A6E645020DDBC4500FFAD03 /* FieryDragon.h */,
+				0A6E645120DDBC4500FFAD03 /* FieryDragon.m */,
+				0A6E645320DDC00D00FFAD03 /* RedFieryDragonAbility.h */,
+				0A6E645420DDC00D00FFAD03 /* RedFieryDragonAbility.m */,
+				0A6E645620DDD3A800FFAD03 /* BlackFieryDragonAbility.h */,
+				0A6E645720DDD3A800FFAD03 /* BlackFieryDragonAbility.m */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		0A6E645920DF1D5E00FFAD03 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				0AA7F6C920DF208400EAC3AA /* StateVC.h */,
+				0AA7F6CA20DF208400EAC3AA /* StateVC.m */,
+				0A807D0020E33C1500E06A0A /* DragonFight.h */,
+				0A807D0120E33C1500E06A0A /* DragonFight.m */,
+				0AA7F6CF20DF217700EAC3AA /* DragonState.h */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		0A72617020CE539900A5427E = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +257,10 @@
 			children = (
 				0A7261D420CFFCCD00A5427E /* Cdnt.h */,
 				0A7261D520CFFCCD00A5427E /* Cdnt.m */,
+				0A6E642920D8D62000FFAD03 /* CdntAction.h */,
+				0A6E642A20D8D62000FFAD03 /* CdntAction.m */,
+				0A6E644820DBB85800FFAD03 /* Dic.h */,
+				0A6E644920DBB85800FFAD03 /* Dic.m */,
 			);
 			path = Cdnt;
 			sourceTree = "<group>";
@@ -167,11 +277,14 @@
 		0A7261DE20D0E7A400A5427E /* Com */ = {
 			isa = PBXGroup;
 			children = (
+				0A807CFC20E11FF900E06A0A /* EmergeCom */,
 				0AA61FA420D3ABEE0001F0C4 /* AopLogCom */,
+				0A6E644420DB947D00FFAD03 /* LabelCom */,
 				0AA61FA020D35DC70001F0C4 /* ButtonCom */,
 				0A7261E720D1170300A5427E /* TextGeneratorCom */,
 				0A7261E620D116F800A5427E /* VCGeneratorCom */,
 				0A7261E520D116E200A5427E /* FirstListCom */,
+				0A6E643420DA663A00FFAD03 /* PublishCom */,
 			);
 			path = Com;
 			sourceTree = "<group>";
@@ -179,7 +292,6 @@
 		0A7261E520D116E200A5427E /* FirstListCom */ = {
 			isa = PBXGroup;
 			children = (
-				0A7261E820D1171E00A5427E /* View */,
 				0A7261EA20D11AC000A5427E /* FirstListCom.h */,
 				0A7261EB20D11AC000A5427E /* FirstListCom.m */,
 			);
@@ -204,20 +316,25 @@
 			path = TextGeneratorCom;
 			sourceTree = "<group>";
 		};
-		0A7261E820D1171E00A5427E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		0A7261E920D117B100A5427E /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				0A6E642C20DA61E800FFAD03 /* Publish */,
 				0A7261B020CE5C6700A5427E /* FirstPage */,
 				0A7261B420CE5D5B00A5427E /* FactoryMethod */,
+				0A6E644B20DDBA5500FFAD03 /* Bridge */,
+				0A6E645920DF1D5E00FFAD03 /* State */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		0A807CFC20E11FF900E06A0A /* EmergeCom */ = {
+			isa = PBXGroup;
+			children = (
+				0A807CFD20E1E60F00E06A0A /* EmergeCom.h */,
+				0A807CFE20E1E60F00E06A0A /* EmergeCom.m */,
+			);
+			path = EmergeCom;
 			sourceTree = "<group>";
 		};
 		0AA61FA020D35DC70001F0C4 /* ButtonCom */ = {
@@ -384,20 +501,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6E644A20DBB85800FFAD03 /* Dic.m in Sources */,
+				0A6E642F20DA625000FFAD03 /* PublishVC.m in Sources */,
 				0A7261D620CFFCCD00A5427E /* Cdnt.m in Sources */,
+				0A6E645220DDBC4500FFAD03 /* FieryDragon.m in Sources */,
 				0AA61FA320D35DFA0001F0C4 /* ButtonCom.m in Sources */,
+				0A6E645820DDD3A800FFAD03 /* BlackFieryDragonAbility.m in Sources */,
 				0A7261DA20D0CD7C00A5427E /* Cdnt+First.m in Sources */,
+				0A6E643320DA628F00FFAD03 /* Cdnt+Publish.m in Sources */,
 				0A7261CB20CFDB2000A5427E /* BlackDragon.m in Sources */,
+				0A6E644720DB959000FFAD03 /* LabelCom.m in Sources */,
 				0A7261C720CFD76400A5427E /* RedDragon.m in Sources */,
+				0A6E644E20DDBA8000FFAD03 /* BridgeVC.m in Sources */,
 				0A7261B320CE5D5100A5427E /* FirstVC.m in Sources */,
+				0A6E643720DA66D900FFAD03 /* PublishCom.m in Sources */,
+				0A807CFF20E1E60F00E06A0A /* EmergeCom.m in Sources */,
+				0A6E645520DDC00D00FFAD03 /* RedFieryDragonAbility.m in Sources */,
 				0A7261CF20CFDE5700A5427E /* RedDragonFactory.m in Sources */,
+				0A807D0220E33C1500E06A0A /* DragonFight.m in Sources */,
 				0A7261D220CFDE6C00A5427E /* BlackDragonFactory.m in Sources */,
 				0A72618C20CE539A00A5427E /* main.m in Sources */,
 				0A72617E20CE539900A5427E /* AppDelegate.m in Sources */,
 				0AA61FA720D3B43F0001F0C4 /* AopLogCom.m in Sources */,
 				0A7261C320CFD3C100A5427E /* FactoryMethodVC.m in Sources */,
 				0A7261EC20D11AC000A5427E /* FirstListCom.m in Sources */,
+				0AA7F6CB20DF208400EAC3AA /* StateVC.m in Sources */,
 				0A7261E120D0E86E00A5427E /* VCGeneratorCom.m in Sources */,
+				0A6E642B20D8D62000FFAD03 /* CdntAction.m in Sources */,
 				0A7261E420D0EDDF00A5427E /* TextGeneratorCom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

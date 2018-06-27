@@ -11,5 +11,17 @@
 @interface FirstListCom : NSObject
 
 - (void)viewInVC:(NSDictionary *)dic;
+- (void)pushVC:(NSDictionary *)dic;
+
+// demo subscriber
+- (void)inVCSubscriberDispatch:(NSDictionary *)dic;
+- (void)outVCSubscriberDispatch:(NSDictionary *)dic;
+
+- (void)simRequest:(NSDictionary *)dic;
+
+// demo state
+- (void)diffStateShow:(NSDictionary *)dic;
+- (void)diffStateShow_state_1:(NSDictionary *)dic;
+- (void)diffStateShow_state_2:(NSDictionary *)dic;
 
 @end

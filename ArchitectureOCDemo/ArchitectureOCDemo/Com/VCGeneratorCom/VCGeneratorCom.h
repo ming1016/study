@@ -13,4 +13,7 @@
 - (UIViewController *)factoryMethodVC:(NSDictionary *)dic;
 - (NSString *)factoryMethodVCTitle:(NSDictionary *)dic;
 
+- (UIViewController *)publishVC:(NSDictionary *)dic;
+- (NSString *)publishVCTitle:(NSDictionary *)dic;
+
 @end

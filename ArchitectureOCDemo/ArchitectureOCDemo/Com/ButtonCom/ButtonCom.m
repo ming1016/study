@@ -15,11 +15,29 @@
     UIButton *bt = [UIButton buttonWithType:UIButtonTypeCustom];
     NSString *text = dic[@"text"];
     void (^action)(void) = dic[@"action"];
-    [bt setTitle:text forState:UIControlStateNormal];
-    bt.titleLabel.textColor = [UIColor whiteColor];
-    bt.backgroundColor = [UIColor blackColor];
+    UIColor *textColor = dic[@"textColor"];
+    UIColor *bgColor = dic[@"bgColor"];
+    if (text) {
+        [bt setTitle:text forState:UIControlStateNormal];
+    } else {
+        [bt setTitle:@"Button" forState:UIControlStateNormal];
+    }
+    if (textColor) {
+        bt.titleLabel.textColor = textColor;
+    } else {
+        bt.titleLabel.textColor = [UIColor whiteColor];
+    }
+    if (bgColor) {
+        bt.backgroundColor = bgColor;
+    } else {
+        bt.backgroundColor = [UIColor blackColor];
+    }
+    
     [[bt rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        action();
+        if (action) {
+            action();
+        }
+        
     }];
     return bt;
 }

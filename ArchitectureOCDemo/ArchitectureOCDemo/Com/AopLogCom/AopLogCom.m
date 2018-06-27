@@ -18,4 +18,9 @@
     NSLog(@"factorytitle was set");
 }
 
+- (void)emergeLog:(NSDictionary *)dic {
+    NSString *actionState = dic[@"actionState"];
+    NSLog(@"emerge %@", actionState);
+}
+
 @end
