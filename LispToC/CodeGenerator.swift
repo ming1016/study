@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class CodeGeneratorFromJSToOC {
+public class CodeGenerator {
     public var code = ""
     public init(_ input:String) {
         print("Input code is:")
