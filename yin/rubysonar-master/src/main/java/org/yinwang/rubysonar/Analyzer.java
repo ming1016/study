@@ -105,7 +105,7 @@ public class Analyzer {
 
 
     // main entry to the analyzer
-    public void analyze(String path) {
+    public void loadDir(String path) {
         String upath = _.unifyPath(path);
         File f = new File(upath);
         projectDir = f.isDirectory() ? f.getPath() : f.getParent();
