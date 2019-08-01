@@ -114,7 +114,7 @@ public class Analyzer {
 
 
     // main entry to the analyzer (for JSONDump only)
-    public void analyze(List<String> paths) {
+    public void loadFile(List<String> paths) {
         for (String path : paths) {
             loadFileRecursive(path);
         }
