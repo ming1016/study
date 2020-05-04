@@ -2,6 +2,8 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+* 增加了我为什么写了《跟戴铭学iOS编程》这本书<https://github.com/ming1016/study/wiki/我为什么写了《跟戴铭学iOS编程》这本书>
+* 增加了Apple 操作系统可执行文件 Mach-O <https://github.com/ming1016/study/wiki/Apple-操作系统可执行文件-Mach-O>
 * 增加如何对 iOS 启动阶段耗时进行分析：<https://github.com/ming1016/study/wiki/如何对-iOS-启动阶段耗时进行分析>
 * 增加iOS 开发舆图：<https://github.com/ming1016/study/wiki/iOS-开发舆图>
 * 增加深入剖析 JavaScriptCore：<https://github.com/ming1016/study/wiki/深入剖析-JavaScriptCore>
