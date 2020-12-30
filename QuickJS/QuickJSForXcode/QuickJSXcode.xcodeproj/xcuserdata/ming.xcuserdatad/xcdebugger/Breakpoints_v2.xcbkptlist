@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D6B3786B-01C8-4F91-A0F0-042B6CC905F0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BC5BF70-453E-418C-AF98-8F4BA9BC6F66"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../quickjs-2020-11-08-forxcode/qjs.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3F9DB6B-3457-4C73-BB2E-CEE7B5ACD02C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../quickjs-2020-11-08-forxcode/quickjs-libc.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "424"
+            endingLineNumber = "424"
+            landmarkName = "js_loadScript(ctx, this_val, argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A2CBB91-C7C8-4A75-BC59-C6C1C247950E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../quickjs-2020-11-08-forxcode/qjs.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C91C8692-20EB-4B03-8EF4-94FA4B355465"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../quickjs-2020-11-08-forxcode/quickjs.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33650"
+            endingLineNumber = "33650"
+            landmarkName = "JS_Eval(ctx, input, input_len, filename, eval_flags)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89520F2E-B869-462A-9EC4-E45FED33AC69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../quickjs-2020-11-08-forxcode/quickjs.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33640"
+            endingLineNumber = "33640"
+            landmarkName = "JS_EvalThis(ctx, this_obj, input, input_len, filename, eval_flags)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "89520F2E-B869-462A-9EC4-E45FED33AC69 - c9374cbfb6419a15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JS_EvalThis"
+                  moduleName = "dummy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode/quickjs.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33636"
+                  endingLineNumber = "33636"
+                  offsetFromSymbolStart = "9">
+               </Location>
+               <Location
+                  uuid = "89520F2E-B869-462A-9EC4-E45FED33AC69 - cb40aac7ff751b39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JS_Eval"
+                  moduleName = "dummy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode/quickjs.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33636"
+                  endingLineNumber = "33636"
+                  offsetFromSymbolStart = "9">
+               </Location>
+               <Location
+                  uuid = "89520F2E-B869-462A-9EC4-E45FED33AC69 - f6d76fe2565a486f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JS_EvalThis.cold.1"
+                  moduleName = "dummy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode/quickjs.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33636"
+                  endingLineNumber = "33636"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "89520F2E-B869-462A-9EC4-E45FED33AC69 - 6e8ea0fe009de7f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JS_Eval.cold.1"
+                  moduleName = "dummy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode/quickjs.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33636"
+                  endingLineNumber = "33636"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84B9C8A4-0AE3-4589-81A4-C143A6FBC369"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dummy/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

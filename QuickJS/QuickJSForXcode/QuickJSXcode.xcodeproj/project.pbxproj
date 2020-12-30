@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AC182C82564C80D00DF10B9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AC182C72564C80D00DF10B9 /* main.c */; };
+		3AD2209325678C5C00CA896C /* libquickjs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC182BB2564C6A800DF10B9 /* libquickjs.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AD2208625676AD600CA896C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ABEC6FC2563D34A00C10595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ABEC7002563D34A00C10595;
+			remoteInfo = QuickJSXcode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3AC182C22564C80D00DF10B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3AC182452564C6A800DF10B9 /* libregexp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libregexp.c; sourceTree = "<group>"; };
+		3AC182462564C6A800DF10B9 /* qjscalc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qjscalc.c; sourceTree = "<group>"; };
+		3AC182472564C6A800DF10B9 /* repl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = repl.js; sourceTree = "<group>"; };
+		3AC182482564C6A800DF10B9 /* test262.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test262.conf; sourceTree = "<group>"; };
+		3AC182492564C6A800DF10B9 /* hello.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hello.c; sourceTree = "<group>"; };
+		3AC1824A2564C6A800DF10B9 /* quickjs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quickjs.c; sourceTree = "<group>"; };
+		3AC1824C2564C6A800DF10B9 /* quickjs.check.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = quickjs.check.o; sourceTree = "<group>"; };
+		3AC1824D2564C6A800DF10B9 /* cutils.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = cutils.o.d; sourceTree = "<group>"; };
+		3AC1824E2564C6A800DF10B9 /* libbf.nolto.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = libbf.nolto.o; sourceTree = "<group>"; };
+		3AC1824F2564C6A800DF10B9 /* repl.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = repl.o.d; sourceTree = "<group>"; };
+		3AC182502564C6A800DF10B9 /* libunicode.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = libunicode.o.d; sourceTree = "<group>"; };
+		3AC182512564C6A800DF10B9 /* quickjs.check.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = quickjs.check.o.d; sourceTree = "<group>"; };
+		3AC182522564C6A800DF10B9 /* qjsc.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = qjsc.o.d; sourceTree = "<group>"; };
+		3AC182532564C6A800DF10B9 /* cutils.nolto.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = cutils.nolto.o; sourceTree = "<group>"; };
+		3AC182542564C6A800DF10B9 /* quickjs-libc.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = "quickjs-libc.o.d"; sourceTree = "<group>"; };
+		3AC182552564C6A800DF10B9 /* hello.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = hello.o.d; sourceTree = "<group>"; };
+		3AC182562564C6A800DF10B9 /* qjscalc.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = qjscalc.o.d; sourceTree = "<group>"; };
+		3AC182582564C6A800DF10B9 /* libbf.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = libbf.o; sourceTree = "<group>"; };
+		3AC182592564C6A800DF10B9 /* libbf.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = libbf.o.d; sourceTree = "<group>"; };
+		3AC1825A2564C6A800DF10B9 /* quickjs.nolto.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = quickjs.nolto.o; sourceTree = "<group>"; };
+		3AC1825B2564C6A800DF10B9 /* libregexp.nolto.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = libregexp.nolto.o; sourceTree = "<group>"; };
+		3AC1825C2564C6A800DF10B9 /* qjs.check.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qjs.check.o; sourceTree = "<group>"; };
+		3AC1825D2564C6A800DF10B9 /* test_fib.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = test_fib.o; sourceTree = "<group>"; };
+		3AC1825E2564C6A800DF10B9 /* quickjs.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = quickjs.o.d; sourceTree = "<group>"; };
+		3AC1825F2564C6A800DF10B9 /* fib.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = fib.o.d; sourceTree = "<group>"; };
+		3AC182602564C6A800DF10B9 /* libunicode.nolto.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = libunicode.nolto.o; sourceTree = "<group>"; };
+		3AC182612564C6A800DF10B9 /* qjscalc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qjscalc.o; sourceTree = "<group>"; };
+		3AC182622564C6A800DF10B9 /* libregexp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = libregexp.o; sourceTree = "<group>"; };
+		3AC182632564C6A800DF10B9 /* .d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .d; sourceTree = "<group>"; };
+		3AC182642564C6A800DF10B9 /* qjs.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = qjs.o.d; sourceTree = "<group>"; };
+		3AC182662564C6A800DF10B9 /* fib.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = fib.o; sourceTree = "<group>"; };
+		3AC182672564C6A800DF10B9 /* run-test262.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "run-test262.o"; sourceTree = "<group>"; };
+		3AC182682564C6A800DF10B9 /* test_fib.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = test_fib.o.d; sourceTree = "<group>"; };
+		3AC182692564C6A800DF10B9 /* hello.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = hello.o; sourceTree = "<group>"; };
+		3AC1826A2564C6A800DF10B9 /* quickjs.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = quickjs.o; sourceTree = "<group>"; };
+		3AC1826B2564C6A800DF10B9 /* qjs.check.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = qjs.check.o.d; sourceTree = "<group>"; };
+		3AC1826C2564C6A800DF10B9 /* libregexp.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = libregexp.o.d; sourceTree = "<group>"; };
+		3AC1826D2564C6A800DF10B9 /* repl.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = repl.o; sourceTree = "<group>"; };
+		3AC1826E2564C6A800DF10B9 /* libunicode.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = libunicode.o; sourceTree = "<group>"; };
+		3AC1826F2564C6A800DF10B9 /* qjs.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qjs.o; sourceTree = "<group>"; };
+		3AC182702564C6A800DF10B9 /* quickjs-libc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "quickjs-libc.o"; sourceTree = "<group>"; };
+		3AC182712564C6A800DF10B9 /* run-test262.o.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = "run-test262.o.d"; sourceTree = "<group>"; };
+		3AC182722564C6A800DF10B9 /* qjsc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qjsc.o; sourceTree = "<group>"; };
+		3AC182732564C6A800DF10B9 /* quickjs-libc.nolto.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "quickjs-libc.nolto.o"; sourceTree = "<group>"; };
+		3AC182742564C6A800DF10B9 /* cutils.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = cutils.o; sourceTree = "<group>"; };
+		3AC182752564C6A800DF10B9 /* run-test262.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "run-test262.c"; sourceTree = "<group>"; };
+		3AC182762564C6A800DF10B9 /* Changelog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog; sourceTree = "<group>"; };
+		3AC182772564C6A800DF10B9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3AC182782564C6A800DF10B9 /* libunicode-table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libunicode-table.h"; sourceTree = "<group>"; };
+		3AC182792564C6A800DF10B9 /* qjs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qjs.c; sourceTree = "<group>"; };
+		3AC1827A2564C6A800DF10B9 /* repl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = repl.c; sourceTree = "<group>"; };
+		3AC1827B2564C6A800DF10B9 /* libunicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libunicode.c; sourceTree = "<group>"; };
+		3AC1827D2564C6A800DF10B9 /* test_worker_module.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_worker_module.js; sourceTree = "<group>"; };
+		3AC1827E2564C6A800DF10B9 /* test_bignum.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_bignum.js; sourceTree = "<group>"; };
+		3AC1827F2564C6A800DF10B9 /* microbench.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = microbench.js; sourceTree = "<group>"; };
+		3AC182802564C6A800DF10B9 /* test_bjson.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_bjson.js; sourceTree = "<group>"; };
+		3AC182812564C6A800DF10B9 /* test262.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test262.patch; sourceTree = "<group>"; };
+		3AC182822564C6A800DF10B9 /* test_std.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_std.js; sourceTree = "<group>"; };
+		3AC182832564C6A800DF10B9 /* test_op_overloading.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_op_overloading.js; sourceTree = "<group>"; };
+		3AC182842564C6A800DF10B9 /* test_closure.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_closure.js; sourceTree = "<group>"; };
+		3AC182852564C6A800DF10B9 /* test_qjscalc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_qjscalc.js; sourceTree = "<group>"; };
+		3AC182862564C6A800DF10B9 /* test_language.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_language.js; sourceTree = "<group>"; };
+		3AC182872564C6A800DF10B9 /* test_builtin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_builtin.js; sourceTree = "<group>"; };
+		3AC182882564C6A800DF10B9 /* test_worker.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_worker.js; sourceTree = "<group>"; };
+		3AC182892564C6A800DF10B9 /* test_loop.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_loop.js; sourceTree = "<group>"; };
+		3AC1828A2564C6A800DF10B9 /* bjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bjson.c; sourceTree = "<group>"; };
+		3AC1828B2564C6A800DF10B9 /* qjsc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = qjsc; sourceTree = "<group>"; };
+		3AC1828C2564C6A800DF10B9 /* libquickjs.lto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libquickjs.lto.a; sourceTree = "<group>"; };
+		3AC1828D2564C6A800DF10B9 /* test262o_errors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test262o_errors.txt; sourceTree = "<group>"; };
+		3AC1828E2564C6A800DF10B9 /* libbf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbf.h; sourceTree = "<group>"; };
+		3AC1828F2564C6A800DF10B9 /* cutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cutils.c; sourceTree = "<group>"; };
+		3AC182902564C6A800DF10B9 /* quickjs-libc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "quickjs-libc.c"; sourceTree = "<group>"; };
+		3AC182912564C6A800DF10B9 /* run-test262 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "run-test262"; sourceTree = "<group>"; };
+		3AC182922564C6A800DF10B9 /* qjsc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qjsc.c; sourceTree = "<group>"; };
+		3AC182932564C6A800DF10B9 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		3AC182942564C6A800DF10B9 /* libregexp-opcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libregexp-opcode.h"; sourceTree = "<group>"; };
+		3AC182952564C6A800DF10B9 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		3AC182962564C6A800DF10B9 /* qjscalc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = qjscalc; sourceTree = "<group>"; };
+		3AC182972564C6A800DF10B9 /* qjscalc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = qjscalc.js; sourceTree = "<group>"; };
+		3AC182982564C6A800DF10B9 /* quickjs-opcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "quickjs-opcode.h"; sourceTree = "<group>"; };
+		3AC182992564C6A800DF10B9 /* test262o.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test262o.conf; sourceTree = "<group>"; };
+		3AC1829A2564C6A800DF10B9 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		3AC1829B2564C6A800DF10B9 /* libregexp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libregexp.h; sourceTree = "<group>"; };
+		3AC1829D2564C6A800DF10B9 /* hello_module */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hello_module; sourceTree = "<group>"; };
+		3AC1829E2564C6A800DF10B9 /* test_point.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_point.js; sourceTree = "<group>"; };
+		3AC1829F2564C6A800DF10B9 /* hello.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hello.js; sourceTree = "<group>"; };
+		3AC182A02564C6A800DF10B9 /* test_fib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_fib.js; sourceTree = "<group>"; };
+		3AC182A12564C6A800DF10B9 /* fib_module.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fib_module.js; sourceTree = "<group>"; };
+		3AC182A22564C6A800DF10B9 /* point.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = point.c; sourceTree = "<group>"; };
+		3AC182A32564C6A800DF10B9 /* test_fib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = test_fib; sourceTree = "<group>"; };
+		3AC182A42564C6A800DF10B9 /* pi_bigdecimal.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pi_bigdecimal.js; sourceTree = "<group>"; };
+		3AC182A52564C6A800DF10B9 /* pi_bigfloat.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pi_bigfloat.js; sourceTree = "<group>"; };
+		3AC182A62564C6A800DF10B9 /* hello */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hello; sourceTree = "<group>"; };
+		3AC182A72564C6A800DF10B9 /* fib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fib.c; sourceTree = "<group>"; };
+		3AC182A82564C6A800DF10B9 /* pi_bigint.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pi_bigint.js; sourceTree = "<group>"; };
+		3AC182A92564C6A800DF10B9 /* hello_module.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hello_module.js; sourceTree = "<group>"; };
+		3AC182AA2564C6A800DF10B9 /* release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = release.sh; sourceTree = "<group>"; };
+		3AC182AB2564C6A800DF10B9 /* quickjs-atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "quickjs-atom.h"; sourceTree = "<group>"; };
+		3AC182AD2564C6A800DF10B9 /* quickjs.texi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quickjs.texi; sourceTree = "<group>"; };
+		3AC182AE2564C6A800DF10B9 /* jsbignum.texi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jsbignum.texi; sourceTree = "<group>"; };
+		3AC182AF2564C6A800DF10B9 /* quickjs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = quickjs.pdf; sourceTree = "<group>"; };
+		3AC182B02564C6A800DF10B9 /* jsbignum.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jsbignum.html; sourceTree = "<group>"; };
+		3AC182B12564C6A800DF10B9 /* jsbignum.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = jsbignum.pdf; sourceTree = "<group>"; };
+		3AC182B22564C6A800DF10B9 /* quickjs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = quickjs.html; sourceTree = "<group>"; };
+		3AC182B32564C6A800DF10B9 /* quickjs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quickjs.h; sourceTree = "<group>"; };
+		3AC182B42564C6A800DF10B9 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		3AC182B52564C6A800DF10B9 /* unicode_gen_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unicode_gen_def.h; sourceTree = "<group>"; };
+		3AC182B62564C6A800DF10B9 /* libunicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libunicode.h; sourceTree = "<group>"; };
+		3AC182B72564C6A800DF10B9 /* test262_errors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test262_errors.txt; sourceTree = "<group>"; };
+		3AC182B82564C6A800DF10B9 /* qjs */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = qjs; sourceTree = "<group>"; };
+		3AC182B92564C6A800DF10B9 /* test_fib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_fib.c; sourceTree = "<group>"; };
+		3AC182BA2564C6A800DF10B9 /* quickjs-libc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "quickjs-libc.h"; sourceTree = "<group>"; };
+		3AC182BB2564C6A800DF10B9 /* libquickjs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libquickjs.a; sourceTree = "<group>"; };
+		3AC182BC2564C6A800DF10B9 /* unicode_download.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = unicode_download.sh; sourceTree = "<group>"; };
+		3AC182BD2564C6A800DF10B9 /* cutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cutils.h; sourceTree = "<group>"; };
+		3AC182BE2564C6A800DF10B9 /* unicode_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unicode_gen.c; sourceTree = "<group>"; };
+		3AC182BF2564C6A800DF10B9 /* libbf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libbf.c; sourceTree = "<group>"; };
+		3AC182C42564C80D00DF10B9 /* dummy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dummy; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC182C72564C80D00DF10B9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		3AD2208F2567761E00CA896C /* libquickjs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libquickjs.a; path = "../quickjs-2020-11-08/libquickjs.a"; sourceTree = "<group>"; };
+		3AD2209B2567B63E00CA896C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AD2209C2567B63E00CA896C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AD2209E2567B63E00CA896C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3AD2209F2567B63E00CA896C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3AD220A12567B63E00CA896C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3AD220A22567B63E00CA896C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3AD220A52567B63E00CA896C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AD220A72567B64100CA896C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AD220AA2567B64100CA896C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AD220AC2567B64100CA896C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD220AD2567B64100CA896C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AC182C12564C80D00DF10B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD2209325678C5C00CA896C /* libquickjs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ABEC6FB2563D34A00C10595 = {
+			isa = PBXGroup;
+			children = (
+				3AC182442564C6A800DF10B9 /* quickjs-2020-11-08-forxcode */,
+				3AC182C62564C80D00DF10B9 /* dummy */,
+				3AD2209A2567B63E00CA896C /* AppWithQuickJS */,
+				3AC182C52564C80D00DF10B9 /* Products */,
+				3AD2208925676F7600CA896C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AC182442564C6A800DF10B9 /* quickjs-2020-11-08-forxcode */ = {
+			isa = PBXGroup;
+			children = (
+				3AC1824B2564C6A800DF10B9 /* .obj */,
+				3AC182762564C6A800DF10B9 /* Changelog */,
+				3AC1828F2564C6A800DF10B9 /* cutils.c */,
+				3AC182BD2564C6A800DF10B9 /* cutils.h */,
+				3AC182AC2564C6A800DF10B9 /* doc */,
+				3AC1829C2564C6A800DF10B9 /* examples */,
+				3AC182492564C6A800DF10B9 /* hello.c */,
+				3AC182BF2564C6A800DF10B9 /* libbf.c */,
+				3AC1828E2564C6A800DF10B9 /* libbf.h */,
+				3AC182BB2564C6A800DF10B9 /* libquickjs.a */,
+				3AC1828C2564C6A800DF10B9 /* libquickjs.lto.a */,
+				3AC182942564C6A800DF10B9 /* libregexp-opcode.h */,
+				3AC182452564C6A800DF10B9 /* libregexp.c */,
+				3AC1829B2564C6A800DF10B9 /* libregexp.h */,
+				3AC182782564C6A800DF10B9 /* libunicode-table.h */,
+				3AC1827B2564C6A800DF10B9 /* libunicode.c */,
+				3AC182B62564C6A800DF10B9 /* libunicode.h */,
+				3AC182952564C6A800DF10B9 /* list.h */,
+				3AC182772564C6A800DF10B9 /* Makefile */,
+				3AC182B82564C6A800DF10B9 /* qjs */,
+				3AC182792564C6A800DF10B9 /* qjs.c */,
+				3AC1828B2564C6A800DF10B9 /* qjsc */,
+				3AC182922564C6A800DF10B9 /* qjsc.c */,
+				3AC182962564C6A800DF10B9 /* qjscalc */,
+				3AC182462564C6A800DF10B9 /* qjscalc.c */,
+				3AC182972564C6A800DF10B9 /* qjscalc.js */,
+				3AC182AB2564C6A800DF10B9 /* quickjs-atom.h */,
+				3AC182902564C6A800DF10B9 /* quickjs-libc.c */,
+				3AC182BA2564C6A800DF10B9 /* quickjs-libc.h */,
+				3AC182982564C6A800DF10B9 /* quickjs-opcode.h */,
+				3AC1824A2564C6A800DF10B9 /* quickjs.c */,
+				3AC182B32564C6A800DF10B9 /* quickjs.h */,
+				3AC182B42564C6A800DF10B9 /* readme.txt */,
+				3AC182AA2564C6A800DF10B9 /* release.sh */,
+				3AC1827A2564C6A800DF10B9 /* repl.c */,
+				3AC182472564C6A800DF10B9 /* repl.js */,
+				3AC182912564C6A800DF10B9 /* run-test262 */,
+				3AC182752564C6A800DF10B9 /* run-test262.c */,
+				3AC182B92564C6A800DF10B9 /* test_fib.c */,
+				3AC182B72564C6A800DF10B9 /* test262_errors.txt */,
+				3AC182482564C6A800DF10B9 /* test262.conf */,
+				3AC1828D2564C6A800DF10B9 /* test262o_errors.txt */,
+				3AC182992564C6A800DF10B9 /* test262o.conf */,
+				3AC1827C2564C6A800DF10B9 /* tests */,
+				3AC182932564C6A800DF10B9 /* TODO */,
+				3AC182BC2564C6A800DF10B9 /* unicode_download.sh */,
+				3AC182B52564C6A800DF10B9 /* unicode_gen_def.h */,
+				3AC182BE2564C6A800DF10B9 /* unicode_gen.c */,
+				3AC1829A2564C6A800DF10B9 /* VERSION */,
+			);
+			name = "quickjs-2020-11-08-forxcode";
+			path = "../quickjs-2020-11-08-forxcode";
+			sourceTree = "<group>";
+		};
+		3AC1824B2564C6A800DF10B9 /* .obj */ = {
+			isa = PBXGroup;
+			children = (
+				3AC1824C2564C6A800DF10B9 /* quickjs.check.o */,
+				3AC1824D2564C6A800DF10B9 /* cutils.o.d */,
+				3AC1824E2564C6A800DF10B9 /* libbf.nolto.o */,
+				3AC1824F2564C6A800DF10B9 /* repl.o.d */,
+				3AC182502564C6A800DF10B9 /* libunicode.o.d */,
+				3AC182512564C6A800DF10B9 /* quickjs.check.o.d */,
+				3AC182522564C6A800DF10B9 /* qjsc.o.d */,
+				3AC182532564C6A800DF10B9 /* cutils.nolto.o */,
+				3AC182542564C6A800DF10B9 /* quickjs-libc.o.d */,
+				3AC182552564C6A800DF10B9 /* hello.o.d */,
+				3AC182562564C6A800DF10B9 /* qjscalc.o.d */,
+				3AC182572564C6A800DF10B9 /* tests */,
+				3AC182582564C6A800DF10B9 /* libbf.o */,
+				3AC182592564C6A800DF10B9 /* libbf.o.d */,
+				3AC1825A2564C6A800DF10B9 /* quickjs.nolto.o */,
+				3AC1825B2564C6A800DF10B9 /* libregexp.nolto.o */,
+				3AC1825C2564C6A800DF10B9 /* qjs.check.o */,
+				3AC1825D2564C6A800DF10B9 /* test_fib.o */,
+				3AC1825E2564C6A800DF10B9 /* quickjs.o.d */,
+				3AC1825F2564C6A800DF10B9 /* fib.o.d */,
+				3AC182602564C6A800DF10B9 /* libunicode.nolto.o */,
+				3AC182612564C6A800DF10B9 /* qjscalc.o */,
+				3AC182622564C6A800DF10B9 /* libregexp.o */,
+				3AC182632564C6A800DF10B9 /* .d */,
+				3AC182642564C6A800DF10B9 /* qjs.o.d */,
+				3AC182652564C6A800DF10B9 /* examples */,
+				3AC182672564C6A800DF10B9 /* run-test262.o */,
+				3AC182682564C6A800DF10B9 /* test_fib.o.d */,
+				3AC182692564C6A800DF10B9 /* hello.o */,
+				3AC1826A2564C6A800DF10B9 /* quickjs.o */,
+				3AC1826B2564C6A800DF10B9 /* qjs.check.o.d */,
+				3AC1826C2564C6A800DF10B9 /* libregexp.o.d */,
+				3AC1826D2564C6A800DF10B9 /* repl.o */,
+				3AC1826E2564C6A800DF10B9 /* libunicode.o */,
+				3AC1826F2564C6A800DF10B9 /* qjs.o */,
+				3AC182702564C6A800DF10B9 /* quickjs-libc.o */,
+				3AC182712564C6A800DF10B9 /* run-test262.o.d */,
+				3AC182722564C6A800DF10B9 /* qjsc.o */,
+				3AC182732564C6A800DF10B9 /* quickjs-libc.nolto.o */,
+				3AC182742564C6A800DF10B9 /* cutils.o */,
+			);
+			path = .obj;
+			sourceTree = "<group>";
+		};
+		3AC182572564C6A800DF10B9 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		3AC182652564C6A800DF10B9 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				3AC182662564C6A800DF10B9 /* fib.o */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		3AC1827C2564C6A800DF10B9 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				3AC1827D2564C6A800DF10B9 /* test_worker_module.js */,
+				3AC1827E2564C6A800DF10B9 /* test_bignum.js */,
+				3AC1827F2564C6A800DF10B9 /* microbench.js */,
+				3AC182802564C6A800DF10B9 /* test_bjson.js */,
+				3AC182812564C6A800DF10B9 /* test262.patch */,
+				3AC182822564C6A800DF10B9 /* test_std.js */,
+				3AC182832564C6A800DF10B9 /* test_op_overloading.js */,
+				3AC182842564C6A800DF10B9 /* test_closure.js */,
+				3AC182852564C6A800DF10B9 /* test_qjscalc.js */,
+				3AC182862564C6A800DF10B9 /* test_language.js */,
+				3AC182872564C6A800DF10B9 /* test_builtin.js */,
+				3AC182882564C6A800DF10B9 /* test_worker.js */,
+				3AC182892564C6A800DF10B9 /* test_loop.js */,
+				3AC1828A2564C6A800DF10B9 /* bjson.c */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		3AC1829C2564C6A800DF10B9 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				3AC1829D2564C6A800DF10B9 /* hello_module */,
+				3AC1829E2564C6A800DF10B9 /* test_point.js */,
+				3AC1829F2564C6A800DF10B9 /* hello.js */,
+				3AC182A02564C6A800DF10B9 /* test_fib.js */,
+				3AC182A12564C6A800DF10B9 /* fib_module.js */,
+				3AC182A22564C6A800DF10B9 /* point.c */,
+				3AC182A32564C6A800DF10B9 /* test_fib */,
+				3AC182A42564C6A800DF10B9 /* pi_bigdecimal.js */,
+				3AC182A52564C6A800DF10B9 /* pi_bigfloat.js */,
+				3AC182A62564C6A800DF10B9 /* hello */,
+				3AC182A72564C6A800DF10B9 /* fib.c */,
+				3AC182A82564C6A800DF10B9 /* pi_bigint.js */,
+				3AC182A92564C6A800DF10B9 /* hello_module.js */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		3AC182AC2564C6A800DF10B9 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				3AC182AD2564C6A800DF10B9 /* quickjs.texi */,
+				3AC182AE2564C6A800DF10B9 /* jsbignum.texi */,
+				3AC182AF2564C6A800DF10B9 /* quickjs.pdf */,
+				3AC182B02564C6A800DF10B9 /* jsbignum.html */,
+				3AC182B12564C6A800DF10B9 /* jsbignum.pdf */,
+				3AC182B22564C6A800DF10B9 /* quickjs.html */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		3AC182C52564C80D00DF10B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AC182C42564C80D00DF10B9 /* dummy */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AC182C62564C80D00DF10B9 /* dummy */ = {
+			isa = PBXGroup;
+			children = (
+				3AC182C72564C80D00DF10B9 /* main.c */,
+			);
+			path = dummy;
+			sourceTree = "<group>";
+		};
+		3AD2208925676F7600CA896C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2208F2567761E00CA896C /* libquickjs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AD2209A2567B63E00CA896C /* AppWithQuickJS */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2209B2567B63E00CA896C /* AppDelegate.h */,
+				3AD2209C2567B63E00CA896C /* AppDelegate.m */,
+				3AD2209E2567B63E00CA896C /* SceneDelegate.h */,
+				3AD2209F2567B63E00CA896C /* SceneDelegate.m */,
+				3AD220A12567B63E00CA896C /* ViewController.h */,
+				3AD220A22567B63E00CA896C /* ViewController.m */,
+				3AD220A42567B63E00CA896C /* Main.storyboard */,
+				3AD220A72567B64100CA896C /* Assets.xcassets */,
+				3AD220A92567B64100CA896C /* LaunchScreen.storyboard */,
+				3AD220AC2567B64100CA896C /* Info.plist */,
+				3AD220AD2567B64100CA896C /* main.m */,
+			);
+			path = AppWithQuickJS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		3ABEC7002563D34A00C10595 /* QuickJSXcode */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = install;
+			buildConfigurationList = 3ABEC7032563D34A00C10595 /* Build configuration list for PBXLegacyTarget "QuickJSXcode" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode";
+			dependencies = (
+			);
+			name = QuickJSXcode;
+			passBuildSettingsInEnvironment = 1;
+			productName = QuickJSXcode;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		3AC182C32564C80D00DF10B9 /* dummy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC182C92564C80D00DF10B9 /* Build configuration list for PBXNativeTarget "dummy" */;
+			buildPhases = (
+				3AC182C02564C80D00DF10B9 /* Sources */,
+				3AC182C12564C80D00DF10B9 /* Frameworks */,
+				3AC182C22564C80D00DF10B9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AD2208725676AD600CA896C /* PBXTargetDependency */,
+			);
+			name = dummy;
+			productName = dummy;
+			productReference = 3AC182C42564C80D00DF10B9 /* dummy */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ABEC6FC2563D34A00C10595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					3ABEC7002563D34A00C10595 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					3AC182C32564C80D00DF10B9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 3ABEC6FF2563D34A00C10595 /* Build configuration list for PBXProject "QuickJSXcode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ABEC6FB2563D34A00C10595;
+			productRefGroup = 3AC182C52564C80D00DF10B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ABEC7002563D34A00C10595 /* QuickJSXcode */,
+				3AC182C32564C80D00DF10B9 /* dummy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AC182C02564C80D00DF10B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC182C82564C80D00DF10B9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AD2208725676AD600CA896C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ABEC7002563D34A00C10595 /* QuickJSXcode */;
+			targetProxy = 3AD2208625676AD600CA896C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AD220A42567B63E00CA896C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD220A52567B63E00CA896C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AD220A92567B64100CA896C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD220AA2567B64100CA896C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ABEC7012563D34A00C10595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		3ABEC7022563D34A00C10595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+			};
+			name = Release;
+		};
+		3ABEC7042563D34A00C10595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3ABEC7052563D34A00C10595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3AC182CA2564C80D00DF10B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "/Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode";
+				LIBRARY_SEARCH_PATHS = "/Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3AC182CB2564C80D00DF10B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "/Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode";
+				LIBRARY_SEARCH_PATHS = "/Users/ming/Downloads/QuickJS/quickjs-2020-11-08-forxcode";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ABEC6FF2563D34A00C10595 /* Build configuration list for PBXProject "QuickJSXcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABEC7012563D34A00C10595 /* Debug */,
+				3ABEC7022563D34A00C10595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ABEC7032563D34A00C10595 /* Build configuration list for PBXLegacyTarget "QuickJSXcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABEC7042563D34A00C10595 /* Debug */,
+				3ABEC7052563D34A00C10595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC182C92564C80D00DF10B9 /* Build configuration list for PBXNativeTarget "dummy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC182CA2564C80D00DF10B9 /* Debug */,
+				3AC182CB2564C80D00DF10B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ABEC6FC2563D34A00C10595 /* Project object */;
+}
