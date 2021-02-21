@@ -77,7 +77,7 @@ js 框架方面，早期 js 的框架是以兼容和接口优雅为基准比较�
 ![](/uploads/deeply-analyse-quickjs/2.png)
 
 
-为了使 js 能够应用于更大的工程化中，出现了静态类型 js 框架。静态类型的 js 框架有微软的 TypeScript 和 Facebook 的 [Flow](https://link.zhihu.com/?target=https%3A//flow.org/)。TypeScript 的作者是当年我大学时做项目使用的 IDE Delphi 的作者 Anders Hejlsberg，当时的 Delphi 开发体验非常棒，我用它做过不少项目，改善了大学生活品质。
+为了使 js 能够应用于更大的工程化中，出现了静态类型 js 框架。静态类型的 js 框架有微软的 TypeScript 和 Facebook 的 [Flow](https://flow.org/)。TypeScript 的作者是当年我大学时做项目使用的 IDE Delphi 的作者 Anders Hejlsberg，当时的 Delphi 开发体验非常棒，我用它做过不少项目，改善了大学生活品质。
 
 
 对于 React 的开发，现需要了解脚手架 [create-react-app](https://github.com/facebook/create-react-app)，一行命令能够在 macOS 和 Windows 上不用配置直接创建 React 应用。然后是使用 JSX 模版语法创建组件，组件是独立可重用的代码，组件一般只需要处理单一事情，数据通过参数和上下文共享，上下文共享数据适用场景类似于 UI 主题所需的数据共享。为了确保属性可用，可以使用 defaultProps 来定义默认值，使用 propTypes 在测试时进行属性类型设置和检查。在组件里使用状态用的是 Hooks，最常见的 Hooks 是 setState 和 useEffect，项目复杂后，需要维护的状态就会很复杂，React 本身有个简单使用的状态管理库 React Query 数据请求的库，作用类似 Redux，但没有模版代码，更轻量和易用，还可用 Hooks。React Router 是声明式路由，通过 URL 可以渲染出不同的组件。react 跑在 QuickJS 上的方法可以参看 QuickJS 邮件列表里[这封邮件](https://www.freelists.org/post/quickjs-devel/Running-React-on-QuickJS)。
