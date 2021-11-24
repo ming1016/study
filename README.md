@@ -2,6 +2,9 @@
 所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
 # 更新
+
+文章的更新可直接访问我的博客：[戴铭的博客](https://ming1016.github.io/)
+
 * 增加App-启动提速实践和一些想法 <https://github.com/ming1016/study/wiki/App-启动提速实践和一些想法>
 * 增加了我为什么写了《跟戴铭学iOS编程》这本书<https://github.com/ming1016/study/wiki/我为什么写了《跟戴铭学iOS编程》这本书>
 * 增加了Apple 操作系统可执行文件 Mach-O <https://github.com/ming1016/study/wiki/Apple-操作系统可执行文件-Mach-O>
