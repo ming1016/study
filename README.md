@@ -1,10 +1,12 @@
-# 笔记
-所有笔记可以通过wiki查看：<https://github.com/ming1016/study/wiki>
 
-# 更新
+## 更新
 
 文章的更新可直接访问我的博客：[戴铭的博客](https://ming1016.github.io/)
 
+* 戴铭的 Swift 小册子 [https://ming1016.github.io/2021/11/23/daiming-swift-pamphlet/](https://ming1016.github.io/2021/11/23/daiming-swift-pamphlet/)
+* 我写技术文章的一点心得 [https://ming1016.github.io/2021/07/24/my-little-idea-about-writing-technical-article/](https://ming1016.github.io/2021/07/24/my-little-idea-about-writing-technical-article/)
+* A站 的 Swift 实践 [https://ming1016.github.io/2021/05/22/acfun-swift-practice/](https://ming1016.github.io/2021/05/22/acfun-swift-practice/)
+* 深入剖析 JavaScript 编译器/解释器引擎 QuickJS - 多了解些 JavaScript 语言 [https://ming1016.github.io/2021/02/21/deeply-analyse-quickjs/](https://ming1016.github.io/2021/02/21/deeply-analyse-quickjs/)
 * 增加App-启动提速实践和一些想法 <https://github.com/ming1016/study/wiki/App-启动提速实践和一些想法>
 * 增加了我为什么写了《跟戴铭学iOS编程》这本书<https://github.com/ming1016/study/wiki/我为什么写了《跟戴铭学iOS编程》这本书>
 * 增加了Apple 操作系统可执行文件 Mach-O <https://github.com/ming1016/study/wiki/Apple-操作系统可执行文件-Mach-O>
