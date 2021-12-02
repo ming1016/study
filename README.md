@@ -3,7 +3,7 @@
 
 文章的更新可直接访问我的博客：[戴铭的博客](https://ming1016.github.io/)
 
-* 戴铭的 Swift 小册子 [https://ming1016.github.io/2021/11/23/daiming-swift-pamphlet/](https://ming1016.github.io/2021/11/23/daiming-swift-pamphlet/)
+* 戴铭的 Swift 小册子 <https://github.com/ming1016/study/wiki/戴铭的-Swift-小册子>
 * 我写技术文章的一点心得 <https://github.com/ming1016/study/wiki/我写技术文章的一点心得>
 * A站 的 Swift 实践 <https://github.com/ming1016/study/wiki/A站-的-Swift-实践>
 * 深入剖析 JavaScript 编译器/解释器引擎 QuickJS - 多了解些 JavaScript 语言 <https://github.com/ming1016/study/wiki/深入剖析-JavaScript-编译器-解释器引擎-QuickJS---多了解些-JavaScript-语言>
