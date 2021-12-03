@@ -10,8 +10,8 @@ categories: Programming
 
 记得以前 PHP 有个 chm 的手册，写的很简单，但很全，每个知识点都有例子，社区版每个知识点下面还有留言互动。因此，我弄了个 Swift 的手册，是个 macOS 程序。建议使用我开发的这个 macOS 程序来浏览，使用方法是：
 * 从  [GitHub - ming1016/SwiftPamphletApp: 戴铭的 Swift 小册子，一本活的 Swift 手册](https://github.com/ming1016/SwiftPamphletApp)  仓库拉代码。
-* 然后在 SwiftPamphletAppConfig.swift 里 gitHubAccessToken 加入你的 GitHub Access Token。GitHub Access Token 在  [Personal Access Tokens](https://github.com/settings/tokens)  这里获取。
-* 使用Xcode编译生成这个手册程序。
+* 然后在 SwiftPamphletAppConfig.swift 里 gitHubAccessToken 加入你的 GitHub Access Token。GitHub Access Token 在  [Personal Access Tokens](https://github.com/settings/tokens)  这里获取，scope 勾上 repo 和 user。
+* 使用Xcode编译生成这个手册程序。Xcode 和 macOS 都需要升到最新版，如果遇到 swift package 下载不下来的情况，参看这个议题来解决：[请问markdownui一直更新不下来是什么原因 · Issue #88 · ming1016/SwiftPamphletApp · GitHub](https://github.com/ming1016/SwiftPamphletApp/issues/88)
 
 截图如下：
 ![](/uploads/daiming-swift-pamphlet/01.png)
@@ -93,7 +93,7 @@ let a4 = [1,3,2].sorted { $0 < $1 }
 print(a)
 ```
 
-函数也是闭包的一种，函数的参数也可以是闭包。@escaping 表示套以闭包，逃逸闭包是可以在函数返回之后继续调用的。@autoclosure 表示自动闭包，可以用来省略花括号。
+函数也是闭包的一种，函数的参数也可以是闭包。@escaping 表示逃逸闭包，逃逸闭包是可以在函数返回之后继续调用的。@autoclosure 表示自动闭包，可以用来省略花括号。
 
 #### 函数 func
 函数可以作为另一个函数的参数，也可以作为另一个函数的返回。函数是特殊的闭包，在类、结构体和枚举中是方法。
@@ -567,7 +567,7 @@ let a1 = ["a", "b", "c", "call my name.", "get it?"]
 let a2 = a1.sorted()
 let a3 = a1.sorted(by: >)
 let a4 = a1.sorted(by: <)
-print(a2) // Hey u, a b c call my name. get it?
+print(a2) // a b c call my name. get it?
 print(a3) // ["get it?", "call my name.", "c", "b", "a"]
 print(a4) // ["a", "b", "c", "call my name.", "get it?"]
 // 类型不遵循 Comparable
