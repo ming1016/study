@@ -133,18 +133,22 @@ print(f3(p: "yes")("no")) // p is no
 let i1 = 100
 let i2 = 22
 print(i1 / i2) //四舍五入得4
+
 // Float
 let f1: Float = 100.0
 let f2: Float = 22.0
 print(f1 / f2) // 4.5454545
+
 // Double
 let d1: Double = 100.0
 let d2: Double = 22.0
 print(d1 / d2) // 4.545454545454546
+
 // 字面量
-print(Int(0b10101)) // 0b开头是二进制 
-print(Int(0x00afff)) // 0x开头是十六进制
-print(2.5e4) // 2.5x10^2
+print(Int(0b10101)) // 0b 开头是二进制 
+print(Int(0x00afff)) // 0x 开头是十六进制
+print(2.5e4) // 2.5x10^4 十进制用 e
+print(0xAp2) // 10*2^2  十六进制用 p
 print(2_000_000) // 2000000
 ```
 
@@ -211,6 +215,11 @@ print(newS4)
 // 删除空格和换行
 let s5 = " Simple line. \n\n  "
 print(s5.trimmingCharacters(in: .whitespacesAndNewlines))
+
+// 切割成数组
+let s6 = "one/two/three"
+let a = s6.components(separatedBy: "/")
+print(a) // ["one", "two", "three"]
 ```
 
 Unicode、Character 和 SubString 等内容参见官方字符串文档： [Strings and Characters — The Swift Programming Language (Swift 5.1)](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html) 
@@ -674,7 +683,7 @@ for str in a where str.prefix(1) == "t" {
     print(str)
 }
 // 字典 for in，遍历是无序的
-et dic = [
+let dic = [
     "one": 1,
     "two": 2,
     "three": 3
