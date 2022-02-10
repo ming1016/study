@@ -3089,6 +3089,8 @@ p.declareTypes([.string], owner: nil)
 p.setString(s, forType: .string)
 ```
 
+## Combine
+
 ### 介绍
 
 #### Combine 是什么？
@@ -4184,6 +4186,8 @@ let cPb = timePb.connect()
 ```
 
 
+## Concurrency
+
 ### 介绍
 
 #### Swift Concurrency 是什么？
@@ -4281,6 +4285,8 @@ actor 是遵循 Sendable 协议的，只有结构体和 final 类才能够遵循
 
 由于 Swift Concurrency 的推出和大量的 Session 发布，特别是 [AsyncSequence](https://developer.apple.com/documentation/swift/asyncsequence/) 的出现，以及正在路上的 [AsyncStream、AsyncThrowingStream](https://github.com/apple/swift-evolution/blob/main/proposals/0314-async-stream.md) 和 [continuation](https://github.com/apple/swift-evolution/blob/main/proposals/0300-continuation.md) 提案（在Xcode 13.0 beta 3 AsyncStream 正式 [release](https://developer.apple.com/documentation/swift/asyncstream?changes=latest_beta) ），这些越来越多和 Combine 功能重叠的特性出现在 Swift Concurrency 蓝图里时，大家开始猜测是否 Combine 会被 Swift Concurrency 替代。关于未来是 Swift Concurrency 还是 Combine，我的感觉是，Combine 更侧重在响应式编程上，而响应式编程并不是所有开发人员都会接受的，而 Swift Concurrency 是所有人都愿意接受的开发方式，从 Swift Concurrency 推出后开发者使用的数量和社区反应火热程度来看都比 Combine 要大。在苹果对 Combine 有下一步动作之前，我还是更偏向 Swift Concurrency。
 
+
+## SwiftUI
 
 ### 介绍
 
@@ -4412,6 +4418,9 @@ struct TextView: View {
     }
 }
 ```
+
+
+
 
 
 
