@@ -3,8 +3,9 @@
 
 文章的更新可直接访问我的博客：[戴铭的博客](https://ming1016.github.io/)
 
+* [Swift 演进之路](https://github.com/ming1016/study/wiki/Swift-%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF)
 * [如何用 SwiftUI + Combine + Swift Concurrency Aysnc/Await Actor 欢畅开发](https://github.com/ming1016/study/wiki/%E5%A6%82%E4%BD%95%E7%94%A8-SwiftUI-Combine-Swift-Concurrency-Aysnc-Await-Actor-%E6%AC%A2%E7%95%85%E5%BC%80%E5%8F%91)
-* 戴铭的 Swift 小册子 <https://github.com/ming1016/study/wiki/戴铭的-Swift-小册子>
+* 戴铭的 Swift 小册子 <https://github.com/ming1016/study/wiki/戴铭的-Swift-小册子-4.0>
 * 我写技术文章的一点心得 <https://github.com/ming1016/study/wiki/我写技术文章的一点心得>
 * A站 的 Swift 实践 <https://github.com/ming1016/study/wiki/A站-的-Swift-实践>
 * 深入剖析 JavaScript 编译器/解释器引擎 QuickJS - 多了解些 JavaScript 语言 <https://github.com/ming1016/study/wiki/深入剖析-JavaScript-编译器-解释器引擎-QuickJS---多了解些-JavaScript-语言>
