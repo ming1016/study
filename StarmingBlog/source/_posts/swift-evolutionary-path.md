@@ -167,7 +167,7 @@ categories: Programming
 * CGFloat 和 Double 之间可以隐式转换。提案 [SE-0307 Allow interchangeable use of CGFloat and Double types](https://github.com/apple/swift-evolution/blob/main/proposals/0307-allow-interchangeable-use-of-double-cgfloat-types.md)
 * Codable 支持关联值枚举。提案 [SE-0295 Codable synthesis for enums with associated values](https://github.com/apple/swift-evolution/blob/main/proposals/0295-codable-synthesis-for-enums-with-associated-values.md)
 
-上面各个版本的语法更新的内容和更多代码的示例都可以在 Swift 小册子里查看，内容力求更全，描述力求更简洁，more big, more small。不想下载 app 也可以查看[《戴铭的 Swift 小册子4.0》](https://ming1016.github.io/2021/11/23/daiming-swift-pamphlet/)这篇，内容也同步做了更新和补充。我对小册子内容查看样式视觉做了更新，排版用了赫蹏（hètí），字体是霞鹜文楷，更新了代码高亮风格，内容看起来更舒服。还有 icon 也进行替换，不用再对着枯燥的 SFSymbol 和我先前临时从以前图里随便挑的那条小狗 App icon 看了。
+上面各个版本的语法更新的内容和更多代码的示例都可以在 Swift 小册子里查看，内容力求更全，描述力求更简洁，more big, more small。不想下载 app 也可以查看[《戴铭的 Swift 小册子4.0》](https://ming1016.github.io/2021/11/23/daiming-swift-pamphlet/)这篇，内容也同步做了更新和补充（内容达十五万字，值得你收藏和分享）。我对小册子内容查看样式视觉做了更新，排版用了赫蹏（hètí），字体是霞鹜文楷，更新了代码高亮风格，内容看起来更舒服。还有 icon 也进行替换，不用再对着枯燥的 SFSymbol 和我先前临时从以前图里随便挑的那条小狗 App icon 看了。
 
 ![](/uploads/swift-evolutionary-path/02.png)
 ![](/uploads/swift-evolutionary-path/03.png)

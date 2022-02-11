@@ -4,7 +4,7 @@ date: 2021-11-23 16:28:18
 tags: [iOS, Apple, Swift]
 categories: Programming
 ---
-update：内容已更新到 4.0 版本。
+update：内容已更新到 4.0 版本。十五万字的手册值得你来收藏！和分享，完美。
 
 ## 背景说明
 越来越多同学打算开始用 Swift 来开发了，可很多人以前都没接触过 Swift。这篇和我以前文章不同的是，本篇只是面向 Swift 零基础的同学，内容主要是一些直接可用的小例子，例子可以直接在工程中用或自己调试着看。
@@ -16,8 +16,6 @@ update：内容已更新到 4.0 版本。
 这个程序是Swift写的，按照声明式UI，响应式编程范式开发的，源码也可以看看。与其讲一堆，不如调着试。
 
 下面是文本内容。注：代码中简化变量名是为了能更快速关注到语言用法。
-
-十五万字的手册值得你来收藏！和分享，完美。
 
 ## 语法速查
 
@@ -5516,6 +5514,50 @@ Star：1010 Issue：2 开发语言：Swift
 A micro-framework for observing file changes, both local and remote. Helpful in building developer tools.
 
 
+## 博客和资讯
+
+* [Swift.org](https://www.swift.org/)：Swift 官方博客
+* [Release notes from iOS-Weekly](https://github.com/SwiftOldDriver/iOS-Weekly/releases)：老司机 iOS 周报
+* [iOS摸鱼周报](https://zhangferry.com/)：iOS 摸鱼周报
+* [Michael Tsai](https://mjtsai.com/blog)：一名 macOS 开发者的博客
+* [少数派](https://sspai.com/)：少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质
+* [刘延栋的赛博空间](https://liuyandong.com)：成一家之言，毕竟有言胜于无。
+* [OneV's Den](https://onevcat.com)：上善若水，人淡如菊。这里是王巍 (onevcat) 的博客，用来记录一些技术和想法，主要专注于 Swift 和 iOS 开发。
+* [SwiftLee](https://www.avanderlee.com)：A weekly blog about Swift, iOS and Xcode Tips and Tricks
+* [Swift with Majid](https://swiftwithmajid.com)：Majid's blog about Swift development
+* [肘子的Swift记事本](https://www.fatbobman.com)
+* [戴铭的博客 - 星光社](https://ming1016.github.io)：一个人走得快，一群人走的远
+* [Swift by Sundell](https://www.swiftbysundell.com)：Weekly Swift articles, podcasts and tips by John Sundell
+* [FIVE STARS](https://www.fivestars.blog)：Exploring iOS, SwiftUI & much more.
+* [SwiftUI Weekly](http://weekly.swiftwithmajid.com/)：The curated collection of links about SwiftUI. Delivered every Monday.
+* [Not Only Swift Weekly](https://www.getrevue.co/profile/peterfriese)：Xcode tips & tricks, Swift, SwiftUI, Combine, Firebase, computing and internet history, and - of course - some fun stuff.
+* [SwiftlyRush Weekly](https://swiftlyrush.curated.co/issues)：SwiftlyRush Weekly is a weekly curated publication full of interesting, relevant links, alongside industry news and updates. Subscribe now and never miss an issue.
+* [iOS Dev Weekly](https://iosdevweekly.com/issues)：Subscribe to a hand-picked round-up of the best iOS development links every week. Curated by Dave Verwer and published every Friday. Free.
+* [阮一峰的网络日志](https://www.ruanyifeng.com/blog/)：Ruan YiFeng's Blog 科技爱好者周刊
+* [The.Swift.Dev.](https://theswiftdev.com)：Weekly Swift articles
+* [爱范儿](https://www.ifanr.com)：让未来触手可及
+* [机核](https://www.gcores.com)：不止是游戏
+
+## 小册子动态
+
+欢迎你的内容分享和留言，请发到 [议题里](https://github.com/KwaiAppTeam/SwiftPamphletApp/issues)，也欢迎你的 PR :) 。
+
+* 22.02.10 发布[4.1](https://github.com/KwaiAppTeam/SwiftPamphletApp/releases/tag/4.1)：完善内容，补齐基础语法
+* 22.02.08 发布[4.0](https://github.com/KwaiAppTeam/SwiftPamphletApp/releases/tag/4.0)：视觉更新。更新了小册子的icon。排版用了赫蹏（hètí），字体是霞鹜文楷，更新了代码高亮风格。
+* 22.01.24 发布[3.1](https://github.com/KwaiAppTeam/SwiftPamphletApp/releases/tag/3.1)：可不设置 Github access token，生成 dmg
+* 22.01.03 发布2.0：新动态支持提醒，包括博客RSS、开发者、好库和探索库
+* 21.11.16 发布1.0：Swift 指南语法速查完成
+
+## 资源
+
+* 官方：[apple/swift](https://github.com/apple/swift)、[Swift.org](https://www.swift.org/)、[Swift.org - Blog](https://www.swift.org/blog/)、[The Swift Programming Language](https://docs.swift.org/swift-book/) [中文](https://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)、[WWDC Session](https://developer.apple.com/videos/)、[SwiftUI 官方例子](https://developer.apple.com/tutorials/sample-apps)
+* 手册：[SwiftDoc.org](https://swiftdoc.org/)、[Swift 5.1 Cheat Sheet and Quick Reference](https://www.raywenderlich.com/6362977-swift-5-1-cheat-sheet-and-quick-reference)、[Learn swift in Y Minutes](https://learnxinyminutes.com/docs/swift/)、
+* Swift 入门：[CS193p](https://cs193p.sites.stanford.edu/)、[从零到上架](https://www.appcoda.com/learnswift/)、[探索标准库](https://www.swiftbysundell.com/discover/standard-library/)、[100 Days of Swift](https://www.hackingwithswift.com/100)
+* SwiftUI 入门：[SwiftUI by Example](https://www.hackingwithswift.com/quick-start/swiftui)
+* 库整理：[Open-Source](https://www.libhunt.com/l/swift)
+* 聚合：[awesome-ios](https://github.com/vsouza/awesome-ios)、[iOS Example](https://iosexample.com/)、[Cocoa Controls](https://www.cocoacontrols.com/)
+* 周报：[老司机](https://github.com/SwiftOldDriver/iOS-Weekly) 、[13週報](https://ethanhuang13.substack.com/)、[摸鱼周报](https://zhangferry.com/)、[iOS Dev Weekly](https://iosdevweekly.com/)、[Not Only Swift Weekly](https://www.getrevue.co/profile/peterfriese)、[SwiftUI Weekly](http://weekly.swiftwithmajid.com/)
+* 播客：[weak self](https://weakself.dev/)、[ggtalk](https://talk.swift.gg/)、[Swift by Sundell](https://swiftbysundell.com/podcast/)
 
 
 
