@@ -4,6 +4,7 @@ date: 2021-11-23 16:28:18
 tags: [iOS, Apple, Swift]
 categories: Programming
 ---
+update：内容已更新到 4.0 版本。
 
 ## 背景说明
 越来越多同学打算开始用 Swift 来开发了，可很多人以前都没接触过 Swift。这篇和我以前文章不同的是，本篇只是面向 Swift 零基础的同学，内容主要是一些直接可用的小例子，例子可以直接在工程中用或自己调试着看。
@@ -15,6 +16,8 @@ categories: Programming
 这个程序是Swift写的，按照声明式UI，响应式编程范式开发的，源码也可以看看。与其讲一堆，不如调着试。
 
 下面是文本内容。注：代码中简化变量名是为了能更快速关注到语言用法。
+
+十五万字的手册值得你来收藏！和分享，完美。
 
 ## 语法速查
 
@@ -4418,6 +4421,1100 @@ struct TextView: View {
     }
 }
 ```
+
+
+## 开发者
+
+### Swift官方
+
+* [tkremenek](https://github.com/tkremenek)：Swift director
+* [DougGregor](https://github.com/DougGregor)
+* [mikeash](https://github.com/mikeash)：Friday Q&A
+
+### 社区
+
+* [onevcat](https://github.com/onevcat)：喵神
+* [DianQK](https://github.com/DianQK)：靛青 - SwiftGG翻译组
+* [kean](https://github.com/kean)：Nuke、Pulse
+* [stephencelis](https://github.com/stephencelis)：Point-Free & SQLite.swift
+* [ibireme](https://github.com/ibireme)：YYDS
+* [mattt](https://github.com/mattt)：NSHipster
+* [ethanhuang13](https://github.com/ethanhuang13)：13 - [weak self]播客
+* [Kyle-Ye](https://github.com/Kyle-Ye)
+* [ming1016](https://github.com/ming1016)：戴铭
+* [mxcl](https://github.com/mxcl)
+* [lkzhao](https://github.com/lkzhao)
+* [insidegui](https://github.com/insidegui)
+* [johnno1962](https://github.com/johnno1962)：InjectionIII
+* [wigging](https://github.com/wigging)：Back to the Mac
+* [Dimillian](https://github.com/Dimillian)：MovieSwiftUI
+* [krzysztofzablocki](https://github.com/krzysztofzablocki)：元编程 Sourcery
+* [onmyway133](https://github.com/onmyway133)
+* [pofat](https://github.com/pofat)：Pofat - [weak self]播客
+* [mecid](https://github.com/mecid)：Swift with Majid
+* [hebertialmeida](https://github.com/hebertialmeida)
+* [kylef](https://github.com/kylef)：Commander
+* [joshaber](https://github.com/joshaber)：at GitHub
+* [ashfurrow](https://github.com/ashfurrow)：Moya
+* [jessesquires](https://github.com/jessesquires)
+
+## 探索库
+
+### 新鲜事
+
+*[SwiftOldDriver/iOS-Weekly](https://github.com/SwiftOldDriver/iOS-Weekly)*
+老司机 iOS 周报
+Star：4053 Issue：17 开发语言：Swift
+🇨🇳 老司机 iOS 周报
+
+*[matteocrippa/awesome-swift](https://github.com/matteocrippa/awesome-swift)*
+Star：21619 Issue：1 开发语言：Swift
+A collaborative list of awesome Swift libraries and resources. Feel free to contribute!
+
+*[ruanyf/weekly](https://github.com/ruanyf/weekly)*
+科技爱好者周刊
+Star：20909 Issue：1687 开发语言：
+科技爱好者周刊，每周五发布
+
+*[KwaiAppTeam/SwiftPamphletApp](https://github.com/KwaiAppTeam/SwiftPamphletApp)*
+戴铭的 Swift 小册子
+Star：1335 Issue：122 开发语言：Swift
+戴铭的 Swift 小册子，一本活的 Swift 手册。使用 SwiftUI + Combine + Swift Concurrency Aysnc/Await Actor + GitHub API 开发的 macOS 应用
+
+
+### 封装易用功能
+
+*[SwifterSwift/SwifterSwift](https://github.com/SwifterSwift/SwifterSwift)*
+Handy Swift extensions
+Star：10854 Issue：22 开发语言：Swift
+A handy collection of more than 500 native Swift extensions to boost your productivity.
+
+*[JoanKing/JKSwiftExtension](https://github.com/JoanKing/JKSwiftExtension)*
+Swift常用扩展、组件、协议
+Star：244 Issue：0 开发语言：Swift
+Swift常用扩展、组件、协议，方便项目快速搭建，提供完整清晰的Demo示例，不断的完善中...... 
+
+*[infinum/iOS-Nuts-And-Bolts](https://github.com/infinum/iOS-Nuts-And-Bolts)*
+Star：174 Issue：1 开发语言：Swift
+iOS bits and pieces that you can include in your project to make your life a bit easier.
+
+*[gtokman/ExtensionKit](https://github.com/gtokman/ExtensionKit)*
+Star：88 Issue：0 开发语言：Swift
+Helpful extensions for iOS app development 🚀 
+
+
+### SwiftUI 扩展
+
+*[SwiftUIX/SwiftUIX](https://github.com/SwiftUIX/SwiftUIX)*
+扩展 SwiftUI
+Star：4309 Issue：5 开发语言：Swift
+Extensions and additions to the standard SwiftUI library.
+
+*[SDWebImage/SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI)*
+Star：1270 Issue：42 开发语言：Swift
+SwiftUI Image loading and Animation framework powered by SDWebImage
+
+*[apptekstudios/ASCollectionView](https://github.com/apptekstudios/ASCollectionView)*
+SwiftUI collection
+Star：1128 Issue：28 开发语言：Swift
+A SwiftUI collection view with support for custom layouts, preloading, and more.
+
+*[siteline/SwiftUI-Introspect](https://github.com/siteline/SwiftUI-Introspect)*
+SwiftUI 引入 UIKit
+Star：2758 Issue：43 开发语言：Swift
+Introspect underlying UIKit components from SwiftUI
+
+*[AvdLee/SwiftUIKitView](https://github.com/AvdLee/SwiftUIKitView)*
+在 SwiftUI 中 使用 UIKit
+Star：488 Issue：3 开发语言：Swift
+Easily use UIKit views in your SwiftUI applications. Create Xcode Previews for UIView elements
+
+*[danielsaidi/SwiftUIKit](https://github.com/danielsaidi/SwiftUIKit)*
+给 SwiftUI 添加更多功能
+Star：535 Issue：0 开发语言：Swift
+SwiftUIKit contains additional functionality for SwiftUI.
+
+*[Toni77777/awesome-swiftui-libraries](https://github.com/Toni77777/awesome-swiftui-libraries)*
+SwiftUI 可使用的库
+Star：131 Issue：1 开发语言：Swift
+:rocket: Awesome SwiftUI Libraries 
+
+*[rakutentech/AltSwiftUI](https://github.com/rakutentech/AltSwiftUI)*
+类 SwiftUI
+Star：245 Issue：7 开发语言：Swift
+Open Source UI framework based on SwiftUI syntax and features, adding backwards compatibility.
+
+*[gymshark/ios-stack-kit](https://github.com/gymshark/ios-stack-kit)*
+类 SwiftUI
+Star：112 Issue：1 开发语言：Swift
+The power of SwiftUI with UIKit
+
+
+### 图片
+
+*[onevcat/Kingfisher](https://github.com/onevcat/Kingfisher)*
+Star：19690 Issue：67 开发语言：Swift
+A lightweight, pure-Swift library for downloading and caching images from the web.
+
+*[kean/Nuke](https://github.com/kean/Nuke)*
+Star：6514 Issue：6 开发语言：Swift
+Image loading system
+
+*[suzuki-0000/SKPhotoBrowser](https://github.com/suzuki-0000/SKPhotoBrowser)*
+图片浏览
+Star：2315 Issue：90 开发语言：Swift
+Simple PhotoBrowser/Viewer inspired by facebook, twitter photo browsers written by swift
+
+
+### 文字处理
+
+*[gonzalezreal/MarkdownUI](https://github.com/gonzalezreal/MarkdownUI)*
+Star：648 Issue：3 开发语言：Swift
+Render Markdown text in SwiftUI
+
+*[tophat/RichTextView](https://github.com/tophat/RichTextView)*
+Star：1043 Issue：25 开发语言：Swift
+iOS Text View (UIView) that Properly Displays LaTeX, HTML, Markdown, and YouTube/Vimeo Links
+
+*[keitaoouchi/MarkdownView](https://github.com/keitaoouchi/MarkdownView)*
+Star：1738 Issue：29 开发语言：Swift
+Markdown View for iOS.
+
+*[johnxnguyen/Down](https://github.com/johnxnguyen/Down)*
+fast Markdown
+Star：1914 Issue：17 开发语言：C
+Blazing fast Markdown / CommonMark rendering in Swift, built upon cmark.
+
+*[qeude/SwiftDown](https://github.com/qeude/SwiftDown)*
+Swift 写的可换主题的 Markdown 编辑器组件
+Star：68 Issue：0 开发语言：Swift
+📦 A themable markdown editor component for your SwiftUI apps.
+
+*[JohnSundell/Ink](https://github.com/JohnSundell/Ink)*
+Markdown 解析器
+Star：2074 Issue：22 开发语言：Swift
+A fast and flexible Markdown parser written in Swift.
+
+*[tnantoka/edhita](https://github.com/tnantoka/edhita)*
+Star：1183 Issue：16 开发语言：Swift
+Fully open source text editor for iOS written in Swift.
+
+*[glushchenko/fsnotes](https://github.com/glushchenko/fsnotes)*
+Star：4616 Issue：219 开发语言：Swift
+Notes manager for macOS/iOS
+
+*[coteditor/CotEditor](https://github.com/coteditor/CotEditor)*
+Star：4192 Issue：118 开发语言：Swift
+Lightweight Plain-Text Editor for macOS
+
+
+### 动画
+
+*[recherst/kavsoft-swiftui-animations](https://github.com/recherst/kavsoft-swiftui-animations)*
+Star：93 Issue：0 开发语言：Swift
+SwiftUI animation tutorials, all of demos are consisted of youtube videos at website of kavsoft. 🔗 https://kavsoft.dev
+
+*[timdonnelly/Advance](https://github.com/timdonnelly/Advance)*
+Physics-based animations
+Star：4449 Issue：4 开发语言：Swift
+Physics-based animations for iOS, tvOS, and macOS.
+
+*[MengTo/Spring](https://github.com/MengTo/Spring)*
+动画
+Star：13968 Issue：167 开发语言：Swift
+A library to simplify iOS animations in Swift.
+
+
+### 持久化存储
+
+*[stephencelis/SQLite.swift](https://github.com/stephencelis/SQLite.swift)*
+Star：8051 Issue：81 开发语言：Swift
+A type-safe, Swift-language layer over SQLite3.
+
+*[groue/GRDB.swift](https://github.com/groue/GRDB.swift)*
+Star：4827 Issue：5 开发语言：Swift
+A toolkit for SQLite databases, with a focus on application development
+
+*[caiyue1993/IceCream](https://github.com/caiyue1993/IceCream)*
+CloudKit 同步 Realm 数据库
+Star：1676 Issue：47 开发语言：Swift
+Sync Realm Database with CloudKit
+
+*[realm/realm-cocoa](https://github.com/realm/realm-cocoa)*
+Star：14900 Issue：353 开发语言：Objective-C
+Realm is a mobile database: a replacement for Core Data & SQLite
+
+*[PostgresApp/PostgresApp](https://github.com/PostgresApp/PostgresApp)*
+PostgreSQL macOS 应用
+Star：6207 Issue：120 开发语言：Makefile
+The easiest way to get started with PostgreSQL on the Mac
+
+
+### 编程范式
+
+*[ReactiveX/RxSwift](https://github.com/ReactiveX/RxSwift)*
+函数响应式编程
+Star：21610 Issue：12 开发语言：Swift
+Reactive Programming in Swift
+
+*[pointfreeco/swift-composable-architecture](https://github.com/pointfreeco/swift-composable-architecture)*
+Star：5561 Issue：12 开发语言：Swift
+A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind.
+
+*[onmyway133/awesome-ios-architecture](https://github.com/onmyway133/awesome-ios-architecture)*
+Star：4494 Issue：0 开发语言：
+:japanese_castle: Better ways to structure iOS apps
+
+*[ReSwift/ReSwift](https://github.com/ReSwift/ReSwift)*
+单页面状态和数据管理
+Star：7101 Issue：38 开发语言：Swift
+Unidirectional Data Flow in Swift - Inspired by Redux
+
+*[gre4ixin/ReduxUI](https://github.com/gre4ixin/ReduxUI)*
+SwiftUI Redux 架构
+Star：24 Issue：0 开发语言：Swift
+💎 Redux like architecture for SwiftUI
+
+*[BohdanOrlov/iOS-Developer-Roadmap](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)*
+Star：5613 Issue：7 开发语言：Swift
+Roadmap to becoming an iOS developer in 2018.
+
+*[ReactiveCocoa/ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)*
+Star：19994 Issue：3 开发语言：Swift
+Cocoa framework and Obj-C dynamism bindings for ReactiveSwift.
+
+*[mehdihadeli/awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)*
+软件架构
+Star：6784 Issue：2 开发语言：
+A curated list of awesome articles, videos, and other resources to learn and practice about software architecture, patterns, and principles.
+
+*[nalexn/clean-architecture-swiftui](https://github.com/nalexn/clean-architecture-swiftui)*
+干净完整的SwiftUI+Combine例子，包含网络和单元测试等
+Star：3080 Issue：17 开发语言：Swift
+SwiftUI sample app using Clean Architecture. Examples of working with CoreData persistence, networking, dependency injection, unit testing, and more.
+
+*[krzysztofzablocki/Sourcery](https://github.com/krzysztofzablocki/Sourcery)*
+Swift 元编程
+Star：6380 Issue：54 开发语言：Swift
+Meta-programming for Swift, stop writing boilerplate code.
+
+
+### 路由
+
+*[pointfreeco/swiftui-navigation](https://github.com/pointfreeco/swiftui-navigation)*
+Star：733 Issue：1 开发语言：Swift
+Tools for making SwiftUI navigation simpler, more ergonomic and more precise.
+
+
+### 静态检查
+
+*[realm/SwiftLint](https://github.com/realm/SwiftLint)*
+Star：15717 Issue：308 开发语言：Swift
+A tool to enforce Swift style and conventions.
+
+
+### 系统能力
+
+*[devicekit/DeviceKit](https://github.com/devicekit/DeviceKit)*
+UIDevice 易用封装
+Star：3602 Issue：44 开发语言：Swift
+DeviceKit is a value-type replacement of UIDevice.
+
+*[kishikawakatsumi/KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)*
+Star：6709 Issue：37 开发语言：Swift
+Simple Swift wrapper for Keychain that works on iOS, watchOS, tvOS and macOS.
+
+*[nvzqz/FileKit](https://github.com/nvzqz/FileKit)*
+文件操作
+Star：2197 Issue：11 开发语言：Swift
+Simple and expressive file management in Swift
+
+*[JohnSundell/Files](https://github.com/JohnSundell/Files)*
+文件操作
+Star：2224 Issue：23 开发语言：Swift
+A nicer way to handle files & folders in Swift
+
+*[kylef/PathKit](https://github.com/kylef/PathKit)*
+文件操作
+Star：1324 Issue：12 开发语言：Swift
+Effortless path operations in Swift
+
+*[rushisangani/BiometricAuthentication](https://github.com/rushisangani/BiometricAuthentication)*
+FaceID or TouchID authentication
+Star：784 Issue：13 开发语言：Swift
+Use Apple FaceID or TouchID authentication in your app using BiometricAuthentication.
+
+*[sunshinejr/SwiftyUserDefaults](https://github.com/sunshinejr/SwiftyUserDefaults)*
+Star：4598 Issue：44 开发语言：Swift
+Modern Swift API for NSUserDefaults
+
+*[MonitorControl/MonitorControl](https://github.com/MonitorControl/MonitorControl)*
+亮度和声音控制
+Star：13963 Issue：38 开发语言：Swift
+🖥 Control your display's brightness & volume on your Mac as if it was a native Apple Display. Use Apple Keyboard keys or custom shortcuts. Shows the native macOS OSDs.
+
+*[carekit-apple/CareKit](https://github.com/carekit-apple/CareKit)*
+使用 SwiftUI 开发健康相关的库
+Star：2163 Issue：65 开发语言：Swift
+CareKit is an open source software framework for creating apps that help people better understand and manage their health.
+
+*[Cay-Zhang/SwiftSpeech](https://github.com/Cay-Zhang/SwiftSpeech)*
+苹果语言识别封装库，已适配 SwiftUI
+Star：245 Issue：2 开发语言：Swift
+A speech recognition framework designed for SwiftUI.
+
+*[malcommac/SwiftDate](https://github.com/malcommac/SwiftDate)*
+Swift编写的时间时区，时间比较等复杂处理的包装
+Star：6753 Issue：67 开发语言：Swift
+🐔 Toolkit to parse, validate, manipulate, compare and display dates, time & timezones in Swift.
+
+
+### 接口
+
+*[OAuthSwift/OAuthSwift](https://github.com/OAuthSwift/OAuthSwift)*
+Star：2972 Issue：39 开发语言：Swift
+Swift based OAuth library for iOS
+
+*[p2/OAuth2](https://github.com/p2/OAuth2)*
+Star：1054 Issue：66 开发语言：Swift
+OAuth2 framework for macOS and iOS, written in Swift.
+
+*[public-apis/public-apis](https://github.com/public-apis/public-apis)*
+Star：179814 Issue：11 开发语言：Python
+A collective list of free APIs
+
+
+### 接口应用
+
+*[bpisano/Weather](https://github.com/bpisano/Weather)*
+天气应用
+Star：275 Issue：2 开发语言：Swift
+A Weather app in SwiftUI.
+
+*[Dimillian/MovieSwiftUI](https://github.com/Dimillian/MovieSwiftUI)*
+电影 MovieDB 应用
+Star：5913 Issue：8 开发语言：Swift
+SwiftUI & Combine app using MovieDB API. With a custom Flux (Redux) implementation.
+
+*[chojnac/NotionSwift](https://github.com/chojnac/NotionSwift)*
+Star：19 Issue：2 开发语言：Swift
+Unofficial Notion API SDK for iOS & macOS
+
+*[Dimillian/RedditOS](https://github.com/Dimillian/RedditOS)*
+SwiftUI 写的 Reddit客户端
+Star：3508 Issue：11 开发语言：Swift
+The product name is Curiosity, a SwiftUI Reddit client for macOS Big Sur
+
+*[carson-katri/reddit-swiftui](https://github.com/carson-katri/reddit-swiftui)*
+SwiftUI 写的 Reddit客户端
+Star：1097 Issue：7 开发语言：Swift
+A cross-platform Reddit client built in SwiftUI
+
+*[Dimillian/SwiftHN](https://github.com/Dimillian/SwiftHN)*
+Hacker News 阅读
+Star：1692 Issue：20 开发语言：Swift
+A Hacker News reader in Swift
+
+*[tatsuz0u/EhPanda](https://github.com/tatsuz0u/EhPanda)*
+Star：1004 Issue：7 开发语言：Swift
+An unofficial E-Hentai App for iOS built with SwiftUI & TCA.
+
+*[Dimillian/MortyUI](https://github.com/Dimillian/MortyUI)*
+GraphQL + SwiftUI 开发的瑞克和莫蒂应用
+Star：421 Issue：4 开发语言：Swift
+A very simple Rick & Morty app to demo GraphQL + SwiftUI
+
+*[Finb/V2ex-Swift](https://github.com/Finb/V2ex-Swift)*
+V2EX 客户端
+Star：1506 Issue：10 开发语言：Swift
+An iOS client written in Swift for V2EX
+
+*[v2er-app/iOS](https://github.com/v2er-app/iOS)*
+V2EX 客户端
+Star：190 Issue：3 开发语言：Swift
+The source of V2er.iOS
+
+*[sinaweibosdk/weibo_ios_sdk](https://github.com/sinaweibosdk/weibo_ios_sdk)*
+Star：1426 Issue：61 开发语言：Objective-C
+新浪微博 IOS SDK
+
+*[miniLV/MNWeibo](https://github.com/miniLV/MNWeibo)*
+Swift5 + MVVM 微博客户端
+Star：242 Issue：4 开发语言：Swift
+Swift5 + MVVM + 文艺复兴微博(纯代码 + 纯Swift)，可作为第一个上手的Swift项目.
+
+*[nerdishbynature/octokit.swift](https://github.com/nerdishbynature/octokit.swift)*
+Swift API Client for GitHub
+Star：377 Issue：10 开发语言：Swift
+A Swift API Client for GitHub and GitHub Enterprise
+
+*[GitHawkApp/GitHawk](https://github.com/GitHawkApp/GitHawk)*
+iOS app for GitHub
+Star：2815 Issue：454 开发语言：Swift
+The (second) best iOS app for GitHub.
+
+*[fangzesheng/free-api](https://github.com/fangzesheng/free-api)*
+Star：11872 Issue：27 开发语言：
+收集免费的接口服务,做一个api的搬运工
+
+*[nerdsupremacist/Graphaello](https://github.com/nerdsupremacist/Graphaello)*
+SwiftUI 中使用 GraphQL 的工具
+Star：428 Issue：18 开发语言：Swift
+A Tool for Writing Declarative, Type-Safe and Data-Driven Applications in SwiftUI using GraphQL
+
+*[nerdsupremacist/tmdb](https://github.com/nerdsupremacist/tmdb)*
+GraphQL 包装电影数据接口
+Star：14 Issue：1 开发语言：Swift
+A GraphQL Wrapper for The Movie Database
+
+
+### macOS
+
+*[serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)*
+开源 macOS 程序合集
+Star：29416 Issue：50 开发语言：Swift
+🚀 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps
+
+*[Ranchero-Software/NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire)*
+Star：5245 Issue：528 开发语言：Swift
+RSS reader for macOS and iOS.
+
+*[overtake/TelegramSwift](https://github.com/overtake/TelegramSwift)*
+Star：3672 Issue：443 开发语言：Swift
+Source code of Telegram for macos on Swift 5.0
+
+*[eonist/FileWatcher](https://github.com/eonist/FileWatcher)*
+macOS 上监听文件变化
+Star：157 Issue：5 开发语言：Swift
+Monitoring file system changes in macOS
+
+*[waylybaye/XcodeCleaner-SwiftUI](https://github.com/waylybaye/XcodeCleaner-SwiftUI)*
+清理 Xcode
+Star：1160 Issue：3 开发语言：Swift
+Make Xcode Clean Again
+
+*[gao-sun/eul](https://github.com/gao-sun/eul)*
+SwiftUI 写的 macOS 状态监控工具
+Star：7001 Issue：50 开发语言：Swift
+🖥️ macOS status monitoring app written in SwiftUI.
+
+*[Dimillian/ACHNBrowserUI](https://github.com/Dimillian/ACHNBrowserUI)*
+SwiftUI 写的动物之森小助手程序
+Star：1494 Issue：32 开发语言：Swift
+Animal Crossing New Horizon companion app in SwiftUI
+
+*[lexrus/RegExPlus](https://github.com/lexrus/RegExPlus)*
+正则表达式
+Star：186 Issue：0 开发语言：Swift
+A nifty RegEx test tool built with SwiftUI
+
+*[v2ex/launcher](https://github.com/v2ex/launcher)*
+用来启动那些本地开发时需要的各种进程，及查看其输出
+Star：157 Issue：7 开发语言：Swift
+
+
+*[lukakerr/Pine](https://github.com/lukakerr/Pine)*
+Markdown 编辑器
+Star：2884 Issue：43 开发语言：Swift
+A modern, native macOS markdown editor
+
+*[root3nl/SupportApp](https://github.com/root3nl/SupportApp)*
+企业支持 macOS 软件
+Star：234 Issue：15 开发语言：Swift
+The Support App is developed by Root3, specialized in managing Apple devices. Root3 offers consultancy and support for organizations to get the most out of their Apple devices and is based in The Netherlands (Haarlem).
+
+*[jaywcjlove/awesome-mac](https://github.com/jaywcjlove/awesome-mac)*
+macOS 软件大全
+Star：47634 Issue：122 开发语言：JavaScript
+ Now we have become very big, Different from the original idea. Collect premium software in various categories.
+
+*[insidegui/WWDC](https://github.com/insidegui/WWDC)*
+Star：8151 Issue：33 开发语言：Swift
+The unofficial WWDC app for macOS
+
+*[sindresorhus/Actions](https://github.com/sindresorhus/Actions)*
+Star：582 Issue：5 开发语言：Swift
+⚙️ Supercharge your shortcuts
+
+
+### 应用
+
+*[vinhnx/Clendar](https://github.com/vinhnx/Clendar)*
+SwiftUI 写的日历应用
+Star：311 Issue：51 开发语言：Swift
+Clendar - universal calendar app. Written in SwiftUI. Available on App Store. MIT License.
+
+*[SvenTiigi/WhatsNewKit](https://github.com/SvenTiigi/WhatsNewKit)*
+欢迎屏
+Star：2437 Issue：0 开发语言：Swift
+Showcase your awesome new app features 📱
+
+*[kickstarter/ios-oss](https://github.com/kickstarter/ios-oss)*
+Kickstarter 的 iOS 版本
+Star：7878 Issue：2 开发语言：Swift
+Kickstarter for iOS. Bring new ideas to life, anywhere.
+
+*[wordpress-mobile/WordPress-iOS](https://github.com/wordpress-mobile/WordPress-iOS)*
+Star：3259 Issue：890 开发语言：Swift
+WordPress for iOS - Official repository
+
+*[CoreOffice/CryptoOffice](https://github.com/CoreOffice/CryptoOffice)*
+Swift 解析 Office Open XML（OOXML）包括 xlsx, docx, pptx
+Star：20 Issue：0 开发语言：Swift
+Office Open XML (OOXML) formats (.xlsx, .docx, .pptx) decryption for Swift
+
+*[CoreOffice/CoreXLSX](https://github.com/CoreOffice/CoreXLSX)*
+Swift编写的Excel电子表格（XLSX）格式解析器
+Star：604 Issue：11 开发语言：Swift
+Excel spreadsheet (XLSX) format parser written in pure Swift
+
+*[analogcode/Swift-Radio-Pro](https://github.com/analogcode/Swift-Radio-Pro)*
+电台应用
+Star：2657 Issue：14 开发语言：Swift
+Professional Radio Station App for iOS!
+
+
+### 游戏
+
+*[pointfreeco/isowords](https://github.com/pointfreeco/isowords)*
+单词搜索游戏
+Star：1635 Issue：3 开发语言：Swift
+Open source game built in SwiftUI and the Composable Architecture.
+
+*[michelpereira/awesome-games-of-coding](https://github.com/michelpereira/awesome-games-of-coding)*
+教你学编程的游戏收集
+Star：1372 Issue：1 开发语言：
+A curated list of games that can teach you how to learn a programming language.
+
+*[OpenEmu/OpenEmu](https://github.com/OpenEmu/OpenEmu)*
+视频游戏模拟器
+Star：13544 Issue：182 开发语言：Objective-C
+🕹 Retro video game emulation for macOS
+
+*[jVirus/swiftui-2048](https://github.com/jVirus/swiftui-2048)*
+Star：138 Issue：0 开发语言：Swift
+🎲 100% SwiftUI 3.0, classic 2048 game [iOS 15.0+, iPadOS 15.0+, macOS 12.0+, Swift 5.5].
+
+*[schellingb/dosbox-pure](https://github.com/schellingb/dosbox-pure)*
+DOS 游戏模拟器
+Star：416 Issue：105 开发语言：C++
+DOSBox Pure is a new fork of DOSBox built for RetroArch/Libretro aiming for simplicity and ease of use.
+
+*[chrismaltby/gb-studio](https://github.com/chrismaltby/gb-studio)*
+拖放式复古游戏创建器
+Star：5943 Issue：463 开发语言：C
+A quick and easy to use drag and drop retro game creator for your favourite handheld video game system
+
+
+### 新技术展示
+
+*[JakeLin/Moments-SwiftUI](https://github.com/JakeLin/Moments-SwiftUI)*
+SwiftUI、Async、Actor
+Star：35 Issue：0 开发语言：Swift
+WeChat-like Moments App implemented using Swift 5.5 and SwiftUI
+
+*[twostraws/HackingWithSwift](https://github.com/twostraws/HackingWithSwift)*
+示例代码
+Star：4266 Issue：11 开发语言：Swift
+The project source code for hackingwithswift.com
+
+*[carson-katri/awesome-result-builders](https://github.com/carson-katri/awesome-result-builders)*
+Result Builders awesome
+Star：737 Issue：2 开发语言：
+A list of cool DSLs made with Swift 5.4’s @resultBuilder
+
+*[pointfreeco/episode-code-samples](https://github.com/pointfreeco/episode-code-samples)*
+Star：640 Issue：2 开发语言：Swift
+💾 Point-Free episode code.
+
+*[SwiftGGTeam/the-swift-programming-language-in-chinese](https://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)*
+中文版 Apple 官方 Swift 教程
+Star：20394 Issue：3 开发语言：CSS
+中文版 Apple 官方 Swift 教程《The Swift Programming Language》
+
+*[jessesquires/TIL](https://github.com/jessesquires/TIL)*
+学习笔记
+Star：250 Issue：0 开发语言：
+Things I've learned and/or things I want to remember. Notes, links, advice, example code, etc.
+
+
+### Combine 扩展
+
+*[OpenCombine/OpenCombine](https://github.com/OpenCombine/OpenCombine)*
+Combine 的开源实现
+Star：2097 Issue：11 开发语言：Swift
+Open source implementation of Apple's Combine framework for processing values over time.
+
+*[CombineCommunity/CombineExt](https://github.com/CombineCommunity/CombineExt)*
+对 Combine 的补充
+Star：1036 Issue：21 开发语言：Swift
+CombineExt provides a collection of operators, publishers and utilities for Combine, that are not provided by Apple themselves, but are common in other Reactive Frameworks and standards.
+
+
+### 聚合
+
+*[dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps)*
+开源的完整 App 例子
+Star：29334 Issue：1 开发语言：Swift
+:iphone: Collaborative List of Open-Source iOS Apps
+
+*[timqian/chinese-independent-blogs](https://github.com/timqian/chinese-independent-blogs)*
+Star：8308 Issue：19 开发语言：JavaScript
+中文独立博客列表
+
+*[vlondon/awesome-swiftui](https://github.com/vlondon/awesome-swiftui)*
+Star：1151 Issue：6 开发语言：
+A collaborative list of awesome articles, talks, books, videos and code examples about SwiftUI.
+
+*[ivanvorobei/SwiftUI](https://github.com/ivanvorobei/SwiftUI)*
+Star：3644 Issue：5 开发语言：Swift
+Examples projects using SwiftUI released by WWDC2019. Include Layout, UI, Animations, Gestures, Draw and Data.
+
+*[kon9chunkit/GitHub-Chinese-Top-Charts](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts)*
+GitHub中文排行榜
+Star：43935 Issue：80 开发语言：Java
+:cn: GitHub中文排行榜，各语言分离设置「软件 / 资料」榜单，精准定位中文好项目。各取所需，互不干扰，高效学习。
+
+*[onmyway133/awesome-swiftui](https://github.com/onmyway133/awesome-swiftui)*
+Star：340 Issue：2 开发语言：
+🌮 Awesome resources, articles, libraries about SwiftUI
+
+*[Juanpe/About-SwiftUI](https://github.com/Juanpe/About-SwiftUI)*
+汇总 SwiftUI 的资料
+Star：6013 Issue：0 开发语言：Swift
+Gathering all info published, both by Apple and by others, about new framework SwiftUI. 
+
+*[sindresorhus/awesome](https://github.com/sindresorhus/awesome)*
+内容广
+Star：188924 Issue：41 开发语言：
+😎 Awesome lists about all kinds of interesting topics
+
+*[SwiftPackageIndex/PackageList](https://github.com/SwiftPackageIndex/PackageList)*
+Swift 开源库索引
+Star：589 Issue：2 开发语言：Swift
+The master list of repositories for the Swift Package Index.
+
+
+### 知识管理
+
+*[AppFlowy-IO/appflowy](https://github.com/AppFlowy-IO/appflowy)*
+Flutter 和 Rust 开发的开源 Notion
+Star：17150 Issue：96 开发语言：Rust
+AppFlowy is an open-source alternative to Notion. You are in charge of your data and customizations. Built with Flutter and Rust.
+
+
+### 性能、工程构建及自动化
+
+*[tuist/tuist](https://github.com/tuist/tuist)*
+创建和维护 Xcode projects 文件
+Star：2361 Issue：145 开发语言：Swift
+🚀 Create, maintain, and interact with Xcode projects at scale
+
+*[swift-server/vscode-swift](https://github.com/swift-server/vscode-swift)*
+VSCode 的 Swift 扩展
+Star：239 Issue：23 开发语言：TypeScript
+VSCode Extension for Swift
+
+*[peripheryapp/periphery](https://github.com/peripheryapp/periphery)*
+检测 Swift 无用代码
+Star：3135 Issue：19 开发语言：Swift
+A tool to identify unused code in Swift projects.
+
+*[nalexn/ViewInspector](https://github.com/nalexn/ViewInspector)*
+SwiftUI Runtime introspection 和 单元测试
+Star：1077 Issue：11 开发语言：Swift
+Runtime introspection and unit testing of SwiftUI views
+
+*[shibapm/Komondor](https://github.com/shibapm/Komondor)*
+Git Hooks for Swift projects
+Star：497 Issue：19 开发语言：Swift
+Git Hooks for Swift projects 🐩
+
+*[SwiftGen/SwiftGen](https://github.com/SwiftGen/SwiftGen)*
+代码生成
+Star：7687 Issue：74 开发语言：Swift
+The Swift code generator for your assets, storyboards, Localizable.strings, … — Get rid of all String-based APIs!
+
+*[hyperoslo/Cache](https://github.com/hyperoslo/Cache)*
+Star：2523 Issue：20 开发语言：Swift
+:package: Nothing but Cache.
+
+*[kylef/Commander](https://github.com/kylef/Commander)*
+命令行
+Star：1478 Issue：1 开发语言：Swift
+Compose beautiful command line interfaces in Swift
+
+*[Carthage/Carthage](https://github.com/Carthage/Carthage)*
+Star：14513 Issue：230 开发语言：Swift
+A simple, decentralized dependency manager for Cocoa
+
+*[NARKOZ/hacker-scripts](https://github.com/NARKOZ/hacker-scripts)*
+程序员的活都让机器干的脚本（真实故事）
+Star：43487 Issue：66 开发语言：JavaScript
+Based on a true story
+
+*[RobotsAndPencils/XcodesApp](https://github.com/RobotsAndPencils/XcodesApp)*
+Xcode 多版本安装
+Star：2348 Issue：30 开发语言：Swift
+The easiest way to install and switch between multiple versions of Xcode - with a mouse click. 
+
+*[ZeeZide/5GUIs](https://github.com/ZeeZide/5GUIs)*
+可以分析程序用了哪些库，用了LLVM objdump
+Star：177 Issue：8 开发语言：Swift
+A tiny macOS app that can detect the GUI technologies used in other apps.
+
+*[faisalmemon/ios-crash-dump-analysis-book](https://github.com/faisalmemon/ios-crash-dump-analysis-book)*
+iOS Crash Dump Analysis Book
+Star：454 Issue：1 开发语言：Objective-C
+iOS Crash Dump Analysis Book
+
+*[majd/ipatool](https://github.com/majd/ipatool)*
+下载 ipa
+Star：1258 Issue：6 开发语言：Swift
+Command-line tool that allows searching and downloading app packages (known as ipa files) from the iOS App Store
+
+
+### 测试
+
+*[Quick/Quick](https://github.com/Quick/Quick)*
+测试框架
+Star：9334 Issue：51 开发语言：Swift
+The Swift (and Objective-C) testing framework.
+
+
+### 网络
+
+*[Alamofire/Alamofire](https://github.com/Alamofire/Alamofire)*
+Star：37100 Issue：33 开发语言：Swift
+Elegant HTTP Networking in Swift
+
+*[socketio/socket.io-client-swift](https://github.com/socketio/socket.io-client-swift)*
+Star：4704 Issue：181 开发语言：Swift
+
+
+*[Lojii/Knot](https://github.com/Lojii/Knot)*
+使用 SwiftNIO 实现 HTTPS 抓包
+Star：587 Issue：2 开发语言：C
+一款iOS端基于MITM(中间人攻击技术)实现的HTTPS抓包工具，完整的App，核心代码使用SwiftNIO实现
+
+*[swift-server/async-http-client](https://github.com/swift-server/async-http-client)*
+使用 SwiftNIO 开发的 HTTP 客户端
+Star：547 Issue：72 开发语言：Swift
+HTTP client library built on SwiftNIO
+
+*[kean/Get](https://github.com/kean/Get)*
+Star：309 Issue：1 开发语言：Swift
+Web API client built using async/await
+
+*[awesome-selfhosted/awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)*
+网络服务及上面的应用
+Star：77219 Issue：149 开发语言：JavaScript
+A list of Free Software network services and web applications which can be hosted on your own servers
+
+*[daltoniam/Starscream](https://github.com/daltoniam/Starscream)*
+WebSocket
+Star：7175 Issue：140 开发语言：Swift
+Websockets in swift for iOS and OSX
+
+*[shadowsocks/ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)*
+Star：30125 Issue：250 开发语言：Swift
+Next Generation of ShadowsocksX
+
+*[carson-katri/swift-request](https://github.com/carson-katri/swift-request)*
+声明式的网络请求
+Star：620 Issue：6 开发语言：Swift
+Declarative HTTP networking, designed for SwiftUI
+
+*[cloudreve/Cloudreve](https://github.com/cloudreve/Cloudreve)*
+云存储部署
+Star：13045 Issue：328 开发语言：Go
+🌩支持多家云存储的云盘系统 (Self-deployed file management and sharing system, supports multiple storage providers)
+
+*[alibaba/xquic](https://github.com/alibaba/xquic)*
+阿里巴巴发布的 XQUIC 库
+Star：911 Issue：4 开发语言：C
+
+
+*[kasketis/netfox](https://github.com/kasketis/netfox)*
+获取所有网络请求
+Star：3207 Issue：15 开发语言：Swift
+A lightweight, one line setup, iOS / OSX network debugging library! 🦊
+
+*[Moya/Moya](https://github.com/Moya/Moya)*
+Swift 编写的网络抽象层
+Star：13744 Issue：116 开发语言：Swift
+Network abstraction layer written in Swift.
+
+*[Kitura/BlueSocket](https://github.com/Kitura/BlueSocket)*
+Star：1285 Issue：27 开发语言：Swift
+Socket framework for Swift using the Swift Package Manager. Works on iOS, macOS, and Linux.
+
+*[rhummelmose/BluetoothKit](https://github.com/rhummelmose/BluetoothKit)*
+蓝牙
+Star：2049 Issue：33 开发语言：Swift
+Easily communicate between iOS/OSX devices using BLE
+
+*[WeTransfer/Mocker](https://github.com/WeTransfer/Mocker)*
+Mock Alamofire and URLSession
+Star：734 Issue：2 开发语言：Swift
+Mock Alamofire and URLSession requests without touching your code implementation
+
+
+### 图形
+
+*[willdale/SwiftUICharts](https://github.com/willdale/SwiftUICharts)*
+用于SwiftUI的图表绘图库
+Star：397 Issue：30 开发语言：Swift
+A charts / plotting library for SwiftUI. Works on macOS, iOS, watchOS, and tvOS and has accessibility features built in.
+
+*[lludo/SwiftSunburstDiagram](https://github.com/lludo/SwiftSunburstDiagram)*
+SwiftUI 图表
+Star：456 Issue：12 开发语言：Swift
+SwiftUI library to easily render diagrams given a tree of objects. Similar to ring chart, sunburst chart, multilevel pie chart.
+
+*[ivanschuetz/SwiftCharts](https://github.com/ivanschuetz/SwiftCharts)*
+Star：2350 Issue：47 开发语言：Swift
+Easy to use and highly customizable charts library for iOS
+
+*[danielgindi/Charts](https://github.com/danielgindi/Charts)*
+Star：24997 Issue：812 开发语言：Swift
+Beautiful charts for iOS/tvOS/OSX! The Apple side of the crossplatform MPAndroidChart.
+
+*[imxieyi/waifu2x-ios](https://github.com/imxieyi/waifu2x-ios)*
+waifu2x Core ML 动漫风格图片的高清渲染
+Star：407 Issue：3 开发语言：Swift
+iOS Core ML implementation of waifu2x
+
+*[mecid/SwiftUICharts](https://github.com/mecid/SwiftUICharts)*
+支持 SwiftUI 的简单的线图和柱状图库
+Star：1156 Issue：2 开发语言：Swift
+A simple line and bar charting library that supports accessibility written using SwiftUI. 
+
+*[Tencent/libpag](https://github.com/Tencent/libpag)*
+PAG（Portable Animated Graphics）实时渲染库，多个平台渲染AE动画。
+Star：1312 Issue：4 开发语言：C++
+A real-time rendering library for PAG (Portable Animated Graphics) files that renders After Effects animations natively across multiple platforms.
+
+*[jathu/UIImageColors](https://github.com/jathu/UIImageColors)*
+获取图片主次颜色
+Star：3056 Issue：10 开发语言：Swift
+Fetches the most dominant and prominent colors from an image.
+
+*[BradLarson/GPUImage3](https://github.com/BradLarson/GPUImage3)*
+Metal 实现
+Star：2290 Issue：73 开发语言：Swift
+GPUImage 3 is a BSD-licensed Swift framework for GPU-accelerated video and image processing using Metal.
+
+*[exyte/Macaw](https://github.com/exyte/Macaw)*
+SVG
+Star：5784 Issue：124 开发语言：Swift
+Powerful and easy-to-use vector graphics Swift library with SVG support
+
+*[exyte/SVGView](https://github.com/exyte/SVGView)*
+支持 SwiftUI 的 SVG 解析渲染视图
+Star：125 Issue：1 开发语言：Swift
+SVG parser and renderer written in SwiftUI
+
+*[efremidze/Magnetic](https://github.com/efremidze/Magnetic)*
+SpriteKit气泡支持SwiftUI
+Star：1351 Issue：21 开发语言：Swift
+SpriteKit Floating Bubble Picker (inspired by Apple Music) 🧲
+
+*[NextLevel/NextLevel](https://github.com/NextLevel/NextLevel)*
+相机
+Star：1963 Issue：70 开发语言：Swift
+⬆️ Rad Media Capture in Swift
+
+*[Harley-xk/MaLiang](https://github.com/Harley-xk/MaLiang)*
+基于 Metal 的涂鸦绘图库
+Star：1240 Issue：39 开发语言：Swift
+iOS painting and drawing library based on Metal. 神笔马良有一支神笔（基于 Metal 的涂鸦绘图库）
+
+*[frzi/Model3DView](https://github.com/frzi/Model3DView)*
+毫不费力的使用 SwiftUI 渲染 3d models
+Star：20 Issue：0 开发语言：Swift
+Render 3d models with SwiftUI effortlessly
+
+
+### 音视频
+
+*[iina/iina](https://github.com/iina/iina)*
+Star：29200 Issue：1304 开发语言：Swift
+The modern video player for macOS.
+
+*[shogo4405/HaishinKit.swift](https://github.com/shogo4405/HaishinKit.swift)*
+RTMP, HLS
+Star：2260 Issue：12 开发语言：Swift
+Camera and Microphone streaming library via RTMP, HLS for iOS, macOS, tvOS.
+
+*[AudioKit/AudioKit](https://github.com/AudioKit/AudioKit)*
+Star：8960 Issue：7 开发语言：Swift
+Swift audio synthesis, processing, & analysis platform for iOS, macOS and tvOS
+
+*[josejuanqm/VersaPlayer](https://github.com/josejuanqm/VersaPlayer)*
+Star：676 Issue：3 开发语言：Swift
+Versatile Video Player implementation for iOS, macOS, and tvOS
+
+*[bilibili/ijkplayer](https://github.com/bilibili/ijkplayer)*
+bilibili 播放器
+Star：29961 Issue：2711 开发语言：C
+Android/iOS video player based on FFmpeg n3.4, with MediaCodec, VideoToolbox support.
+
+
+### 安全
+
+*[krzyzanowskim/CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift)*
+Star：8912 Issue：40 开发语言：Swift
+CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
+
+*[rockbruno/SwiftInfo](https://github.com/rockbruno/SwiftInfo)*
+提取和分析一个iOS应用
+Star：1032 Issue：16 开发语言：Swift
+📊 Extract and analyze the evolution of an iOS app's code.
+
+
+### Web
+
+*[Kitura/swift-html-entities](https://github.com/Kitura/swift-html-entities)*
+HTML5 规范字符编码/解码器
+Star：137 Issue：3 开发语言：Swift
+HTML5 spec-compliant character encoder/decoder for Swift
+
+*[TokamakUI/Tokamak](https://github.com/TokamakUI/Tokamak)*
+SwiftUI 兼容，WebAssembly 构建 HTML
+Star：1555 Issue：93 开发语言：Swift
+SwiftUI-compatible framework for building browser apps with WebAssembly and native apps for other platforms
+
+*[johnsundell/publish](https://github.com/johnsundell/publish)*
+用 swift 来写网站
+Star：3793 Issue：25 开发语言：Swift
+A static site generator for Swift developers
+
+*[highlightjs/highlight.js](https://github.com/highlightjs/highlight.js)*
+语法高亮
+Star：19564 Issue：54 开发语言：JavaScript
+JavaScript syntax highlighter with language auto-detection and zero dependencies.
+
+*[sivan/heti](https://github.com/sivan/heti)*
+赫蹏（hètí）中文排版
+Star：4171 Issue：15 开发语言：SCSS
+赫蹏（hètí）是专为中文内容展示设计的排版样式增强。它基于通行的中文排版规范而来，可以为网站的读者带来更好的文章阅读体验。
+
+*[kevquirk/simple.css](https://github.com/kevquirk/simple.css)*
+简单大方基础 CSS 样式
+Star：1811 Issue：1 开发语言：CSS
+Simple.css is a classless CSS template that allows you to make a good looking website really quickly.
+
+*[mozilla-mobile/firefox-ios](https://github.com/mozilla-mobile/firefox-ios)*
+Star：10693 Issue：947 开发语言：Swift
+Firefox for iOS
+
+
+### 服务器
+
+*[vapor/vapor](https://github.com/vapor/vapor)*
+Star：21360 Issue：95 开发语言：Swift
+💧 A server-side Swift HTTP web framework.
+
+
+### 系统
+
+*[spevans/swift-project1](https://github.com/spevans/swift-project1)*
+Swift编写内核，可在 Mac 和 PC 启动
+Star：233 Issue：1 开发语言：Swift
+A minimal bare metal kernel in Swift
+
+
+### Web 3.0
+
+*[chaozh/awesome-blockchain-cn](https://github.com/chaozh/awesome-blockchain-cn)*
+区块链 awesome
+Star：16115 Issue：13 开发语言：JavaScript
+收集所有区块链(BlockChain)技术开发相关资料，包括Fabric和Ethereum开发资料
+
+
+### Apple
+
+*[apple/swift](https://github.com/apple/swift)*
+Star：58648 Issue：496 开发语言：C++
+The Swift Programming Language
+
+*[apple/swift-evolution](https://github.com/apple/swift-evolution)*
+提案
+Star：13055 Issue：40 开发语言：Markdown
+This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.
+
+*[apple/swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation)*
+Star：4512 Issue：32 开发语言：Swift
+The Foundation Project, providing core utilities, internationalization, and OS independence
+
+*[apple/swift-package-manager](https://github.com/apple/swift-package-manager)*
+Star：8660 Issue：22 开发语言：Swift
+The Package Manager for the Swift Programming Language
+
+*[apple/swift-markdown](https://github.com/apple/swift-markdown)*
+Star：1615 Issue：6 开发语言：Swift
+A Swift package for parsing, building, editing, and analyzing Markdown documents.
+
+*[apple/sourcekit-lsp](https://github.com/apple/sourcekit-lsp)*
+Star：2496 Issue：5 开发语言：Swift
+Language Server Protocol implementation for Swift and C-based languages
+
+*[apple/swift-nio](https://github.com/apple/swift-nio)*
+Star：6858 Issue：148 开发语言：Swift
+Event-driven network application framework for high performance protocol servers & clients, non-blocking.
+
+*[apple/swift-syntax](https://github.com/apple/swift-syntax)*
+解析、生成、转换 Swift 代码
+Star：1763 Issue：3 开发语言：Swift
+SwiftPM package for SwiftSyntax library.
+
+*[apple/swift-crypto](https://github.com/apple/swift-crypto)*
+CryptoKit 的开源实现
+Star：1169 Issue：10 开发语言：C
+Open-source implementation of a substantial portion of the API of Apple CryptoKit suitable for use on Linux platforms.
+
+*[apple/swift-driver](https://github.com/apple/swift-driver)*
+用 Swift 语言重新实现的编译器的驱动程序库
+Star：607 Issue：11 开发语言：Swift
+Swift compiler driver reimplementation in Swift
+
+*[apple/swift-numerics](https://github.com/apple/swift-numerics)*
+用简单的方式用浮点型进行数值计算
+Star：1337 Issue：43 开发语言：Swift
+Advanced mathematical types and functions for Swift
+
+*[apple/swift-atomics](https://github.com/apple/swift-atomics)*
+Swift 的低级原子操作
+Star：715 Issue：10 开发语言：Swift
+Low-level atomic operations for Swift
+
+
+### 计算机科学
+
+*[raywenderlich/swift-algorithm-club](https://github.com/raywenderlich/swift-algorithm-club)*
+Star：25933 Issue：50 开发语言：Swift
+Algorithms and data structures in Swift, with explanations!
+
+
+### 扩展知识
+
+*[trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)*
+Star：59575 Issue：57 开发语言：
+A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.
+
+*[rossant/awesome-math](https://github.com/rossant/awesome-math)*
+Star：5624 Issue：7 开发语言：Python
+A curated list of awesome mathematics resources
+
+
+### 待分类
+
+*[krzysztofzablocki/KZFileWatchers](https://github.com/krzysztofzablocki/KZFileWatchers)*
+Swift编写的观察本地或者网络上，比如网盘和FTP的文件变化
+Star：1010 Issue：2 开发语言：Swift
+A micro-framework for observing file changes, both local and remote. Helpful in building developer tools.
+
 
 
 
