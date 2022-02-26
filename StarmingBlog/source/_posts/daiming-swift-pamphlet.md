@@ -4,12 +4,18 @@ date: 2021-11-23 16:28:18
 tags: [iOS, Apple, Swift]
 categories: Programming
 ---
-update：内容已更新到 4.0 版本。十五万字的手册值得你来收藏！和分享，完美。
+update：内容已更新到 4.0 版本。
+
+> 新dyld源码透出近期苹果出新系统必然，依苹果 taste，势必要用好技术抛落后技术。漫漫长假我完善了Swift手册内容，字数达到十五万字，内容已压缩压缩再压缩，求全存简，more big, so small 。满满诚意，望有用、值得收藏、求转发。
+>
+> come on and learn (੭*ˊᵕˋ)੭
+>
+> -- 戴·代码之使徒·画终结者·被光选中的人·铭
 
 ## 背景说明
 越来越多同学打算开始用 Swift 来开发了，可很多人以前都没接触过 Swift。这篇和我以前文章不同的是，本篇只是面向 Swift 零基础的同学，内容主要是一些直接可用的小例子，例子可以直接在工程中用或自己调试着看。
 
-记得以前 PHP 有个 chm 的手册，写的很简单，但很全，每个知识点都有例子，社区版每个知识点下面还有留言互动。因此，我弄了个 Swift 的手册，是个 macOS 程序。建议使用我开发的这个 macOS 程序来浏览。源码地址：[KwaiAppTeam/SwiftPamphletApp](https://github.com/KwaiAppTeam/SwiftPamphletApp)，直接下载 dmg 地址：[戴铭的Swift小册子4.1.dmg.zip](https://github.com/KwaiAppTeam/SwiftPamphletApp/files/8040117/Swift.4.1.dmg.zip)
+记得以前 PHP 有个 chm 的手册，写的很简单，但很全，每个知识点都有例子，社区版每个知识点下面还有留言互动。因此，我弄了个 Swift 的手册，是个 macOS 程序。建议使用我开发的这个 macOS 程序来浏览。源码地址：[KwaiAppTeam/SwiftPamphletApp](https://github.com/KwaiAppTeam/SwiftPamphletApp)，直接下载 dmg 地址：[戴铭的开发小册子4.3.dmg.zip](https://github.com/KwaiAppTeam/SwiftPamphletApp/files/8055673/4.3.dmg.zip)
 
 ![](https://user-images.githubusercontent.com/251980/152918704-9522eb27-9304-4788-b4ed-72ffb170e1bc.png)
 
