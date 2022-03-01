@@ -40,6 +40,8 @@ categories: Programming
 
 *Swift 2.2*
 
+官方博客介绍：[Swift 2.2 Released!](https://swift.org/blog/swift-2.2-released/)、[New Features in Swift 2.2](https://swift.org/blog/swift-2.2-new-features/)、[Swift 2.2 Release Process](https://swift.org/blog/swift-2.2-release-process/)
+
 * __FILE__, __LINE__ 和 __FUNCTION__ 换成 #file，#line 和 #function。
 * 废弃 ++ 和 -- 操作符。
 * C 语言风格 for 循环废弃。
@@ -48,6 +50,8 @@ categories: Programming
 * 元组可直接比较是否相等。
 
 *Swift 3.0*
+
+官方博客介绍：[Swift 3.0 Released!](https://swift.org/blog/swift-3.0-released/)、[Swift 3.0 Preview 1 Released!](https://swift.org/blog/swift-3.0-preview-1-released/)、[Swift 3.0 Release Process](https://swift.org/blog/swift-3.0-release-process/)
 
 * 规范动词和名词来命名。
 * 去掉 NS 前缀。
@@ -58,11 +62,15 @@ categories: Programming
 
 *Swift 3.1*
 
+官方博客介绍：[Swift 3.1 Released!](https://swift.org/blog/swift-3.1-released/)、[Swift 3.1 Release Process](https://swift.org/blog/swift-3.1-release-process/)
+
 * 序列新增 prefix(while:) 和 drop(while:) 方法，顺序遍历执行闭包里的逻辑判断，满足条件就返回，遇到不匹配就会停止遍历。prefix 返回满足条件的元素集合，drop 返回停止遍历之后那些元素集合。
 * 泛型适用于嵌套类型。
 * 类型的扩展可以使用约束条件，比如扩展数组时，加上元素为整数的约束，这样的扩展就只会对元素为整数的数组有效。
 
 *Swift 4.0*
+
+官方博客介绍：[Swift 4.0 Released!](https://swift.org/blog/swift-4.0-released/)、[Swift 4 Release Process](https://swift.org/blog/swift-4.0-release-process/)
 
 * 加入 Codable 协议，更 Swifty 的编码和解码。提案 [SE-0167 Swift Encoders](https://github.com/apple/swift-evolution/blob/master/proposals/0167-swift-encoders.md)
 * 字符串加入三个双引号的支持，让多行字符串编写更加直观。提案 [SE-0168 Multi-Line String Literals](https://github.com/apple/swift-evolution/blob/master/proposals/0168-multi-line-string-literals.md)
@@ -73,6 +81,7 @@ categories: Programming
 
 *Swift 4.1*
 
+官方博客介绍：[Swift 4.1 Released!](https://swift.org/blog/swift-4.1-released/)、[Swift 4.1 Release Process](https://swift.org/blog/swift-4.1-release-process/)
 
 * Hashable 也不需要返回一个唯一的 hashValue 哈希值属性。
 * Equatable 和 Hashable 自动合成的提案参见 [SE-0185 Synthesizing Equatable and Hashable conformance](https://github.com/apple/swift-evolution/blob/master/proposals/0185-synthesize-equatable-hashable.md)。
@@ -86,6 +95,8 @@ categories: Programming
 
 *Swift 4.2*
 
+官方博客介绍：[Swift 4.2 Released!](https://swift.org/blog/swift-4.2-released/)、[Swift 4.2 Release Process](https://swift.org/blog/4.2-release-process/)
+
 * 新增动态成员查询，@dynamicMemberLookup 新属性，指示访问属性时调用一个已实现的处理动态查找的下标方法 subscript(dynamicMemeber:)，通过指定属性字符串名返回值。提案 [SE-0195 Introduce User-defined "Dynamic Member Lookup" Types](https://github.com/apple/swift-evolution/blob/master/proposals/0195-dynamic-member-lookup.md)
 * 集合新加 removeAll(where:) 方法，过滤满足条件所有元素。比 filter 更高效。提案 [SE-0197 Adding in-place removeAll(where:) to the Standard Library](https://github.com/apple/swift-evolution/blob/master/proposals/0197-remove-where.md)
 * 布尔值增加 toggle() 方法，用来切换布尔值。提案见 [SE-0199 Adding toggle to Bool](https://github.com/apple/swift-evolution/blob/master/proposals/0199-bool-toggle.md)
@@ -97,6 +108,8 @@ categories: Programming
 
 *Swift 5.0*
 
+官方博客介绍：[Swift 5 Released!](https://swift.org/blog/swift-5-released/)、[Swift 5.0 Release Process](https://swift.org/blog/5.0-release-process/)
+
 * @dynamicCallable 动态可调用类型。通过实现 dynamicallyCall 方法来定义变参的处理。提案 [SE-0216 Introduce user-defined dynamically "callable" types](https://github.com/apple/swift-evolution/blob/master/proposals/0216-dynamic-callable.md)
 * 新加 Result 类型用来处理错误。提案 [SE-0235 Add Result to the Standard Library](https://github.com/apple/swift-evolution/blob/master/proposals/0235-add-result.md)
 * 新增原始字符串能力，在字符串前加上一个或多个#符号。里面的双引号和转义符号将不再起作用了，如果想让转义符起作用，需要在转义符后面加上#符号。提案见 [SE-0200 Enhancing String Literals Delimiters to Support Raw Text](https://github.com/apple/swift-evolution/blob/master/proposals/0200-raw-string-escaping.md)
@@ -107,6 +120,8 @@ categories: Programming
 * isMultiple(of:) 方法检查一个数字是否是另一个数字的倍数。提案见 [SE-0225 Adding isMultiple to BinaryInteger](https://github.com/apple/swift-evolution/blob/master/proposals/0225-binaryinteger-iseven-isodd-ismultiple.md)
 
 *Swift 5.1*
+
+官方博客介绍：[Swift 5.1 Released!](https://swift.org/blog/swift-5.1-released/)、[Swift 5.1 Release Process](https://swift.org/blog/5.1-release-process/)
 
 * 有序集合的 diff，通过 difference(from:) 方法，可以返回要删除哪些和添加哪些项目能够让两个集合相等。提案 [SE-0240 Ordered Collection Diffing](https://github.com/apple/swift-evolution/blob/master/proposals/0240-ordered-collection-diffing.md)
 * 属性包装。提案 [SE-0258 Property Wrappers](https://github.com/apple/swift-evolution/blob/main/proposals/0258-property-wrappers.md)
@@ -120,10 +135,14 @@ categories: Programming
 
 *Swift 5.2*
 
+官方博客介绍：[Swift 5.2 Released!](https://swift.org/blog/swift-5.2-released/)、[Swift 5.2 Release Process](https://swift.org/blog/5.2-release-process/)
+
 * 自定义类型中实现了 callAsFunction() 的话，该类型的值就可以直接调用。提案 [SE-0253 Callable values of user-defined nominal types](https://github.com/apple/swift-evolution/blob/master/proposals/0253-callable.md)
 * 键路径表达式作为函数。提案 [SE-0249 Key Path Expressions as Functions](https://github.com/apple/swift-evolution/blob/master/proposals/0249-key-path-literal-function-expressions.md)
 
 *Swift 5.3*
+
+官方博客介绍：[Swift 5.3 released!](https://swift.org/blog/swift-5.3-released/)、[Swift 5.3 Release Process](https://swift.org/blog/5.3-release-process/)
 
 * SPM 包管理资源，SPM 可以包含资源文件，比如多媒体或文本等。通过 Bundle.module 访问这些资源。提案 [SE-0271 Package Manager Resources](https://github.com/apple/swift-evolution/blob/master/proposals/0271-package-manager-resources.md)
 * SPM 包里资源本地化。提案 [SE-0278 Package Manager Localized Resources](https://github.com/apple/swift-evolution/blob/master/proposals/0278-package-manager-localized-resources.md)
@@ -142,6 +161,8 @@ categories: Programming
 
 *Swift 5.4*
 
+官方博客介绍：[Swift 5.4 Released!](https://swift.org/blog/swift-5.4-released/)
+
 * SPM 支持 @main。提案见 [SE-0294 Declaring executable targets in Package Manifests](https://github.com/apple/swift-evolution/blob/main/proposals/0294-package-executable-targets.md)
 * 结果生成器（Result builders），通过传递序列创建新值，SwiftUI就是使用的结果生成器将多个视图生成一个视图。提案 [SE-0289 Result builders](https://github.com/apple/swift-evolution/blob/main/proposals/0289-result-builders.md)
 * 增强隐式成员语法，即使用了隐式的成员可以进行链式处理。提案见 [SE-0287 Extend implicit member syntax to cover chains of member references](https://github.com/apple/swift-evolution/blob/main/proposals/0287-implicit-member-chains.md)
@@ -150,6 +171,8 @@ categories: Programming
 * 属性包装支持局部变量。
 
 *Swift 5.5*
+
+官方博客介绍：[Swift 5.5 Released!](https://swift.org/blog/swift-5.5-released/)
 
 * Async await，用同步写法来处理异步。提案 [SE-0296 Async/await](https://github.com/apple/swift-evolution/blob/main/proposals/0296-async-await.md)
 * Async sequences，异步序列上的循环能力。符合 AsyncSequence 协议的序列可以通过 for await 来进行异步循环。提案见 [SE-0298 Async/Await: Sequences](https://github.com/apple/swift-evolution/blob/main/proposals/0298-asyncsequence.md) 
