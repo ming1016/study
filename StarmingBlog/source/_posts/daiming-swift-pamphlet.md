@@ -2603,6 +2603,8 @@ struct C: ParsableCommand {
 
 *Swift 2.2*
 
+官方博客介绍：[Swift 2.2 Released!](https://swift.org/blog/swift-2.2-released/)、[New Features in Swift 2.2](https://swift.org/blog/swift-2.2-new-features/)、[Swift 2.2 Release Process](https://swift.org/blog/swift-2.2-release-process/)
+
 * __FILE__, __LINE__ 和 __FUNCTION__ 换成 #file，#line 和 #function。
 * 废弃 ++ 和 -- 操作符。
 * C 语言风格 for 循环废弃。
@@ -2611,6 +2613,8 @@ struct C: ParsableCommand {
 * 元组可直接比较是否相等。
 
 *Swift 3.0*
+
+官方博客介绍：[Swift 3.0 Released!](https://swift.org/blog/swift-3.0-released/)、[Swift 3.0 Preview 1 Released!](https://swift.org/blog/swift-3.0-preview-1-released/)、[Swift 3.0 Release Process](https://swift.org/blog/swift-3.0-release-process/)
 
 * 规范动词和名词来命名。
 * 去掉 NS 前缀。
@@ -2621,11 +2625,15 @@ struct C: ParsableCommand {
 
 *Swift 3.1*
 
+官方博客介绍：[Swift 3.1 Released!](https://swift.org/blog/swift-3.1-released/)、[Swift 3.1 Release Process](https://swift.org/blog/swift-3.1-release-process/)
+
 * 序列新增 prefix(while:) 和 drop(while:) 方法，顺序遍历执行闭包里的逻辑判断，满足条件就返回，遇到不匹配就会停止遍历。prefix 返回满足条件的元素集合，drop 返回停止遍历之后那些元素集合。
 * 泛型适用于嵌套类型。
 * 类型的扩展可以使用约束条件，比如扩展数组时，加上元素为整数的约束，这样的扩展就只会对元素为整数的数组有效。
 
 *Swift 4.0*
+
+官方博客介绍：[Swift 4.0 Released!](https://swift.org/blog/swift-4.0-released/)、[Swift 4 Release Process](https://swift.org/blog/swift-4.0-release-process/)
 
 * 加入 Codable 协议，更 Swifty 的编码和解码。提案 [SE-0167 Swift Encoders](https://github.com/apple/swift-evolution/blob/master/proposals/0167-swift-encoders.md)
 * 字符串加入三个双引号的支持，让多行字符串编写更加直观。提案 [SE-0168 Multi-Line String Literals](https://github.com/apple/swift-evolution/blob/master/proposals/0168-multi-line-string-literals.md)
@@ -2636,6 +2644,7 @@ struct C: ParsableCommand {
 
 *Swift 4.1*
 
+官方博客介绍：[Swift 4.1 Released!](https://swift.org/blog/swift-4.1-released/)、[Swift 4.1 Release Process](https://swift.org/blog/swift-4.1-release-process/)
 
 * Hashable 也不需要返回一个唯一的 hashValue 哈希值属性。
 * Equatable 和 Hashable 自动合成的提案参见 [SE-0185 Synthesizing Equatable and Hashable conformance](https://github.com/apple/swift-evolution/blob/master/proposals/0185-synthesize-equatable-hashable.md)。
@@ -2649,6 +2658,8 @@ struct C: ParsableCommand {
 
 *Swift 4.2*
 
+官方博客介绍：[Swift 4.2 Released!](https://swift.org/blog/swift-4.2-released/)、[Swift 4.2 Release Process](https://swift.org/blog/4.2-release-process/)
+
 * 新增动态成员查询，@dynamicMemberLookup 新属性，指示访问属性时调用一个已实现的处理动态查找的下标方法 subscript(dynamicMemeber:)，通过指定属性字符串名返回值。提案 [SE-0195 Introduce User-defined "Dynamic Member Lookup" Types](https://github.com/apple/swift-evolution/blob/master/proposals/0195-dynamic-member-lookup.md)
 * 集合新加 removeAll(where:) 方法，过滤满足条件所有元素。比 filter 更高效。提案 [SE-0197 Adding in-place removeAll(where:) to the Standard Library](https://github.com/apple/swift-evolution/blob/master/proposals/0197-remove-where.md)
 * 布尔值增加 toggle() 方法，用来切换布尔值。提案见 [SE-0199 Adding toggle to Bool](https://github.com/apple/swift-evolution/blob/master/proposals/0199-bool-toggle.md)
@@ -2660,6 +2671,8 @@ struct C: ParsableCommand {
 
 *Swift 5.0*
 
+官方博客介绍：[Swift 5 Released!](https://swift.org/blog/swift-5-released/)、[Swift 5.0 Release Process](https://swift.org/blog/5.0-release-process/)
+
 * @dynamicCallable 动态可调用类型。通过实现 dynamicallyCall 方法来定义变参的处理。提案 [SE-0216 Introduce user-defined dynamically "callable" types](https://github.com/apple/swift-evolution/blob/master/proposals/0216-dynamic-callable.md)
 * 新加 Result 类型用来处理错误。提案 [SE-0235 Add Result to the Standard Library](https://github.com/apple/swift-evolution/blob/master/proposals/0235-add-result.md)
 * 新增原始字符串能力，在字符串前加上一个或多个#符号。里面的双引号和转义符号将不再起作用了，如果想让转义符起作用，需要在转义符后面加上#符号。提案见 [SE-0200 Enhancing String Literals Delimiters to Support Raw Text](https://github.com/apple/swift-evolution/blob/master/proposals/0200-raw-string-escaping.md)
@@ -2670,6 +2683,8 @@ struct C: ParsableCommand {
 * isMultiple(of:) 方法检查一个数字是否是另一个数字的倍数。提案见 [SE-0225 Adding isMultiple to BinaryInteger](https://github.com/apple/swift-evolution/blob/master/proposals/0225-binaryinteger-iseven-isodd-ismultiple.md)
 
 *Swift 5.1*
+
+官方博客介绍：[Swift 5.1 Released!](https://swift.org/blog/swift-5.1-released/)、[Swift 5.1 Release Process](https://swift.org/blog/5.1-release-process/)
 
 * 有序集合的 diff，通过 difference(from:) 方法，可以返回要删除哪些和添加哪些项目能够让两个集合相等。提案 [SE-0240 Ordered Collection Diffing](https://github.com/apple/swift-evolution/blob/master/proposals/0240-ordered-collection-diffing.md)
 * 属性包装。提案 [SE-0258 Property Wrappers](https://github.com/apple/swift-evolution/blob/main/proposals/0258-property-wrappers.md)
@@ -2683,10 +2698,14 @@ struct C: ParsableCommand {
 
 *Swift 5.2*
 
+官方博客介绍：[Swift 5.2 Released!](https://swift.org/blog/swift-5.2-released/)、[Swift 5.2 Release Process](https://swift.org/blog/5.2-release-process/)
+
 * 自定义类型中实现了 callAsFunction() 的话，该类型的值就可以直接调用。提案 [SE-0253 Callable values of user-defined nominal types](https://github.com/apple/swift-evolution/blob/master/proposals/0253-callable.md)
 * 键路径表达式作为函数。提案 [SE-0249 Key Path Expressions as Functions](https://github.com/apple/swift-evolution/blob/master/proposals/0249-key-path-literal-function-expressions.md)
 
 *Swift 5.3*
+
+官方博客介绍：[Swift 5.3 released!](https://swift.org/blog/swift-5.3-released/)、[Swift 5.3 Release Process](https://swift.org/blog/5.3-release-process/)
 
 * SPM 包管理资源，SPM 可以包含资源文件，比如多媒体或文本等。通过 Bundle.module 访问这些资源。提案 [SE-0271 Package Manager Resources](https://github.com/apple/swift-evolution/blob/master/proposals/0271-package-manager-resources.md)
 * SPM 包里资源本地化。提案 [SE-0278 Package Manager Localized Resources](https://github.com/apple/swift-evolution/blob/master/proposals/0278-package-manager-localized-resources.md)
@@ -2705,6 +2724,8 @@ struct C: ParsableCommand {
 
 *Swift 5.4*
 
+官方博客介绍：[Swift 5.4 Released!](https://swift.org/blog/swift-5.4-released/)
+
 * SPM 支持 @main。提案见 [SE-0294 Declaring executable targets in Package Manifests](https://github.com/apple/swift-evolution/blob/main/proposals/0294-package-executable-targets.md)
 * 结果生成器（Result builders），通过传递序列创建新值，SwiftUI就是使用的结果生成器将多个视图生成一个视图。提案 [SE-0289 Result builders](https://github.com/apple/swift-evolution/blob/main/proposals/0289-result-builders.md)
 * 增强隐式成员语法，即使用了隐式的成员可以进行链式处理。提案见 [SE-0287 Extend implicit member syntax to cover chains of member references](https://github.com/apple/swift-evolution/blob/main/proposals/0287-implicit-member-chains.md)
@@ -2713,6 +2734,8 @@ struct C: ParsableCommand {
 * 属性包装支持局部变量。
 
 *Swift 5.5*
+
+官方博客介绍：[Swift 5.5 Released!](https://swift.org/blog/swift-5.5-released/)
 
 * Async await，用同步写法来处理异步。提案 [SE-0296 Async/await](https://github.com/apple/swift-evolution/blob/main/proposals/0296-async-await.md)
 * Async sequences，异步序列上的循环能力。符合 AsyncSequence 协议的序列可以通过 for await 来进行异步循环。提案见 [SE-0298 Async/Await: Sequences](https://github.com/apple/swift-evolution/blob/main/proposals/0298-asyncsequence.md) 
@@ -2729,6 +2752,7 @@ struct C: ParsableCommand {
 * #if 用于后缀成员表达式。提案见 [SE-0308 #if for postfix member expressions](https://github.com/apple/swift-evolution/blob/main/proposals/0308-postfix-if-config-expressions.md)
 * CGFloat 和 Double 之间可以隐式转换。提案 [SE-0307 Allow interchangeable use of CGFloat and Double types](https://github.com/apple/swift-evolution/blob/main/proposals/0307-allow-interchangeable-use-of-double-cgfloat-types.md)
 * Codable 支持关联值枚举。提案 [SE-0295 Codable synthesis for enums with associated values](https://github.com/apple/swift-evolution/blob/main/proposals/0295-codable-synthesis-for-enums-with-associated-values.md)
+
 
 ### 规范
 
@@ -3047,6 +3071,52 @@ struct SPList: View {
 
 
 
+#### 全屏模式
+
+将 NSSplitView 里的其中一个 NSView 设置为全屏和退出全屏的函数如下：
+
+```swift
+// MARK: - 获取 NSSplitViewController
+func splitVC() -> NSSplitViewController {
+    return ((NSApp.keyWindow?.contentView?.subviews.first?.subviews.first?.subviews.first as? NSSplitView)?.delegate as? NSSplitViewController)!
+}
+
+// MARK: - 全屏
+func fullScreen(isEnter: Bool) {
+    if isEnter == true {
+        // 进入全屏
+        let presOptions:
+        NSApplication.PresentationOptions = ([.autoHideDock,.autoHideMenuBar])
+        let optionsDictionary = [NSView.FullScreenModeOptionKey.fullScreenModeApplicationPresentationOptions : NSNumber(value: presOptions.rawValue)]
+        
+        let v = splitVC().splitViewItems[2].viewController.view
+        v.enterFullScreenMode(NSScreen.main!, withOptions: optionsDictionary)
+        v.wantsLayer = true
+    } else {
+        // 退出全屏
+        NSApp.keyWindow?.contentView?.exitFullScreenMode()
+    } // end if
+}
+```
+
+使用方法
+
+```swift
+struct V: View {
+    @StateObject var appVM = AppVM()
+    @State var isEnterFullScreen: Bool = false // 全屏控制
+    var body: some View {
+        Button {
+            isEnterFullScreen.toggle()
+            appVM.fullScreen(isEnter: isEnterFullScreen)
+        } label: {
+            Image(systemName: isEnterFullScreen == true ? "arrow.down.right.and.arrow.up.left" : "arrow.up.left.and.arrow.down.right")
+        }
+    }
+}
+```
+
+
 #### 共享菜单
 
 ```swift
@@ -3204,7 +3274,7 @@ struct S {
 
  输出
  ```
- array: receive subscription: ([戴铭的Swift小册子.AppDelegate.(unknown context at $10ac82d20).(unknown context at $10ac82da4).S(p1: "1", p2: "one"), 戴铭的Swift小册子.AppDelegate.(unknown context at $10ac82d20).(unknown context at $10ac82da4).S(p1: "2", p2: "two")])
+ array: receive subscription: ([戴铭的开发小册子.AppDelegate.(unknown context at $10ac82d20).(unknown context at $10ac82da4).S(p1: "1", p2: "one"), 戴铭的开发小册子.AppDelegate.(unknown context at $10ac82d20).(unknown context at $10ac82da4).S(p1: "2", p2: "two")])
 array: request unlimited
 array: receive value: (S(p1: "1", p2: "one"))
 S(p1: "1", p2: "one")
@@ -3312,7 +3382,7 @@ ps1: request unlimited
 ps1: receive value: (S(p1: "1", p2: "one"))
 receive: S(p1: "1", p2: "one")
 ps1: receive error: (aE)
-completion: failure(戴铭的Swift小册子.AppDelegate.(unknown context at $10b15ce10).(unknown context at $10b15cf3c).CError.aE)
+completion: failure(戴铭的开发小册子.AppDelegate.(unknown context at $10b15ce10).(unknown context at $10b15cf3c).CError.aE)
 ps2 sb1: receive subscription: (PassthroughSubject)
 ps2 sb1: request unlimited
 ps2 sb1: receive value: (three)
@@ -3498,7 +3568,7 @@ sb.store(in: &cc)
 
 输出
 ```
-sb: receive subscription: ([戴铭的Swift小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher), 戴铭的Swift小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher), 戴铭的Swift小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher)])
+sb: receive subscription: ([戴铭的开发小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher), 戴铭的开发小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher), 戴铭的开发小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher)])
 sb: request unlimited
 sb: receive value: (S(p: AnyPublisher))
 one
@@ -3538,7 +3608,7 @@ pb.send(completion: .finished)
 
 输出
 ```
-sb: receive subscription: ([戴铭的Swift小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher), 戴铭的Swift小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher), 戴铭的Swift小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher)])
+sb: receive subscription: ([戴铭的开发小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher), 戴铭的开发小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher), 戴铭的开发小册子.AppDelegate.(unknown context at $101167070).(unknown context at $1011670f4).S(p: AnyPublisher)])
 sb: request unlimited
 sb: receive value: (S(p: AnyPublisher))
 one
@@ -4360,68 +4430,2966 @@ SwiftUI全部都是基于Swift的各大可提高开发效率特性完成的，�
 
 #### Text
 
-![](https://user-images.githubusercontent.com/251980/143826034-977a6d5e-f9f5-4ec3-90d0-f09281d64af6.png)
+基本用法
 
+![](https://user-images.githubusercontent.com/251980/154473546-94ba6f9f-2ce3-44ef-a7c6-60d86df8c90f.png)
+
+```swift
+// MARK: - Text
+struct PlayTextView: View {
+    let manyString = "这是一段长文。总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么吧。"
+    var body: some View {
+        ScrollView {
+            Group {
+                Text("大标题").font(.largeTitle)
+                Text("说点啥呢？")
+                    .tracking(30) // 字间距
+                    .kerning(30) // 尾部留白
+                Text("划重点")
+                    .underline()
+                    .foregroundColor(.yellow)
+                    .fontWeight(.heavy)
+                Text("可旋转的文字")
+                    .rotationEffect(.degrees(45))
+                    .fixedSize()
+                    .frame(width: 20, height: 80)
+                Text("自定义系统字体大小")
+                    .font(.system(size: 30))
+                Text("使用指定的字体")
+                    .font(.custom("Georgia", size: 24))
+            }
+            Group {
+                Text("有阴影")
+                    .font(.largeTitle)
+                    .foregroundColor(.orange)
+                    .bold()
+                    .italic()
+                    .shadow(color: .black, radius: 1, x: 0, y: 2)
+                Text("Gradient Background")
+                    .font(.largeTitle)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [.white, .black, .red]), startPoint: .top, endPoint: .bottom))
+                    .cornerRadius(10)
+                Text("Gradient Background")
+                    .padding(5)
+                    .foregroundColor(.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [.white, .black, .purple]), startPoint: .leading, endPoint: .trailing))
+                    .cornerRadius(10)
+                ZStack {
+                    Text("渐变透明材质风格")
+                        .padding()
+                        .background(
+                            .regularMaterial,
+                            in: RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        )
+                        .shadow(radius: 10)
+                        .padding()
+                        .font(.largeTitle.weight(.black))
+                }
+                .frame(width: 300, height: 200)
+                .background(
+                    LinearGradient(colors: [.yellow, .pink], startPoint: .topLeading, endPoint: .bottomTrailing)
+                )
+                Text("Angular Gradient Background")
+                    .padding()
+                    .background(AngularGradient(colors: [.red, .yellow, .green, .blue, .purple, .red], center: .center))
+                    .cornerRadius(20)
+                Text("带背景图片的")
+                    .padding()
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .background {
+                        Rectangle()
+                            .fill(Color(.black))
+                            .cornerRadius(10)
+                        Image("logo")
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                    }
+                    .frame(width: 200, height: 100)
+            }
+
+            Group {
+                // 设置 lineLimit 表示最多支持行数，依据情况依然有会被减少显示行数
+                Text(manyString)
+                    .lineLimit(3) // 对行的限制，如果多余设定行数，尾部会显示...
+                    .lineSpacing(10) // 行间距
+                    .multilineTextAlignment(.leading) // 对齐
+                
+                // 使用 fixedSize 就可以在任何时候完整显示
+                Text(manyString)
+                    .fixedSize(horizontal: false, vertical: true)
+                
+            }
+            
+            // 使用 AttributeString
+            PTextViewAttribute()
+                .padding()
+
+            // 使用 Markdown
+            PTextViewMarkdown()
+                .padding()
+            
+            // 时间
+            PTextViewDate()
+            
+            // 插值
+            PTextViewInterpolation()
+        }
+
+    }
+}
+```
+
+font 字体设置的样式对应 weight 和 size 可以在官方交互文档中查看 [Typography](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/#dynamic-type-sizes)
+
+markdown 使用
+```swift
+// MARK: - Markdown
+struct PTextViewMarkdown: View {
+    let mdaStr: AttributedString = {
+        
+        var mda = AttributedString(localized: "这是一个 **Attribute** ~string~")
+        
+        /// 自定义的属性语法是^[string](key：value)
+        mda = AttributedString(localized: "^[这是](p2:'one')^[一](p3:{k1:1,k2:2})个 **Attribute** ~string~", including: \.newScope)
+        print(mda)
+        /// 这是 {
+        ///     NSLanguage = en
+        ///     p2 = one
+        /// }
+        /// 一 {
+        ///     NSLanguage = en
+        ///     p3 = P3(k1: 1, k2: 2)
+        /// }
+        /// 个  {
+        ///     NSLanguage = en
+        /// }
+        /// Attribute {
+        ///     NSLanguage = en
+        ///     NSInlinePresentationIntent = NSInlinePresentationIntent(rawValue: 2)
+        /// }
+        ///   {
+        ///     NSLanguage = en
+        /// }
+        /// string {
+        ///     NSInlinePresentationIntent = NSInlinePresentationIntent(rawValue: 32)
+        ///     NSLanguage = en
+        /// }
+        
+        // 从文件中读取 Markdown 内容
+        let mdUrl = Bundle.main.url(forResource: "1", withExtension: "md")!
+        mda = try! AttributedString(contentsOf: mdUrl,options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace), baseURL: nil) // .inlineOnlyPreservingWhitespace 支持 markdown 文件的换行
+                
+        // Markdown 已转换成 AtrributedString 结构。
+        for r in mda.runs {
+            if let ipi = r.inlinePresentationIntent {
+                switch ipi {
+                case .lineBreak:
+                    print("paragrahp")
+                case .code:
+                    print("this is code")
+                default:
+                    break
+                }
+            }
+            if let pi = r.presentationIntent {
+                for c in pi.components {
+                    switch c.kind {
+                    case .paragraph:
+                        print("this is paragraph")
+                    case .codeBlock(let lang):
+                        print("this is \(lang ?? "") code")
+                    case .header(let level):
+                        print("this is \(level) level")
+                    default:
+                        break
+                    }
+                }
+            }
+        }
+        
+        return mda
+    }()
+    var body: some View {
+        Text(mdaStr)
+    }
+}
+```
+
+AttributedString 的使用
+```swift
+// MARK: - AttributedString
+struct PTextViewAttribute: View {
+    let aStr: AttributedString = {
+        var a1 = AttributedString("这是一个 ")
+        var c1 = AttributeContainer()
+        c1.font = .footnote
+        c1.foregroundColor = .secondary
+        a1.setAttributes(c1)
+        
+        var a2 = AttributedString("Attribute ")
+        var c2 = AttributeContainer()
+        c2.font = .title
+        a2.setAttributes(c2)
+        
+        var a3 = AttributedString("String ")
+        var c3 = AttributeContainer()
+        c3.baselineOffset = 10
+        c3.appKit.foregroundColor = .yellow // 仅在 macOS 里显示的颜色
+        c3.swiftUI.foregroundColor = .secondary
+        c3.font = .footnote
+        a3.setAttributes(c3)
+        // a3 使用自定义属性
+        a3.p1 = "This is a custom property."
+        
+        // formatter 的支持
+        var a4 = Date.now.formatted(.dateTime
+                                        .hour()
+                                        .minute()
+                                        .weekday()
+                                        .attributed
+        )
+        
+        let c4AMPM = AttributeContainer().dateField(.amPM)
+        let c4AMPMColor = AttributeContainer().foregroundColor(.green)
+        
+        a4.replaceAttributes(c4AMPM, with: c4AMPMColor)
+        let c4Week = AttributeContainer().dateField(.weekday)
+        let c4WeekColor = AttributeContainer().foregroundColor(.purple)
+        a4.replaceAttributes(c4Week, with: c4WeekColor)
+        
+        a1.append(a2)
+        a1.append(a3)
+        a1.append(a4)
+        
+        
+        
+        // Runs 视图
+        for r in a1.runs {
+            print(r)
+        }
+        /// 这是一个  {
+        ///     SwiftUI.Font = Font(provider: SwiftUI.(unknown context at $7ff91d4a5e90).FontBox<SwiftUI.Font.(unknown context at $7ff91d4ad5d8).TextStyleProvider>)
+        ///     SwiftUI.ForegroundColor = secondary
+        /// }
+        /// Attribute  {
+        ///     SwiftUI.Font = Font(provider: SwiftUI.(unknown context at $7ff91d4a5e90).FontBox<SwiftUI.Font.(unknown context at $7ff91d4ad5d8).TextStyleProvider>)
+        /// }
+        /// String  {
+        ///     SwiftUI.ForegroundColor = secondary
+        ///     SwiftUI.BaselineOffset = 10.0
+        ///     NSColor = sRGB IEC61966-2.1 colorspace 1 1 0 1
+        ///     SwiftUI.Font = Font(provider: SwiftUI.(unknown context at $7ff91d4a5e90).FontBox<SwiftUI.Font.(unknown context at $7ff91d4ad5d8).TextStyleProvider>)
+        ///     p1 = This is a custom property.
+        /// }
+        /// Tue {
+        ///     SwiftUI.ForegroundColor = purple
+        /// }
+        ///   {
+        /// }
+        /// 5 {
+        ///     Foundation.DateFormatField = hour
+        /// }
+        /// : {
+        /// }
+        /// 16 {
+        ///     Foundation.DateFormatField = minute
+        /// }
+        ///   {
+        /// }
+        /// PM {
+        ///     SwiftUI.ForegroundColor = green
+        /// }
+        
+        return a1
+    }()
+    var body: some View {
+        Text(aStr)
+    }
+}
+
+// MARK: - 自定 AttributedString 属性
+struct PAKP1: AttributedStringKey {
+    typealias Value = String
+    static var name: String = "p1"
+    
+    
+}
+struct PAKP2: CodableAttributedStringKey, MarkdownDecodableAttributedStringKey {
+    public enum P2: String, Codable {
+        case one, two, three
+    }
+
+    static var name: String = "p2"
+    typealias Value = P2
+}
+struct PAKP3: CodableAttributedStringKey, MarkdownDecodableAttributedStringKey {
+    public struct P3: Codable, Hashable {
+        let k1: Int
+        let k2: Int
+    }
+    typealias Value = P3
+    static var name: String = "p3"
+}
+extension AttributeScopes {
+    public struct NewScope: AttributeScope {
+        let p1: PAKP1
+        let p2: PAKP2
+        let p3: PAKP3
+    }
+    var newScope: NewScope.Type {
+        NewScope.self
+    }
+}
+
+extension AttributeDynamicLookup{
+    subscript<T>(dynamicMember keyPath:KeyPath<AttributeScopes.NewScope,T>) -> T where T:AttributedStringKey {
+        self[T.self]
+    }
+}
+```
+
+
+时间的显示
+
+```swift
+// MARK: - 时间
+struct PDateTextView: View {
+    let date: Date = Date()
+    let df: DateFormatter = {
+        let df = DateFormatter()
+        df.dateStyle = .long
+        df.timeStyle = .short
+        return df
+    }()
+    var dv: String {
+        return df.string(from: date)
+    }
+    var body: some View {
+        HStack {
+            Text(dv)
+        }
+        .environment(\.locale, Locale(identifier: "zh_cn"))
+    }
+}
+```
+
+插值使用
+
+```swift
+// MARK: - 插值
+struct PTextViewInterpolation: View {
+    let nf: NumberFormatter = {
+        let f = NumberFormatter()
+        f.numberStyle = .currencyPlural
+        return f
+    }()
+    var body: some View {
+        VStack {
+            Text("图文 \(Image(systemName: "sun.min"))")
+            Text("💰 \(999 as NSNumber, formatter: nf)")
+                .environment(\.locale, Locale(identifier: "zh_cn"))
+            Text("数组： \(["one", "two"])")
+            Text("红字：\(red: "变红了")，带图标的字：\(sun: "天晴")")
+        }
+    }
+}
+
+// 扩展 LocalizedStringKey.StringInterpolation 自定义插值
+extension LocalizedStringKey.StringInterpolation {
+    // 特定类型处理
+    mutating func appendInterpolation(_ value: [String]) {
+        for s in value {
+            appendLiteral(s + "")
+            appendInterpolation(Text(s + " ").bold().foregroundColor(.secondary))
+        }
+    }
+    
+    // 实现不同情况处理，可以简化设置修改器设置
+    mutating func appendInterpolation(red value: LocalizedStringKey) {
+        appendInterpolation(Text(value).bold().foregroundColor(.red))
+    }
+    mutating func appendInterpolation(sun value: String) {
+        appendInterpolation(Image(systemName: "sun.max.fill"))
+        appendLiteral(value)
+    }
+}
+```
+
+
+
+#### Link
+
+使用方法如下：
+
+```swift
+struct PlayLinkView: View {
+    @Environment(\.openURL) var openURL
+    var aStr: AttributedString {
+        var a = AttributedString("戴铭的博客")
+        a.link = URL(string: "https://ming1016.github.io/")
+        return a
+    }
+    var body: some View {
+        VStack {
+            // 普通
+            Link("前往 www.starming.com", destination: URL(string: "http://www.starming.com")!)
+                .buttonStyle(.borderedProminent)
+            Link(destination: URL(string: "https://twitter.com/daiming_cn")!) {
+                Label("My Twitter", systemImage: "message.circle.fill")
+            }
+            
+            // AttributedString 链接
+            Text(aStr)
+            
+            // markdown 链接
+            Text("[Go Ming's GitHub](https://github.com/ming1016)")
+            
+            // 控件使用 OpenURL
+            Link("小册子源码", destination: URL(string: "https://github.com/KwaiAppTeam/SwiftPamphletApp")!)
+                .environment(\.openURL, OpenURLAction { url in
+                    return .systemAction
+                    /// return .handled 不会返回系统打开浏览器动作，只会处理 return 前的事件。
+                    /// .discard 和 .handled 类似。
+                    /// .systemAction(URL(string: "https://www.anotherurl.com")) 可以返回另外一个 url 来替代指定的url
+                })
+            
+            // 扩展 View 后更简洁的使用 OpenURL
+            Link("戴铭的微博", destination: URL(string: "https://weibo.com/allstarming")!)
+                .goOpenURL { url in
+                    print(url.absoluteString)
+                    return .systemAction
+                }
+            
+            // 根据内容返回不同链接
+            Text("戴铭博客有好几个，存在[GitHub Page](github)、[自建服务器](starming)和[知乎](zhihu)上")
+                .environment(\.openURL, OpenURLAction { url in
+                    switch url.absoluteString {
+                    case "github":
+                        return .systemAction(URL(string: "https://ming1016.github.io/")!)
+                    case "starming":
+                        return .systemAction(URL(string: "http://www.starming.com")!)
+                    case "zhihu":
+                        return .systemAction(URL(string: "https://www.zhihu.com/people/starming/posts")!)
+                    default:
+                        return .handled
+                    }
+                })
+        } // end VStack
+        .padding()
+        
+    }
+    
+    // View 支持 openURL 的能力
+    func goUrl(_ url: URL, done: @escaping (_ accepted: Bool) -> Void) {
+        openURL(url, completion: done)
+    }
+}
+
+// 为 View 扩展一个 OpenURL 方法
+extension View {
+    func goOpenURL(done: @escaping (URL) -> OpenURLAction.Result) -> some View {
+        environment(\.openURL, OpenURLAction(handler: done))
+    }
+}
+```
+
+View 的 onOpenURL 方法可以处理 Universal Links。
+
+```swift
+struct V: View {
+    var body: some View {
+        VStack {
+            Text("hi")
+        }
+        .onOpenURL { url in
+            print(url.absoluteString)
+        }
+    }
+}
+```
+
+#### Label
+
+![](https://user-images.githubusercontent.com/251980/154474725-d696d50b-9da7-4a0d-808f-07894a9597cb.png)
+
+```swift
+struct PlayLabelView: View {
+    var body: some View {
+        VStack(spacing: 10) {
+            Label("一个 Label", systemImage: "bolt.circle")
+            
+            Label("只显示 icon", systemImage: "heart.fill")
+                .labelStyle(.iconOnly)
+                .foregroundColor(.red)
+            
+            // 自建 Label
+            Label {
+                Text("自建 Label")
+                    .foregroundColor(.orange)
+                    .bold()
+                    .font(.largeTitle)
+                    .shadow(color: .black, radius: 1, x: 0, y: 2)
+            } icon: {
+                Image("p3")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 30)
+                    .shadow(color: .black, radius: 1, x: 0, y: 2)
+            }
+
+            
+            // 自定义 LabelStyle
+            Label("有边框的 Label", systemImage: "b.square.fill")
+                .labelStyle(.border)
+            
+            Label("仅标题有边框", systemImage: "text.bubble")
+                .labelStyle(.borderOnlyTitle)
+            
+            // 扩展的 Label
+            Label("扩展的 Label", originalSystemImage: "cloud.sun.bolt.fill")
+            
+        } // end VStack
+    } // end body
+}
+
+// 对 Label 做扩展
+extension Label where Title == Text, Icon == Image {
+    init(_ title: LocalizedStringKey, originalSystemImage systemImageString: String) {
+        self.init {
+            Text(title)
+        } icon: {
+            Image(systemName: systemImageString)
+                .renderingMode(.original) // 让 SFSymbol 显示本身的颜色
+        }
+
+    }
+}
+
+// 添加自定义 LabelStyle，用来加上边框
+struct BorderLabelStyle: LabelStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Label(configuration)
+            .padding()
+            .overlay(RoundedRectangle(cornerRadius: 20)
+                        .stroke(.purple, lineWidth: 4))
+            .shadow(color: .black, radius: 4, x: 0, y: 5)
+            .labelStyle(.automatic) // 样式擦除器，防止样式被 .iconOnly、.titleOnly 这样的 LabelStyle 擦除了样式。
+                        
+    }
+}
+extension LabelStyle where Self == BorderLabelStyle {
+    internal static var border: BorderLabelStyle {
+        BorderLabelStyle()
+    }
+}
+
+// 只给标题加边框
+struct BorderOnlyTitleLabelStyle: LabelStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        HStack {
+            configuration.icon
+            configuration.title
+                .padding()
+                .overlay(RoundedRectangle(cornerRadius: 20)
+                            .stroke(.pink, lineWidth: 4))
+                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                .labelStyle(.automatic)
+        }
+    }
+}
+extension LabelStyle where Self == BorderOnlyTitleLabelStyle {
+    internal static var borderOnlyTitle: BorderOnlyTitleLabelStyle {
+        BorderOnlyTitleLabelStyle()
+    }
+}
+```
+
+
+#### TextEditor
+
+![](https://user-images.githubusercontent.com/251980/154667163-e906dfd4-074e-4c04-9c80-94af86df4ba6.png)
+
+对应的代码如下：
 
 ```swift
 import SwiftUI
+import CodeEditorView
 
-struct TextView: View {
+struct PlayTextEditorView: View {
+    // for TextEditor
+    @State private var txt: String = "一段可编辑文字...\n"
+    @State private var count: Int = 0
+    
+    // for CodeEditorView
+    @Environment(\.colorScheme) private var colorScheme: ColorScheme
+    @State private var codeMessages: Set<Located<Message>> = Set ()
+    @SceneStorage("editLocation") private var editLocation: CodeEditor.Location = CodeEditor.Location()
     var body: some View {
-        Group {
-            Text("大标题").font(.largeTitle)
-            Text("说点啥呢？")
-                .tracking(30) // 字间距
-                .kerning(30) // 尾部留白
-            Text("划重点")
-                .underline()
-                .foregroundColor(.yellow)
-            Text("可旋转的文字")
-                .rotationEffect(.degrees(45))
-                .fixedSize()
-                .frame(width: 20, height: 80)
+        
+        // 使用 SwiftUI 自带 TextEditor
+        TextEditor(text: $txt)
+            .font(.title)
+            .lineSpacing(10)
+            .disableAutocorrection(true)
+            .padding()
+            .onChange(of: txt) { newValue in
+                count = txt.count
+            }
+        Text("字数：\(count)")
+            .foregroundColor(.secondary)
+            .font(.footnote)
+        
+        // 使用的 CodeEditorView 显示和编辑代码高亮的代码，还有 minimap
+        CodeEditor(text: .constant("""
+static func number() {
+    // Int
+    let i1 = 100
+    let i2 = 22
+    print(i1 / i2) // 向下取整得 4
+
+    // Float
+    let f1: Float = 100.0
+    let f2: Float = 22.0
+    print(f1 / f2) // 4.5454545
+    
+    let f4: Float32 = 5.0
+    let f5: Float64 = 5.0
+    print(f4, f5) // 5.0 5.0 5.0
+
+    // Double
+    let d1: Double = 100.0
+    let d2: Double = 22.0
+    print(d1 / d2) // 4.545454545454546
+
+    // 字面量
+    print(Int(0b10101)) // 0b 开头是二进制
+    print(Int(0x00afff)) // 0x 开头是十六进制
+    print(2.5e4) // 2.5x10^4 十进制用 e
+    print(0xAp2) // 10*2^2  十六进制用 p
+    print(2_000_000) // 2000000
+    
+    // isMultiple(of:) 方法检查一个数字是否是另一个数字的倍数
+    let i3 = 36
+    print(i3.isMultiple(of: 9)) // true
+}
+"""),
+                   messages: $codeMessages,
+                   language: .swift,
+                   layout: CodeEditor.LayoutConfiguration(showMinimap: true)
+        )
+            .environment(\.codeEditorTheme, colorScheme == .dark ? Theme.defaultDark : Theme.defaultLight)
+        
+        // 包装的 NSTextView
+        HSplitView {
+            PNSTextView(text: .constant("左边写...\n"), onDidChange: { (s, i) in
+                print("Typing \(i) times.")
+            })
+                .padding()
+            PNSTextView(text: .constant("右边写...\n"))
+                .padding()
+        } // end HSplitView
+    } // end body
+}
+
+// MARK: - 自己包装 NSTextView
+struct PNSTextView: NSViewRepresentable {
+    @Binding var text: String
+    var onBeginEditing: () -> Void = {}
+    var onCommit: () -> Void = {}
+    var onDidChange: (String, Int) -> Void = { _,_  in }
+    
+    // 返回要包装的 NSView
+    func makeNSView(context: Context) -> PNSTextConfiguredView {
+        let t = PNSTextConfiguredView(text: text)
+        t.delegate = context.coordinator
+        return t
+    }
+    
+    func updateNSView(_ view: PNSTextConfiguredView, context: Context) {
+        view.text = text
+        view.selectedRanges = context.coordinator.sRanges
+    }
+    
+    // 回调
+    func makeCoordinator() -> TextViewDelegate {
+        TextViewDelegate(self)
+    }
+}
+
+// 处理 delegate 回调
+extension PNSTextView {
+    class TextViewDelegate: NSObject, NSTextViewDelegate {
+        var tView: PNSTextView
+        var sRanges: [NSValue] = []
+        var typeCount: Int = 0
+        
+        init(_ v: PNSTextView) {
+            self.tView = v
         }
-        Group {
-            Text("有阴影")
-                .bold()
-                .italic()
-                .shadow(color: .primary, radius: 1, x: 0, y: 2)
-            Text("Gradient Background")
-                .font(.largeTitle)
-                .padding()
-                .foregroundColor(.white)
-                .background(LinearGradient(gradient: Gradient(colors: [.white, .black, .red]), startPoint: .top, endPoint: .bottom))
-                .cornerRadius(10)
-            Text("Gradient Background")
-                .padding(5)
-                .foregroundColor(.white)
-                .background(LinearGradient(gradient: Gradient(colors: [.white, .black, .purple]), startPoint: .leading, endPoint: .trailing))
-                .cornerRadius(10)
-            Text("Angular Gradient Background")
-                .padding()
-                .background(AngularGradient(colors: [.red, .yellow, .green, .blue, .purple, .red], center: .center))
-                .cornerRadius(20)
-            Text("带背景图片的")
-                .padding()
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .background {
-                    Rectangle()
-                        .fill(Color(.black))
-                        .cornerRadius(10)
-                    Image("logo")
-                        .resizable()
-                        .frame(width: 100, height: 100)
-                }
-                .frame(width: 200, height: 100)
+        // 开始编辑
+        func textDidBeginEditing(_ notification: Notification) {
+            guard let textView = notification.object as? NSTextView else {
+                return
+            }
+            self.tView.text = textView.string
+            self.tView.onBeginEditing()
         }
+        // 每次敲字
+        func textDidChange(_ notification: Notification) {
+            guard let textView = notification.object as? NSTextView else {
+                return
+            }
+            typeCount += 1
+            self.tView.text = textView.string
+            self.sRanges = textView.selectedRanges
+            self.tView.onDidChange(textView.string, typeCount)
+        }
+        // 提交
+        func textDidEndEditing(_ notification: Notification) {
+            guard let textView = notification.object as? NSTextView else {
+                return
+            }
+            self.tView.text = textView.string
+            self.tView.onCommit()
+        }
+    }
+}
+
+// 配置 NSTextView
+final class PNSTextConfiguredView: NSView {
+    weak var delegate: NSTextViewDelegate?
+    
+    private lazy var tv: NSTextView = {
+        let contentSize = sv.contentSize
+        let textStorage = NSTextStorage()
+        
+        let layoutManager = NSLayoutManager()
+        textStorage.addLayoutManager(layoutManager)
+        
+        let textContainer = NSTextContainer(containerSize: sv.frame.size)
+        textContainer.widthTracksTextView = true
+        textContainer.containerSize = NSSize(
+            width: contentSize.width,
+            height: CGFloat.greatestFiniteMagnitude
+        )
+        
+        layoutManager.addTextContainer(textContainer)
+        
+        let t = NSTextView(frame: .zero, textContainer: textContainer)
+        t.delegate = self.delegate
+        t.isEditable = true
+        t.allowsUndo = true
+        
+        t.font = .systemFont(ofSize: 24)
+        t.textColor = NSColor.labelColor
+        t.drawsBackground = true
+        t.backgroundColor = NSColor.textBackgroundColor
+        
+        t.maxSize = NSSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+        t.minSize = NSSize(width: 0, height: contentSize.height)
+        t.autoresizingMask = .width
+
+        t.isHorizontallyResizable = false
+        t.isVerticallyResizable   = true
+        
+        return t
+    }()
+    
+    private lazy var sv: NSScrollView = {
+        let s = NSScrollView()
+        s.drawsBackground = true
+        s.borderType = .noBorder
+        s.hasVerticalScroller = true
+        s.hasHorizontalRuler = false
+        s.translatesAutoresizingMaskIntoConstraints = false
+        s.autoresizingMask = [.width, .height]
+        return s
+    }()
+    
+    var text: String {
+        didSet {
+            tv.string = text
+        }
+    }
+    
+    var selectedRanges: [NSValue] = [] {
+        didSet {
+            guard selectedRanges.count > 0 else {
+                return
+            }
+            tv.selectedRanges = selectedRanges
+        }
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("Error coder")
+    }
+    
+    init(text: String) {
+        self.text = text
+        super.init(frame: .zero)
+    }
+    
+    override func viewWillDraw() {
+        super.viewWillDraw()
+        sv.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(sv)
+        NSLayoutConstraint.activate([
+            sv.topAnchor.constraint(equalTo: topAnchor),
+            sv.trailingAnchor.constraint(equalTo: trailingAnchor),
+            sv.bottomAnchor.constraint(equalTo: bottomAnchor),
+            sv.leadingAnchor.constraint(equalTo: leadingAnchor)
+        ])
+        sv.documentView = tv
+    } // end viewWillDraw
+
+}
+```
+
+SwiftUI 中用 NSView，可以通过 NSViewRepresentable 来包装视图，这个协议主要是实现 makeNSView、updateNSView 和 makeCoordinator 三个方法。makeNSView 要求返回需要包装的 NSView。每当 SwiftUI 的状态变化时触发 updateNSView 方法的调用。为了实现 NSView 里的 delegate 和 SwiftUI 通信，就要用 makeCoordinator 返回一个用于处理 delegate 的实例。
+
+
+#### TextField
+
+![](https://user-images.githubusercontent.com/251980/154916174-2e9b1bd8-992a-485e-803a-07da59d0c7e3.png)
+
+使用方法如下：
+
+```swift
+struct PlayTextFieldView: View {
+    @State private var t = "Starming"
+    @State private var showT = ""
+    @State private var isEditing = false
+    var placeholder = "输入些文字..."
+    
+    @FocusState private var isFocus: Bool
+    
+    var body: some View {
+        VStack {
+            TextField(placeholder, text: $t)
             
-        Group {
-            Text("这是一段长文。总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么，总得说点什么吧。")
-                .lineLimit(3) // 对行的限制，如果多余设定行数，尾部会显示...
-                .lineSpacing(10) // 行间距
-                .multilineTextAlignment(.leading) // 对齐
-        }    
+            // 样式设置
+            TextField(placeholder, text: $t)
+                .padding(10)
+                .textFieldStyle(.roundedBorder) // textFieldStyle 有三个预置值 automatic、plain 和 roundedBorder。
+                .multilineTextAlignment(.leading) // 对齐方式
+                .font(.system(size: 14, weight: .heavy, design: .rounded))
+                .border(.teal, width: 4)
+                .background(.white)
+                .foregroundColor(.brown)
+                .textCase(.uppercase)
+
+            // 多视图组合
+            HStack {
+                Image(systemName: "lock.circle")
+                    .foregroundColor(.gray).font(.headline)
+                TextField(placeholder, text: $t)
+                    .textFieldStyle(.plain)
+                    .submitLabel(.done)
+                    .onSubmit {
+                        showT = t
+                        isFocus = true
+                    }
+                    .onChange(of: t) { newValue in
+                        t = String(newValue.prefix(20)) // 限制字数
+                    }
+                Image(systemName: "eye.slash")
+                    .foregroundColor(.gray)
+                    .font(.headline)
+            }
+            .padding()
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(.gray, lineWidth: 1)
+            )
+            .padding(.horizontal)
+
+            Text(showT)
+
+
+            // 自定义 textFieldStyle 样式
+            TextField(placeholder, text: $t)
+                .textFieldStyle(PClearTextStyle())
+                .focused($isFocus)
+        }
+        .padding()
+    } // end body
+}
+
+struct PClearTextStyle: TextFieldStyle {
+    @ViewBuilder
+    func _body(configuration: TextField<_Label>) -> some View {
+        let mirror = Mirror(reflecting: configuration)
+        let bindingText: Binding<String> = mirror.descendant("_text") as! Binding<String>
+        configuration
+            .overlay(alignment: .trailing) {
+                Button(action: {
+                    bindingText.wrappedValue = ""
+                }, label: {
+                    Image(systemName: "clear")
+                })
+            }
+        
+        let text: String = mirror.descendant("_text", "_value") as! String
+        configuration
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 16)
+                    .strokeBorder(text.count > 10 ? .pink : .gray, lineWidth: 4)
+            )
+    } // end func
+}
+```
+
+目前iOS 和 iPadOS上支持的键盘有：
+
+* asciiCapable：能显示标准 ASCII 字符的键盘
+* asciiCapableNumberPad：只输出 ASCII 数字的数字键盘
+* numberPad：用于输入 PIN 码的数字键盘
+* numbersAndPunctuation：数字和标点符号的键盘
+* decimalPad：带有数字和小数点的键盘
+* phonePad：电话中使用的键盘
+* namePhonePad：用于输入人名或电话号码的小键盘
+* URL：用于输入URL的键盘
+* emailAddress：用于输入电子邮件地址的键盘
+* twitter：用于Twitter文本输入的键盘，支持@和#字符简便输入
+* webSearch：用于网络搜索词和URL输入的键盘
+
+可以通过 keyboardType 修改器来指定。
+
+
+#### Button
+
+![](https://user-images.githubusercontent.com/251980/155062538-108a79b4-3e5c-417b-867a-3f7e58316664.png)
+
+```swift
+struct PlayButtonView: View {
+    var asyncAction: () async -> Void = {
+        do {
+            try await Task.sleep(nanoseconds: 300_000_000)
+        } catch {}
+    }
+    @State private var isFollowed: Bool = false
+    var body: some View {
+        VStack {
+            // 常用方式
+            Button {
+                print("Clicked")
+            } label: {
+                Image(systemName: "ladybug.fill")
+                Text("Report Bug")
+            }
+
+            // 图标
+            Button(systemIconName: "ladybug.fill") {
+                print("bug")
+            }
+            .buttonStyle(.plain) // 无背景
+            .simultaneousGesture(LongPressGesture().onEnded({ _ in
+                print("长按") // macOS 暂不支持
+            }))
+            .simultaneousGesture(TapGesture().onEnded({ _ in
+                print("短按") // macOS 暂不支持
+            }))
+            
+            
+            // iOS 15 修改器的使用。role 在 macOS 上暂不支持
+            Button("要删除了", role: .destructive) {
+                print("删除")
+            }
+            .tint(.purple)
+            .controlSize(.large) // .regular 是默认大小
+            .buttonStyle(.borderedProminent) // borderedProminent 可显示 tint 的设置。还有 bordered、plain 和 borderless 可选。
+            .clipShape(RoundedRectangle(cornerRadius: 5))
+            .accentColor(.pink)
+            .buttonBorderShape(.automatic) // 会依据 controlSize 调整边框样式
+            .background(.ultraThinMaterial, in: Capsule()) // 添加材质就像在视图和背景间加了个透明层达到模糊的效果。效果由高到底分别是.ultraThinMaterial、.thinMaterial、.regularMaterial、.thickMaterial、.ultraThickMaterial。
+            
+            // 风格化
+            Button(action: {
+                //
+            }, label: {
+                Text("风格化").font(.largeTitle)
+            })
+            .buttonStyle(PStarmingButtonStyle())
+            
+            
+            // 自定义 Button
+            PCustomButton("点一下触发") {
+                print("Clicked!")
+            }
+            
+            // 自定义 ButtonStyle
+            Button {
+                print("Double Clicked!")
+            } label: {
+                Text("点两下触发")
+            }
+            .buttonStyle(PCustomPrimitiveButtonStyle())
+
+            // 将 Text 视图加上另一个 Text 视图中，类型仍还是 Text。
+            PCustomButton(Text("点我 ").underline() + Text("别犹豫").font(.title) + Text("🤫悄悄说声，有惊喜").font(.footnote).foregroundColor(.secondary)) {
+                print("多 Text 组合标题按钮点击！")
+            }
+            
+            // 异步按钮
+            ButtonAsync {
+                await asyncAction()
+                isFollowed = true
+            } label: {
+                if isFollowed == true {
+                    Text("已关注")
+                } else {
+                    Text("关注")
+                }
+            }
+            .font(.largeTitle)
+            .disabled(isFollowed)
+            .buttonStyle(PCustomButtonStyle(backgroundColor: isFollowed == true ? .gray : .pink))
+        }
+        .padding()
+        .background(Color.skeumorphismBG)
+        
+    }
+}
+
+// MARK: - 异步操作的按钮
+struct ButtonAsync<Label: View>: View {
+    var doAsync: () async -> Void
+    @ViewBuilder var label: () -> Label
+    @State private var isRunning = false // 避免连续点击造成重复执行事件
+    
+    var body: some View {
+        Button {
+            isRunning = true
+            Task {
+                await doAsync()
+                isRunning = false
+            }
+        } label: {
+            label().opacity(isRunning == true ? 0 : 1)
+            if isRunning == true {
+                ProgressView()
+            }
+        }
+        .disabled(isRunning)
+
+    }
+}
+
+// MARK: - 扩展 Button
+// 使用 SFSymbol 做图标
+extension Button where Label == Image {
+    init(systemIconName: String, done: @escaping () -> Void) {
+        self.init(action: done) {
+            Image(systemName: systemIconName)
+                .renderingMode(.original)
+        }
+    }
+}
+
+// MARK: - 自定义 Button
+struct PCustomButton: View {
+    let desTextView: Text
+    let act: () -> Void
+    
+    init(_ des: LocalizedStringKey, act: @escaping () -> Void) {
+        self.desTextView = Text(des)
+        self.act = act
+    }
+    
+    var body: some View {
+        Button {
+            act()
+        } label: {
+            desTextView.bold()
+        }
+        .buttonStyle(.starming)
+    }
+}
+
+extension PCustomButton {
+    init(_ desTextView: Text, act: @escaping () -> Void) {
+        self.desTextView = desTextView
+        self.act = act
+    }
+}
+
+// 点语法使用自定义样式
+extension ButtonStyle where Self == PCustomButtonStyle {
+    static var starming: PCustomButtonStyle {
+        PCustomButtonStyle(cornerRadius: 15)
+    }
+}
+
+
+// MARK: - ButtonStyle
+struct PCustomButtonStyle: ButtonStyle {
+    var cornerRadius:Double = 10
+    var backgroundColor: Color = .pink
+    func makeBody(configuration: Configuration) -> some View {
+        HStack {
+            Spacer()
+            configuration.label
+            Spacer()
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                .fill(backgroundColor)
+                .shadow(color: configuration.isPressed ? .white : .black, radius: 1, x: 0, y: 1)
+        )
+        .opacity(configuration.isPressed ? 0.5 : 1)
+        .scaleEffect(configuration.isPressed ? 0.99 : 1)
+        
+    }
+}
+
+// MARK: - PrimitiveButtonStyle
+struct PCustomPrimitiveButtonStyle: PrimitiveButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        // 双击触发
+        configuration.label
+            .onTapGesture(count: 2) {
+                configuration.trigger()
+            }
+        // 手势识别
+        Button(configuration)
+            .gesture(
+                LongPressGesture()
+                    .onEnded({ _ in
+                        configuration.trigger()
+                    })
+            )
+    }
+}
+
+// MARK: - 风格化
+struct PStarmingButtonStyle: ButtonStyle {
+    var backgroundColor = Color.skeumorphismBG
+    func makeBody(configuration: Configuration) -> some View {
+        HStack {
+            Spacer()
+            configuration.label
+            Spacer()
+        }
+        .padding(20)
+        .background(
+            ZStack {
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .shadow(color: .white, radius: configuration.isPressed ? 7 : 10, x: configuration.isPressed ? -5 : -10, y: configuration.isPressed ? -5 : -10)
+                    .shadow(color: .black, radius: configuration.isPressed ? 7 : 10, x: configuration.isPressed ? 5 : 10, y: configuration.isPressed ? 5 : 10)
+                    .blendMode(.overlay)
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .fill(backgroundColor)
+            }
+        )
+        .scaleEffect(configuration.isPressed ? 0.98 : 1)
+    }
+}
+
+extension Color {
+    static let skeumorphismBG = Color(hex: "f0f0f3")
+}
+
+extension Color {
+    init(hex: String) {
+        var rgbValue: UInt64 = 0
+        Scanner(string: hex).scanHexInt64(&rgbValue)
+
+        let r = (rgbValue & 0xff0000) >> 16
+        let g = (rgbValue & 0xff00) >> 8
+        let b = rgbValue & 0xff
+
+        self.init(red: Double(r) / 0xff, green: Double(g) / 0xff, blue: Double(b) / 0xff)
+    }
+}
+```
+
+
+#### ProgressView
+
+![](https://user-images.githubusercontent.com/251980/155676571-726c15d1-e4a2-4493-8fb0-c37c1c61c88c.jpeg)
+
+用 ProgressViewStyle 协议，可以创建自定义的进度条视图。在 WatchOS 上会多一个 Guage 视图。
+
+```swift
+struct PlayProgressView: View {
+    @State private var v: CGFloat = 0.0
+    var body: some View {
+        VStack {
+            // 默认旋转
+            ProgressView()
+            
+            // 有进度条
+            ProgressView(value: v / 100)
+                .tint(.yellow)
+            
+            ProgressView(value: v / 100) {
+                Image(systemName: "music.note.tv")
+            }
+            .progressViewStyle(CircularProgressViewStyle(tint: .pink))
+            
+            // 自定义样式
+            ProgressView(value: v / 100)
+                .padding(.vertical)
+                .progressViewStyle(PCProgressStyle1(borderWidth: 3))
+            
+            ProgressView(value: v / 100)
+                .progressViewStyle(PCProgressStyle2())
+                .frame(height:200)
+            
+            Slider(value: $v, in: 0...100, step: 1)
+        }
+        .padding(20)
+    }
+}
+
+// 自定义 Progress 样式
+struct PCProgressStyle1: ProgressViewStyle {
+    var lg = LinearGradient(colors: [.purple, .black, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+    var borderWidth: Double = 2
+    
+    func makeBody(configuration: Configuration) -> some View {
+        let fc = configuration.fractionCompleted ?? 0
+        
+        return VStack {
+            ZStack(alignment: .topLeading) {
+                GeometryReader { g in
+                    Rectangle()
+                        .fill(lg)
+                        .frame(maxWidth: g.size.width * CGFloat(fc))
+                }
+            }
+            .frame(height: 20)
+            .cornerRadius(10)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lg, lineWidth: borderWidth)
+            )
+            // end ZStack
+        } // end VStack
+    }
+}
+
+struct PCProgressStyle2: ProgressViewStyle {
+    var lg = LinearGradient(colors: [.orange, .yellow, .green, .blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+    
+    var borderWidth: Double = 20
+    
+    func makeBody(configuration: Configuration) -> some View {
+        let fc = configuration.fractionCompleted ?? 0
+        
+        func strokeStyle(_ g: GeometryProxy) -> StrokeStyle {
+            StrokeStyle(lineWidth: 0.1 * min(g.size.width, g.size.height), lineCap: .round)
+        }
+        
+        return VStack {
+            GeometryReader { g in
+                ZStack {
+                    Group {
+                        Circle()
+                            .trim(from: 0, to: 1)
+                            .stroke(lg, style: strokeStyle(g))
+                            .padding(borderWidth)
+                            .opacity(0.2)
+                        Circle()
+                            .trim(from: 0, to: fc)
+                            .stroke(lg, style: strokeStyle(g))
+                            .padding(borderWidth)
+                    }
+                    .rotationEffect(.degrees(90 + 360 * 0.5), anchor: .center)
+                    .offset(x: 0, y: 0.1 * min(g.size.width, g.size.height))
+                }
+                
+                Text("读取 \(Int(fc * 100)) %")
+                    .bold()
+                    .font(.headline)
+            }
+            // end ZStack
+        } // end VStack
+    }
+}
+```
+
+
+#### Image
+
+![](https://user-images.githubusercontent.com/251980/155683776-0f0acdee-c7c1-44e3-a68b-38f778863821.png)
+
+```swift
+struct PlayImageView: View {
+    var body: some View {
+        Image("logo")
+            .resizable()
+            .frame(width: 100, height: 100)
+        
+        Image("logo")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 50, height: 50)
+            .clipShape(Circle())
+            .overlay(
+                Circle().stroke(.cyan, lineWidth: 4)
+            )
+            .shadow(radius: 10)
+        
+        // SF Symbols
+        Image(systemName: "scissors")
+            .imageScale(.large)
+            .foregroundColor(.pink)
+            .frame(width: 40, height: 40)
+        
+        // SF Symbols 多色时使用原色
+        Image(systemName: "thermometer.sun.fill")
+            .renderingMode(.original)
+            .imageScale(.large)
+    }
+}
+```
+
+
+#### ControlGroup
+
+```swift
+struct PlayControlGroupView: View {
+    var body: some View {
+        ControlGroup {
+            Button {
+                print("plus")
+            } label: {
+                Image(systemName: "plus")
+            }
+
+            Button {
+                print("minus")
+            } label: {
+                Image(systemName: "minus")
+            }
+        }
+        .padding()
+        .controlGroupStyle(.automatic) // .automatic 是默认样式，还有 .navigation
+    }
+}
+```
+
+
+#### GroupBox
+
+![](https://user-images.githubusercontent.com/251980/155317172-dc137c38-64d0-415a-8412-e3f479f2bd91.png)
+
+```swift
+struct PlayGroupBoxView: View {
+    var body: some View {
+        GroupBox {
+            Text("这是 GroupBox 的内容")
+        } label: {
+            Label("标题一", systemImage: "t.square.fill")
+        }
+        .padding()
+        
+        GroupBox {
+            Text("还是 GroupBox 的内容")
+        } label: {
+            Label("标题二", systemImage: "t.square.fill")
+        }
+        .padding()
+        .groupBoxStyle(PCGroupBoxStyle())
+
+    }
+}
+
+struct PCGroupBoxStyle: GroupBoxStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        VStack(alignment: .leading) {
+            configuration.label
+                .font(.title)
+            configuration.content
+        }
+        .padding()
+        .background(.pink)
+        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+    }
+}
+```
+
+
+
+#### Stack
+
+Stack View 有 VStack、HStack 和 ZStack
+
+![](https://user-images.githubusercontent.com/251980/155077158-f6efd3bb-4b82-48ac-b5e6-792dd833dfda.jpeg)
+
+```swift
+struct PlayStackView: View {
+    var body: some View {
+        // 默认是 VStack 竖排
+        
+        // 横排
+        HStack {
+            Text("左")
+            Spacer()
+            Text("右")
+        }
+        .padding()
+        
+        // Z 轴排
+        ZStack(alignment: .top) {
+            Image("logo")
+            Text("戴铭的开发小册子")
+                .font(.title)
+                .bold()
+                .foregroundColor(.white)
+                .shadow(color: .black, radius: 1, x: 0, y: 2)
+                .padding()
+        }
+        
+        Color.cyan
+            .cornerRadius(10)
+            .frame(width: 100, height: 100)
+            .overlay(
+                Text("一段文字")
+            )
+    }
+}
+```
+
+
+#### NavigationView
+
+![](https://user-images.githubusercontent.com/251980/155517358-4e5d54b8-0284-4fde-bf09-4b5e22e0e9a5.jpeg)
+
+对应代码如下：
+
+```swift
+struct PlayNavigationView: View {
+    let lData = 1...10
+    var body: some View {
+        NavigationView {
+            ZStack {
+                LinearGradient(colors: [.pink, .orange], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
+                
+                List(lData, id: \.self) { i in
+                    NavigationLink {
+                        PNavDetailView(contentStr: "\(i)")
+                    } label: {
+                        Text("\(i)")
+                    }
+                }
+            }
+            
+            ZStack {
+                LinearGradient(colors: [.mint, .yellow], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
+                
+                VStack {
+                    Text("一个 NavigationView 的示例")
+                        .bold()
+                        .font(.largeTitle)
+                        .shadow(color: .white, radius: 9, x: 0, y: 0)
+                        .scaleEffect(2)
+                }
+            }
+            .safeAreaInset(edge: .bottom) {
+                HStack {
+                    Button("bottom1") {}
+                    .font(.headline)
+                    Button("bottom2") {}
+                    Button("bottom3") {}
+                    Spacer()
+                }
+                .padding(5)
+                .background(LinearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+            }
+        }
+        .foregroundColor(.white)
+        .navigationTitle("数字列表")
+        .toolbar {
+            // placement 共有 keyboard、destructiveAction、cancellationAction、confirmationAction、status、primaryAction、navigation、principal、automatic 这些
+            ToolbarItem(placement: .primaryAction) {
+                Button("primaryAction") {}
+                .background(.ultraThinMaterial)
+                .font(.headline)
+            }
+            // 通过 ToolbarItemGroup 可以简化相同位置 ToolbarItem 的编写。
+            ToolbarItemGroup(placement: .navigation) {
+                Button("返回") {}
+                Button("前进") {}
+            }
+            PCToolbar(doDestruct: {
+                print("删除了")
+            }, doCancel: {
+                print("取消了")
+            }, doConfirm: {
+                print("确认了")
+            })
+            ToolbarItem(placement: .status) {
+                Button("status") {}
+            }
+            ToolbarItem(placement: .principal) {
+                Button("principal") {
+                    
+                }
+            }
+            ToolbarItem(placement: .keyboard) {
+                Button("Touch Bar Button") {}
+            }
+        } // end toolbar
+    }
+}
+
+// MARK: - NavigationView 的目的页面
+struct PNavDetailView: View {
+    @Environment(\.presentationMode) var pMode: Binding<PresentationMode>
+    var contentStr: String
+    var body: some View {
+        ZStack {
+            LinearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+                .ignoresSafeArea()
+            VStack {
+                Text(contentStr)
+                Button("返回") {
+                    pMode.wrappedValue.dismiss()
+                }
+            }
+        } // end ZStack
+    } // end body
+}
+
+// MARK: - 自定义 toolbar
+// 通过 ToolbarContent 创建可重复使用的 toolbar 组
+struct PCToolbar: ToolbarContent {
+    let doDestruct: () -> Void
+    let doCancel: () -> Void
+    let doConfirm: () -> Void
+    
+    var body: some ToolbarContent {
+        ToolbarItem(placement: .destructiveAction) {
+            Button("删除", action: doDestruct)
+        }
+        ToolbarItem(placement: .cancellationAction) {
+            Button("取消", action: doCancel)
+        }
+        ToolbarItem(placement: .confirmationAction) {
+            Button("确定", action: doConfirm)
+        }
+    }
+}
+```
+
+toolbar 的位置设置可选项如下：
+
+* primaryAction：放置到最主要位置，macOS 就是放在 toolbar 的最左边
+* automatic：根据平台不同放到默认位置
+* confirmationAction：一些确定的动作
+* cancellationAction：取消动作
+* destructiveAction：删除的动作
+* status：状态变化，比如检查更新等动作
+* navigation：导航动作，比如浏览器的前进后退
+* principal：突出的位置，iOS 和 macOS 会出现在中间的位置
+* keyboard：macOS 会出现在 Touch Bar 里。iOS 会出现在弹出的虚拟键盘上。
+
+
+#### List
+
+![](https://user-images.githubusercontent.com/251980/155293565-d85080c1-2304-491b-be72-20aa921f7067.jpeg)
+
+List 除了能够展示数据外，还有下拉刷新、过滤搜索和侧滑 Swipe 动作提供更多 Cell 操作的能力。
+
+通过 List 的可选子项参数提供数据模型的关键路径来制定子项路劲，还可以实现大纲视图，使用 DisclosureGroup 和 OutlineGroup  可以进一步定制大纲视图。
+
+下面是 List 使用，包括了 DisclosureGroup 和 OutlineGroup 的演示代码：
+
+```swift
+struct PlayListView: View {
+    @StateObject var l: PLVM = PLVM()
+    @State private var s: String = ""
+    
+    var outlineModel = [
+        POutlineModel(title: "文件夹一", iconName: "folder.fill", children: [
+            POutlineModel(title: "个人", iconName: "person.crop.circle.fill"),
+            POutlineModel(title: "群组", iconName: "person.2.circle.fill"),
+            POutlineModel(title: "加好友", iconName: "person.badge.plus")
+        ]),
+        POutlineModel(title: "文件夹二", iconName: "folder.fill", children: [
+            POutlineModel(title: "晴天", iconName: "sun.max.fill"),
+            POutlineModel(title: "夜间", iconName: "moon.fill"),
+            POutlineModel(title: "雨天", iconName: "cloud.rain.fill", children: [
+                POutlineModel(title: "雷加雨", iconName: "cloud.bolt.rain.fill"),
+                POutlineModel(title: "太阳雨", iconName: "cloud.sun.rain.fill")
+            ])
+        ]),
+        POutlineModel(title: "文件夹三", iconName: "folder.fill", children: [
+            POutlineModel(title: "电话", iconName: "phone"),
+            POutlineModel(title: "拍照", iconName: "camera.circle.fill"),
+            POutlineModel(title: "提醒", iconName: "bell")
+        ])
+    ]
+    
+    var body: some View {
+        HStack {
+            // List 通过$语法可以将集合的元素转换成可绑定的值
+            List {
+                ForEach($l.ls) { $d in
+                    PRowView(s: d.s, i: d.i)
+                        .listRowInsets(EdgeInsets(top: 5, leading: 15, bottom: 5, trailing: 15))
+                        .listRowBackground(Color.black.opacity(0.2))
+                }
+            }
+            .refreshable {
+                // 下拉刷新
+            }
+            .searchable(text: $s) // 搜索
+            .onChange(of: s) { newValue in
+                print("搜索关键字：\(s)")
+            }
+            
+            Divider()
+            
+            // 自定义 List
+            VStack {
+                PCustomListView($l.ls) { $d in
+                    PRowView(s: d.s, i: d.i)
+                }
+                // 添加数据
+                Button {
+                    l.ls.append(PLModel(s: "More", i: 0))
+                } label: {
+                    Text("添加")
+                }
+            }
+            .padding()
+            
+            Divider()
+            
+            // 使用大纲
+            List(outlineModel, children: \.children) { i in
+                Label(i.title, systemImage: i.iconName)
+            }
+            
+            Divider()
+            
+            // 自定义大纲视图
+            VStack {
+                Text("可点击标题展开")
+                    .font(.headline)
+                PCOutlineListView(d: outlineModel, c: \.children) { i in
+                    Label(i.title, systemImage: i.iconName)
+                }
+            }
+            .padding()
+            
+            Divider()
+            
+            // 使用 OutlineGroup 实现大纲视图
+            VStack {
+                Text("OutlineGroup 实现大纲")
+                
+                OutlineGroup(outlineModel, children: \.children) { i in
+                    Label(i.title, systemImage: i.iconName)
+                }
+                
+                // OutlineGroup 和 List 结合
+                Text("OutlineGroup 和 List 结合")
+                List {
+                    ForEach(outlineModel) { s in
+                        Section {
+                            OutlineGroup(s.children ?? [], children: \.children) { i in
+                                Label(i.title, systemImage: i.iconName)
+                            }
+                        } header: {
+                            Label(s.title, systemImage: s.iconName)
+                        }
+
+                    } // end ForEach
+                } // end List
+            } // end VStack
+        } // end HStack
+    } // end body
+}
+
+// MARK: - 自定义大纲视图
+struct PCOutlineListView<D, Content>: View where D: RandomAccessCollection, D.Element: Identifiable, Content: View {
+    private let v: PCOutlineView<D, Content>
+    
+    init(d: D, c: KeyPath<D.Element, D?>, content: @escaping (D.Element) -> Content) {
+        self.v = PCOutlineView(d: d, c: c, content: content)
+    }
+    
+    var body: some View {
+        List {
+            v
+        }
+    }
+}
+
+struct PCOutlineView<D, Content>: View where D: RandomAccessCollection, D.Element: Identifiable, Content: View {
+    let d: D
+    let c: KeyPath<D.Element, D?>
+    let content: (D.Element) -> Content
+    @State var isExpanded = true // 控制初始是否展开的状态
+    
+    var body: some View {
+        ForEach(d) { i in
+            if let sub = i[keyPath: c] {
+                PCDisclosureGroup(content: PCOutlineView(d: sub, c: c, content: content), label: content(i))
+            } else {
+                content(i)
+            } // end if
+        } // end ForEach
+    } // end body
+}
+
+struct PCDisclosureGroup<C, L>: View where C: View, L: View {
+    @State var isExpanded = false
+    var content: C
+    var label: L
+    var body: some View {
+        DisclosureGroup(isExpanded: $isExpanded) {
+            content
+        } label: {
+            Button {
+                isExpanded.toggle()
+            } label: {
+                label
+            }
+            .buttonStyle(.plain)
+        }
+    }
+}
+
+// MARK: - 大纲模式数据模型
+struct POutlineModel: Hashable, Identifiable {
+    var id = UUID()
+    var title: String
+    var iconName: String
+    var children: [POutlineModel]?
+}
+
+// MARK: - List 的抽象，数据兼容任何集合类型
+struct PCustomListView<D: RandomAccessCollection & MutableCollection & RangeReplaceableCollection, Content: View>: View where D.Element: Identifiable {
+    @Binding var data: D
+    var content: (Binding<D.Element>) -> Content
+    
+    init(_ data: Binding<D>, content: @escaping (Binding<D.Element>) -> Content) {
+        self._data = data
+        self.content = content
+    }
+    
+    var body: some View {
+        List {
+            Section {
+                ForEach($data, content: content)
+                    .onMove { indexSet, offset in
+                        data.move(fromOffsets: indexSet, toOffset: offset)
+                    }
+                    .onDelete { indexSet in
+                        data.remove(atOffsets: indexSet) // macOS 暂不支持
+                    }
+            } header: {
+                Text("第一栏，共 \(data.count) 项")
+            } footer: {
+                Text("The End")
+            }
+        }
+        .listStyle(.plain) // 有.automatic、.inset、.plain、sidebar，macOS 暂不支持的有.grouped 和 .insetGrouped
+    }
+}
+
+// MARK: - Cell 视图
+struct PRowView: View {
+    var s: String
+    var i: Int
+    var body: some View {
+        HStack {
+            Text("\(i)：")
+            Text(s)
+        }
+    }
+}
+
+// MARK: - 数据模型设计
+struct PLModel: Hashable, Identifiable {
+    let id = UUID()
+    var s: String
+    var i: Int
+}
+
+final class PLVM: ObservableObject {
+    @Published var ls: [PLModel]
+    init() {
+        ls = [PLModel]()
+        for i in 0...20 {
+            ls.append(PLModel(s: "\(i)", i: i))
+        }
+    }
+}
+```
+
+
+#### LazyVStack 和 LazyHStack
+
+LazyVStack 和 LazyHStack 里的视图只有在滚到时才会被创建。
+
+```swift
+struct PlayLazyVStackAndLazyHStackView: View {
+    var body: some View {
+        ScrollView {
+            LazyVStack {
+                ForEach(1...300, id: \.self) { i in
+                    PLHSRowView(i: i)
+                }
+            }
+        }
+    }
+}
+
+struct PLHSRowView: View {
+    let i: Int
+    var body: some View {
+        Text("第 \(i) 个")
+    }
+    init(i: Int) {
+        print("第 \(i) 个初始化了") // 用来查看什么时候创建的。
+        self.i = i
+    }
+}
+```
+
+
+#### LazyVGrid 和 LazyHGrid
+
+![](https://user-images.githubusercontent.com/251980/155708552-35396dcd-f120-4498-a793-a65abd68c0a6.jpeg)
+
+列的设置有三种，这三种也可以组合用。
+
+* GridItem(.fixed(10)) 会固定设置有多少列。
+* GridItem(.flexible()) 会充满没有使用的空间。
+* GridItem(.adaptive(minimum: 10)) 表示会根据设置大小自动设置有多少列展示。
+
+示例：
+
+```swift
+struct PlayLazyVGridAndLazyHGridView: View {
+    @State private var colors: [String:Color] = [
+        "red" : .red,
+        "orange" : .orange,
+        "yellow" : .yellow,
+        "green" : .green,
+        "mint" : .mint,
+        "teal" : .teal,
+        "cyan" : .cyan,
+        "blue" : .blue,
+        "indigo" : .indigo,
+        "purple" : .purple,
+        "pink" : .pink,
+        "brown" : .brown,
+        "gray" : .gray,
+        "black" : .black
+    ]
+    
+    var body: some View {
+        ScrollView {
+            LazyVGrid(columns: [
+                GridItem(.adaptive(minimum: 50), spacing: 10)
+            ], pinnedViews: [.sectionHeaders]) {
+                Section(header:
+                            Text("🎨调色板")
+                            .font(.title)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(RoundedRectangle(cornerRadius: 0)
+                                                .fill(.black.opacity(0.1)))
+                ) {
+                    ForEach(Array(colors.keys), id: \.self) { k in
+                        colors[k].frame(height:Double(Int.random(in: 50...150)))
+                            .overlay(
+                                Text(k)
+                            )
+                            .shadow(color: .black, radius: 2, x: 0, y: 2)
+                    }
+                }
+            }
+            .padding()
+            
+            LazyVGrid(columns: [
+                GridItem(.adaptive(minimum: 20), spacing: 10)
+            ]) {
+                Section(header: Text("图标集").font(.title)) {
+                    ForEach(1...30, id: \.self) { i in
+                        Image("p\(i)")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .shadow(color: .black, radius: 2, x: 0, y: 2)
+                    }
+                }
+            }
+            .padding()
+        }
+    }
+}
+```
+
+
+#### ScrollView
+
+ScrollView 使用 scrollTo 可以直接滚动到指定的位置。ScrollView 还可以透出偏移量，利用偏移量可以定义自己的动态视图，比如向下向上滚动视图时有不同效果，到顶部显示标题视图等。
+
+示例代码如下：
+
+```swift
+struct PlayScrollView: View {
+    @State private var scrollOffset: CGFloat = .zero
+    
+    var infoView: some View {
+        GeometryReader { g in
+            Text("移动了 \(Double(scrollOffset).formatted(.number.precision(.fractionLength(1)).rounded()))")
+                .padding()
+        }
+    }
+    
+    var body: some View {
+        // 标准用法
+        ScrollViewReader { s in
+            ScrollView {
+                ForEach(0..<300) { i in
+                    Text("\(i)")
+                        .id(i)
+                }
+            }
+            Button("跳到150") {
+                withAnimation {
+                    s.scrollTo(150, anchor: .top)
+                }
+            } // end Button
+        } // end ScrollViewReader
+        
+        // 自定义的 ScrollView 透出 offset 供使用
+        ZStack {
+            PCScrollView {
+                ForEach(0..<100) { i in
+                    Text("\(i)")
+                }
+            } whenMoved: { d in
+                scrollOffset = d
+            }
+            infoView
+            
+        } // end ZStack
+    } // end body
+}
+
+// MARK: - 自定义 ScrollView
+struct PCScrollView<C: View>: View {
+    let c: () -> C
+    let whenMoved: (CGFloat) -> Void
+    
+    init(@ViewBuilder c: @escaping () -> C, whenMoved: @escaping (CGFloat) -> Void) {
+        self.c = c
+        self.whenMoved = whenMoved
+    }
+    
+    var offsetReader: some View {
+        GeometryReader { g in
+            Color.clear
+                .preference(key: OffsetPreferenceKey.self, value: g.frame(in: .named("frameLayer")).minY)
+        }
+        .frame(height:0)
+    }
+    
+    var body: some View {
+        ScrollView {
+            offsetReader
+            c()
+                .padding(.top, -8)
+        }
+        .coordinateSpace(name: "frameLayer")
+        .onPreferenceChange(OffsetPreferenceKey.self, perform: whenMoved)
+    } // end body
+}
+
+private struct OffsetPreferenceKey: PreferenceKey {
+  static var defaultValue: CGFloat = .zero
+  static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {}
+}
+```
+
+#### 浮层
+
+![](https://user-images.githubusercontent.com/251980/156135869-7451bbc9-95b9-445f-8721-66f0aedbed70.png)
+
+浮层有 HUD、ContextMenu、Sheet、Alert、ConfirmationDialog、Popover、ActionSheet 等几种方式。这些方式实现代码如下：
+
+```swift
+struct PlaySuperposedLayerView: View {
+    @StateObject var hudVM = PHUDVM()
+    @State private var isShow = false
+    @State private var isShowAlert = false
+    @State private var isShowConfirmationDialog = false
+    @State private var isShowPopover = false
+    
+    var body: some View {
+        VStack {
+            
+            
+            List {
+                ForEach(0..<100) { i in
+                    Text("\(i)")
+                        .contextMenu {
+                            // 在 macOS 上右键会出现的菜单
+                            Button {
+                                print("\(i) is clicked")
+                            } label: {
+                                Text("Click \(i)")
+                            }
+                        }
+                }
+            }
+            .navigationTitle("列表")
+            .toolbar {
+                ToolbarItemGroup(placement: .automatic) {
+                    Button("查看 Sheet") {
+                        isShow = true
+                    }
+                    
+                    Button("查看 Alert") {
+                        isShowAlert = true
+                    }
+                    
+                    Button("查看 confirmationDialog", role: .destructive) {
+                        isShowConfirmationDialog = true
+                    }
+                    
+                    // Popover 样式默认是弹出窗口置于按钮上方，指向底部。
+                    Button("查看 Popover") {
+                        isShowPopover = true
+                    }
+                    .popover(isPresented: $isShowPopover, attachmentAnchor: .point(.trailing), arrowEdge: .trailing) {
+                        Text("Popover 的内容")
+                            .padding()
+                    }
+                    
+                } // end ToolbarItemGroup
+            } // end toolbar
+            .alert(isPresented: $isShowAlert) {
+                Alert(title: Text("弹框标题"), message: Text("弹框内容"))
+            }
+            .sheet(isPresented: $isShow) {
+                print("dismiss")
+            } content: {
+                VStack {
+                    Label("Sheet", systemImage: "brain.head.profile")
+                    Button("关闭") {
+                        isShow = false
+                    }
+                }
+                .padding(20)
+            }
+            .confirmationDialog("确定删除？", isPresented: $isShowConfirmationDialog, titleVisibility: .hidden) {
+                Button("确定") {
+                    // do good thing
+                }
+                .keyboardShortcut(.defaultAction) // 使用 keyboardShortcut 可以设置成为默认选项样式
+                
+                Button("不不", role: .cancel) {
+                    // good choice
+                }
+                
+            } message: {
+                Text("这个东西还有点重要哦")
+            }
+            
+            Button {
+                hudVM.show(title: "您有一条新的短消息", systemImage: "ellipsis.bubble")
+            } label: {
+                Label("查看 HUD", systemImage: "switch.2")
+            }
+            .padding()
+        }
+        .environmentObject(hudVM)
+        .hud(isShow: $hudVM.isShow) {
+            Label(hudVM.title, systemImage: hudVM.systemImage)
+        }
+    }
+}
+
+// MARK: - 供全局使用的 HUD
+final class PHUDVM: ObservableObject {
+    @Published var isShow: Bool = false
+    var title: String = ""
+    var systemImage: String = ""
+    
+    func show(title: String, systemImage: String) {
+        self.title = title
+        self.systemImage = systemImage
+        withAnimation {
+            isShow = true
+        }
+    }
+}
+
+// MARK: - 扩展 View 使其能够有 HUD 的能力
+extension View {
+    func hud<V: View>(
+        isShow: Binding<Bool>,
+        @ViewBuilder v: () -> V
+    ) -> some View {
+        ZStack(alignment: .top) {
+            self
+            
+            if isShow.wrappedValue == true {
+                PHUD(v: v)
+                    .transition(AnyTransition.move(edge: .top).combined(with: .opacity))
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            withAnimation {
+                                isShow.wrappedValue = false
+                            }
+                        }
+                    }
+                    .zIndex(1)
+                    .padding()
+            }
+        }
+    }
+}
+
+// MARK: - 自定义 HUD
+struct PHUD<V: View>: View {
+    @ViewBuilder let v: V
+    
+    var body: some View {
+        v
+            .padding()
+            .foregroundColor(.black)
+            .background(
+                Capsule()
+                    .foregroundColor(.white)
+                    .shadow(color: .black.opacity(0.2), radius: 12, x: 0, y: 5)
+            )
+    }
+}
+```
+
+
+#### TabView
+
+```swift
+struct PlayTabView: View {
+    @State private var selection = 0
+    
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            TabView(selection: $selection) {
+                Text("one")
+                    .tabItem {
+                        Text("首页")
+                            .hidden()
+                    }
+                    .tag(0)
+                Text("two")
+                    .tabItem {
+                        Text("二栏")
+                    }
+                    .tag(1)
+                Text("three")
+                    .tabItem {
+                        Text("三栏")
+                    }
+                    .tag(2)
+                Text("four")
+                    .tag(3)
+                Text("five")
+                    .tag(4)
+                Text("six")
+                    .tag(5)
+                Text("seven")
+                    .tag(6)
+                Text("eight")
+                    .tag(7)
+                Text("nine")
+                    .tag(8)
+                Text("ten")
+                    .tag(9)
+            } // end TabView
+            
+            
+            HStack {
+                Button("上一页") {
+                    if selection > 0 {
+                        selection -= 1
+                    }
+                }
+                .keyboardShortcut(.cancelAction)
+                Button("下一页") {
+                    if selection < 9 {
+                        selection += 1
+                    }
+                }
+                .keyboardShortcut(.defaultAction)
+            } // end HStack
+            .padding()
+        }
+    }
+}
+```
+
+.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) 可以实现 UIPageViewController 的效果，如果要给小白点加上背景，可以多添加一个 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always)) 修改器。
+
+
+#### Toggle
+
+![](https://user-images.githubusercontent.com/251980/156289124-bde3c73e-2a81-4043-8682-ae55a820f1aa.png)
+
+Toggle 可以设置 toggleStyle，可以自定义样式。使用示例如下
+
+```swift
+struct PlayToggleView: View {
+    @State private var isEnable = false
+    var body: some View {
+        // 普通样式
+        Toggle(isOn: $isEnable) {
+            Text("\(isEnable ? "开了" : "关了")")
+        }
+        .padding()
+        
+        // 按钮样式
+        Toggle(isOn: $isEnable) {
+            Label("\(isEnable ? "打开了" : "关闭了")", systemImage: "cloud.moon")
+        }
+        .padding()
+        .tint(.pink)
+        .controlSize(.large)
+        .toggleStyle(.button)
+        
+        // Switch 样式
+        Toggle(isOn: $isEnable) {
+            Text("\(isEnable ? "开了" : "关了")")
+        }
+        .toggleStyle(SwitchToggleStyle(tint: .orange))
+        .padding()
+        
+        // 自定义样式
+        Toggle(isOn: $isEnable) {
+            Text(isEnable ? "录音中" : "已静音")
+        }
+        .toggleStyle(PCToggleStyle())
+        
+    }
+}
+
+// MARK: - 自定义样式
+struct PCToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        return HStack {
+            configuration.label
+            Image(systemName: configuration.isOn ? "mic.square.fill" : "mic.slash.circle.fill")
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 30, height: 30)
+                .onTapGesture {
+                    configuration.isOn.toggle()
+                }
+        }
+    }
+}
+```
+
+
+#### Picker
+
+![](https://user-images.githubusercontent.com/251980/156298284-2fb37b3e-55f0-4918-ba8e-74f747bf3171.jpeg)
+
+有 Picker 视图，还有颜色和时间选择的 ColorPicker 和 DatePicker。
+
+示例代码如下：
+
+```swift
+struct PlayPickerView: View {
+    @State private var select = 1
+    @State private var color = Color.red.opacity(0.3)
+    
+    var dateFt: DateFormatter {
+        let ft = DateFormatter()
+        ft.dateStyle = .long
+        return ft
+    }
+    @State private var date = Date()
+    
+    var body: some View {
+        
+        // 默认是下拉的风格
+        Form {
+            Section("选区") {
+                Picker("选一个", selection: $select) {
+                    Text("1")
+                        .tag(1)
+                    Text("2")
+                        .tag(2)
+                }
+            }
+        }
+        .padding()
+        
+        // Segment 风格，
+        Picker("选一个", selection: $select) {
+            Text("one")
+                .tag(1)
+            Text("two")
+                .tag(2)
+        }
+        .pickerStyle(SegmentedPickerStyle())
+        .padding()
+        
+        // 颜色选择器
+        ColorPicker("选一个颜色", selection: $color, supportsOpacity: false)
+            .padding()
+        
+        RoundedRectangle(cornerRadius: 8)
+            .fill(color)
+            .frame(width: 50, height: 50)
+        
+        // 时间选择器
+        VStack {
+            DatePicker(selection: $date, in: ...Date(), displayedComponents: .date) {
+                Text("选时间")
+            }
+            
+            DatePicker("选时间", selection: $date)
+                .datePickerStyle(GraphicalDatePickerStyle())
+                .frame(maxHeight: 400)
+            
+            Text("时间：\(date, formatter: dateFt)")
+        }
+        .padding()
+    }
+}
+```
+
+
+#### Slider
+
+```swift
+struct PlaySliderView: View {
+    @State var count: Double = 0
+    var body: some View {
+        Slider(value: $count, in: 0...100)
+            .padding()
+        Text("\(Int(count))")
+    }
+}
+```
+
+
+#### Stepper
+
+```swift
+struct PlayStepperView: View {
+    @State private var count: Int = 0
+    var body: some View {
+        Stepper(value: $count, step: 2) {
+            Text("共\(count)")
+        } onEditingChanged: { b in
+            print(b)
+        } // end Stepper
+    }
+}
+```
+
+
+#### Keyboard
+
+键盘快捷键的使用方法如下：
+
+```swift
+struct PlayKeyboard: View {
+    var body: some View {
+        Button(systemIconName: "camera.shutter.button") {
+            print("按了回车键")
+        }
+        .keyboardShortcut(.defaultAction) // 回车
+        
+        Button("ESC", action: {
+            print("按了 ESC")
+        })
+        .keyboardShortcut(.cancelAction) // ESC 键
+        
+        Button("CMD + p") {
+            print("按了 CMD + p")
+        }
+        .keyboardShortcut("p")
+        
+        Button("SHIFT + p") {
+            print("按了 SHIFT + p")
+        }
+        .keyboardShortcut("p", modifiers: [.shift])
+    }
+}
+```
+
+
+### 视觉
+
+#### Color
+
+```swift
+struct PlayColor: View {
+    var body: some View {
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all) // Color 也是一个 View
+            
+            VStack(spacing: 10) {
+                Text("这是一个适配了暗黑的文字颜色")
+                    .foregroundColor(light: .purple, dark: .pink)
+                    .background(Color(nsColor: .quaternaryLabelColor)) // 使用以前 NSColor
+                
+                Text("自定义颜色")
+                    .foregroundColor(Color(red: 0, green: 0, blue: 100))
+            }
+            .padding()
+            
+        }
+    }
+}
+
+// MARK: - 暗黑适配颜色
+struct PCColorModifier: ViewModifier {
+    @Environment(\.colorScheme) private var colorScheme
+    var light: Color
+    var dark: Color
+    
+    private var adaptColor: Color {
+        switch colorScheme {
+        case .light:
+            return light
+        case .dark:
+            return dark
+        @unknown default:
+            return light
+        }
+    }
+    
+    func body(content: Content) -> some View {
+        content.foregroundColor(adaptColor)
+    }
+}
+
+extension View {
+    func foregroundColor(light: Color, dark: Color) -> some View {
+        modifier(PCColorModifier(light: light, dark: dark))
+    }
+}
+```
+
+
+#### Effect
+
+![](https://user-images.githubusercontent.com/251980/156332122-66813e4e-851c-4207-8cb9-b41ea0365008.jpeg)
+
+```swift
+struct PlayEffect: View {
+    @State private var isHover = false
+    
+    var body: some View {
+        ZStack {
+            LinearGradient(colors: [.purple, .black, .pink], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            
+            VStack(spacing: 20) {
+                
+                // 材质
+                Text("材质效果")
+                    .font(.system(size:30))
+                    .padding(isHover ? 40 : 30)
+                    .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                    .onHover { b in
+                        withAnimation {
+                            isHover = b
+                        }
+                    }
+                
+                // 模糊
+                Text("模糊效果")
+                    .font(.system(size: 30))
+                    .padding(30)
+                    .background {
+                        Color.black.blur(radius: 8, opaque: false)
+                    }
+                
+                // 选择
+                Text("3D 旋转")
+                    .font(.largeTitle)
+                    .rotation3DEffect(Angle(degrees: 45), axis: (x: 0, y: 20, z: 0))
+                    .scaleEffect(1.5)
+                    .blendMode(.hardLight)
+                    .blur(radius: 3)
+                
+            }
+                
+        }
+    }
+}
+```
+
+材质厚度从低到高有：
+
+* .regularMaterial
+* .thinMaterial
+* .ultraThinMaterial
+* .thickMaterial
+* .ultraThickMaterial
+
+
+#### Animation
+
+SwiftUI 里实现动画的方式包括有 .animation 隐式动画、withAnimation 和 withTransaction 显示动画、matchedGeometryEffect Hero 动画和 TimelineView 等。
+
+示例代码如下：
+
+```swift
+struct PlayAnimation: View {
+    @State private var isChange = false
+    private var anis:[String: Animation] = [
+        "p1": .default,
+        "p2": .linear(duration: 1),
+        "p3": .interpolatingSpring(stiffness: 5, damping: 3),
+        "p4": .easeInOut(duration: 1),
+        "p5": .easeIn(duration: 1),
+        "p6": .easeOut(duration: 1),
+        "p7": .interactiveSpring(response: 3, dampingFraction: 2, blendDuration: 1),
+        "p8": .spring(),
+        "p9": .default.repeatCount(3)
+    ]
+    @State private var selection = 1
+    
+    var body: some View {
+        // animation 隐式动画和 withAnimation 显示动画
+        Text(isChange ? "另一种状态" : "一种状态")
+            .font(.headline)
+            .padding()
+            .animation(.easeInOut, value: isChange) // 受限的隐式动画，只绑定某个值。
+            .onTapGesture {
+                // 使用 withAnimation 就是显式动画，效果等同 withTransaction(Transaction(animation: .default))
+                withAnimation {
+                    isChange.toggle()
+                }
+
+                // 设置 Transaction。和隐式动画共存时，优先执行 withAnimation 或 Transaction。
+                var t = Transaction(animation: .linear(duration: 2))
+                t.disablesAnimations = true // 用来禁用隐式动画
+                withTransaction(t) {
+                    isChange.toggle()
+                }
+            } // end onHover
+        
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: isChange ? 60 : 30), spacing: 60)]) {
+            ForEach(Array(anis.keys), id: \.self) { s in
+                Image(s)
+                    .resizable()
+                    .scaledToFit()
+                    .animation(anis[s], value: isChange)
+                    .scaleEffect()
+            }
+        }
+        .padding()
+        Button {
+            isChange.toggle()
+        } label: {
+            Image(systemName: isChange ? "pause.fill" : "play.fill")
+                .renderingMode(.original)
+        }
+        
+        // matchedGeometryEffect 的使用
+        VStack {
+            Text("后台")
+                .font(.headline)
+            placeStayView
+            Text("前台")
+                .font(.headline)
+            placeShowView
+        }
+        .padding(50)
+        
+        // 通过使用相同 matchedGeometryEffect 的 id，绑定两个元素变化。
+        HStack {
+            if isChange {
+                Rectangle()
+                    .fill(.pink)
+                    .matchedGeometryEffect(id: "g1", in: mgeStore)
+                    .frame(width: 100, height: 100)
+            }
+            Spacer()
+            Button("转换") {
+                withAnimation(.linear(duration: 2.0)) {
+                    isChange.toggle()
+                }
+            }
+            Spacer()
+            if !isChange {
+                Circle()
+                    .fill(.orange)
+                    .matchedGeometryEffect(id: "g1", in: mgeStore)
+                    .frame(width: 70, height: 70)
+            }
+            HStack {
+                Image("p1")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50, height: 50)
+                if !isChange {
+                    Image("p19")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
+                        .matchedGeometryEffect(id: "g1", in: mgeStore)
+                }
+                Image("p1")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50, height: 50)
+            }
+        }
+        .padding()
+        
+        // 使用 isSource，作为移动到相同 matchedGeometryEffect id 的方法。
+        HStack {
+            Image("p19")
+                .resizable()
+                .scaledToFit()
+                .frame(width: isChange ? 100 : 50, height: isChange ? 100 : 50)
+                .matchedGeometryEffect(id: isChange ? "g2" : "", in: mgeStore, isSource: false)
+            
+            Image("p19")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+                .matchedGeometryEffect(id: "g2", in: mgeStore)
+                .opacity(0)
+        }
+        
+        
+        
+        // 点击跟随的效果
+        HStack {
+            ForEach(Array(1...4), id: \.self) { i in
+                Image("p\(i)")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: i == selection ? 200 : 50)
+                    .matchedGeometryEffect(id: "h\(i)", in: mgeStore)
+                    .onTapGesture {
+                        withAnimation {
+                            selection = i
+                        }
+                    }
+                    .shadow(color: .black, radius: 3, x: 2, y: 3)
+            }
+        }
+        .background(
+            RoundedRectangle(cornerRadius: 8).fill(.pink)
+                .matchedGeometryEffect(id: "h\(selection)", in: mgeStore, isSource: false)
+        )
+        
+        // matchedGeometryEffect 还可以应用到 List 中，通过 Array enumerated 获得 index 作为 matchedGeometryEffect 的 id。右侧固定按钮可以直接让对应 id 的视图滚动到固定按钮的位置
+        
+        
+        // TimelineView
+        TimelineView(.periodic(from: .now, by: 1)) { t in
+            Text("\(t.date)")
+            HStack(spacing: 20) {
+                let e = "p\(Int.random(in: 1...30))"
+                Image(e)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 40)
+                    .animation(.default.repeatCount(3), value: e)
+                
+                TimelineSubView(date: t.date) // 需要传入 timeline 的时间给子视图才能够起作用。
+                    
+            }
+            .padding()
+        }
+        
+        // matchedGeometryEffect
+
+        /// TimelineScheduler 的使用，TimelineScheduler 有以下类型
+        /// .animation：制定更新的频率，可以控制暂停
+        /// .everyMinute：每分钟更新一次
+        /// .explicit：所有要更新的放到一个数组里
+        /// .periodic：设置开始时间和更新频率
+        /// 也可以自定义 TimelineScheduler
+        TimelineView(.everySecond) { t in
+            let e = "p\(Int.random(in: 1...30))"
+            Image(e)
+                .resizable()
+                .scaledToFit()
+                .frame(height: 40)
+        }
+        
+        // 自定义的 TimelineScheduler
+        TimelineView(.everyLoop(timeOffsets: [0.2, 0.7, 1, 0.5, 2])) { t in
+            TimelineSubView(date: t.date)
+        }
+    }
+    
+    // MARK: - TimelineSubView
+    struct TimelineSubView: View {
+        let date : Date
+        @State private var s = "let's go"
+        // 顺序从数组中取值，取完再重头开始
+        @State private var idx: Int = 1
+        func advanceIndex(count: Int) {
+            idx = (idx + 1) % count
+            if idx == 0 { idx = 1 }
+        }
+        
+        var body: some View {
+            HStack(spacing: 20) {
+                Image("p\(idx)")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 40)
+                    .animation(.easeIn(duration: 1), value: date)
+                    .onChange(of: date) { newValue in
+                        advanceIndex(count: 30)
+                        s = "\(date.hour):\(date.minute):\(date.second)"
+                    }
+                    .onAppear {
+                        advanceIndex(count: 30)
+                    }
+                    
+                Text(s)
+            }
+        }
+    }
+    
+    // MARK: - 用 matchedGeometryEffect 做动画
+    /// matchedGeometryEffect 可以无缝的将一个图像变成另外一个图像。
+    @State private var placeStayItems = ["p1", "p2", "p3", "p4"]
+    @State private var placeShowItems: [String] = []
+    
+    @Namespace private var mgeStore
+    
+    private var placeStayView: some View {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 30), spacing: 10)]) {
+            ForEach(placeStayItems, id: \.self) { s in
+                Image(s)
+                    .resizable()
+                    .scaledToFit()
+                    .matchedGeometryEffect(id: s, in: mgeStore)
+                    .onTapGesture {
+                        withAnimation {
+                            placeStayItems.removeAll { $0 == s }
+                            placeShowItems.append(s)
+                        }
+                    }
+                    .shadow(color: .black, radius: 2, x: 2, y: 4)
+            } // end ForEach
+        } // end LazyVGrid
+    } // private var placeStayView
+    
+    private var placeShowView: some View {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: 10)]) {
+            ForEach(placeShowItems, id: \.self) { s in
+                Image(s)
+                    .resizable()
+                    .scaledToFit()
+                    .matchedGeometryEffect(id: s, in: mgeStore)
+                    .onTapGesture {
+                        withAnimation {
+                            placeShowItems.removeAll { $0 == s }
+                            placeStayItems.append(s)
+                        }
+                    }
+                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+                    .shadow(color: .white, radius: 5, x: 0, y: 2)
+            } // end ForEach
+        } // end LazyVGrid
+    } // end private var placeShowView
+    
+} // end struct PlayAnimation
+
+// MARK: - 扩展 TimelineSchedule
+extension TimelineSchedule where Self == PeriodicTimelineSchedule {
+    static var everySecond: PeriodicTimelineSchedule {
+        get {
+            .init(from: .now, by: 1)
+        }
+    }
+}
+
+// MARK: - 自定义一个 TimelineSchedule
+// timeOffsets 用完，就会再重头重新再来一遍
+struct PCLoopTimelineSchedule: TimelineSchedule {
+    let timeOffsets: [TimeInterval]
+    
+    func entries(from startDate: Date, mode: TimelineScheduleMode) -> Entries {
+        Entries(last: startDate, offsets: timeOffsets)
+    }
+    
+    struct Entries: Sequence, IteratorProtocol {
+        var last: Date
+        let offsets: [TimeInterval]
+        var idx: Int = -1
+        mutating func next() -> Date? {
+            idx = (idx + 1) % offsets.count
+            last = last.addingTimeInterval(offsets[idx])
+            return last
+        }
+    } // end Struct Entries
+}
+
+// 为自定义的 PCLoopTimelineSchedule 做一个 TimelineSchedule 的扩展函数，方便使用
+extension TimelineSchedule where Self == PCLoopTimelineSchedule {
+    static func everyLoop(timeOffsets: [TimeInterval]) -> PCLoopTimelineSchedule {
+        .init(timeOffsets: timeOffsets)
+    }
+}
+```
+
+
+#### Canvas
+
+Canvas 可以画路径、图片和文字、Symbols、可变的图形上下文、使用 CoreGraphics 代码和做动画。
+
+图形上下文可以被 addFilter、clip、clipToLayer、concatenate、rotate、scaleBy、translateBy 这些方法来进行改变。
+
+示例代码如下：
+
+```swift
+struct PlayCanvas: View {
+    let colors: [Color] = [.purple, .blue, .yellow, .pink]
+    
+    var body: some View {
+        
+        // 画路径
+        PCCanvasPathView(t: .rounded)
+        PCCanvasPathView(t: .ellipse)
+        PCCanvasPathView(t: .circle)
+
+        // 图片和文字
+        PCCanvasImageAndText(text: "Starming", colors: [.purple, .pink])
+
+        // Symbol，在 Canvas 里引用 SwiftUI 视图
+        Canvas { c, s in
+            let c0 = c.resolveSymbol(id: 0)!
+            let c1 = c.resolveSymbol(id: 1)!
+            let c2 = c.resolveSymbol(id: 2)!
+            let c3 = c.resolveSymbol(id: 3)!
+
+            c.draw(c0, at: .init(x: 10, y: 10), anchor: .topLeading)
+            c.draw(c1, at: .init(x: 30, y: 20), anchor: .topLeading)
+            c.draw(c2, at: .init(x: 50, y: 30), anchor: .topLeading)
+            c.draw(c3, at: .init(x: 70, y: 40), anchor: .topLeading)
+
+        } symbols: {
+            ForEach(Array(colors.enumerated()), id: \.0) { i, c in
+                Circle()
+                    .fill(c)
+                    .frame(width: 100, height: 100)
+                    .tag(i)
+            }
+        }
+
+        // Symbol 动画和 SwiftUI 视图一样，不会受影响
+        Canvas { c, s in
+            let sb = c.resolveSymbol(id: 0)!
+            c.draw(sb, at: CGPoint(x: s.width / 2, y: s.height /  2), anchor: .center)
+
+        } symbols: {
+            PCForSymbolView()
+                .tag(0)
+        }
+    } // end var body
+}
+
+// MARK: - 给 Symbol 用的视图
+struct PCForSymbolView: View {
+    @State private var change = true
+    var body: some View {
+        Image(systemName: "star.fill")
+            .renderingMode(.original)
+            .font(.largeTitle)
+            .rotationEffect(.degrees(change ? 0 : 72))
+            .onAppear {
+                withAnimation(.linear(duration: 1.0).repeatForever(autoreverses: false)) {
+                    change.toggle()
+                }
+            }
+    }
+}
+
+// MARK: - 图片和文字
+struct PCCanvasImageAndText: View {
+    let text: String
+    let colors: [Color]
+    var fontSize: Double = 42
+    
+    var body: some View {
+        Canvas { context, size in
+            let midPoint = CGPoint(x: size.width / 2, y: size.height / 2)
+            let font = Font.system(size: fontSize)
+            var resolved = context.resolve(Text(text).font(font))
+            
+            let start = CGPoint(x: (size.width - resolved.measure(in: size).width) / 2.0, y: 0)
+            let end = CGPoint(x: size.width - start.x, y: 0)
+            
+            resolved.shading = .linearGradient(Gradient(colors: colors), startPoint: start, endPoint: end)
+            context.draw(resolved, at: midPoint, anchor: .center)
+            
+        }
+    }
+}
+
+// MARK: - Path
+struct PCCanvasPathView: View {
+    enum PathType {
+        case rounded, ellipse, casual, circle
+    }
+    let t: PathType
+    
+    var body: some View {
+        Canvas { context, size in
+            
+            conf(context: &context, size: size, type: t)
+        } // end Canvas
+    }
+    
+    func conf( context: inout GraphicsContext, size: CGSize, type: PathType) {
+        let rect = CGRect(origin: .zero, size: size).insetBy(dx: 25, dy: 25)
+        var path = Path()
+        switch type {
+        case .rounded:
+            path = Path(roundedRect: rect, cornerRadius: 35.0)
+        case .ellipse:
+            let cgPath = CGPath(ellipseIn: rect, transform: nil)
+            path = Path(cgPath)
+        case .casual:
+            path = Path {
+                let points: [CGPoint] = [
+                    .init(x: 10, y: 10),
+                    .init(x: 0, y: 50),
+                    .init(x: 100, y: 100),
+                    .init(x: 100, y: 0),
+                ]
+                $0.move(to: .zero)
+                $0.addLines(points)
+            }
+        case .circle:
+            path = Circle().path(in: rect)
+        }
+        
+        
+        let gradient = Gradient(colors: [.purple, .pink])
+        let from = rect.origin
+        let to = CGPoint(x: rect.width, y: rect.height + from.y)
+        
+        // Stroke path
+        context.stroke(path, with: .color(.blue), lineWidth: 25)
+        context.fill(path, with: .linearGradient(gradient, startPoint: from, endPoint: to))
     }
 }
 ```
@@ -4468,42 +7436,42 @@ struct TextView: View {
 
 *[SwiftOldDriver/iOS-Weekly](https://github.com/SwiftOldDriver/iOS-Weekly)*
 老司机 iOS 周报
-Star：4053 Issue：17 开发语言：Swift
+Star：4115 Issue：11 开发语言：
 🇨🇳 老司机 iOS 周报
 
 *[matteocrippa/awesome-swift](https://github.com/matteocrippa/awesome-swift)*
-Star：21619 Issue：1 开发语言：Swift
+Star：21759 Issue：0 开发语言：Swift
 A collaborative list of awesome Swift libraries and resources. Feel free to contribute!
 
 *[ruanyf/weekly](https://github.com/ruanyf/weekly)*
 科技爱好者周刊
-Star：20909 Issue：1687 开发语言：
+Star：21785 Issue：1758 开发语言：
 科技爱好者周刊，每周五发布
 
 *[KwaiAppTeam/SwiftPamphletApp](https://github.com/KwaiAppTeam/SwiftPamphletApp)*
-戴铭的 Swift 小册子
-Star：1335 Issue：122 开发语言：Swift
-戴铭的 Swift 小册子，一本活的 Swift 手册。使用 SwiftUI + Combine + Swift Concurrency Aysnc/Await Actor + GitHub API 开发的 macOS 应用
+戴铭的开发小册子
+Star：1545 Issue：150 开发语言：Swift
+戴铭的开发小册子，一本活的开发手册。使用 SwiftUI + Combine + Swift Concurrency Aysnc/Await Actor + GitHub API 开发的 macOS 应用
 
 
 ### 封装易用功能
 
 *[SwifterSwift/SwifterSwift](https://github.com/SwifterSwift/SwifterSwift)*
 Handy Swift extensions
-Star：10854 Issue：22 开发语言：Swift
+Star：11010 Issue：22 开发语言：Swift
 A handy collection of more than 500 native Swift extensions to boost your productivity.
 
 *[JoanKing/JKSwiftExtension](https://github.com/JoanKing/JKSwiftExtension)*
 Swift常用扩展、组件、协议
-Star：244 Issue：0 开发语言：Swift
+Star：278 Issue：0 开发语言：Swift
 Swift常用扩展、组件、协议，方便项目快速搭建，提供完整清晰的Demo示例，不断的完善中...... 
 
 *[infinum/iOS-Nuts-And-Bolts](https://github.com/infinum/iOS-Nuts-And-Bolts)*
-Star：174 Issue：1 开发语言：Swift
+Star：174 Issue：0 开发语言：Swift
 iOS bits and pieces that you can include in your project to make your life a bit easier.
 
 *[gtokman/ExtensionKit](https://github.com/gtokman/ExtensionKit)*
-Star：88 Issue：0 开发语言：Swift
+Star：92 Issue：0 开发语言：Swift
 Helpful extensions for iOS app development 🚀 
 
 
@@ -4511,146 +7479,161 @@ Helpful extensions for iOS app development 🚀
 
 *[SwiftUIX/SwiftUIX](https://github.com/SwiftUIX/SwiftUIX)*
 扩展 SwiftUI
-Star：4309 Issue：5 开发语言：Swift
+Star：4455 Issue：6 开发语言：Swift
 Extensions and additions to the standard SwiftUI library.
 
 *[SDWebImage/SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI)*
-Star：1270 Issue：42 开发语言：Swift
+Star：1314 Issue：43 开发语言：Swift
 SwiftUI Image loading and Animation framework powered by SDWebImage
 
 *[apptekstudios/ASCollectionView](https://github.com/apptekstudios/ASCollectionView)*
 SwiftUI collection
-Star：1128 Issue：28 开发语言：Swift
+Star：1151 Issue：30 开发语言：Swift
 A SwiftUI collection view with support for custom layouts, preloading, and more.
 
 *[siteline/SwiftUI-Introspect](https://github.com/siteline/SwiftUI-Introspect)*
 SwiftUI 引入 UIKit
-Star：2758 Issue：43 开发语言：Swift
+Star：2890 Issue：48 开发语言：Swift
 Introspect underlying UIKit components from SwiftUI
 
 *[AvdLee/SwiftUIKitView](https://github.com/AvdLee/SwiftUIKitView)*
 在 SwiftUI 中 使用 UIKit
-Star：488 Issue：3 开发语言：Swift
+Star：498 Issue：3 开发语言：Swift
 Easily use UIKit views in your SwiftUI applications. Create Xcode Previews for UIView elements
 
 *[danielsaidi/SwiftUIKit](https://github.com/danielsaidi/SwiftUIKit)*
 给 SwiftUI 添加更多功能
-Star：535 Issue：0 开发语言：Swift
+Star：565 Issue：0 开发语言：Swift
 SwiftUIKit contains additional functionality for SwiftUI.
 
 *[Toni77777/awesome-swiftui-libraries](https://github.com/Toni77777/awesome-swiftui-libraries)*
 SwiftUI 可使用的库
-Star：131 Issue：1 开发语言：Swift
+Star：161 Issue：0 开发语言：Swift
 :rocket: Awesome SwiftUI Libraries 
 
 *[rakutentech/AltSwiftUI](https://github.com/rakutentech/AltSwiftUI)*
 类 SwiftUI
-Star：245 Issue：7 开发语言：Swift
+Star：254 Issue：6 开发语言：Swift
 Open Source UI framework based on SwiftUI syntax and features, adding backwards compatibility.
 
 *[gymshark/ios-stack-kit](https://github.com/gymshark/ios-stack-kit)*
 类 SwiftUI
-Star：112 Issue：1 开发语言：Swift
+Star：114 Issue：1 开发语言：Swift
 The power of SwiftUI with UIKit
 
 
 ### 图片
 
 *[onevcat/Kingfisher](https://github.com/onevcat/Kingfisher)*
-Star：19690 Issue：67 开发语言：Swift
+Star：19940 Issue：73 开发语言：Swift
 A lightweight, pure-Swift library for downloading and caching images from the web.
 
 *[kean/Nuke](https://github.com/kean/Nuke)*
-Star：6514 Issue：6 开发语言：Swift
+Star：6557 Issue：9 开发语言：Swift
 Image loading system
 
 *[suzuki-0000/SKPhotoBrowser](https://github.com/suzuki-0000/SKPhotoBrowser)*
 图片浏览
-Star：2315 Issue：90 开发语言：Swift
+Star：2325 Issue：90 开发语言：Swift
 Simple PhotoBrowser/Viewer inspired by facebook, twitter photo browsers written by swift
 
 
 ### 文字处理
 
 *[gonzalezreal/MarkdownUI](https://github.com/gonzalezreal/MarkdownUI)*
-Star：648 Issue：3 开发语言：Swift
+Star：680 Issue：6 开发语言：Swift
 Render Markdown text in SwiftUI
 
 *[tophat/RichTextView](https://github.com/tophat/RichTextView)*
-Star：1043 Issue：25 开发语言：Swift
+Star：1059 Issue：27 开发语言：Swift
 iOS Text View (UIView) that Properly Displays LaTeX, HTML, Markdown, and YouTube/Vimeo Links
 
 *[keitaoouchi/MarkdownView](https://github.com/keitaoouchi/MarkdownView)*
-Star：1738 Issue：29 开发语言：Swift
+Star：1752 Issue：28 开发语言：Swift
 Markdown View for iOS.
 
 *[johnxnguyen/Down](https://github.com/johnxnguyen/Down)*
 fast Markdown
-Star：1914 Issue：17 开发语言：C
+Star：1934 Issue：17 开发语言：C
 Blazing fast Markdown / CommonMark rendering in Swift, built upon cmark.
 
 *[qeude/SwiftDown](https://github.com/qeude/SwiftDown)*
 Swift 写的可换主题的 Markdown 编辑器组件
-Star：68 Issue：0 开发语言：Swift
+Star：81 Issue：0 开发语言：Swift
 📦 A themable markdown editor component for your SwiftUI apps.
 
 *[JohnSundell/Ink](https://github.com/JohnSundell/Ink)*
 Markdown 解析器
-Star：2074 Issue：22 开发语言：Swift
+Star：2090 Issue：23 开发语言：Swift
 A fast and flexible Markdown parser written in Swift.
 
 *[tnantoka/edhita](https://github.com/tnantoka/edhita)*
-Star：1183 Issue：16 开发语言：Swift
+Star：1186 Issue：16 开发语言：Swift
 Fully open source text editor for iOS written in Swift.
 
 *[glushchenko/fsnotes](https://github.com/glushchenko/fsnotes)*
-Star：4616 Issue：219 开发语言：Swift
+Star：4799 Issue：230 开发语言：Swift
 Notes manager for macOS/iOS
 
 *[coteditor/CotEditor](https://github.com/coteditor/CotEditor)*
-Star：4192 Issue：118 开发语言：Swift
+Star：4336 Issue：118 开发语言：Swift
 Lightweight Plain-Text Editor for macOS
+
+*[mchakravarty/CodeEditorView](https://github.com/mchakravarty/CodeEditorView)*
+SwiftUI 写的代码编辑器
+Star：366 Issue：30 开发语言：Swift
+SwiftUI code editor view for iOS and macOS
+
+*[CodeEditApp/CodeEdit](https://github.com/CodeEditApp/CodeEdit)*
+原生，性能好的代码编辑器
+Star：0 Issue：0 开发语言：
+
+
+*[ZeeZide/CodeEditor](https://github.com/ZeeZide/CodeEditor)*
+使用 Highlight.js 的来做语法高亮的 SwiftUI 编辑器
+Star：0 Issue：0 开发语言：
+
 
 
 ### 动画
 
 *[recherst/kavsoft-swiftui-animations](https://github.com/recherst/kavsoft-swiftui-animations)*
-Star：93 Issue：0 开发语言：Swift
+Star：107 Issue：0 开发语言：Swift
 SwiftUI animation tutorials, all of demos are consisted of youtube videos at website of kavsoft. 🔗 https://kavsoft.dev
 
 *[timdonnelly/Advance](https://github.com/timdonnelly/Advance)*
 Physics-based animations
-Star：4449 Issue：4 开发语言：Swift
+Star：4448 Issue：4 开发语言：Swift
 Physics-based animations for iOS, tvOS, and macOS.
 
 *[MengTo/Spring](https://github.com/MengTo/Spring)*
 动画
-Star：13968 Issue：167 开发语言：Swift
+Star：13978 Issue：167 开发语言：Swift
 A library to simplify iOS animations in Swift.
 
 
 ### 持久化存储
 
 *[stephencelis/SQLite.swift](https://github.com/stephencelis/SQLite.swift)*
-Star：8051 Issue：81 开发语言：Swift
+Star：8144 Issue：87 开发语言：Swift
 A type-safe, Swift-language layer over SQLite3.
 
 *[groue/GRDB.swift](https://github.com/groue/GRDB.swift)*
-Star：4827 Issue：5 开发语言：Swift
+Star：4932 Issue：3 开发语言：Swift
 A toolkit for SQLite databases, with a focus on application development
 
 *[caiyue1993/IceCream](https://github.com/caiyue1993/IceCream)*
 CloudKit 同步 Realm 数据库
-Star：1676 Issue：47 开发语言：Swift
+Star：1689 Issue：47 开发语言：Swift
 Sync Realm Database with CloudKit
 
 *[realm/realm-cocoa](https://github.com/realm/realm-cocoa)*
-Star：14900 Issue：353 开发语言：Objective-C
+Star：14980 Issue：361 开发语言：Objective-C
 Realm is a mobile database: a replacement for Core Data & SQLite
 
 *[PostgresApp/PostgresApp](https://github.com/PostgresApp/PostgresApp)*
 PostgreSQL macOS 应用
-Star：6207 Issue：120 开发语言：Makefile
+Star：6239 Issue：121 开发语言：Makefile
 The easiest way to get started with PostgreSQL on the Mac
 
 
@@ -4658,62 +7641,62 @@ The easiest way to get started with PostgreSQL on the Mac
 
 *[ReactiveX/RxSwift](https://github.com/ReactiveX/RxSwift)*
 函数响应式编程
-Star：21610 Issue：12 开发语言：Swift
+Star：21990 Issue：16 开发语言：Swift
 Reactive Programming in Swift
 
 *[pointfreeco/swift-composable-architecture](https://github.com/pointfreeco/swift-composable-architecture)*
-Star：5561 Issue：12 开发语言：Swift
+Star：5790 Issue：13 开发语言：Swift
 A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind.
 
 *[onmyway133/awesome-ios-architecture](https://github.com/onmyway133/awesome-ios-architecture)*
-Star：4494 Issue：0 开发语言：
+Star：4547 Issue：0 开发语言：
 :japanese_castle: Better ways to structure iOS apps
 
 *[ReSwift/ReSwift](https://github.com/ReSwift/ReSwift)*
 单页面状态和数据管理
-Star：7101 Issue：38 开发语言：Swift
+Star：7147 Issue：38 开发语言：Swift
 Unidirectional Data Flow in Swift - Inspired by Redux
 
 *[gre4ixin/ReduxUI](https://github.com/gre4ixin/ReduxUI)*
 SwiftUI Redux 架构
-Star：24 Issue：0 开发语言：Swift
+Star：27 Issue：0 开发语言：Swift
 💎 Redux like architecture for SwiftUI
 
 *[BohdanOrlov/iOS-Developer-Roadmap](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)*
-Star：5613 Issue：7 开发语言：Swift
+Star：5670 Issue：7 开发语言：Swift
 Roadmap to becoming an iOS developer in 2018.
 
 *[ReactiveCocoa/ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)*
-Star：19994 Issue：3 开发语言：Swift
+Star：19987 Issue：3 开发语言：Swift
 Cocoa framework and Obj-C dynamism bindings for ReactiveSwift.
 
 *[mehdihadeli/awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)*
 软件架构
-Star：6784 Issue：2 开发语言：
+Star：7415 Issue：2 开发语言：
 A curated list of awesome articles, videos, and other resources to learn and practice about software architecture, patterns, and principles.
 
 *[nalexn/clean-architecture-swiftui](https://github.com/nalexn/clean-architecture-swiftui)*
 干净完整的SwiftUI+Combine例子，包含网络和单元测试等
-Star：3080 Issue：17 开发语言：Swift
+Star：3275 Issue：17 开发语言：Swift
 SwiftUI sample app using Clean Architecture. Examples of working with CoreData persistence, networking, dependency injection, unit testing, and more.
 
 *[krzysztofzablocki/Sourcery](https://github.com/krzysztofzablocki/Sourcery)*
 Swift 元编程
-Star：6380 Issue：54 开发语言：Swift
+Star：6434 Issue：52 开发语言：Swift
 Meta-programming for Swift, stop writing boilerplate code.
 
 
 ### 路由
 
 *[pointfreeco/swiftui-navigation](https://github.com/pointfreeco/swiftui-navigation)*
-Star：733 Issue：1 开发语言：Swift
+Star：775 Issue：1 开发语言：Swift
 Tools for making SwiftUI navigation simpler, more ergonomic and more precise.
 
 
 ### 静态检查
 
 *[realm/SwiftLint](https://github.com/realm/SwiftLint)*
-Star：15717 Issue：308 开发语言：Swift
+Star：15867 Issue：300 开发语言：Swift
 A tool to enforce Swift style and conventions.
 
 
@@ -4721,70 +7704,70 @@ A tool to enforce Swift style and conventions.
 
 *[devicekit/DeviceKit](https://github.com/devicekit/DeviceKit)*
 UIDevice 易用封装
-Star：3602 Issue：44 开发语言：Swift
+Star：3628 Issue：43 开发语言：Swift
 DeviceKit is a value-type replacement of UIDevice.
 
 *[kishikawakatsumi/KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)*
-Star：6709 Issue：37 开发语言：Swift
+Star：6791 Issue：38 开发语言：Swift
 Simple Swift wrapper for Keychain that works on iOS, watchOS, tvOS and macOS.
 
 *[nvzqz/FileKit](https://github.com/nvzqz/FileKit)*
 文件操作
-Star：2197 Issue：11 开发语言：Swift
+Star：2203 Issue：11 开发语言：Swift
 Simple and expressive file management in Swift
 
 *[JohnSundell/Files](https://github.com/JohnSundell/Files)*
 文件操作
-Star：2224 Issue：23 开发语言：Swift
+Star：2255 Issue：23 开发语言：Swift
 A nicer way to handle files & folders in Swift
 
 *[kylef/PathKit](https://github.com/kylef/PathKit)*
 文件操作
-Star：1324 Issue：12 开发语言：Swift
+Star：1333 Issue：12 开发语言：Swift
 Effortless path operations in Swift
 
 *[rushisangani/BiometricAuthentication](https://github.com/rushisangani/BiometricAuthentication)*
 FaceID or TouchID authentication
-Star：784 Issue：13 开发语言：Swift
+Star：787 Issue：13 开发语言：Swift
 Use Apple FaceID or TouchID authentication in your app using BiometricAuthentication.
 
 *[sunshinejr/SwiftyUserDefaults](https://github.com/sunshinejr/SwiftyUserDefaults)*
-Star：4598 Issue：44 开发语言：Swift
+Star：4626 Issue：46 开发语言：Swift
 Modern Swift API for NSUserDefaults
 
 *[MonitorControl/MonitorControl](https://github.com/MonitorControl/MonitorControl)*
 亮度和声音控制
-Star：13963 Issue：38 开发语言：Swift
+Star：14730 Issue：49 开发语言：Swift
 🖥 Control your display's brightness & volume on your Mac as if it was a native Apple Display. Use Apple Keyboard keys or custom shortcuts. Shows the native macOS OSDs.
 
 *[carekit-apple/CareKit](https://github.com/carekit-apple/CareKit)*
 使用 SwiftUI 开发健康相关的库
-Star：2163 Issue：65 开发语言：Swift
+Star：2177 Issue：66 开发语言：Swift
 CareKit is an open source software framework for creating apps that help people better understand and manage their health.
 
 *[Cay-Zhang/SwiftSpeech](https://github.com/Cay-Zhang/SwiftSpeech)*
 苹果语言识别封装库，已适配 SwiftUI
-Star：245 Issue：2 开发语言：Swift
+Star：258 Issue：2 开发语言：Swift
 A speech recognition framework designed for SwiftUI.
 
 *[malcommac/SwiftDate](https://github.com/malcommac/SwiftDate)*
 Swift编写的时间时区，时间比较等复杂处理的包装
-Star：6753 Issue：67 开发语言：Swift
+Star：6815 Issue：67 开发语言：Swift
 🐔 Toolkit to parse, validate, manipulate, compare and display dates, time & timezones in Swift.
 
 
 ### 接口
 
 *[OAuthSwift/OAuthSwift](https://github.com/OAuthSwift/OAuthSwift)*
-Star：2972 Issue：39 开发语言：Swift
+Star：2979 Issue：39 开发语言：Swift
 Swift based OAuth library for iOS
 
 *[p2/OAuth2](https://github.com/p2/OAuth2)*
-Star：1054 Issue：66 开发语言：Swift
+Star：1057 Issue：68 开发语言：Swift
 OAuth2 framework for macOS and iOS, written in Swift.
 
 *[public-apis/public-apis](https://github.com/public-apis/public-apis)*
-Star：179814 Issue：11 开发语言：Python
+Star：186561 Issue：1 开发语言：Python
 A collective list of free APIs
 
 
@@ -4797,73 +7780,73 @@ A Weather app in SwiftUI.
 
 *[Dimillian/MovieSwiftUI](https://github.com/Dimillian/MovieSwiftUI)*
 电影 MovieDB 应用
-Star：5913 Issue：8 开发语言：Swift
+Star：5950 Issue：8 开发语言：Swift
 SwiftUI & Combine app using MovieDB API. With a custom Flux (Redux) implementation.
 
 *[chojnac/NotionSwift](https://github.com/chojnac/NotionSwift)*
-Star：19 Issue：2 开发语言：Swift
+Star：22 Issue：3 开发语言：Swift
 Unofficial Notion API SDK for iOS & macOS
 
 *[Dimillian/RedditOS](https://github.com/Dimillian/RedditOS)*
 SwiftUI 写的 Reddit客户端
-Star：3508 Issue：11 开发语言：Swift
+Star：3538 Issue：11 开发语言：Swift
 The product name is Curiosity, a SwiftUI Reddit client for macOS Big Sur
 
 *[carson-katri/reddit-swiftui](https://github.com/carson-katri/reddit-swiftui)*
 SwiftUI 写的 Reddit客户端
-Star：1097 Issue：7 开发语言：Swift
+Star：1105 Issue：7 开发语言：Swift
 A cross-platform Reddit client built in SwiftUI
 
 *[Dimillian/SwiftHN](https://github.com/Dimillian/SwiftHN)*
 Hacker News 阅读
-Star：1692 Issue：20 开发语言：Swift
+Star：1689 Issue：20 开发语言：Swift
 A Hacker News reader in Swift
 
 *[tatsuz0u/EhPanda](https://github.com/tatsuz0u/EhPanda)*
-Star：1004 Issue：7 开发语言：Swift
+Star：1132 Issue：11 开发语言：Swift
 An unofficial E-Hentai App for iOS built with SwiftUI & TCA.
 
 *[Dimillian/MortyUI](https://github.com/Dimillian/MortyUI)*
 GraphQL + SwiftUI 开发的瑞克和莫蒂应用
-Star：421 Issue：4 开发语言：Swift
+Star：424 Issue：4 开发语言：Swift
 A very simple Rick & Morty app to demo GraphQL + SwiftUI
 
 *[Finb/V2ex-Swift](https://github.com/Finb/V2ex-Swift)*
 V2EX 客户端
-Star：1506 Issue：10 开发语言：Swift
+Star：1505 Issue：10 开发语言：Swift
 An iOS client written in Swift for V2EX
 
 *[v2er-app/iOS](https://github.com/v2er-app/iOS)*
 V2EX 客户端
-Star：190 Issue：3 开发语言：Swift
+Star：194 Issue：4 开发语言：Swift
 The source of V2er.iOS
 
 *[sinaweibosdk/weibo_ios_sdk](https://github.com/sinaweibosdk/weibo_ios_sdk)*
-Star：1426 Issue：61 开发语言：Objective-C
+Star：1423 Issue：63 开发语言：Objective-C
 新浪微博 IOS SDK
 
 *[miniLV/MNWeibo](https://github.com/miniLV/MNWeibo)*
 Swift5 + MVVM 微博客户端
-Star：242 Issue：4 开发语言：Swift
+Star：244 Issue：4 开发语言：Swift
 Swift5 + MVVM + 文艺复兴微博(纯代码 + 纯Swift)，可作为第一个上手的Swift项目.
 
 *[nerdishbynature/octokit.swift](https://github.com/nerdishbynature/octokit.swift)*
 Swift API Client for GitHub
-Star：377 Issue：10 开发语言：Swift
+Star：391 Issue：9 开发语言：Swift
 A Swift API Client for GitHub and GitHub Enterprise
 
 *[GitHawkApp/GitHawk](https://github.com/GitHawkApp/GitHawk)*
 iOS app for GitHub
-Star：2815 Issue：454 开发语言：Swift
+Star：2822 Issue：455 开发语言：Swift
 The (second) best iOS app for GitHub.
 
 *[fangzesheng/free-api](https://github.com/fangzesheng/free-api)*
-Star：11872 Issue：27 开发语言：
+Star：11998 Issue：26 开发语言：
 收集免费的接口服务,做一个api的搬运工
 
 *[nerdsupremacist/Graphaello](https://github.com/nerdsupremacist/Graphaello)*
 SwiftUI 中使用 GraphQL 的工具
-Star：428 Issue：18 开发语言：Swift
+Star：436 Issue：21 开发语言：Swift
 A Tool for Writing Declarative, Type-Safe and Data-Driven Applications in SwiftUI using GraphQL
 
 *[nerdsupremacist/tmdb](https://github.com/nerdsupremacist/tmdb)*
@@ -4876,15 +7859,15 @@ A GraphQL Wrapper for The Movie Database
 
 *[serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)*
 开源 macOS 程序合集
-Star：29416 Issue：50 开发语言：Swift
+Star：29820 Issue：52 开发语言：Swift
 🚀 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps
 
 *[Ranchero-Software/NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire)*
-Star：5245 Issue：528 开发语言：Swift
+Star：5374 Issue：535 开发语言：Swift
 RSS reader for macOS and iOS.
 
 *[overtake/TelegramSwift](https://github.com/overtake/TelegramSwift)*
-Star：3672 Issue：443 开发语言：Swift
+Star：3729 Issue：452 开发语言：Swift
 Source code of Telegram for macos on Swift 5.0
 
 *[eonist/FileWatcher](https://github.com/eonist/FileWatcher)*
@@ -4894,87 +7877,88 @@ Monitoring file system changes in macOS
 
 *[waylybaye/XcodeCleaner-SwiftUI](https://github.com/waylybaye/XcodeCleaner-SwiftUI)*
 清理 Xcode
-Star：1160 Issue：3 开发语言：Swift
+Star：1178 Issue：3 开发语言：Swift
 Make Xcode Clean Again
 
 *[gao-sun/eul](https://github.com/gao-sun/eul)*
 SwiftUI 写的 macOS 状态监控工具
-Star：7001 Issue：50 开发语言：Swift
+Star：7123 Issue：51 开发语言：Swift
 🖥️ macOS status monitoring app written in SwiftUI.
 
 *[Dimillian/ACHNBrowserUI](https://github.com/Dimillian/ACHNBrowserUI)*
 SwiftUI 写的动物之森小助手程序
-Star：1494 Issue：32 开发语言：Swift
+Star：1507 Issue：32 开发语言：Swift
 Animal Crossing New Horizon companion app in SwiftUI
 
 *[lexrus/RegExPlus](https://github.com/lexrus/RegExPlus)*
 正则表达式
-Star：186 Issue：0 开发语言：Swift
+Star：185 Issue：0 开发语言：Swift
 A nifty RegEx test tool built with SwiftUI
 
 *[v2ex/launcher](https://github.com/v2ex/launcher)*
 用来启动那些本地开发时需要的各种进程，及查看其输出
-Star：157 Issue：7 开发语言：Swift
+Star：167 Issue：3 开发语言：Swift
 
 
 *[lukakerr/Pine](https://github.com/lukakerr/Pine)*
 Markdown 编辑器
-Star：2884 Issue：43 开发语言：Swift
+Star：2910 Issue：45 开发语言：Swift
 A modern, native macOS markdown editor
 
 *[root3nl/SupportApp](https://github.com/root3nl/SupportApp)*
 企业支持 macOS 软件
-Star：234 Issue：15 开发语言：Swift
+Star：242 Issue：17 开发语言：Swift
 The Support App is developed by Root3, specialized in managing Apple devices. Root3 offers consultancy and support for organizations to get the most out of their Apple devices and is based in The Netherlands (Haarlem).
 
 *[jaywcjlove/awesome-mac](https://github.com/jaywcjlove/awesome-mac)*
 macOS 软件大全
-Star：47634 Issue：122 开发语言：JavaScript
+Star：48349 Issue：126 开发语言：JavaScript
  Now we have become very big, Different from the original idea. Collect premium software in various categories.
 
 *[insidegui/WWDC](https://github.com/insidegui/WWDC)*
-Star：8151 Issue：33 开发语言：Swift
+Star：8163 Issue：33 开发语言：Swift
 The unofficial WWDC app for macOS
 
 *[sindresorhus/Actions](https://github.com/sindresorhus/Actions)*
-Star：582 Issue：5 开发语言：Swift
+Star：682 Issue：4 开发语言：Swift
 ⚙️ Supercharge your shortcuts
+
+*[ObuchiYuki/DevToysMac](https://github.com/ObuchiYuki/DevToysMac)*
+开发者工具合集
+Star：5065 Issue：33 开发语言：Swift
+DevToys For mac
 
 
 ### 应用
 
 *[vinhnx/Clendar](https://github.com/vinhnx/Clendar)*
 SwiftUI 写的日历应用
-Star：311 Issue：51 开发语言：Swift
+Star：328 Issue：52 开发语言：Swift
 Clendar - universal calendar app. Written in SwiftUI. Available on App Store. MIT License.
 
 *[SvenTiigi/WhatsNewKit](https://github.com/SvenTiigi/WhatsNewKit)*
 欢迎屏
-Star：2437 Issue：0 开发语言：Swift
+Star：2464 Issue：0 开发语言：Swift
 Showcase your awesome new app features 📱
 
 *[kickstarter/ios-oss](https://github.com/kickstarter/ios-oss)*
 Kickstarter 的 iOS 版本
-Star：7878 Issue：2 开发语言：Swift
+Star：7923 Issue：1 开发语言：Swift
 Kickstarter for iOS. Bring new ideas to life, anywhere.
-
-*[wordpress-mobile/WordPress-iOS](https://github.com/wordpress-mobile/WordPress-iOS)*
-Star：3259 Issue：890 开发语言：Swift
-WordPress for iOS - Official repository
 
 *[CoreOffice/CryptoOffice](https://github.com/CoreOffice/CryptoOffice)*
 Swift 解析 Office Open XML（OOXML）包括 xlsx, docx, pptx
-Star：20 Issue：0 开发语言：Swift
+Star：21 Issue：0 开发语言：Swift
 Office Open XML (OOXML) formats (.xlsx, .docx, .pptx) decryption for Swift
 
 *[CoreOffice/CoreXLSX](https://github.com/CoreOffice/CoreXLSX)*
 Swift编写的Excel电子表格（XLSX）格式解析器
-Star：604 Issue：11 开发语言：Swift
+Star：619 Issue：11 开发语言：Swift
 Excel spreadsheet (XLSX) format parser written in pure Swift
 
 *[analogcode/Swift-Radio-Pro](https://github.com/analogcode/Swift-Radio-Pro)*
 电台应用
-Star：2657 Issue：14 开发语言：Swift
+Star：2663 Issue：13 开发语言：Swift
 Professional Radio Station App for iOS!
 
 
@@ -4982,63 +7966,98 @@ Professional Radio Station App for iOS!
 
 *[pointfreeco/isowords](https://github.com/pointfreeco/isowords)*
 单词搜索游戏
-Star：1635 Issue：3 开发语言：Swift
+Star：1674 Issue：4 开发语言：Swift
 Open source game built in SwiftUI and the Composable Architecture.
 
 *[michelpereira/awesome-games-of-coding](https://github.com/michelpereira/awesome-games-of-coding)*
 教你学编程的游戏收集
-Star：1372 Issue：1 开发语言：
+Star：1395 Issue：1 开发语言：
 A curated list of games that can teach you how to learn a programming language.
 
 *[OpenEmu/OpenEmu](https://github.com/OpenEmu/OpenEmu)*
 视频游戏模拟器
-Star：13544 Issue：182 开发语言：Objective-C
+Star：13679 Issue：193 开发语言：Swift
 🕹 Retro video game emulation for macOS
 
 *[jVirus/swiftui-2048](https://github.com/jVirus/swiftui-2048)*
-Star：138 Issue：0 开发语言：Swift
+Star：141 Issue：0 开发语言：Swift
 🎲 100% SwiftUI 3.0, classic 2048 game [iOS 15.0+, iPadOS 15.0+, macOS 12.0+, Swift 5.5].
 
 *[schellingb/dosbox-pure](https://github.com/schellingb/dosbox-pure)*
 DOS 游戏模拟器
-Star：416 Issue：105 开发语言：C++
+Star：420 Issue：114 开发语言：C++
 DOSBox Pure is a new fork of DOSBox built for RetroArch/Libretro aiming for simplicity and ease of use.
 
 *[chrismaltby/gb-studio](https://github.com/chrismaltby/gb-studio)*
 拖放式复古游戏创建器
-Star：5943 Issue：463 开发语言：C
+Star：5981 Issue：484 开发语言：C
 A quick and easy to use drag and drop retro game creator for your favourite handheld video game system
+
+*[darrellroot/Netrek-SwiftUI](https://github.com/darrellroot/Netrek-SwiftUI)*
+SwiftUI 开发的1989年的 Netrek 游戏
+Star：10 Issue：0 开发语言：Swift
+
+
+*[jynew/jynew](https://github.com/jynew/jynew)*
+Unity 引擎重制 DOS 金庸群侠传
+Star：4382 Issue：30 开发语言：C#
+金庸群侠传3D重制版
+
+*[CleverRaven/Cataclysm-DDA](https://github.com/CleverRaven/Cataclysm-DDA)*
+以世界末日为背景的生存游戏
+Star：6672 Issue：2667 开发语言：C++
+Cataclysm - Dark Days Ahead. A turn-based survival game set in a post-apocalyptic world.
+
+*[freeCodeCamp/LearnToCodeRPG](https://github.com/freeCodeCamp/LearnToCodeRPG)*
+学习编码的游戏
+Star：784 Issue：11 开发语言：Ren'Py
+A visual novel video game where you learn to code and get a dev job 🎯
+
+*[pmgl/microstudio](https://github.com/pmgl/microstudio)*
+游戏开发平台集搜索、开发、学习、体验、交流等功能于一身
+Star：500 Issue：32 开发语言：JavaScript
+Free, open source game engine online
+
+*[diasurgical/devilutionX](https://github.com/diasurgical/devilutionX)*
+可以运行在 macOS 上的 Diablo 1
+Star：5191 Issue：342 开发语言：C++
+Diablo build for modern operating systems
+
+*[InvadingOctopus/octopuskit](https://github.com/InvadingOctopus/octopuskit)*
+2D游戏引擎，用的 GameplayKit + SpriteKit + SwiftUI
+Star：302 Issue：0 开发语言：Swift
+2D ECS game engine in 100% Swift + SwiftUI for iOS, macOS, tvOS
 
 
 ### 新技术展示
 
 *[JakeLin/Moments-SwiftUI](https://github.com/JakeLin/Moments-SwiftUI)*
 SwiftUI、Async、Actor
-Star：35 Issue：0 开发语言：Swift
+Star：37 Issue：0 开发语言：Swift
 WeChat-like Moments App implemented using Swift 5.5 and SwiftUI
 
 *[twostraws/HackingWithSwift](https://github.com/twostraws/HackingWithSwift)*
 示例代码
-Star：4266 Issue：11 开发语言：Swift
+Star：4345 Issue：11 开发语言：Swift
 The project source code for hackingwithswift.com
 
 *[carson-katri/awesome-result-builders](https://github.com/carson-katri/awesome-result-builders)*
 Result Builders awesome
-Star：737 Issue：2 开发语言：
+Star：754 Issue：1 开发语言：
 A list of cool DSLs made with Swift 5.4’s @resultBuilder
 
 *[pointfreeco/episode-code-samples](https://github.com/pointfreeco/episode-code-samples)*
-Star：640 Issue：2 开发语言：Swift
+Star：655 Issue：2 开发语言：Swift
 💾 Point-Free episode code.
 
 *[SwiftGGTeam/the-swift-programming-language-in-chinese](https://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)*
 中文版 Apple 官方 Swift 教程
-Star：20394 Issue：3 开发语言：CSS
+Star：20436 Issue：4 开发语言：CSS
 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
 
 *[jessesquires/TIL](https://github.com/jessesquires/TIL)*
 学习笔记
-Star：250 Issue：0 开发语言：
+Star：252 Issue：0 开发语言：
 Things I've learned and/or things I want to remember. Notes, links, advice, example code, etc.
 
 
@@ -5046,12 +8065,12 @@ Things I've learned and/or things I want to remember. Notes, links, advice, exam
 
 *[OpenCombine/OpenCombine](https://github.com/OpenCombine/OpenCombine)*
 Combine 的开源实现
-Star：2097 Issue：11 开发语言：Swift
+Star：2122 Issue：11 开发语言：Swift
 Open source implementation of Apple's Combine framework for processing values over time.
 
 *[CombineCommunity/CombineExt](https://github.com/CombineCommunity/CombineExt)*
 对 Combine 的补充
-Star：1036 Issue：21 开发语言：Swift
+Star：1089 Issue：22 开发语言：Swift
 CombineExt provides a collection of operators, publishers and utilities for Combine, that are not provided by Apple themselves, but are common in other Reactive Frameworks and standards.
 
 
@@ -5059,122 +8078,118 @@ CombineExt provides a collection of operators, publishers and utilities for Comb
 
 *[dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps)*
 开源的完整 App 例子
-Star：29334 Issue：1 开发语言：Swift
+Star：29703 Issue：0 开发语言：Swift
 :iphone: Collaborative List of Open-Source iOS Apps
 
 *[timqian/chinese-independent-blogs](https://github.com/timqian/chinese-independent-blogs)*
-Star：8308 Issue：19 开发语言：JavaScript
+Star：8655 Issue：18 开发语言：JavaScript
 中文独立博客列表
 
 *[vlondon/awesome-swiftui](https://github.com/vlondon/awesome-swiftui)*
-Star：1151 Issue：6 开发语言：
+Star：1184 Issue：5 开发语言：
 A collaborative list of awesome articles, talks, books, videos and code examples about SwiftUI.
 
 *[ivanvorobei/SwiftUI](https://github.com/ivanvorobei/SwiftUI)*
-Star：3644 Issue：5 开发语言：Swift
+Star：3726 Issue：5 开发语言：Swift
 Examples projects using SwiftUI released by WWDC2019. Include Layout, UI, Animations, Gestures, Draw and Data.
 
 *[kon9chunkit/GitHub-Chinese-Top-Charts](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts)*
 GitHub中文排行榜
-Star：43935 Issue：80 开发语言：Java
-:cn: GitHub中文排行榜，各语言分离设置「软件 / 资料」榜单，精准定位中文好项目。各取所需，互不干扰，高效学习。
+Star：45272 Issue：83 开发语言：Java
+:cn: GitHub中文排行榜，各语言分设「软件 | 资料」榜单，精准定位中文好项目。各取所需，高效学习。
 
 *[onmyway133/awesome-swiftui](https://github.com/onmyway133/awesome-swiftui)*
-Star：340 Issue：2 开发语言：
+Star：361 Issue：3 开发语言：
 🌮 Awesome resources, articles, libraries about SwiftUI
 
 *[Juanpe/About-SwiftUI](https://github.com/Juanpe/About-SwiftUI)*
 汇总 SwiftUI 的资料
-Star：6013 Issue：0 开发语言：Swift
+Star：6096 Issue：0 开发语言：Swift
 Gathering all info published, both by Apple and by others, about new framework SwiftUI. 
 
 *[sindresorhus/awesome](https://github.com/sindresorhus/awesome)*
 内容广
-Star：188924 Issue：41 开发语言：
+Star：194524 Issue：42 开发语言：
 😎 Awesome lists about all kinds of interesting topics
 
 *[SwiftPackageIndex/PackageList](https://github.com/SwiftPackageIndex/PackageList)*
 Swift 开源库索引
-Star：589 Issue：2 开发语言：Swift
+Star：605 Issue：1 开发语言：Swift
 The master list of repositories for the Swift Package Index.
 
-
-### 知识管理
-
-*[AppFlowy-IO/appflowy](https://github.com/AppFlowy-IO/appflowy)*
-Flutter 和 Rust 开发的开源 Notion
-Star：17150 Issue：96 开发语言：Rust
-AppFlowy is an open-source alternative to Notion. You are in charge of your data and customizations. Built with Flutter and Rust.
+*[matteocrippa/awesome-swift](https://github.com/matteocrippa/awesome-swift)*
+Star：21759 Issue：0 开发语言：Swift
+A collaborative list of awesome Swift libraries and resources. Feel free to contribute!
 
 
 ### 性能、工程构建及自动化
 
 *[tuist/tuist](https://github.com/tuist/tuist)*
 创建和维护 Xcode projects 文件
-Star：2361 Issue：145 开发语言：Swift
+Star：2474 Issue：148 开发语言：Swift
 🚀 Create, maintain, and interact with Xcode projects at scale
 
 *[swift-server/vscode-swift](https://github.com/swift-server/vscode-swift)*
 VSCode 的 Swift 扩展
-Star：239 Issue：23 开发语言：TypeScript
-VSCode Extension for Swift
+Star：262 Issue：30 开发语言：TypeScript
+Visual Studio Code Extension for Swift
 
 *[peripheryapp/periphery](https://github.com/peripheryapp/periphery)*
 检测 Swift 无用代码
-Star：3135 Issue：19 开发语言：Swift
+Star：3231 Issue：24 开发语言：Swift
 A tool to identify unused code in Swift projects.
 
 *[nalexn/ViewInspector](https://github.com/nalexn/ViewInspector)*
 SwiftUI Runtime introspection 和 单元测试
-Star：1077 Issue：11 开发语言：Swift
+Star：1115 Issue：17 开发语言：Swift
 Runtime introspection and unit testing of SwiftUI views
 
 *[shibapm/Komondor](https://github.com/shibapm/Komondor)*
 Git Hooks for Swift projects
-Star：497 Issue：19 开发语言：Swift
+Star：503 Issue：20 开发语言：Swift
 Git Hooks for Swift projects 🐩
 
 *[SwiftGen/SwiftGen](https://github.com/SwiftGen/SwiftGen)*
 代码生成
-Star：7687 Issue：74 开发语言：Swift
+Star：7781 Issue：75 开发语言：Swift
 The Swift code generator for your assets, storyboards, Localizable.strings, … — Get rid of all String-based APIs!
 
 *[hyperoslo/Cache](https://github.com/hyperoslo/Cache)*
-Star：2523 Issue：20 开发语言：Swift
+Star：2541 Issue：20 开发语言：Swift
 :package: Nothing but Cache.
 
 *[kylef/Commander](https://github.com/kylef/Commander)*
 命令行
-Star：1478 Issue：1 开发语言：Swift
+Star：1482 Issue：4 开发语言：Swift
 Compose beautiful command line interfaces in Swift
 
 *[Carthage/Carthage](https://github.com/Carthage/Carthage)*
-Star：14513 Issue：230 开发语言：Swift
+Star：14546 Issue：232 开发语言：Swift
 A simple, decentralized dependency manager for Cocoa
 
 *[NARKOZ/hacker-scripts](https://github.com/NARKOZ/hacker-scripts)*
 程序员的活都让机器干的脚本（真实故事）
-Star：43487 Issue：66 开发语言：JavaScript
+Star：43582 Issue：66 开发语言：JavaScript
 Based on a true story
 
 *[RobotsAndPencils/XcodesApp](https://github.com/RobotsAndPencils/XcodesApp)*
 Xcode 多版本安装
-Star：2348 Issue：30 开发语言：Swift
+Star：2589 Issue：39 开发语言：Swift
 The easiest way to install and switch between multiple versions of Xcode - with a mouse click. 
 
 *[ZeeZide/5GUIs](https://github.com/ZeeZide/5GUIs)*
 可以分析程序用了哪些库，用了LLVM objdump
-Star：177 Issue：8 开发语言：Swift
+Star：180 Issue：8 开发语言：Swift
 A tiny macOS app that can detect the GUI technologies used in other apps.
 
 *[faisalmemon/ios-crash-dump-analysis-book](https://github.com/faisalmemon/ios-crash-dump-analysis-book)*
 iOS Crash Dump Analysis Book
-Star：454 Issue：1 开发语言：Objective-C
+Star：461 Issue：1 开发语言：Objective-C
 iOS Crash Dump Analysis Book
 
 *[majd/ipatool](https://github.com/majd/ipatool)*
 下载 ipa
-Star：1258 Issue：6 开发语言：Swift
+Star：1897 Issue：4 开发语言：Swift
 Command-line tool that allows searching and downloading app packages (known as ipa files) from the iOS App Store
 
 
@@ -5182,198 +8197,218 @@ Command-line tool that allows searching and downloading app packages (known as i
 
 *[Quick/Quick](https://github.com/Quick/Quick)*
 测试框架
-Star：9334 Issue：51 开发语言：Swift
+Star：9375 Issue：54 开发语言：Swift
 The Swift (and Objective-C) testing framework.
 
 
 ### 网络
 
 *[Alamofire/Alamofire](https://github.com/Alamofire/Alamofire)*
-Star：37100 Issue：33 开发语言：Swift
+Star：37285 Issue：33 开发语言：Swift
 Elegant HTTP Networking in Swift
 
 *[socketio/socket.io-client-swift](https://github.com/socketio/socket.io-client-swift)*
-Star：4704 Issue：181 开发语言：Swift
+Star：4740 Issue：184 开发语言：Swift
 
 
 *[Lojii/Knot](https://github.com/Lojii/Knot)*
 使用 SwiftNIO 实现 HTTPS 抓包
-Star：587 Issue：2 开发语言：C
+Star：1169 Issue：3 开发语言：C
 一款iOS端基于MITM(中间人攻击技术)实现的HTTPS抓包工具，完整的App，核心代码使用SwiftNIO实现
 
 *[swift-server/async-http-client](https://github.com/swift-server/async-http-client)*
 使用 SwiftNIO 开发的 HTTP 客户端
-Star：547 Issue：72 开发语言：Swift
+Star：569 Issue：79 开发语言：Swift
 HTTP client library built on SwiftNIO
 
 *[kean/Get](https://github.com/kean/Get)*
-Star：309 Issue：1 开发语言：Swift
+Star：344 Issue：4 开发语言：Swift
 Web API client built using async/await
 
 *[awesome-selfhosted/awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)*
 网络服务及上面的应用
-Star：77219 Issue：149 开发语言：JavaScript
+Star：81497 Issue：173 开发语言：JavaScript
 A list of Free Software network services and web applications which can be hosted on your own servers
 
 *[daltoniam/Starscream](https://github.com/daltoniam/Starscream)*
 WebSocket
-Star：7175 Issue：140 开发语言：Swift
+Star：7249 Issue：144 开发语言：Swift
 Websockets in swift for iOS and OSX
 
 *[shadowsocks/ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)*
-Star：30125 Issue：250 开发语言：Swift
+Star：30240 Issue：252 开发语言：Swift
 Next Generation of ShadowsocksX
 
 *[carson-katri/swift-request](https://github.com/carson-katri/swift-request)*
 声明式的网络请求
-Star：620 Issue：6 开发语言：Swift
+Star：627 Issue：6 开发语言：Swift
 Declarative HTTP networking, designed for SwiftUI
 
 *[cloudreve/Cloudreve](https://github.com/cloudreve/Cloudreve)*
 云存储部署
-Star：13045 Issue：328 开发语言：Go
-🌩支持多家云存储的云盘系统 (Self-deployed file management and sharing system, supports multiple storage providers)
+Star：13529 Issue：337 开发语言：Go
+🌩支持多家云存储的云盘系统 (Self-hosted file management and sharing system, supports multiple storage providers)
 
 *[alibaba/xquic](https://github.com/alibaba/xquic)*
 阿里巴巴发布的 XQUIC 库
-Star：911 Issue：4 开发语言：C
-
+Star：987 Issue：8 开发语言：C
+XQUIC Library released by Alibaba is a cross-platform implementation of QUIC and HTTP/3 protocol.
 
 *[kasketis/netfox](https://github.com/kasketis/netfox)*
 获取所有网络请求
-Star：3207 Issue：15 开发语言：Swift
+Star：3227 Issue：14 开发语言：Swift
 A lightweight, one line setup, iOS / OSX network debugging library! 🦊
 
 *[Moya/Moya](https://github.com/Moya/Moya)*
 Swift 编写的网络抽象层
-Star：13744 Issue：116 开发语言：Swift
+Star：13842 Issue：119 开发语言：Swift
 Network abstraction layer written in Swift.
 
 *[Kitura/BlueSocket](https://github.com/Kitura/BlueSocket)*
-Star：1285 Issue：27 开发语言：Swift
+Star：1296 Issue：28 开发语言：Swift
 Socket framework for Swift using the Swift Package Manager. Works on iOS, macOS, and Linux.
 
 *[rhummelmose/BluetoothKit](https://github.com/rhummelmose/BluetoothKit)*
 蓝牙
-Star：2049 Issue：33 开发语言：Swift
+Star：2063 Issue：33 开发语言：Swift
 Easily communicate between iOS/OSX devices using BLE
 
 *[WeTransfer/Mocker](https://github.com/WeTransfer/Mocker)*
 Mock Alamofire and URLSession
-Star：734 Issue：2 开发语言：Swift
+Star：770 Issue：1 开发语言：Swift
 Mock Alamofire and URLSession requests without touching your code implementation
+
+*[bagder/everything-curl](https://github.com/bagder/everything-curl)*
+记录了 curl 的一切
+Star：1410 Issue：2 开发语言：Perl
+The book documenting the curl project, the curl tool, libcurl and more. Simply put: everything curl.
+
+*[LANDrop/LANDrop](https://github.com/LANDrop/LANDrop)*
+全平台局域网文件传输
+Star：2370 Issue：75 开发语言：C++
+Drop any files to any devices on your LAN.
 
 
 ### 图形
 
 *[willdale/SwiftUICharts](https://github.com/willdale/SwiftUICharts)*
 用于SwiftUI的图表绘图库
-Star：397 Issue：30 开发语言：Swift
+Star：445 Issue：28 开发语言：Swift
 A charts / plotting library for SwiftUI. Works on macOS, iOS, watchOS, and tvOS and has accessibility features built in.
 
 *[lludo/SwiftSunburstDiagram](https://github.com/lludo/SwiftSunburstDiagram)*
 SwiftUI 图表
-Star：456 Issue：12 开发语言：Swift
+Star：464 Issue：12 开发语言：Swift
 SwiftUI library to easily render diagrams given a tree of objects. Similar to ring chart, sunburst chart, multilevel pie chart.
 
 *[ivanschuetz/SwiftCharts](https://github.com/ivanschuetz/SwiftCharts)*
-Star：2350 Issue：47 开发语言：Swift
+Star：2363 Issue：48 开发语言：Swift
 Easy to use and highly customizable charts library for iOS
 
 *[danielgindi/Charts](https://github.com/danielgindi/Charts)*
-Star：24997 Issue：812 开发语言：Swift
+Star：25114 Issue：818 开发语言：Swift
 Beautiful charts for iOS/tvOS/OSX! The Apple side of the crossplatform MPAndroidChart.
 
 *[imxieyi/waifu2x-ios](https://github.com/imxieyi/waifu2x-ios)*
 waifu2x Core ML 动漫风格图片的高清渲染
-Star：407 Issue：3 开发语言：Swift
+Star：415 Issue：1 开发语言：Swift
 iOS Core ML implementation of waifu2x
 
 *[mecid/SwiftUICharts](https://github.com/mecid/SwiftUICharts)*
 支持 SwiftUI 的简单的线图和柱状图库
-Star：1156 Issue：2 开发语言：Swift
+Star：1201 Issue：2 开发语言：Swift
 A simple line and bar charting library that supports accessibility written using SwiftUI. 
 
 *[Tencent/libpag](https://github.com/Tencent/libpag)*
 PAG（Portable Animated Graphics）实时渲染库，多个平台渲染AE动画。
-Star：1312 Issue：4 开发语言：C++
-A real-time rendering library for PAG (Portable Animated Graphics) files that renders After Effects animations natively across multiple platforms.
+Star：1543 Issue：2 开发语言：C++
+The official rendering library for PAG (Portable Animated Graphics) files that renders After Effects animations natively across multiple platforms.
 
 *[jathu/UIImageColors](https://github.com/jathu/UIImageColors)*
 获取图片主次颜色
-Star：3056 Issue：10 开发语言：Swift
+Star：3068 Issue：10 开发语言：Swift
 Fetches the most dominant and prominent colors from an image.
 
 *[BradLarson/GPUImage3](https://github.com/BradLarson/GPUImage3)*
 Metal 实现
-Star：2290 Issue：73 开发语言：Swift
+Star：2327 Issue：73 开发语言：Swift
 GPUImage 3 is a BSD-licensed Swift framework for GPU-accelerated video and image processing using Metal.
 
 *[exyte/Macaw](https://github.com/exyte/Macaw)*
 SVG
-Star：5784 Issue：124 开发语言：Swift
+Star：5810 Issue：126 开发语言：Swift
 Powerful and easy-to-use vector graphics Swift library with SVG support
 
 *[exyte/SVGView](https://github.com/exyte/SVGView)*
 支持 SwiftUI 的 SVG 解析渲染视图
-Star：125 Issue：1 开发语言：Swift
+Star：141 Issue：2 开发语言：Swift
 SVG parser and renderer written in SwiftUI
 
 *[efremidze/Magnetic](https://github.com/efremidze/Magnetic)*
 SpriteKit气泡支持SwiftUI
-Star：1351 Issue：21 开发语言：Swift
+Star：1359 Issue：23 开发语言：Swift
 SpriteKit Floating Bubble Picker (inspired by Apple Music) 🧲
 
 *[NextLevel/NextLevel](https://github.com/NextLevel/NextLevel)*
 相机
-Star：1963 Issue：70 开发语言：Swift
+Star：1970 Issue：70 开发语言：Swift
 ⬆️ Rad Media Capture in Swift
 
 *[Harley-xk/MaLiang](https://github.com/Harley-xk/MaLiang)*
 基于 Metal 的涂鸦绘图库
-Star：1240 Issue：39 开发语言：Swift
+Star：1242 Issue：40 开发语言：Swift
 iOS painting and drawing library based on Metal. 神笔马良有一支神笔（基于 Metal 的涂鸦绘图库）
 
 *[frzi/Model3DView](https://github.com/frzi/Model3DView)*
 毫不费力的使用 SwiftUI 渲染 3d models
-Star：20 Issue：0 开发语言：Swift
+Star：27 Issue：0 开发语言：Swift
 Render 3d models with SwiftUI effortlessly
 
 
 ### 音视频
 
 *[iina/iina](https://github.com/iina/iina)*
-Star：29200 Issue：1304 开发语言：Swift
+Star：29520 Issue：1319 开发语言：Swift
 The modern video player for macOS.
 
 *[shogo4405/HaishinKit.swift](https://github.com/shogo4405/HaishinKit.swift)*
 RTMP, HLS
-Star：2260 Issue：12 开发语言：Swift
+Star：2279 Issue：12 开发语言：Swift
 Camera and Microphone streaming library via RTMP, HLS for iOS, macOS, tvOS.
 
 *[AudioKit/AudioKit](https://github.com/AudioKit/AudioKit)*
-Star：8960 Issue：7 开发语言：Swift
+Star：9028 Issue：13 开发语言：Swift
 Swift audio synthesis, processing, & analysis platform for iOS, macOS and tvOS
 
 *[josejuanqm/VersaPlayer](https://github.com/josejuanqm/VersaPlayer)*
-Star：676 Issue：3 开发语言：Swift
+Star：685 Issue：4 开发语言：Swift
 Versatile Video Player implementation for iOS, macOS, and tvOS
 
 *[bilibili/ijkplayer](https://github.com/bilibili/ijkplayer)*
 bilibili 播放器
-Star：29961 Issue：2711 开发语言：C
+Star：30123 Issue：2720 开发语言：C
 Android/iOS video player based on FFmpeg n3.4, with MediaCodec, VideoToolbox support.
+
+*[mpv-player/mpv](https://github.com/mpv-player/mpv)*
+命令行视频播放器
+Star：18145 Issue：800 开发语言：C
+🎥 Command line video player
+
+*[analogcode/Swift-Radio-Pro](https://github.com/analogcode/Swift-Radio-Pro)*
+广播电台
+Star：2663 Issue：13 开发语言：Swift
+Professional Radio Station App for iOS!
 
 
 ### 安全
 
 *[krzyzanowskim/CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift)*
-Star：8912 Issue：40 开发语言：Swift
+Star：8966 Issue：40 开发语言：Swift
 CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
 
 *[rockbruno/SwiftInfo](https://github.com/rockbruno/SwiftInfo)*
 提取和分析一个iOS应用
-Star：1032 Issue：16 开发语言：Swift
+Star：1068 Issue：17 开发语言：Swift
 📊 Extract and analyze the evolution of an iOS app's code.
 
 
@@ -5381,51 +8416,61 @@ Star：1032 Issue：16 开发语言：Swift
 
 *[Kitura/swift-html-entities](https://github.com/Kitura/swift-html-entities)*
 HTML5 规范字符编码/解码器
-Star：137 Issue：3 开发语言：Swift
+Star：138 Issue：5 开发语言：Swift
 HTML5 spec-compliant character encoder/decoder for Swift
 
 *[TokamakUI/Tokamak](https://github.com/TokamakUI/Tokamak)*
 SwiftUI 兼容，WebAssembly 构建 HTML
-Star：1555 Issue：93 开发语言：Swift
+Star：1587 Issue：98 开发语言：Swift
 SwiftUI-compatible framework for building browser apps with WebAssembly and native apps for other platforms
 
 *[johnsundell/publish](https://github.com/johnsundell/publish)*
 用 swift 来写网站
-Star：3793 Issue：25 开发语言：Swift
+Star：3851 Issue：28 开发语言：Swift
 A static site generator for Swift developers
 
 *[highlightjs/highlight.js](https://github.com/highlightjs/highlight.js)*
 语法高亮
-Star：19564 Issue：54 开发语言：JavaScript
+Star：19693 Issue：53 开发语言：JavaScript
 JavaScript syntax highlighter with language auto-detection and zero dependencies.
 
 *[sivan/heti](https://github.com/sivan/heti)*
 赫蹏（hètí）中文排版
-Star：4171 Issue：15 开发语言：SCSS
+Star：4391 Issue：17 开发语言：SCSS
 赫蹏（hètí）是专为中文内容展示设计的排版样式增强。它基于通行的中文排版规范而来，可以为网站的读者带来更好的文章阅读体验。
 
 *[kevquirk/simple.css](https://github.com/kevquirk/simple.css)*
 简单大方基础 CSS 样式
-Star：1811 Issue：1 开发语言：CSS
+Star：2053 Issue：2 开发语言：CSS
 Simple.css is a classless CSS template that allows you to make a good looking website really quickly.
 
 *[mozilla-mobile/firefox-ios](https://github.com/mozilla-mobile/firefox-ios)*
-Star：10693 Issue：947 开发语言：Swift
+Star：10772 Issue：1002 开发语言：Swift
 Firefox for iOS
+
+*[liviuschera/noctis](https://github.com/liviuschera/noctis)*
+好看的代码编辑器配色主题
+Star：0 Issue：0 开发语言：
+
 
 
 ### 服务器
 
 *[vapor/vapor](https://github.com/vapor/vapor)*
-Star：21360 Issue：95 开发语言：Swift
+Star：21499 Issue：93 开发语言：Swift
 💧 A server-side Swift HTTP web framework.
+
+*[Lakr233/Rayon](https://github.com/Lakr233/Rayon)*
+SSH 机器管理，Swift 编写
+Star：1884 Issue：18 开发语言：Swift
+yet another SSH machine manager
 
 
 ### 系统
 
 *[spevans/swift-project1](https://github.com/spevans/swift-project1)*
 Swift编写内核，可在 Mac 和 PC 启动
-Star：233 Issue：1 开发语言：Swift
+Star：239 Issue：1 开发语言：Swift
 A minimal bare metal kernel in Swift
 
 
@@ -5433,82 +8478,82 @@ A minimal bare metal kernel in Swift
 
 *[chaozh/awesome-blockchain-cn](https://github.com/chaozh/awesome-blockchain-cn)*
 区块链 awesome
-Star：16115 Issue：13 开发语言：JavaScript
+Star：16249 Issue：14 开发语言：JavaScript
 收集所有区块链(BlockChain)技术开发相关资料，包括Fabric和Ethereum开发资料
 
 
 ### Apple
 
 *[apple/swift](https://github.com/apple/swift)*
-Star：58648 Issue：496 开发语言：C++
+Star：59091 Issue：527 开发语言：C++
 The Swift Programming Language
 
 *[apple/swift-evolution](https://github.com/apple/swift-evolution)*
 提案
-Star：13055 Issue：40 开发语言：Markdown
+Star：13171 Issue：38 开发语言：Markdown
 This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.
 
 *[apple/swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation)*
-Star：4512 Issue：32 开发语言：Swift
+Star：4554 Issue：37 开发语言：Swift
 The Foundation Project, providing core utilities, internationalization, and OS independence
 
 *[apple/swift-package-manager](https://github.com/apple/swift-package-manager)*
-Star：8660 Issue：22 开发语言：Swift
+Star：8705 Issue：31 开发语言：Swift
 The Package Manager for the Swift Programming Language
 
 *[apple/swift-markdown](https://github.com/apple/swift-markdown)*
-Star：1615 Issue：6 开发语言：Swift
+Star：1682 Issue：6 开发语言：Swift
 A Swift package for parsing, building, editing, and analyzing Markdown documents.
 
 *[apple/sourcekit-lsp](https://github.com/apple/sourcekit-lsp)*
-Star：2496 Issue：5 开发语言：Swift
+Star：2520 Issue：6 开发语言：Swift
 Language Server Protocol implementation for Swift and C-based languages
 
 *[apple/swift-nio](https://github.com/apple/swift-nio)*
-Star：6858 Issue：148 开发语言：Swift
+Star：6901 Issue：152 开发语言：Swift
 Event-driven network application framework for high performance protocol servers & clients, non-blocking.
 
 *[apple/swift-syntax](https://github.com/apple/swift-syntax)*
 解析、生成、转换 Swift 代码
-Star：1763 Issue：3 开发语言：Swift
+Star：1783 Issue：3 开发语言：Swift
 SwiftPM package for SwiftSyntax library.
 
 *[apple/swift-crypto](https://github.com/apple/swift-crypto)*
 CryptoKit 的开源实现
-Star：1169 Issue：10 开发语言：C
+Star：1182 Issue：10 开发语言：C
 Open-source implementation of a substantial portion of the API of Apple CryptoKit suitable for use on Linux platforms.
 
 *[apple/swift-driver](https://github.com/apple/swift-driver)*
 用 Swift 语言重新实现的编译器的驱动程序库
-Star：607 Issue：11 开发语言：Swift
+Star：612 Issue：14 开发语言：Swift
 Swift compiler driver reimplementation in Swift
 
 *[apple/swift-numerics](https://github.com/apple/swift-numerics)*
 用简单的方式用浮点型进行数值计算
-Star：1337 Issue：43 开发语言：Swift
+Star：1362 Issue：45 开发语言：Swift
 Advanced mathematical types and functions for Swift
 
 *[apple/swift-atomics](https://github.com/apple/swift-atomics)*
 Swift 的低级原子操作
-Star：715 Issue：10 开发语言：Swift
+Star：727 Issue：11 开发语言：Swift
 Low-level atomic operations for Swift
 
 
 ### 计算机科学
 
 *[raywenderlich/swift-algorithm-club](https://github.com/raywenderlich/swift-algorithm-club)*
-Star：25933 Issue：50 开发语言：Swift
+Star：26101 Issue：51 开发语言：Swift
 Algorithms and data structures in Swift, with explanations!
 
 
 ### 扩展知识
 
 *[trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)*
-Star：59575 Issue：57 开发语言：
+Star：63110 Issue：10 开发语言：
 A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.
 
 *[rossant/awesome-math](https://github.com/rossant/awesome-math)*
-Star：5624 Issue：7 开发语言：Python
+Star：5782 Issue：6 开发语言：Python
 A curated list of awesome mathematics resources
 
 
@@ -5516,7 +8561,7 @@ A curated list of awesome mathematics resources
 
 *[krzysztofzablocki/KZFileWatchers](https://github.com/krzysztofzablocki/KZFileWatchers)*
 Swift编写的观察本地或者网络上，比如网盘和FTP的文件变化
-Star：1010 Issue：2 开发语言：Swift
+Star：1011 Issue：2 开发语言：Swift
 A micro-framework for observing file changes, both local and remote. Helpful in building developer tools.
 
 
@@ -5527,7 +8572,6 @@ A micro-framework for observing file changes, both local and remote. Helpful in 
 * [iOS摸鱼周报](https://zhangferry.com/)：iOS 摸鱼周报
 * [Michael Tsai](https://mjtsai.com/blog)：一名 macOS 开发者的博客
 * [少数派](https://sspai.com/)：少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质
-* [刘延栋的赛博空间](https://liuyandong.com)：成一家之言，毕竟有言胜于无。
 * [OneV's Den](https://onevcat.com)：上善若水，人淡如菊。这里是王巍 (onevcat) 的博客，用来记录一些技术和想法，主要专注于 Swift 和 iOS 开发。
 * [SwiftLee](https://www.avanderlee.com)：A weekly blog about Swift, iOS and Xcode Tips and Tricks
 * [Swift with Majid](https://swiftwithmajid.com)：Majid's blog about Swift development
@@ -5554,16 +8598,6 @@ A micro-framework for observing file changes, both local and remote. Helpful in 
 * 22.01.03 发布2.0：新动态支持提醒，包括博客RSS、开发者、好库和探索库
 * 21.11.16 发布1.0：Swift 指南语法速查完成
 
-## 资源
-
-* 官方：[apple/swift](https://github.com/apple/swift)、[Swift.org](https://www.swift.org/)、[Swift.org - Blog](https://www.swift.org/blog/)、[The Swift Programming Language](https://docs.swift.org/swift-book/) [中文](https://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)、[WWDC Session](https://developer.apple.com/videos/)、[SwiftUI 官方例子](https://developer.apple.com/tutorials/sample-apps)
-* 手册：[SwiftDoc.org](https://swiftdoc.org/)、[Swift 5.1 Cheat Sheet and Quick Reference](https://www.raywenderlich.com/6362977-swift-5-1-cheat-sheet-and-quick-reference)、[Learn swift in Y Minutes](https://learnxinyminutes.com/docs/swift/)、
-* Swift 入门：[CS193p](https://cs193p.sites.stanford.edu/)、[从零到上架](https://www.appcoda.com/learnswift/)、[探索标准库](https://www.swiftbysundell.com/discover/standard-library/)、[100 Days of Swift](https://www.hackingwithswift.com/100)
-* SwiftUI 入门：[SwiftUI by Example](https://www.hackingwithswift.com/quick-start/swiftui)
-* 库整理：[Open-Source](https://www.libhunt.com/l/swift)
-* 聚合：[awesome-ios](https://github.com/vsouza/awesome-ios)、[iOS Example](https://iosexample.com/)、[Cocoa Controls](https://www.cocoacontrols.com/)
-* 周报：[老司机](https://github.com/SwiftOldDriver/iOS-Weekly) 、[13週報](https://ethanhuang13.substack.com/)、[摸鱼周报](https://zhangferry.com/)、[iOS Dev Weekly](https://iosdevweekly.com/)、[Not Only Swift Weekly](https://www.getrevue.co/profile/peterfriese)、[SwiftUI Weekly](http://weekly.swiftwithmajid.com/)
-* 播客：[weak self](https://weakself.dev/)、[ggtalk](https://talk.swift.gg/)、[Swift by Sundell](https://swiftbysundell.com/podcast/)
 
 
 
