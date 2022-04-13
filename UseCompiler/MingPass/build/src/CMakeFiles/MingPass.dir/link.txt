@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -bundle -Wl,-headerpad_max_install_names -undefined dynamic_lookup -o libMingPass.so CMakeFiles/MingPass.dir/MingPass.cpp.o   -L/usr/local/opt/llvm/lib 
