@@ -1,8 +1,0 @@
-/Users/mingdai/Downloads/PTest/MingPass/build/CMakeFiles/rebuild_cache.dir
-/Users/mingdai/Downloads/PTest/MingPass/build/CMakeFiles/edit_cache.dir
-/Users/mingdai/Downloads/PTest/MingPass/build/CMakeFiles/acc_gen.dir
-/Users/mingdai/Downloads/PTest/MingPass/build/CMakeFiles/omp_gen.dir
-/Users/mingdai/Downloads/PTest/MingPass/build/CMakeFiles/intrinsics_gen.dir
-/Users/mingdai/Downloads/PTest/MingPass/build/src/CMakeFiles/rebuild_cache.dir
-/Users/mingdai/Downloads/PTest/MingPass/build/src/CMakeFiles/edit_cache.dir
-/Users/mingdai/Downloads/PTest/MingPass/build/src/CMakeFiles/MingPass.dir

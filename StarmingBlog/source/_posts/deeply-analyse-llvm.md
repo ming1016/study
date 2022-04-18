@@ -4,7 +4,7 @@ date: 2017-03-01 21:58:09
 tags: [LLVM, iOS, Clang]
 categories: Programming
 ---
-# 前言
+## 前言
 2000年，伊利诺伊大学厄巴纳－香槟分校（University of Illinois at Urbana-Champaign 简称UIUC）这所享有世界声望的一流公立研究型大学的 Chris Lattner（他的 twitter [@clattner_llvm](https://twitter.com/clattner_llvm) ） 开发了一个叫作 Low Level Virtual Machine 的编译器开发工具套件，后来涉及范围越来越大，可以用于常规编译器，JIT编译器，汇编器，调试器，静态分析工具等一系列跟编程语言相关的工作，于是就把简称 LLVM 这个简称作为了正式的名字。Chris Lattner 后来又开发了 Clang，使得 LLVM 直接挑战 GCC 的地位。2012年，LLVM 获得美国计算机学会 ACM 的软件系统大奖，和 UNIX，WWW，TCP/IP，Tex，JAVA 等齐名。
 
 Chris Lattner 生于 1978 年，2005年加入苹果，将苹果使用的 GCC 全面转为 LLVM。2010年开始主导开发 Swift 语言。
@@ -25,7 +25,7 @@ LLVM 还用在 Gallium3D 中进行 JIT 优化，Xorg 中的 pixman 也有考虑�
 
 将编译器之前对于编译的前世今生也是需要了解的，比如回答下这个问题，编译器程序是用什么编译的？看看 [《linkers and loaders》](https://book.douban.com/subject/1436811/) 这本书就知道了。
 
-# 编译流程
+## 编译流程
 在列出完整步骤之前可以先看个简单例子。看看是如何完成一次编译的。
 ```objective-c
 #import <Foundation/Foundation.h>
@@ -148,7 +148,7 @@ starming rank 14
 * 拷贝标准库
 * 创建 .app 文件和签名
 
-# Clang 编译 .m 文件
+## Clang 编译 .m 文件
 在 Xcode 编译过后，可以通过 Show the report navigator 里对应 target 的 build 中查看每个 .m 文件的 clang 参数信息，这些参数都是通过Build Setting。
 
 具体拿编译 AFSecurityPolicy.m 的信息来看看。首先对任务进行描述。
@@ -182,7 +182,7 @@ clang 命令参数
 -o 编译结果
 ```
 
-## 构建 Target
+### 构建 Target
 编译工程中的第三方依赖库后会构建我们程序的 target，会按顺序输出如下的信息：
 ```
 Create product structure
@@ -203,10 +203,10 @@ Sign GCDFetchFeed.app
 ```
 从这些信息可以看出在这些步骤中会分别调用不同的命令行工具来执行。
 
-## Target 在 Build 过程的控制
+### Target 在 Build 过程的控制
 在 Xcode 的 Project editor 中的 Build Setting，Build Phases 和 Build Rules 能够控制编译的过程。
 
-### Build Phases
+#### Build Phases
 构建可执行文件的规则。指定 target 的依赖项目，在 target build 之前需要先 build 的依赖。在 Compile Source 中指定所有必须编译的文件，这些文件会根据 Build Setting 和 Build Rules 里的设置来处理。
 
 在 Link Binary With Libraries 里会列出所有的静态库和动态库，它们会和编译生成的目标文件进行链接。
@@ -215,13 +215,13 @@ build phase 还会把静态资源拷贝到 bundle 里。
 
 可以通过在 build phases 里添加自定义脚本来做些事情，比如像 CocoaPods 所做的那样。
 
-### Build Rules
+#### Build Rules
 指定不同文件类型如何编译。每条 build rule 指定了该类型如何处理以及输出在哪。可以增加一条新规则对特定文件类型添加处理方法。
 
-### Build Settings
+#### Build Settings
 在 build 的过程中各个阶段的选项的设置。
 
-### pbxproj工程文件
+#### pbxproj工程文件
 build 过程控制的这些设置都会被保存在工程文件 .pbxproj 里。在这个文件中可以找 rootObject 的 ID 值
 ```
 rootObject = 3EE311301C4E1F0800103FA3 /* Project object */;
@@ -269,7 +269,7 @@ targets = (
 
 接下来详细的看看 Clang 所做的事情吧。
 
-# Clang Static Analyzer静态代码分析
+## Clang Static Analyzer静态代码分析
 可以在 [llvm/clang/ Source Tree - Woboq Code Browser](https://code.woboq.org/llvm/clang/) 上查看 Clang 的代码。
 
 Youtube上一个教程：[The Clang AST - a Tutorial - YouTube](https://www.youtube.com/watch?time_continue=280&v=VqCkCDFLSsc)
@@ -400,7 +400,7 @@ CFG 将程序拆得更细，能够将执行的过程表现的更直观些，为�
 静态检查的一些库以及使用方法
 * [FauxPas_document_translation/README.md at master · DeveloperLx/FauxPas_document_translation · GitHub](https://github.com/DeveloperLx/FauxPas_document_translation/blob/master/README.md?from=timeline&isappinstalled=0)
 
-# CodeGen 生成 IR 代码
+## CodeGen 生成 IR 代码
 将语法树翻译成 LLVM IR 中间代码，做为 LLVM Backend 输入的桥接语言。这样做的好处在前言里也提到了，方便 LLVM Backend 给多语言做相同的优化，做到语言无关。
 
 这个过程中还会跟 runtime 桥接。
@@ -416,7 +416,7 @@ CFG 将程序拆得更细，能够将执行的过程表现的更直观些，为�
 
 不管编译的语言时 Objective-C 还是 Swift 也不管对应机器是什么，亦或是即时编译，LLVM 里唯一不变的是中间语言 LLVM IR。那么我们就来看看如何玩 LLVM IR。
 
-## IR 结构
+### IR 结构
 下面是刚才生成的 main.ll 中间代码文件。
 ```
 ; ModuleID = ‘main.c’
@@ -491,7 +491,7 @@ LLVM IR 有三种表示格式，第一种是 bitcode 这样的存储格式，以
 
 IR 语言满足静态单赋值，可以很好的降低数据流分析和控制流分析的复杂度。及只能在定义时赋值，后面不能更改。但是这样就没法写程序了，输入输出都没法弄，所以函数式编程才会有类似 Monad 这样机制的原因。
 
-## LLVM IR 优化
+### LLVM IR 优化
 使用 O2，O3 这样的优化会调用对应的 Pass 来进行处理，有比如类似死代码清理，内联化，表达式重组，循环变量移动这样的 Pass。可以通过 llvm-opt 调用 LLVM 优化相关的库。
 
 可能直接这么说不太直观，我们可以更改下原 c 代码举个小例子看看这些 Pass 会做哪些优化。当我们加上
@@ -562,7 +562,7 @@ br label %while.body
 这段，icmp 会比较当前的 %inc 和定义的临界值 100，根据返回的布尔值来决定 br 跳转到那个代码标签，真就跳转到 while.end 标签，否就在进入 while.body 标签。这就是 while 的逻辑。通过br 跳转和 label 这种标签的概念使得 IR 语言能够成为更低级兼容性更高更方便转向更低级语言的语言。
 
 
-## SSA
+### SSA
 LLVM IR 是 SSA 形式的，维护双向 def-use 信息，use-def 是通过普通指针实现信息维护，def-use 是通过内存跳表和链表来实现的，便于 forward dataflow analysis 和 backward dataflow analysis。可以通过 ADCE 这个 Pass 来了解下 backward dataflow，这个pass 的源文件在 lib/Transforms/Scalar/ADCE.cpp 中，ADCE 实现了 Aggressive Dead Code Elimination Pass。这个 Pass 乐观地假设所有 instructions 都是 Dead 直到证明是否定的，允许它消除其他 DCE Pass 的 Dead 计算 catch，特别是涉及循环计算。其它 DCE 相关的 Pass 可以查看同级目录下的 BDCE.cpp 和 DCE.cpp，目录下其它的 Pass 都是和数据流相关的分析包含了各种分析算法和思路。
 
 那么看看加法这个操作的相关的 IR 代码
@@ -675,7 +675,7 @@ llc 编译器是专门编译 LLVM IR 的编译器用来生成汇编文件。
 
 llvm-mc 还可以直接生成 object 文件。
 
-# Clang CFE
+## Clang CFE
 动手玩肯定不能少了 Clang 的前端组件及库，熟悉这些库以后就能够自己动手用这些库编写自己的程序了。下面我就对这些库做些介绍，然后再着重说说 libclang 库，以及如何用它来写工具。
 
 * LLVM Support Library - LLVM libSupport 库提供了许多底层库和数据结构，包括命令行 option 处理，各种容器和系统抽象层，用于文件系统访问。
@@ -687,7 +687,7 @@ llvm-mc 还可以直接生成 object 文件。
 * The Sema Library - 解析器调用此库时，会对输入进行语义分析。 对于有效的程序，Sema 为解析构造一个 AST。
 * The CodeGen Library - CodeGen 用 AST 作为输入，并从中生成 LLVM IR 代码。
 
-## libclang
+### libclang
 libclang 会让你觉得 clang 不仅仅只是一个伟大的编译器。下面从解析源码来说下
 
 先写个 libclang 的程序来解析源码
@@ -781,7 +781,7 @@ clang_getCursorExtent(R)
 clang_getCursorReferenced(R) == C //指向C
 ```
 
-# Driver
+## Driver
 动手玩的话，特别是想要使用这些工具链之前最好先了解我们和 LLVM 交互的实现。那么这部分就介绍下 LLVM 里的 Driver。
 
 Driver 是 Clang 面对用户的接口，用来解析 Option 设置，判断决定调用的工具链，最终完成整个编译过程。
@@ -824,7 +824,7 @@ int main(int argc_, const char **argv_) {
 }
 ```
 
-## Driver 的工作流程图
+### Driver 的工作流程图
 在 driver.cpp 的 main 函数里有 Driver 的初始化。我们来看看和 driver 相关的代码
 ```c++
   Driver TheDriver(Path, llvm::sys::getDefaultTargetTriple(), Diags);
@@ -933,7 +933,7 @@ public:
 
 ![](/uploads/deeply-analyse-llvm/04.png)
 
-## Parse
+### Parse
 看完完整的 Driver 流程后，我们就先从 Parse 开始说起。
 
 Parse 是解析选项，对应的代码在 ParseArgStrings 这个函数里。
@@ -1013,7 +1013,7 @@ static int ExecuteCC1Tool(ArrayRef<const char *> argv, StringRef Tool) {
 * ParsePreprocessorOutputArgs - 解析预处理输出的 option
 
 
-## Pipeline
+### Pipeline
 Pipeline 这里可以添加 -ccc-print-phases 看到进入 Pipeline 以后的事情。
 
 这些如 -ccc-print-phases 这样的 option 在编译时会生成.inc 这样的 C++ TableGen 文件。在 Options.td 可以看到全部的 option 定义。
@@ -1022,7 +1022,7 @@ Pipeline 这里可以添加 -ccc-print-phases 看到进入 Pipeline 以后的事
 
 使用 clang main.c -arch i386 -arch x86_64 -o main 然后 file main 能够看到这时 BindArchAction 这个 Action 起到了作用，编译链接了两次同时创建了一个库既能够支持32位也能够支持64位用 lipo 打包。
 
-## Action
+### Action
 ```c++
 /// BuildActions - Construct the list of actions to perform for the
   /// given arguments, which are only done for a single architecture.
@@ -1108,7 +1108,7 @@ void Driver::BuildActions(Compilation &C, DerivedArgList &Args,
 * EmitBCAction - 生成 IR Bitcode 文件，option 是 -emit-llvm-bc
 * MigrateSourceAction - 代码迁移，option 是 -migrate
 
-## Bind
+### Bind
 Bind 主要是与工具链 ToolChain 交互
 根据创建的那些 Action，在 Action 执行时 Bind 来提供使用哪些工具，比如生成汇编时是使用内嵌的还是 GNU 的，还是其它的呢，这个就是由 Bind 来决定的，具体使用的工具有各个架构，平台，系统的 ToolChain 来决定。
 
@@ -1116,10 +1116,10 @@ Bind 主要是与工具链 ToolChain 交互
 
 可以看到编译选择的是 clang，链接选择的是 darwin::Linker，但是在链接时前没有汇编器的过程，这个就是 Bind 起了作用，它会根据不同的平台来决定选择什么工具，因为是在 Mac 系统里 Bind 就会决定使用 integrated-as 这个内置汇编器。那么如何在不用内置汇编器呢。可以使用 -fno-integrated-as 这个 option。
 
-## Translate
+### Translate
 Translate 就是把相关的参数对应到不同平台上不同的工具。
 
-## Jobs
+### Jobs
 从创建 Jobs 的方法
 ```c++
 /// BuildJobsForAction - Construct the jobs to perform for the action \p A and
@@ -1135,7 +1135,7 @@ Translate 就是把相关的参数对应到不同平台上不同的工具。
 ```
 可以看出 Jobs 需要前面的 Compilation，Action，ToolChain 等，那么 Jobs 就是将前面获取的信息进行组合分组给后面的 Execute 做万全准备。
 
-## Execute
+### Execute
 在 driver.cpp 的 main 函数里的 ExecuteCompilation 方法里可以看到如下代码：
 ```c++
  // Set up response file names for each command, if necessary
@@ -1150,10 +1150,10 @@ Execute 就是执行整个的编译过程的 Jobs。过程执行的内容和耗�
 
 ![](/uploads/deeply-analyse-llvm/07.png)
 
-# Clang Attributes
+## Clang Attributes
 以 __attribute__(xx) 的语法格式出现，是 Clang 提供的一些能够让开发者在编译过程中参与一些源码控制的方法。下面列一些会用到的用法：
 
-## __attribute__((format(__NSString__, F, A))) 格式化字符串
+### __attribute__((format(__NSString__, F, A))) 格式化字符串
 可以查看 NSLog 的用法
 ```objective-c
 FOUNDATION_EXPORT void NSLog(NSString *format, …) NS_FORMAT_FUNCTION(1,2) NS_NO_TAIL_CALL;
@@ -1168,32 +1168,32 @@ FOUNDATION_EXPORT void NSLog(NSString *format, …) NS_FORMAT_FUNCTION(1,2) NS_N
 #endif
 ```
 
-## __attribute__((deprecated(s))) 版本弃用提示
+### __attribute__((deprecated(s))) 版本弃用提示
 在编译过程中能够提示开发者该方法或者属性已经被弃用
 ```objective-c
 - (void)preMethod:( NSString *)string __attribute__((deprecated(“preMethod已经被弃用，请使用newMethod”)));
 - (void)deprecatedMethod DEPRECATED_ATTRIBUTE; //也可以直接使用DEPRECATED_ATTRIBUTE这个系统定义的宏
 ```
 
-## __attribute__((availability(os,introduced=m,deprecated=n, obsoleted=o,message=“” __VA_ARGS__))) 指明使用版本范围
+### __attribute__((availability(os,introduced=m,deprecated=n, obsoleted=o,message=“” __VA_ARGS__))) 指明使用版本范围
 os 指系统的版本，m 指明引入的版本，n 指明过时的版本，o 指完全不用的版本，message 可以写入些描述信息。
 ```objective-c
 - (void)method __attribute__((availability(ios,introduced=3_0,deprecated=6_0,obsoleted=7_0,message=“iOS3到iOS7版本可用，iOS7不能用”)));
 ```
 
-## __attribute__((unavailable(…))) 方法不可用提示
+### __attribute__((unavailable(…))) 方法不可用提示
 这个会在编译过程中告知方法不可用，如果使用了还会让编译失败。
 
-## __attribute__((unused))
+### __attribute__((unused))
 没有被使用也不报警告
 
-## __attribute__((__warn_unused_result__))
+### __attribute__((__warn_unused_result__))
 不使用方法的返回值就会警告，目前 swift3 已经支持该特性了。oc中也可以通过定义这个attribute来支持。
 
-## __attribute__((__availability__(swift, unavailable, message=_msg)))
+### __attribute__((__availability__(swift, unavailable, message=_msg)))
 OC 的方法不能在 Swift 中使用。
 
-## __attribute__((cleanup(…))) 作用域结束时自动执行一个指定方法
+### __attribute__((cleanup(…))) 作用域结束时自动执行一个指定方法
 作用域结束包括大括号结束，return，goto，break，exception 等情况。这个动作是先于这个对象的 dealloc 调用的。
 
 Reactive Cocoa 中有个比较好的使用范例，@onExit 这个宏，定义如下：
@@ -1226,7 +1226,7 @@ if (property != NULL) {
 ```
 可以看出 attributes 的设置和释放都在一起使得代码的可读性得到了提高。
 
-## __attribute__((overloadable)) 方法重载
+### __attribute__((overloadable)) 方法重载
 能够在 c 的函数上实现方法重载。即同样的函数名函数能够对不同参数在编译时能够自动根据参数来选择定义的函数
 ```objective-c
 __attribute__((overloadable)) void printArgument(int number){
@@ -1242,25 +1242,25 @@ __attribute__((overloadable)) void printArgument(NSNumber *number){
 }
 ```
 
-## __attribute__((objc_designated_initializer)) 指定内部实现的初始化方法
+### __attribute__((objc_designated_initializer)) 指定内部实现的初始化方法
 * 如果是 objc_designated_initializer 初始化的方法必须调用覆盖实现 super 的 objc_designated_initializer 方法。
 * 如果不是 objc_designated_initializer 的初始化方法，但是该类有 objc_designated_initializer 的初始化方法，那么必须调用该类的 objc_designated_initializer 方法或者非 objc_designated_initializer 方法，而不能够调用 super 的任何初始化方法。
 
-## __attribute__((objc_subclassing_restricted)) 指定不能有子类
+### __attribute__((objc_subclassing_restricted)) 指定不能有子类
 相当于 Java 里的 final 关键字，如果有子类继承就会出错。
 
-## __attribute__((objc_requires_super)) 子类继承必须调用 super
+### __attribute__((objc_requires_super)) 子类继承必须调用 super
 声明后子类在继承这个方法时必须要调用 super，否则会出现编译警告，这个可以定义一些必要执行的方法在 super 里提醒使用者这个方法的内容时必要的。
 
 ## __attribute__((const)) 重复调用相同数值参数优化返回
 用于数值类型参数的函数，多次调用相同的数值型参数，返回是相同的，只在第一次是需要进行运算，后面只返回第一次的结果，这时编译器的一种优化处理方式。
 
-## __attribute__((constructor(PRIORITY))) 和 __attribute__((destructor(PRIORITY)))
+### __attribute__((constructor(PRIORITY))) 和 __attribute__((destructor(PRIORITY)))
 PRIORITY 是指执行的优先级，main 函数执行之前会执行 constructor，main 函数执行后会执行 destructor，+load 会比 constructor 执行的更早点，因为动态链接器加载 Mach-O 文件时会先加载每个类，需要 +load 调用，然后才会调用所有的 constructor 方法。
 
 通过这个特性，可以做些比较好玩的事情，比如说类已经 load 完了，是不是可以在 constructor 中对想替换的类进行替换，而不用加在特定类的 +load 方法里。
 
-# Clang 警告处理
+## Clang 警告处理
 先看看这个
 ```objective-c
 #pragma clang diagnostic push
@@ -1271,7 +1271,7 @@ PRIORITY 是指执行的优先级，main 函数执行之前会执行 constructor
 
 如果没有#pragma clang 这些定义，会报出 sizeWithFont 的方法会被废弃的警告，这个加上这个方法当然是为了兼容老系统，加上 ignored “-Wdeprecated-declarations” 的作用是忽略这个警告。通过 clang diagnostic push/pop 可以灵活的控制代码块的编译选项。
 
-# 使用 libclang 来进行语法分析
+## 使用 libclang 来进行语法分析
 使用 libclang 里面提供的方法对源文件进行语法分析，分析语法树，遍历语法树上每个节点。
 
 使用这个库可以直接使用 C 的 API，官方也提供了 python binding。还有开源的 node-js / ruby binding，还有 Objective-C的开源库 [GitHub - macmade/ClangKit: ClangKit provides an Objective-C frontend to LibClang. Source tokenization, diagnostics and fix-its are actually implemented.](https://github.com/macmade/ClangKit) 。
@@ -1309,7 +1309,7 @@ print asciitree.draw_tree(translation_unit.cursor,
 ```
 基于语法树的分析还可以针对字符串做加密。
 
-# LibTooling 对语法树完全的控制
+## LibTooling 对语法树完全的控制
 因为 LibTooling 能够完全控制语法树，那么可以做的事情就非常多了。
 * 可以改变 clang 生成代码的方式。
 * 增加更强的类型检查。
@@ -1358,7 +1358,7 @@ virtual bool VisitObjCMessageExpr(ObjCMessageExpr *E) {
 }
 ```
 
-# Clang Plugin
+## Clang Plugin
 通过自己写个插件，比如上面写的 LibTooling 的 clang 工具，可以将这个插件动态的加载到编译器中，对编译进行控制，可以在 LLVM 的这个目录下查看一些范例 llvm/tools/clang/tools
 
 动态化方案 DynamicCocoa 中就是使用了一个将 OC 源码转 JS 的插件来进行代码的转换，这里整理了些利用 clang 转 js 的库  [clangtojs资源 - Lmsgsendnilself](https://lmsgsendnilself.github.io/blog/2017/02/28/clangtojszi-yuan/) ，JSPatch 是直接手写 JS 而没有转换的过程，所以也就没有多出这一步，而鹅厂的OCS更猛，直接在端内写了个编译器。在 C 函数的调用上孙源有个 slides 可以看看： [Calling Conventions in Cocoa by sunnyxx](http://slides.com/sunnyxx/calling-conventions-in-cocoa#/) bang 也有篇文章： [如何动态调用 C 函数 «  bang’s blog](http://blog.cnbang.net/tech/3219/)  。
@@ -1376,7 +1376,7 @@ virtual bool VisitObjCMessageExpr(ObjCMessageExpr *E) {
 * 在 Xcode 中添加 clang 静态分析自定义 checks： [Running the analyzer within Xcode](http://clang-analyzer.llvm.org/xcode.html)
 * 将 LLVM C 的 API 用 swift 来包装： [GitHub - harlanhaskins/LLVMSwift: A Swifty wrapper for the LLVM C API version 3.9.1](https://github.com/harlanhaskins/LLVMSwift)
 
-# LLVM Backend
+## LLVM Backend
 首先通过下图看看 LLVM Backend 在整个 LLVM 里所处的位置：
 ![](/uploads/deeply-analyse-llvm/09.png)
 
@@ -1384,7 +1384,7 @@ virtual bool VisitObjCMessageExpr(ObjCMessageExpr *E) {
 
 ![](/uploads/deeply-analyse-llvm/10.png)
 
-## CodeGen 阶段
+### CodeGen 阶段
 * Instruction Selection 指令选择：将IR转化成目标平台指令组成的定向非循环图 DAG（Directed Acyclic Graph）。选择既能完成指定操作，又能执行时间最短的指令。
 * Scheduling and Formation 调度与排序：读取 DAG，将 DAG 的指令排成 MachineInstr 的队列。根据指令间的依赖进行指令重排使得能够更好的利用 CPU 的功能单元。
 * SSA 优化：多个基于 SSA（Static Single Assignment） 的 Pass 组成。比如 modulo-scheduling 和 peephole optimization 都是在这个阶段完成的
@@ -1394,7 +1394,7 @@ Prolog / Epilog 生成
 * 晚期优化：最后一次优化机会
 * Code Emission：输出代码，可以选择汇编或者二进制机器码。
 
-## SelectionDAG
+### SelectionDAG
 * 构建最初的 DAG：把 IR 里的 add 指令转成 SelectionDAG 的 add 节点
 * 优化构建好的 DAG：把一些平台支持的 meta instructions 比如 Rotates，div / rem 指令识别出
 * Legalization SelectionDAG 类型：比如某些平台只有64位浮点和32位整数运算指令，那么就需要把所有 f32 都提升到 f64，i1/i8/i16 都提升到 i32，同时还要把 i64 拆分成两个 i32 来存储，操作符的合法化，比如 SDIV 在 x86 上回转成 SDIVREM。这个过程结果可以通过 llc -view-dag-combine2-dags sum.ll 看到
@@ -1413,7 +1413,7 @@ Prolog / Epilog 生成
 * -view-sched-dags：在 Scheduler 之前 ISel 之后
 * -view-sunit-dags：可以显示 Scheduler 的依赖图
 
-### SDNode
+#### SDNode
 DAG 的节点都是有 SDNode 所构成，它的主要是作为 dag 值的操作符，描述这个 dag 所代表的操作，操作数。在 LLVM 里 SDNode 的定义出现在 SelectDAGNodes.h 还有就是 TargetSelectionDAG.td 里，每个 SelectionDAG 节点类型都有一个对应的 SDNode 定义。
 ```c++
 class SDNode<string opcode, SDTypeProfile typeprof, list<SDNodeProperty> props = [], string sdclass ="SDNode"> :SDPatternOperator {
@@ -1437,7 +1437,7 @@ class SDTypeConstraint<intopnum> {
 
 SDNodeProperty 是 SDNode 的属性，用来描述 SDNode 操作的特征。
 
-### PatFrag 可复用的结构
+#### PatFrag 可复用的结构
 为了支持高级语言的特性，TD 也通过 PatFrag 来支持，在SelectionTargetDAG.td 里定义的，这样就可以支持数据与结构的复用。
 ```c++
 class PatFrag<dag ops, dag frag, code pred = [{}], SDNodeXForm xform =NOOP_SDNodeXForm> : SDPatternOperator {
@@ -1448,7 +1448,7 @@ class PatFrag<dag ops, dag frag, code pred = [{}], SDNodeXForm xform =NOOP_SDNod
 	SDNodeXForm OperandTransform = xform;
 }
 ```
-### Pattern 匹配指令
+#### Pattern 匹配指令
 Pattern 主要是解决复杂操作的 DAG 模式，LLVM 会使用贪婪匹配自动完成这个指令选择。定义在 Target.td 里。
 ```c++
 class Pattern<dag patternToMatch, list<dag>resultInstrs> {
@@ -1459,7 +1459,7 @@ class Pattern<dag patternToMatch, list<dag>resultInstrs> {
 }
 ```
 
-### Predicate
+#### Predicate
 在 Pattern 和 Instruction 的定义里都有 Predicates。满足 Predicates 的条件才能够继续，定义也在 Target.td 里
 ```c++
 class Predicate<string cond> {
@@ -1474,7 +1474,7 @@ class Predicate<string cond> {
 ```
 这个 Predicate 实际上就是一个容器，转么装嵌入代码的，然后把这个代码插入到合适的地方来对某些局限的指令进行筛选过滤。
 
-### Itinerary 和 SchedRW 调度信息
+#### Itinerary 和 SchedRW 调度信息
 Itinerary 和 SchedRW 在 Instruction 里定义，用来描述指令调度的信息。目标机器平台会从 InstrltinClass 来派生对应指令的定义，比如 X86，它的指令很多而且复杂所以定义的 InstrltinClass 派生定义数量也很多，都在 X86Schedule.td 里。每条指令都对应一个 InstrltinClass 定义。比如除法的 InstrltinClass 的定义：
 ```c++
 def IIC_DIV8_MEM   : InstrItinClass;
@@ -1504,7 +1504,7 @@ class InstrItinData<InstrItinClass Class,list<InstrStage> stages, list<int>opera
 }
 ```
 
-### TableGen
+#### TableGen
 在 llvm/lib/Target 目录下有各个 CPU 架构的目录。以 X86 举例
 * X86.td：架构描述。
 * X86CallingConv.td：架构调用规范。
@@ -1549,16 +1549,16 @@ class InstrItinData<InstrItinClass Class,list<InstrStage> stages, list<int>opera
 
 llvm/include/llvm/CodeGen 目录包含 ValueTypes.td 是用来描述具有通用性的寄存器和操作数的类型。在 llvm/include/llvm/IR 包含描述平台无关的固有函数 Intrinsics.td 文件，还有平台相关的比如 IntrinsicsX86.td 这样的文件。
 
-#### TabelGen 类型
+##### TabelGen 类型
 * Dag：表示程序中间表达树中的 DAG 结构，是一个递归构造。有“(“DagArg DagArgList”)”，DagArgList ::= DagArg (“,” DagArg)*，DagArg ::= Value [“:” TokVarName] | TokVarName 这几种语法。比如 (set VR128:$dst, (v2i64 (scalar_to_vector (i64 (bitconvert (x86mmx VR64:$src)))))) 这个 dag 值有多层嵌套，表达的意思是将64位标量的源操作数保存在 MMX 寄存器中，先转成 64 位有符号整数，再转成 2Xi64向量，保存到 128 位寄存器。dag 操作都是比如 def 比如 out，in, set 等，再就是 SDNode 比如 scalar_to_vector 和 bitconvert，或者是 ValueType 的派生定义描述值类型比如 VR128，i64，x86mmx 等。
 * List：代表队列，有 “[“ ValueList ”]” [“<” Type ”>”]，ValueList ::= [ValueListNE]，ValueListNE ::= Value (“,” Value)* 这样的语法，比如 [llvm_ptr_ty, llvm_ptr_ty]
 * String：C++ 字符串常量
 * Bit，int：Bit 代表字节，int 是64位整数
 * Bits：代表若干字节，比如“bits<64>”
 
-## Register Allocation 寄存器分配
+### Register Allocation 寄存器分配
 
-### 寄存器
+#### 寄存器
 寄存器定义在 TargetRegisterInfo.td 里，它们的基类是这样定义的：
 ```c++
 class Register<string n, list<string> altNames =[]> {
@@ -1593,7 +1593,7 @@ class X86Reg<string n, bits<16> Enc, list<Register>subregs = []> : Register<n> {
 }
 ```
 
-### RegisterClass
+#### RegisterClass
 为了描述寄存器用途，将相同用途的寄存器归入同一个 RegisterClass。
 ```c++
 class RegisterClass<string namespace, list<ValueType>regTypes, int alignment, dagregList, RegAltNameIndex idx = NoRegAltName> : DAGOperand {
@@ -1631,24 +1631,24 @@ class RegisterClass<string namespace, list<ValueType>regTypes, int alignment, da
 }
 ```
 
-### 寄存器在 LLVM 中的表达
+#### 寄存器在 LLVM 中的表达
 物理寄存器在 LLVM 里均有 1 - 1023 范围内的编号。在 GenRegisterNames.inc 里找到，比如 lib/Target/X86/X86GenRegisterInfo.inc
 
-### 虚拟寄存器到物理寄存器的映射
+#### 虚拟寄存器到物理寄存器的映射
 直接映射使用 TargetRegisterInfo 和 MachineOperand 中的 API。间接映射的API用 VirtRegMap 以正确插入读写指令实现内存调度
 
-### LLVM 自带的寄存器分配算法 
+#### LLVM 自带的寄存器分配算法 
 llc -regalloc=Greedy add.bc -o ln.s
 * Fast - debug 默认，尽可能保存寄存器。
 * Basic - 增量分配
 * Greedy - LLVM 默认寄存器分配算法，对 Basic 算法变量生存期进行分裂进行高度优化
 * PBQP - 将寄存器分配描述成分区布尔二次规划
 
-## Code Emission
+### Code Emission
 下图详细表达了整个 Code Emission 的过程
 ![](/uploads/deeply-analyse-llvm/12.png)
 
-# Swift 编译流
+## Swift 编译流
 Swift 编译流和 Clang 一样都是编译前端，和 Clang 一样代码会被解析成语法数 AST，接下来会比 Clang 多一步，通过 SILGen 生成 SIL 这一次方便做些 Swift 特定的优化，SIL 会被传递给 IR 生成阶段生成 LLVM IR，最后由 LLVM 解决余下事情。看到这里大家肯定会好奇 swift 是如何与 C 和 OC 交互的比如系统底层的模块，这里就要提提 swift 的模块映射了（Module map），它调用 Clang 的模块，将其传入 Clang importer 中生成 AST 来分析是的 swift 能够和 C/OC 进行交互。
 
 下面通过一个例子看详细了解下 Swift 编译流吧。先创建一个 toy.swift
@@ -1678,19 +1678,19 @@ swiftc -emit-assembly toy.swift
 xcrun -sdk macosx swiftc toy.swift -o toy
 ```
 
-# 编译后生成的二进制内容 Link Map File
+## 编译后生成的二进制内容 Link Map File
 在 Build Settings 里设置 Write Link Map File 为 Yes 后每次编译都会在指定目录生成这样一个文件。文件内容包含 Object files，Sections，Symbols。下面分别说说这些内容
 
-## Object files
+### Object files
 这个部分的内容都是 .m 文件编译后的 .o 和需要 link 的 .a 文件。前面是文件编号，后面是文件路径。
 
-## Sections
+### Sections
 这里描述的是每个 Section 在可执行文件中的位置和大小。每个 Section 的 Segment 的类型分为 __TEXT 代码段和 __DATA 数据段两种。
 
-## Symbols
+### Symbols
 Symbols 是对 Sections 进行了再划分。这里会描述所有的 methods，ivar 和字符串，及它们对应的地址，大小，文件编号信息。
 
-# 每次编译后生成的 dSYM 文件
+## 每次编译后生成的 dSYM 文件
 在每次编译后都会生成一个 dSYM 文件，程序在执行中通过地址来调用方法函数，而 dSYM 文件里存储了函数地址映射，这样调用栈里的地址可以通过 dSYM 这个映射表能够获得具体函数的位置。一般都会用来处理 crash 时获取到的调用栈 .crash 文件将其符号化。
 
 可以通过 Xcode 进行符号化，将 .crash 文件，.dSYM 和 .app 文件放到同一个目录下，打开 Xcode 的 Window 菜单下的 organizer，再点击 Device tab，最后选中左边的 Device Logs。选择 import 将 .crash 文件导入就可以看到 crash 的详细 log 了。
@@ -1701,7 +1701,7 @@ export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
 symbolicatecrash appName.crash appName.app > appName.log
 ```
 
-# Mach-O 文件
+## Mach-O 文件
 记录编译后的可执行文件，对象代码，共享库，动态加载代码和内存转储的文件格式。不同于 xml 这样的文件，它只是二进制字节流，里面有不同的包含元信息的数据块，比如字节顺序，cpu 类型，块大小等。文件内容是不可以修改的，因为在 .app 目录中有个 _CodeSignature 的目录，里面包含了程序代码的签名，这个签名的作用就是保证签名后 .app 里的文件，包括资源文件，Mach-O 文件都不能够更改。
 
 Mach-O 文件包含三个区域
@@ -1709,7 +1709,7 @@ Mach-O 文件包含三个区域
 * Load Commands：包含很多内容的表，包括区域的位置，符号表，动态符号表等。每个加载指令包含一个元信息，比如指令类型，名称，在二进制中的位置等。
 * Data：最大的部分，包含了代码，数据，比如符号表，动态符号表等。
 
-## Mach-O 文件的解析
+### Mach-O 文件的解析
 再通过一个例子来分析下：
 这次用 xcrun 来
 ```
@@ -2023,7 +2023,7 @@ xcrun clang -c SayHi.m
 xcrun clang SayHi.o Foo.o -Wl,`xcrun —show-sdk-path`/System/Library/Frameworks/Foundation.framework/Foundation
 ```
 
-## 逆向 Mach-O 文件
+### 逆向 Mach-O 文件
 需要先安装 tweak，安装越狱可以通过 cydia，不越狱直接打包成 ipa 安装包。越狱的话会安装一个 mobilesubstrate 的动态库，使用 theos 开发工具，非越狱的直接把这个库打包进 ipa 中或者直接修改汇编代码。
 
 Mobilesubstrate 提供了三个模块来方便开发。
@@ -2039,7 +2039,7 @@ Mobilesubstrate 提供了三个模块来方便开发。
 * 入门文章可以看看这篇： [MyArticles/iOS冰与火之歌 at master · zhengmin1989/MyArticles · GitHub](https://github.com/zhengmin1989/MyArticles/tree/master/iOS%E5%86%B0%E4%B8%8E%E7%81%AB%E4%B9%8B%E6%AD%8C)
 * 玩出新花样： [黑科技：把第三方 iOS 应用转成动态库 - Jun’s Blog](http://blog.imjun.net/2016/10/08/%E9%BB%91%E7%A7%91%E6%8A%80%EF%BC%9A%E6%8A%8A%E7%AC%AC%E4%B8%89%E6%96%B9-iOS-%E5%BA%94%E7%94%A8%E8%BD%AC%E6%88%90%E5%8A%A8%E6%80%81%E5%BA%93/)，作者另一篇文章： [iOS符号表恢复&逆向支付宝 - Jun’s Blog](http://blog.imjun.net/2016/08/25/iOS%E7%AC%A6%E5%8F%B7%E8%A1%A8%E6%81%A2%E5%A4%8D-%E9%80%86%E5%90%91%E6%94%AF%E4%BB%98%E5%AE%9D/)
 
-# dyld动态链接
+## dyld动态链接
 生成可执行文件后就是在启动时进行动态链接了，进行符号和地址的绑定。首先会加载所依赖的 dylibs，修正地址偏移，因为 iOS 会用 ASLR 来做地址偏移避免攻击，确定 Non-Lazy Pointer 地址进行符号地址绑定，加载所有类，最后执行 load 方法和 clang attribute 的 constructor 修饰函数。
 
 用先前 Mach-O 章节的例子继续分析，每个函数，全局变量和类都是通过符号的形式来定义和使用的，当把目标文件链接成一个执行文件时，链接器在目标文件和动态库之间对符号做解析处理。
@@ -2175,8 +2175,8 @@ dyld 是开源的： [GitHub - opensource-apple/dyld](https://github.com/opensou
 
 这篇文章也不错： [Dynamic Linking of Imported Functions in Mach-O - CodeProject](https://www.codeproject.com/articles/187181/dynamic-linking-of-imported-functions-in-mach-o)
 
-# LLVM 工具链
-## 获取 LLVM
+## LLVM 工具链
+### 获取 LLVM
 ```bash
 #先下载 LLVM
 svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
@@ -2196,7 +2196,7 @@ cd ../tools/clang/tools
 svn co http://llvm.org/svn/llvm-project/clang-tools-extra/trunk extra
 ```
 
-## 编译 LLVM
+### 编译 LLVM
 ```bash
 brew install gcc
 brew install cmake
@@ -2224,7 +2224,7 @@ cmake -GXcode /path/to/llvm/source
 
 ![](/uploads/deeply-analyse-llvm/03.png)
 
-## LLVM 源码工程目录介绍
+### LLVM 源码工程目录介绍
 * llvm/examples/ - 使用 LLVM IR 和 JIT 的例子。
 * llvm/include/ - 导出的头文件。
 * llvm/lib/ - 主要源文件都在这里。
@@ -2234,7 +2234,7 @@ cmake -GXcode /path/to/llvm/source
 * llvm/tools/ - 基于 lib 构建的可以执行文件，用户通过这些程序进行交互，-help 可以查看各个工具详细使用。
 * llvm/utils/ - LLVM 源代码的实用工具，比如，查找 LLC 和 LLI 生成代码差异工具， Vim 或 Emacs 的语法高亮工具等。
 
-## lib 目录介绍
+### lib 目录介绍
 * llvm/lib/IR/ - 核心类比如 Instruction 和 BasicBlock。
 * llvm/lib/AsmParser/ - 汇编语言解析器。
 * llvm/lib/Bitcode/ - 读取和写入字节码
@@ -2244,8 +2244,8 @@ cmake -GXcode /path/to/llvm/source
 * llvm/lib/CodeGen/ - 主要是代码生成，指令选择器，指令调度和寄存器分配。
 * llvm/lib/ExecutionEngine/ - 在解释执行和JIT编译场景能够直接在运行时执行字节码的库。
 
-## 工具链命令介绍
-### 基本命令
+### 工具链命令介绍
+#### 基本命令
 * llvm-as - 汇编器，将 .ll 汇编成字节码。
 * llvm-dis - 反汇编器，将字节码编成可读的 .ll 文件。
 * opt - 字节码优化器。
@@ -2263,19 +2263,19 @@ cmake -GXcode /path/to/llvm/source
 * llvm-symbolizer - 地址对应源码位置，定位错误。
 * llvm-dwarfdump - 打印 DWARF。
 
-### 调试工具
+#### 调试工具
 * bugpoint - 自动测试案例工具
 * llvm-extract - 从一个 LLVM 的模块里提取一个函数。
 * llvm-bcanalyzer - LLVM 字节码分析器。
 
-### 开发工具
+#### 开发工具
 * FileCheck - 灵活的模式匹配文件验证器。
 * tblgen - C++ 代码生成器。
 * lit - LLVM 集成测试器。
 * llvm-build - LLVM 构建工程时需要的工具。
 * llvm-readobj - LLVM Object 结构查看器。
 
-# Swift 编译
+## Swift 编译
 官网： [GitHub - apple/swift: The Swift Programming Language](https://github.com/apple/swift)
 swift 现在是开源的，如果希望能够为它做贡献可以先了解下官方的介绍说明： [Swift.org - Contributing](https://swift.org/contributing/#contributing-code)
 
@@ -2309,15 +2309,15 @@ du -h -d 1
 ```
 swift 编译是由多个代码仓库组合而成的，各个代码仓库的介绍说明可以查看官方说明： [Swift.org - Source Code](https://swift.org/source-code/)
 
-# 其它编译工具
+## 其它编译工具
 
-## js写的C++解释器JSCPP
+### js写的C++解释器JSCPP
 适合学生学习时能够方便的在浏览器里直接编c++程序。项目地址：[GitHub - felixhao28/JSCPP: A simple C++ interpreter written in JavaScript](https://github.com/felixhao28/JSCPP)
 
-## C-SMILE 一套支持C/C++ JS JAVA四种语言的scripting language
+### C-SMILE 一套支持C/C++ JS JAVA四种语言的scripting language
 在 web 中有个 WebAssembly 是个标准，可以使得 web 运行 C/C++ 成为可能。当然还有其它的比如：http://c-smile.sourceforge.net/
 
-# 资料网址
+## 资料网址
 * http://llvm.org
 * http://clang.llvm.org/
 * http://www.aosabook.org/en/llvm.html
