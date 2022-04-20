@@ -10,6 +10,65 @@
 		08AC63AF280E75E00030921F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63AE280E75E00030921F /* main.swift */; };
 		08AC63C4280E885C0030921F /* libLLVM.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AC63C3280E885B0030921F /* libLLVM.dylib */; };
 		08AC63C9280E89C60030921F /* LLVMC.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63C8280E89C60030921F /* LLVMC.c */; };
+		08AC63CC280EA7180030921F /* HiIR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63CB280EA7180030921F /* HiIR.swift */; };
+		08AC63CE280EA7820030921F /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63CD280EA7820030921F /* Sum.swift */; };
+		08AC63E2280EAE230030921F /* AddressSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63E1280EAE230030921F /* AddressSpace.swift */; };
+		08AC63E4280EAE9A0030921F /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63E3280EAE9A0030921F /* Alias.swift */; };
+		08AC63E6280EAEC60030921F /* IRGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63E5280EAEC60030921F /* IRGlobal.swift */; };
+		08AC63E9280EAEDF0030921F /* IRValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63E8280EAEDF0030921F /* IRValue.swift */; };
+		08AC63EB280EAFC30030921F /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63EA280EAFC30030921F /* Arbitrary.swift */; };
+		08AC63ED280EB0000030921F /* ArrayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63EC280EB0000030921F /* ArrayType.swift */; };
+		08AC63F1280EB18D0030921F /* shim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63F0280EB18D0030921F /* shim.cpp */; };
+		08AC63F3280ED2C70030921F /* AttachedMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63F2280ED2C60030921F /* AttachedMetadata.swift */; };
+		08AC63F5280ED39B0030921F /* BasicBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63F4280ED39B0030921F /* BasicBlock.swift */; };
+		08AC63F7280ED3C10030921F /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63F6280ED3C10030921F /* Call.swift */; };
+		08AC63F9280ED5500030921F /* CallingConvention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63F8280ED5500030921F /* CallingConvention.swift */; };
+		08AC63FB280ED5890030921F /* Clause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63FA280ED5890030921F /* Clause.swift */; };
+		08AC63FD280ED62B0030921F /* Comdat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63FC280ED62B0030921F /* Comdat.swift */; };
+		08AC63FF280ED6440030921F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC63FE280ED6440030921F /* Constant.swift */; };
+		08AC6401280ED6760030921F /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6400280ED6760030921F /* Context.swift */; };
+		08AC6403280ED69D0030921F /* DIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6402280ED69D0030921F /* DIBuilder.swift */; };
+		08AC6405280ED6CF0030921F /* DWARFExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6404280ED6CF0030921F /* DWARFExpression.swift */; };
+		08AC6407280ED7060030921F /* FloatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6406280ED7060030921F /* FloatType.swift */; };
+		08AC6409280ED91D0030921F /* Function+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6408280ED91D0030921F /* Function+Attributes.swift */; };
+		08AC640B280ED96A0030921F /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC640A280ED96A0030921F /* Function.swift */; };
+		08AC640D280ED9B00030921F /* FunctionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC640C280ED9B00030921F /* FunctionType.swift */; };
+		08AC640F280ED9FF0030921F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC640E280ED9FF0030921F /* Global.swift */; };
+		08AC6411280EDA240030921F /* IRBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6410280EDA240030921F /* IRBuilder.swift */; };
+		08AC6413280EDC3E0030921F /* IRMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6412280EDC3E0030921F /* IRMetadata.swift */; };
+		08AC6415280EDC780030921F /* IRType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6414280EDC780030921F /* IRType.swift */; };
+		08AC6417280EDEE70030921F /* IRValue+Kinds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6416280EDEE60030921F /* IRValue+Kinds.swift */; };
+		08AC6419280EDF370030921F /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6418280EDF370030921F /* Initialization.swift */; };
+		08AC641B280EDFD40030921F /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC641A280EDFD40030921F /* Instruction.swift */; };
+		08AC641D280EDFF80030921F /* IntType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC641C280EDFF80030921F /* IntType.swift */; };
+		08AC641F280EE0250030921F /* Intrinsic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC641E280EE0250030921F /* Intrinsic.swift */; };
+		08AC6421280EE06B0030921F /* JIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6420280EE06B0030921F /* JIT.swift */; };
+		08AC6423280EE09A0030921F /* LabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6422280EE09A0030921F /* LabelType.swift */; };
+		08AC6425280EE1550030921F /* Linkage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6424280EE1550030921F /* Linkage.swift */; };
+		08AC6427280FB12E0030921F /* MDBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6426280FB12E0030921F /* MDBuilder.swift */; };
+		08AC6429280FB16F0030921F /* MemoryBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6428280FB16F0030921F /* MemoryBuffer.swift */; };
+		08AC642B280FB1B10030921F /* MetadataAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC642A280FB1B10030921F /* MetadataAttributes.swift */; };
+		08AC642D280FB32E0030921F /* MetadataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC642C280FB32E0030921F /* MetadataType.swift */; };
+		08AC642F280FB3610030921F /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC642E280FB3610030921F /* Module.swift */; };
+		08AC6431280FB5AF0030921F /* NamedMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6430280FB5AF0030921F /* NamedMetadata.swift */; };
+		08AC6433280FB63E0030921F /* ObjectFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6432280FB63E0030921F /* ObjectFile.swift */; };
+		08AC6435280FB7420030921F /* OpCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6434280FB7420030921F /* OpCode.swift */; };
+		08AC644D280FC2E50030921F /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC644C280FC2E50030921F /* Operation.swift */; };
+		08AC644F280FC3080030921F /* PassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC644E280FC3080030921F /* PassManager.swift */; };
+		08AC6451280FC3440030921F /* PassPipeliner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6450280FC3440030921F /* PassPipeliner.swift */; };
+		08AC6453280FC3770030921F /* PhiNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6452280FC3770030921F /* PhiNode.swift */; };
+		08AC6455280FC5170030921F /* PointerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6454280FC5170030921F /* PointerType.swift */; };
+		08AC6457280FC5360030921F /* StructType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6456280FC5360030921F /* StructType.swift */; };
+		08AC6459280FC5590030921F /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6458280FC5590030921F /* Switch.swift */; };
+		08AC645B280FC5730030921F /* TargetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC645A280FC5730030921F /* TargetData.swift */; };
+		08AC645D280FC5980030921F /* TargetMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC645C280FC5980030921F /* TargetMachine.swift */; };
+		08AC645F280FC5D10030921F /* TokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC645E280FC5D10030921F /* TokenType.swift */; };
+		08AC6461280FD39F0030921F /* Triple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6460280FD39F0030921F /* Triple.swift */; };
+		08AC6463280FD4880030921F /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6462280FD4880030921F /* Units.swift */; };
+		08AC6465280FD4A10030921F /* Use.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6464280FD4A10030921F /* Use.swift */; };
+		08AC6467280FD4CA0030921F /* VectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6466280FD4CA0030921F /* VectorType.swift */; };
+		08AC6469280FD4EA0030921F /* VoidType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC6468280FD4EA0030921F /* VoidType.swift */; };
+		08AC646B280FD5040030921F /* X86MMXType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC646A280FD5040030921F /* X86MMXType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +91,66 @@
 		08AC63C6280E89C50030921F /* SwiftLLVMCase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLLVMCase-Bridging-Header.h"; sourceTree = "<group>"; };
 		08AC63C7280E89C60030921F /* LLVMC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLVMC.h; sourceTree = "<group>"; };
 		08AC63C8280E89C60030921F /* LLVMC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LLVMC.c; sourceTree = "<group>"; };
+		08AC63CB280EA7180030921F /* HiIR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiIR.swift; sourceTree = "<group>"; };
+		08AC63CD280EA7820030921F /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
+		08AC63E1280EAE230030921F /* AddressSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSpace.swift; sourceTree = "<group>"; };
+		08AC63E3280EAE9A0030921F /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
+		08AC63E5280EAEC60030921F /* IRGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRGlobal.swift; sourceTree = "<group>"; };
+		08AC63E8280EAEDF0030921F /* IRValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRValue.swift; sourceTree = "<group>"; };
+		08AC63EA280EAFC30030921F /* Arbitrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arbitrary.swift; sourceTree = "<group>"; };
+		08AC63EC280EB0000030921F /* ArrayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayType.swift; sourceTree = "<group>"; };
+		08AC63EF280EB18D0030921F /* shim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shim.h; sourceTree = "<group>"; };
+		08AC63F0280EB18D0030921F /* shim.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shim.cpp; sourceTree = "<group>"; };
+		08AC63F2280ED2C60030921F /* AttachedMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedMetadata.swift; sourceTree = "<group>"; };
+		08AC63F4280ED39B0030921F /* BasicBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBlock.swift; sourceTree = "<group>"; };
+		08AC63F6280ED3C10030921F /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		08AC63F8280ED5500030921F /* CallingConvention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingConvention.swift; sourceTree = "<group>"; };
+		08AC63FA280ED5890030921F /* Clause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clause.swift; sourceTree = "<group>"; };
+		08AC63FC280ED62B0030921F /* Comdat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comdat.swift; sourceTree = "<group>"; };
+		08AC63FE280ED6440030921F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		08AC6400280ED6760030921F /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		08AC6402280ED69D0030921F /* DIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIBuilder.swift; sourceTree = "<group>"; };
+		08AC6404280ED6CF0030921F /* DWARFExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWARFExpression.swift; sourceTree = "<group>"; };
+		08AC6406280ED7060030921F /* FloatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatType.swift; sourceTree = "<group>"; };
+		08AC6408280ED91D0030921F /* Function+Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function+Attributes.swift"; sourceTree = "<group>"; };
+		08AC640A280ED96A0030921F /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		08AC640C280ED9B00030921F /* FunctionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionType.swift; sourceTree = "<group>"; };
+		08AC640E280ED9FF0030921F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		08AC6410280EDA240030921F /* IRBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRBuilder.swift; sourceTree = "<group>"; };
+		08AC6412280EDC3E0030921F /* IRMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRMetadata.swift; sourceTree = "<group>"; };
+		08AC6414280EDC780030921F /* IRType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRType.swift; sourceTree = "<group>"; };
+		08AC6416280EDEE60030921F /* IRValue+Kinds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IRValue+Kinds.swift"; sourceTree = "<group>"; };
+		08AC6418280EDF370030921F /* Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
+		08AC641A280EDFD40030921F /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		08AC641C280EDFF80030921F /* IntType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntType.swift; sourceTree = "<group>"; };
+		08AC641E280EE0250030921F /* Intrinsic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intrinsic.swift; sourceTree = "<group>"; };
+		08AC6420280EE06B0030921F /* JIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIT.swift; sourceTree = "<group>"; };
+		08AC6422280EE09A0030921F /* LabelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelType.swift; sourceTree = "<group>"; };
+		08AC6424280EE1550030921F /* Linkage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linkage.swift; sourceTree = "<group>"; };
+		08AC6426280FB12E0030921F /* MDBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBuilder.swift; sourceTree = "<group>"; };
+		08AC6428280FB16F0030921F /* MemoryBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryBuffer.swift; sourceTree = "<group>"; };
+		08AC642A280FB1B10030921F /* MetadataAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataAttributes.swift; sourceTree = "<group>"; };
+		08AC642C280FB32E0030921F /* MetadataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataType.swift; sourceTree = "<group>"; };
+		08AC642E280FB3610030921F /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		08AC6430280FB5AF0030921F /* NamedMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedMetadata.swift; sourceTree = "<group>"; };
+		08AC6432280FB63E0030921F /* ObjectFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectFile.swift; sourceTree = "<group>"; };
+		08AC6434280FB7420030921F /* OpCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpCode.swift; sourceTree = "<group>"; };
+		08AC644C280FC2E50030921F /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		08AC644E280FC3080030921F /* PassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassManager.swift; sourceTree = "<group>"; };
+		08AC6450280FC3440030921F /* PassPipeliner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassPipeliner.swift; sourceTree = "<group>"; };
+		08AC6452280FC3770030921F /* PhiNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhiNode.swift; sourceTree = "<group>"; };
+		08AC6454280FC5170030921F /* PointerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerType.swift; sourceTree = "<group>"; };
+		08AC6456280FC5360030921F /* StructType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructType.swift; sourceTree = "<group>"; };
+		08AC6458280FC5590030921F /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		08AC645A280FC5730030921F /* TargetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetData.swift; sourceTree = "<group>"; };
+		08AC645C280FC5980030921F /* TargetMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetMachine.swift; sourceTree = "<group>"; };
+		08AC645E280FC5D10030921F /* TokenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenType.swift; sourceTree = "<group>"; };
+		08AC6460280FD39F0030921F /* Triple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triple.swift; sourceTree = "<group>"; };
+		08AC6462280FD4880030921F /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		08AC6464280FD4A10030921F /* Use.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Use.swift; sourceTree = "<group>"; };
+		08AC6466280FD4CA0030921F /* VectorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorType.swift; sourceTree = "<group>"; };
+		08AC6468280FD4EA0030921F /* VoidType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidType.swift; sourceTree = "<group>"; };
+		08AC646A280FD5040030921F /* X86MMXType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X86MMXType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,14 +184,98 @@
 		08AC63AD280E75E00030921F /* SwiftLLVMCase */ = {
 			isa = PBXGroup;
 			children = (
+				08AC63E0280EAE020030921F /* LLVM */,
+				08AC63CA280EA7060030921F /* Case */,
 				08AC63AE280E75E00030921F /* main.swift */,
 				08AC63BF280E873B0030921F /* module.modulemap */,
 				08AC63C3280E885B0030921F /* libLLVM.dylib */,
-				08AC63C7280E89C60030921F /* LLVMC.h */,
-				08AC63C8280E89C60030921F /* LLVMC.c */,
+				08AC63EE280EB1420030921F /* C */,
 				08AC63C6280E89C50030921F /* SwiftLLVMCase-Bridging-Header.h */,
 			);
 			path = SwiftLLVMCase;
+			sourceTree = "<group>";
+		};
+		08AC63CA280EA7060030921F /* Case */ = {
+			isa = PBXGroup;
+			children = (
+				08AC63CB280EA7180030921F /* HiIR.swift */,
+				08AC63CD280EA7820030921F /* Sum.swift */,
+			);
+			path = Case;
+			sourceTree = "<group>";
+		};
+		08AC63E0280EAE020030921F /* LLVM */ = {
+			isa = PBXGroup;
+			children = (
+				08AC63E1280EAE230030921F /* AddressSpace.swift */,
+				08AC63E3280EAE9A0030921F /* Alias.swift */,
+				08AC63EA280EAFC30030921F /* Arbitrary.swift */,
+				08AC63EC280EB0000030921F /* ArrayType.swift */,
+				08AC63F2280ED2C60030921F /* AttachedMetadata.swift */,
+				08AC63F4280ED39B0030921F /* BasicBlock.swift */,
+				08AC63F6280ED3C10030921F /* Call.swift */,
+				08AC63F8280ED5500030921F /* CallingConvention.swift */,
+				08AC63FA280ED5890030921F /* Clause.swift */,
+				08AC63FC280ED62B0030921F /* Comdat.swift */,
+				08AC63FE280ED6440030921F /* Constant.swift */,
+				08AC6400280ED6760030921F /* Context.swift */,
+				08AC6402280ED69D0030921F /* DIBuilder.swift */,
+				08AC6404280ED6CF0030921F /* DWARFExpression.swift */,
+				08AC6406280ED7060030921F /* FloatType.swift */,
+				08AC6408280ED91D0030921F /* Function+Attributes.swift */,
+				08AC640A280ED96A0030921F /* Function.swift */,
+				08AC640C280ED9B00030921F /* FunctionType.swift */,
+				08AC640E280ED9FF0030921F /* Global.swift */,
+				08AC6410280EDA240030921F /* IRBuilder.swift */,
+				08AC63E5280EAEC60030921F /* IRGlobal.swift */,
+				08AC6412280EDC3E0030921F /* IRMetadata.swift */,
+				08AC6414280EDC780030921F /* IRType.swift */,
+				08AC6416280EDEE60030921F /* IRValue+Kinds.swift */,
+				08AC63E8280EAEDF0030921F /* IRValue.swift */,
+				08AC6418280EDF370030921F /* Initialization.swift */,
+				08AC641A280EDFD40030921F /* Instruction.swift */,
+				08AC641C280EDFF80030921F /* IntType.swift */,
+				08AC641E280EE0250030921F /* Intrinsic.swift */,
+				08AC6420280EE06B0030921F /* JIT.swift */,
+				08AC6422280EE09A0030921F /* LabelType.swift */,
+				08AC6424280EE1550030921F /* Linkage.swift */,
+				08AC6426280FB12E0030921F /* MDBuilder.swift */,
+				08AC6428280FB16F0030921F /* MemoryBuffer.swift */,
+				08AC642A280FB1B10030921F /* MetadataAttributes.swift */,
+				08AC642C280FB32E0030921F /* MetadataType.swift */,
+				08AC642E280FB3610030921F /* Module.swift */,
+				08AC6430280FB5AF0030921F /* NamedMetadata.swift */,
+				08AC6432280FB63E0030921F /* ObjectFile.swift */,
+				08AC6434280FB7420030921F /* OpCode.swift */,
+				08AC644C280FC2E50030921F /* Operation.swift */,
+				08AC644E280FC3080030921F /* PassManager.swift */,
+				08AC6450280FC3440030921F /* PassPipeliner.swift */,
+				08AC6452280FC3770030921F /* PhiNode.swift */,
+				08AC6454280FC5170030921F /* PointerType.swift */,
+				08AC6456280FC5360030921F /* StructType.swift */,
+				08AC6458280FC5590030921F /* Switch.swift */,
+				08AC645A280FC5730030921F /* TargetData.swift */,
+				08AC645C280FC5980030921F /* TargetMachine.swift */,
+				08AC645E280FC5D10030921F /* TokenType.swift */,
+				08AC6460280FD39F0030921F /* Triple.swift */,
+				08AC6462280FD4880030921F /* Units.swift */,
+				08AC6464280FD4A10030921F /* Use.swift */,
+				08AC6466280FD4CA0030921F /* VectorType.swift */,
+				08AC6468280FD4EA0030921F /* VoidType.swift */,
+				08AC646A280FD5040030921F /* X86MMXType.swift */,
+			);
+			path = LLVM;
+			sourceTree = "<group>";
+		};
+		08AC63EE280EB1420030921F /* C */ = {
+			isa = PBXGroup;
+			children = (
+				08AC63C7280E89C60030921F /* LLVMC.h */,
+				08AC63C8280E89C60030921F /* LLVMC.c */,
+				08AC63EF280EB18D0030921F /* shim.h */,
+				08AC63F0280EB18D0030921F /* shim.cpp */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +341,67 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AC63F9280ED5500030921F /* CallingConvention.swift in Sources */,
+				08AC63E9280EAEDF0030921F /* IRValue.swift in Sources */,
+				08AC63EB280EAFC30030921F /* Arbitrary.swift in Sources */,
+				08AC642B280FB1B10030921F /* MetadataAttributes.swift in Sources */,
+				08AC63E2280EAE230030921F /* AddressSpace.swift in Sources */,
+				08AC6419280EDF370030921F /* Initialization.swift in Sources */,
+				08AC63FB280ED5890030921F /* Clause.swift in Sources */,
+				08AC6401280ED6760030921F /* Context.swift in Sources */,
+				08AC641F280EE0250030921F /* Intrinsic.swift in Sources */,
+				08AC6465280FD4A10030921F /* Use.swift in Sources */,
+				08AC6407280ED7060030921F /* FloatType.swift in Sources */,
+				08AC6415280EDC780030921F /* IRType.swift in Sources */,
+				08AC6453280FC3770030921F /* PhiNode.swift in Sources */,
+				08AC642F280FB3610030921F /* Module.swift in Sources */,
 				08AC63C9280E89C60030921F /* LLVMC.c in Sources */,
+				08AC6435280FB7420030921F /* OpCode.swift in Sources */,
+				08AC63F3280ED2C70030921F /* AttachedMetadata.swift in Sources */,
+				08AC6433280FB63E0030921F /* ObjectFile.swift in Sources */,
+				08AC6427280FB12E0030921F /* MDBuilder.swift in Sources */,
+				08AC6423280EE09A0030921F /* LabelType.swift in Sources */,
+				08AC6417280EDEE70030921F /* IRValue+Kinds.swift in Sources */,
+				08AC63F7280ED3C10030921F /* Call.swift in Sources */,
+				08AC6459280FC5590030921F /* Switch.swift in Sources */,
+				08AC6425280EE1550030921F /* Linkage.swift in Sources */,
+				08AC63E6280EAEC60030921F /* IRGlobal.swift in Sources */,
+				08AC645F280FC5D10030921F /* TokenType.swift in Sources */,
+				08AC641B280EDFD40030921F /* Instruction.swift in Sources */,
+				08AC63CE280EA7820030921F /* Sum.swift in Sources */,
 				08AC63AF280E75E00030921F /* main.swift in Sources */,
+				08AC6469280FD4EA0030921F /* VoidType.swift in Sources */,
+				08AC646B280FD5040030921F /* X86MMXType.swift in Sources */,
+				08AC645B280FC5730030921F /* TargetData.swift in Sources */,
+				08AC641D280EDFF80030921F /* IntType.swift in Sources */,
+				08AC6455280FC5170030921F /* PointerType.swift in Sources */,
+				08AC6463280FD4880030921F /* Units.swift in Sources */,
+				08AC63FF280ED6440030921F /* Constant.swift in Sources */,
+				08AC63E4280EAE9A0030921F /* Alias.swift in Sources */,
+				08AC6413280EDC3E0030921F /* IRMetadata.swift in Sources */,
+				08AC640D280ED9B00030921F /* FunctionType.swift in Sources */,
+				08AC640B280ED96A0030921F /* Function.swift in Sources */,
+				08AC644D280FC2E50030921F /* Operation.swift in Sources */,
+				08AC645D280FC5980030921F /* TargetMachine.swift in Sources */,
+				08AC63F1280EB18D0030921F /* shim.cpp in Sources */,
+				08AC644F280FC3080030921F /* PassManager.swift in Sources */,
+				08AC640F280ED9FF0030921F /* Global.swift in Sources */,
+				08AC63FD280ED62B0030921F /* Comdat.swift in Sources */,
+				08AC6405280ED6CF0030921F /* DWARFExpression.swift in Sources */,
+				08AC63CC280EA7180030921F /* HiIR.swift in Sources */,
+				08AC63F5280ED39B0030921F /* BasicBlock.swift in Sources */,
+				08AC6467280FD4CA0030921F /* VectorType.swift in Sources */,
+				08AC6421280EE06B0030921F /* JIT.swift in Sources */,
+				08AC6429280FB16F0030921F /* MemoryBuffer.swift in Sources */,
+				08AC6461280FD39F0030921F /* Triple.swift in Sources */,
+				08AC6403280ED69D0030921F /* DIBuilder.swift in Sources */,
+				08AC6409280ED91D0030921F /* Function+Attributes.swift in Sources */,
+				08AC6431280FB5AF0030921F /* NamedMetadata.swift in Sources */,
+				08AC6457280FC5360030921F /* StructType.swift in Sources */,
+				08AC642D280FB32E0030921F /* MetadataType.swift in Sources */,
+				08AC6451280FC3440030921F /* PassPipeliner.swift in Sources */,
+				08AC63ED280EB0000030921F /* ArrayType.swift in Sources */,
+				08AC6411280EDA240030921F /* IRBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,16 +6,6 @@
 //
 
 import Foundation
-
-//import llvm
 import llvm
 
-
-print("Hello, World!")
-
-func a() {
-    hello()
-    
-}
-
-a()
+hiIR()
