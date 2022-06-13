@@ -5,14 +5,16 @@ tags: [LLVM]
 categories: Programming
 ---
 
-*本篇还会持续更新，增加更多用 llvm 干的事情，直到本句话被删掉为止。欢迎关注本篇。*
+## 前言
 
-目前在做些编译相关调研。先前写过篇《[深入剖析 iOS 编译 Clang / LLVM](https://ming1016.github.io/2017/03/01/deeply-analyse-llvm/)》和《[深入剖析 iOS 编译 Clang / LLVM 直播的 Slides](https://ming1016.github.io/2017/04/01/slides-of-deeply-analyse-llvm/)》，内容偏理论。本篇着重对 LLVM 的使用，理论内容会很少，主要是说下如何使用 llvm 来做些事情，会有详细的操作步骤和工程示例。
+本篇还会持续更新，增加更多用 llvm 干的事情，直到本句话被删掉为止。欢迎关注本篇。
+
+目前在做一些编译相关调研。先前写过篇《[深入剖析 iOS 编译 Clang / LLVM](https://ming1016.github.io/2017/03/01/deeply-analyse-llvm/)》和《[深入剖析 iOS 编译 Clang / LLVM 直播的 Slides](https://ming1016.github.io/2017/04/01/slides-of-deeply-analyse-llvm/)》，内容偏理论。本篇着重对 LLVM 的使用，理论内容会很少，主要是说下如何使用 llvm 来做些事情，会有详细的操作步骤和工程示例。
 
 ## 代码新陈代谢
 昨天看了昨天和今天 WWDC22 的 session，看到了苹果为包体积也做了很多工作，甚至不惜改 C ABI的 call convention 来达到此目的。
 
-我很早前就做过一个方案，可以说是一个更好处理代码新陈代谢的方案，那就先说下个。
+我很早前就做过一个方案，可以说是一个更好处理代码新陈代谢的方案，那就先说下这个。
 
 ### 方案总体介绍
 静态检查无法分析真实使用场景里代码是不是真的用了，或用的是否多。
@@ -532,7 +534,7 @@ clang main.o loglib.o
 ```
 
 #### 更多自制 pass
-可以在[这里](https://github.com/ming1016/DaiMingCreationToolbox/tree/main/Project/UseCompiler/LeanLLVMPass)查看，代码里有详细注释。
+可以在[这里](https://github.com/ming1016/DaiMingCreationToolbox/tree/main/Project/UseCompiler/LeanLLVMPass)查看，代码里有详细注释。这里先留个白，后面再添加内容。
 
 #### IR
 
