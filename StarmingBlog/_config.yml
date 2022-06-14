@@ -38,10 +38,13 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
+  enable: false
+prismjs:
   enable: true
+  preprocess: true
   line_number: true
-  auto_detect: false
-  tab_replace:
+  line_threshold: 0
+  tab_replace: ''
 
 # Category & Tag
 default_category: uncategorized
@@ -63,7 +66,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: archer
+theme: kaze
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -71,6 +74,11 @@ deploy:
   type: git
   repo: https://github.com/ming1016/ming1016.github.io.git
   branch: master
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 10
 
 jsonContent:
   meta: true

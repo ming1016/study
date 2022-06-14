@@ -3,6 +3,7 @@ title: 如何用 SwiftUI + Combine + Swift Concurrency Aysnc/Await Actor 欢畅�
 date: 2022-01-03 11:53:21
 tags: [Apple, Swift, macOS, Combine, SwiftUI, Concurrency]
 categories: Programming
+banner_img: /uploads/develop-macos-with-swiftui-combine-concurrency-aysnc-await-actor/16.png
 ---
 
 ## 先说两句废话（Don't blame me about my calculation） 

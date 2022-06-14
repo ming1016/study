@@ -3,6 +3,7 @@ title: atSwift大会上分享《学习iOS编译原理能做哪些有意思的事
 date: 2017-05-27 17:54:41
 tags: [iOS, Slides, LLVM]
 categories: Programming
+banner_img: /uploads/slides-of-learn-what-interesting-things-you-can-do-with-iOS-compilation/23.png
 ---
 本次 swift 大会上我分享了一个 h5 转 swift 的 demo 还有 llvm backend 相关的知识和应用，分享完后微信，淘宝和 perfect 团队成员都私下表示了对这个主题的兴趣，看来大家对用技术提高效率的决心是一致的。下面是我的 slides ，下载地址是 [https://pan.baidu.com/s/1kVPvPiB](https://pan.baidu.com/s/1kVPvPiB)。其他嘉宾的 pdf 和 源码在 [https://github.com/atConf/atswift-2017-resources](https://github.com/atConf/atswift-2017-resources)
 

@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  About: /about
 rss: /atom.xml
 
 # Content
@@ -30,7 +31,7 @@ show_count: false
 # Miscellaneous
 google_analytics:
 favicon: /favicon.png
-twitter:
+twitter: daiming_cn
 google_plus:
 fb_admins:
 fb_app_id:

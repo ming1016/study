@@ -3,6 +3,7 @@ title: WWDC22 笔记
 date: 2022-06-10 12:13:57
 tags: [iOS, Apple, Swift]
 categories: Programming
+banner_img: /uploads/wwdc22-notes/05.png
 ---
 
 ## 第一天

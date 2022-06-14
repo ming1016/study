@@ -3,6 +3,7 @@ title: GIAC 大会上分享的《Swift 将 Web 代码转成60帧满帧原生应�
 date: 2018-01-10 15:31:54
 tags: [iOS, Slides]
 categories: Programming
+banner_img: /uploads/slides-of-giac-how-to-use-swift-transfer-web-to-60-frame-native-code/19.png
 ---
 
 ![](/uploads/slides-of-giac-how-to-use-swift-transfer-web-to-60-frame-native-code/01.png)

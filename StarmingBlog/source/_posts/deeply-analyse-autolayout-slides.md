@@ -3,6 +3,7 @@ title: 深入剖析Auto Layout的幻灯片
 date: 2021-07-13 14:01:22
 tags: [iOS, Autolayout]
 categories: Programming
+banner_img: /uploads/deeply-analyse-autolayout-slides/7.png
 ---
 
 在2015年SegmentFault D-Day活动上分享用的幻灯片，发现以前没有发到博客中，现在补上。

@@ -3,6 +3,7 @@ title: 使用ReactiveCocoa开发RSS阅读器
 date: 2016-09-02 21:47:59
 tags: [iOS, RSSReader]
 categories: Programming
+banner_img: https://raw.githubusercontent.com/ming1016/GCDFetchFeed/master/GCDFetchFeed/resource/ScreenShot1.png
 ---
 目前已经完成的功能有对RSS的解析和Atom解析，RSS内容本地数据库存储和读取，抓取中状态进度展示，标记阅读状态，标记全部已读等。这些功能里我对一些异步操作产生的数据采用了ReactiveCocoa来对数据流向进行了控制，下面我来说下如何运用RAC来进行的开发。
 

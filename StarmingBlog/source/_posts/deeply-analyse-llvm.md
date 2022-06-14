@@ -3,6 +3,7 @@ title: 深入剖析 iOS 编译 Clang / LLVM
 date: 2017-03-01 21:58:09
 tags: [LLVM, iOS, Clang]
 categories: Programming
+banner_img: /uploads/deeply-analyse-llvm/10.png
 ---
 ## 前言
 2000年，伊利诺伊大学厄巴纳－香槟分校（University of Illinois at Urbana-Champaign 简称UIUC）这所享有世界声望的一流公立研究型大学的 Chris Lattner（他的 twitter [@clattner_llvm](https://twitter.com/clattner_llvm) ） 开发了一个叫作 Low Level Virtual Machine 的编译器开发工具套件，后来涉及范围越来越大，可以用于常规编译器，JIT编译器，汇编器，调试器，静态分析工具等一系列跟编程语言相关的工作，于是就把简称 LLVM 这个简称作为了正式的名字。Chris Lattner 后来又开发了 Clang，使得 LLVM 直接挑战 GCC 的地位。2012年，LLVM 获得美国计算机学会 ACM 的软件系统大奖，和 UNIX，WWW，TCP/IP，Tex，JAVA 等齐名。

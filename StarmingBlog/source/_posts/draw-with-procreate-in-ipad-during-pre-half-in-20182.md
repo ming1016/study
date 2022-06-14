@@ -3,6 +3,7 @@ title: 18年上半年procreate的练习图图
 date: 2018-09-14 23:08:12
 tags: [Painting, iPad, Procreate]
 categories: My painting
+banner_img: /uploads/draw-with-procreate-in-ipad-during-pre-half-in-2018/1.jpg
 ---
 
 ![](/uploads/draw-with-procreate-in-ipad-during-pre-half-in-2018/1.jpg)

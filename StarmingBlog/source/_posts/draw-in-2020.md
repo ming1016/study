@@ -3,6 +3,7 @@ title: 2020年涂图
 date: 2020-05-04 23:47:57
 tags: [Painting, iPad, Procreate]
 categories: My painting
+banner_img: /uploads/draw-in-2020/01.jpg
 ---
 
 ![](/uploads/draw-in-2020/01.jpg)

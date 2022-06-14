@@ -3,6 +3,7 @@ title: 深入剖析 JavaScript 编译器/解释器引擎 QuickJS - 多了解些 
 date: 2021-02-21 12:03:09
 tags: [JavaScript, Web, 编译]
 categories: Programming
+banner_img: /uploads/deeply-analyse-quickjs/4.png
 ---
 ## 介绍
 

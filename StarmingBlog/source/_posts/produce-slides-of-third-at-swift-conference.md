@@ -3,6 +3,7 @@ title: 这次swift大会分享准备的幻灯片和 demo
 date: 2018-09-17 10:04:11
 tags: [iOS, Slides, swift, 编译]
 categories: Programming
+banner_img: /uploads/produce-slides-of-third-at-swift-conference/11.PNG
 ---
 
 第三届在北京举办的@swift大会，我分享了用 swift 写解释器的思路，这个解释器 demo 我放在了 github 上，地址在 [https://github.com/ming1016/HTN/tree/master/Sources/Core/OC](https://github.com/ming1016/HTN/tree/master/Sources/Core/OC) 。demo 支持简单的几个 OC 语法，按照这个架子和思路大家可以当作一个去支持一个语言，和设计自己特定语法的雏形来练手。当年前端人人都在用的 babel 转义器的作者也写过一个雏型例子，看完这个雏型就大致了解了 babel 这个工程整个解析的思路，工程代码看起来轻松不少，从里面也能很快的学到了很多自己需要的知识。大会上我还提到了一个 demo，地址[https://github.com/ming1016/ArchitectureDemo](https://github.com/ming1016/ArchitectureDemo)。这个 demo 是对 casatwy 的 [CTMediator](https://github.com/casatwy/CTMediator) 扩展了一些 aop 和状态管理功能的一个例子，加了些链式写法，在接口里留了一个 eval 的方法。有兴趣也可以结合前一个 demo 的思路去实现这个接口的方法，让这个接口可以支持程序运行中解释执行想支持的语法内容。

@@ -3,6 +3,7 @@ title: 我为什么写了《跟戴铭学iOS编程》这本书
 date: 2020-04-12 20:31:03
 tags: [iOS, book]
 categories: Programming
+banner_img: /uploads/why_write_study_ios_programming_with_daiming_book_and_draw_recently/01.jpg
 ---
 
 在我改了几次封面后，书已上架。

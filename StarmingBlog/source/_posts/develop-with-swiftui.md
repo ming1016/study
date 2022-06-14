@@ -3,6 +3,7 @@ title: 在苹果加速器活动做的 SwiftUI 开发分享
 date: 2022-03-25 13:04:49
 tags: [Apple, SwiftUI]
 categories: Programming
+banner_img: /uploads/develop-with-swiftui/21.PNG
 ---
 
 受 Apple 加速器 SwiftUI 活动邀请，做了个分享，还和喵神、61、浙剑、思琪等社区大神参与了圆桌讨论。这次完善了 SwiftUI 做的幻灯片，比去年要好一点，增加了解释执行代码交互功能。

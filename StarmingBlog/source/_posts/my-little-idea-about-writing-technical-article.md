@@ -3,6 +3,7 @@ title: 我写技术文章的一点心得
 date: 2021-07-24 05:52:45
 tags: [iOS, Apple, Swift]
 categories: Programming
+banner_img: /uploads/my-little-idea-about-writing-technical-article/12.PNG
 ---
 
 ## 前言

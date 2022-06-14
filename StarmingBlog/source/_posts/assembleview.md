@@ -3,6 +3,7 @@ title: 制作一个类似苹果VFL(Visual Format Language)的格式化语言来�
 date: 2016-07-21 21:38:01
 tags: [AssembleView, iOS]
 categories: Programming
+banner_img: https://raw.githubusercontent.com/ming1016/STMAssembleView/master/STMAssembleView/as.png
 ---
 在项目中总是希望页面上各处的文字，颜色，字体大小甚至各个视图控件布局都能够在发版之后能够修改以弥补一些前期考虑不周，或者根据统计数据能够随时进行调整，当然是各个版本都能够统一变化。看到这样的要求后，第一反应是这样的页面只能改成H5，或者尝试使用React Native来应对这种要求。
 

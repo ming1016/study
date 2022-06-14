@@ -1,0 +1,96 @@
+#------------------------
+# Header config
+title: 戴铭的博客
+author: 戴铭
+logo_img: /img/logo-starming.png # put the logo on the ${blog_path}/source/img/${picname}.png or use urls
+author_img: /img/ming.jpeg
+author_description: 极客时间《iOS开发高手课》和纸书《跟戴铭学iOS编程》作者
+#------------------------
+# Navbar config
+#------------------------
+
+menus:
+  home: /
+  archive: /archives
+  tags: /tags
+  categories: /categories
+  about: /about
+  friends: 
+
+about:
+  description: 联系我
+  social_links:
+    - { icon: icon-sina, link: https://weibo.com/allstarming }
+    - { icon: icon-github, link: https://github.com/ming1016 }
+    - { icon: icon-mail, link: mailto:ming1016@foxmail.com }
+    - { icon: icon-chrome, link: /atom.xml }
+
+rss: /atom.xml
+language: zh-CN
+
+#------------------------
+# Post
+#------------------------
+toc:
+  showListNumber: true
+  maxDepth: 6
+  minDepth: 1
+
+copyright:
+  enable: true
+  writer: # if writer is empty we will use config.author as writer
+  declare: 本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！
+  style: warning # the style uses note warning | danger | primary | info | success
+
+search:
+  enable: false
+  path: search.json
+  field: posts
+  searchContent: true
+
+og:
+  enable: true
+  title: true
+  url: true
+  image: true
+  description: true
+  article: true
+
+#------------------------
+# Footer
+#------------------------
+footer:
+  copyYear: 2014
+  # if showPoweredBy is ture, 'Powered by Hexo' will be seen on the footer
+  showPoweredBy: false
+  # if showThemeName is ture, 'Theme - Kaze' will be seen on the footer
+  showThemeName: false
+  #------------------------
+  # Record config
+  # please put the gov image in ${yoursite}/img/beian.png
+  RecordInfo: "鄂ICP备17011999号" # your Record info such as '某ICP备xxx号'
+  govRecordInfo: "京公网安备 7011999号" # your gov record info such as '某公网安备xxx号'
+  govRecordUrl: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=7011999" # your gov record url
+  #------------------------
+  # pv / uv statistics config
+  #------------------------
+  statistics:
+    enable: true
+    type: busuanzi # now version only supports busuanzi
+    pv:
+      enable: true
+      style: 本站总访问量{}次 # the style will be shown as $1{pv}$2
+    uv:
+      enable: true
+      style: 本站总访客数{}次 # the style will be shown as $1{uv}$2
+
+
+
+
+#------------------------
+# lazyload config
+#------------------------
+lazyload:
+  enable: true
+  loadingImg:
+

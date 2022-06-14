@@ -3,6 +3,7 @@ title: iOS 开发舆图
 date: 2019-07-29 12:49:06
 tags: [Swift, iOS]
 categories: Programming
+banner_img: /uploads/ios-map/4.png
 ---
 43篇 [《iOS开发高手课》](https://time.geekbang.org/column/intro/161)已完成，后面会对内容进行迭代，丰富下内容和配图。最近画了张 iOS 开发全景舆图，还有相关一些资料整理，方便我平时开发 App 时参看。舆图如下：
 

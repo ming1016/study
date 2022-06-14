@@ -3,6 +3,7 @@ title: 深入剖析 iOS 编译 Clang / LLVM 直播的 Slides
 date: 2017-04-01 18:27:46
 tags: [iOS, Slides, LLVM]
 categories: Programming
+banner_img: /uploads/slides-of-deeply-analyse-llvm/29.png
 ---
 这次直播主要是针对上篇文章：[https://github.com/ming1016/study/wiki/深入剖析-iOS-编译-Clang---LLVM](https://github.com/ming1016/study/wiki/%E6%B7%B1%E5%85%A5%E5%89%96%E6%9E%90-iOS-%E7%BC%96%E8%AF%91-Clang---LLVM) 做了些补充，一些不容易用文字表达的知识点做了些详细的说明，同时现场做了些代码和操作的演示。
 

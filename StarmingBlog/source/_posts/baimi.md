@@ -3,6 +3,7 @@ title: 白芈
 date: 2018-01-04 19:24:38
 tags: [Novel]
 categories: My novel
+banner_img: /uploads/baimi/01.png
 ---
 ![](/uploads/baimi/01.png)
 

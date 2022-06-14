@@ -3,6 +3,7 @@ title: App 启动提速实践和一些想法
 date: 2020-12-18 16:14:09
 tags: [Swift, iOS]
 categories: Programming
+banner_img: /uploads/thinking-in-how-to-speed-up-app/6.png
 ---
 
 ![](/uploads/thinking-in-how-to-speed-up-app/1.png)

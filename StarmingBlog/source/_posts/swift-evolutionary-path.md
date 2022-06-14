@@ -3,6 +3,7 @@ title: Swift 演进之路
 date: 2022-02-10 18:28:39
 tags: [Apple, Swift]
 categories: Programming
+banner_img: /uploads/swift-evolutionary-path/04.png
 ---
 
 本篇主要是对[《A站 的 Swift 实践》](https://ming1016.github.io/2021/05/22/acfun-swift-practice/)文章中的一幅配图做了详细的扩展，能够更加全面和详细了解 Swift 语言的发展，文章中提到的 Swift 各版本的语法示例代码，及本文内容都可以在 [Swift 小册子](https://github.com/KwaiAppTeam/SwiftPamphletApp)里对应栏目里找到，这个假期我也对 Swift 小册子里栏目内容进行了些更新和补充。《A站 的 Swift 实践》文章的那个演进配图如下：

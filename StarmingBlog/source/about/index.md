@@ -3,7 +3,7 @@ title: 戴铭的介绍
 date: 2022-04-15 11:01:20
 ---
 
-![](/avatar/daiming.jpeg)
+![](/img/daiming.jpeg)
 
 # 戴铭的介绍
 

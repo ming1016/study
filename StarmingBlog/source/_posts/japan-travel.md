@@ -3,6 +3,7 @@ title: 日本游玩
 date: 2019-12-28 09:21:26
 tags: [Japan]
 categories: travel
+banner_img: /uploads/japan-travel/211.JPG
 ---
 
 1. 从羽田机场到酒店

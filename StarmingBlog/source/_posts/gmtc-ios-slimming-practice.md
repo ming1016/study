@@ -3,6 +3,7 @@ title: GMTC 上分享滴滴出行 iOS 端瘦身实践的 Slides
 date: 2017-06-12 14:15:06
 tags: [iOS, Slides]
 categories: Programming
+banner_img: /uploads/gmtc-ios-slimming-practice/19.jpeg
 ---
 在这次 GMTC 大会上分享了我们在包大小瘦身实践过程中使用的一些方法和遇到的一些问题，会前也有很多朋友咨询过这方面的问题，相信这些经验对大家会有一些帮助，完整的 Slides 我放到了这里 [http://pan.baidu.com/s/1skPAIID](http://pan.baidu.com/s/1skPAIID) 这次大会其他讲师的 pdf 在 GMTC 官网已经放出 [http://gmtc.geekbang.org/](http://gmtc.geekbang.org/)
 

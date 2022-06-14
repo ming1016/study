@@ -3,6 +3,7 @@ title: 如何对 iOS 启动阶段耗时进行分析
 date: 2019-12-07 09:25:33
 tags: [Swift, iOS]
 categories: Programming
+banner_img: /uploads/how-to-analyze-startup-time-cost-in-ios/01.jpeg
 ---
 
 ![](/uploads/kuaishou-unused-class-swiftui-note-binary-tree-interview/01.png)

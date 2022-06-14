@@ -3,6 +3,7 @@ title: A站 的 Swift 实践
 date: 2021-05-22 18:16:12
 tags: [iOS, Apple, Swift]
 categories: Programming
+banner_img: /uploads/acfun-swift-practice/01.png
 ---
 
 文章已发在快手大前端公众号，欢迎关注，文章地址如下：
