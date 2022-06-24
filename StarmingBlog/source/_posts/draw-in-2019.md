@@ -2,7 +2,7 @@
 title: 2019年涂图
 date: 2019-12-06 13:48:40
 tags: [Painting, iPad, Procreate]
-categories: My painting
+categories: My-painting
 banner_img: /uploads/draw-in-2019/03.jpg
 ---
 

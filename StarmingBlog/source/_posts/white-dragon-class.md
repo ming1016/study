@@ -2,7 +2,7 @@
 title: 白龙班
 date: 2019-06-19 19:24:38
 tags: [Novel]
-categories: My novel
+categories: My-novel
 ---
 ## 前言
 

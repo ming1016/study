@@ -2,7 +2,7 @@
 title: 15年用iPad上的备忘录画的
 date: 2015-11-2 22:04:14
 tags: [Painting, iPad]
-categories: My painting
+categories: My-painting
 banner_img: /uploads/draw-with-note-in-ipad-during-15/8.jpeg
 ---
 ![](/uploads/draw-with-note-in-ipad-during-15/1.jpg)

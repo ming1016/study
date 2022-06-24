@@ -2,7 +2,7 @@
 title: 14和15年间的铅笔画练习
 date: 2015-03-12 21:55:01
 tags: [Painting, Pencil]
-categories: My painting
+categories: My-painting
 banner_img: /uploads/draw-practice-with-pencil-during-14-to-15/16.jpg
 ---
 ![](/uploads/draw-practice-with-pencil-during-14-to-15/1.jpg)

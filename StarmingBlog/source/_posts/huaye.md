@@ -2,7 +2,7 @@
 title: 花野
 date: 2018-01-04 19:27:32
 tags: Novel
-categories: My novel
+categories: My-novel
 ---
 ![](/uploads/huaye/01.png)
 

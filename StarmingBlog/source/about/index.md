@@ -23,6 +23,7 @@ date: 2022-04-15 11:01:20
 
 ## 分享
 
+* 清华大学讲课《解释器》
 * 苹果加速器活动分享《[SwiftUI practice for macOS](https://ming1016.github.io/2022/03/25/develop-with-swiftui/)》
 * SwiftGG 和快手中学合办的 WWDC 沙龙活动《聊一聊SwiftUI》
 * @Swift 大会《[Swift 写解释器](https://ming1016.github.io/2018/09/17/produce-slides-of-third-at-swift-conference/)》

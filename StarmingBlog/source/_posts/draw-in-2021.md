@@ -2,7 +2,7 @@
 title: 2021年画的
 date: 2022-02-26 11:31:16
 tags: [Painting, iPad, Procreate,]
-categories: My painting
+categories: My-painting
 banner_img: /uploads/draw-in-2021/30.png
 ---
 

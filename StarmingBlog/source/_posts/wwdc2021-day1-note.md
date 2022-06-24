@@ -1,7 +1,7 @@
 ---
 title: WWDC 2021 Day1 笔记
 date: 2021-06-08 16:54:01
-tags: [iOS, Apple, Swift]
+tags: [iOS, Apple, Swift, WWDC]
 categories: Programming
 ---
 

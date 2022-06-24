@@ -2,7 +2,7 @@
 title: 十中
 date: 2016-04-04 16:08:08
 tags: Novel
-categories: My novel
+categories: My-novel
 ---
 # 第一话
 
