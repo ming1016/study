@@ -6,18 +6,20 @@ categories: Programming
 banner_img: /uploads/swift-evolutionary-path/04.png
 ---
 
+已更新到 Swift 5.7。
+
 本篇主要是对[《A站 的 Swift 实践》](https://ming1016.github.io/2021/05/22/acfun-swift-practice/)文章中的一幅配图做了详细的扩展，能够更加全面和详细了解 Swift 语言的发展，文章中提到的 Swift 各版本的语法示例代码，及本文内容都可以在 [Swift 小册子](https://github.com/KwaiAppTeam/SwiftPamphletApp)里对应栏目里找到，这个假期我也对 Swift 小册子里栏目内容进行了些更新和补充。《A站 的 Swift 实践》文章的那个演进配图如下：
 
 ![](/uploads/swift-evolutionary-path/01.png)
 
 文章内容如下：
 
-*Swift 1.1*
+##### Swift 1.1
 
 * countElements() 改成了 count()。
 * @NSApplicationMain 可以在 macOS 上使用。
 
-*Swift 1.2*
+##### Swift 1.2
 
 * 引入 Set 类型。
 * if let 可以放到一起，使用逗号分隔。
@@ -27,7 +29,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * @noescape 用于描述作为参数闭包，用来告诉 Swift 闭包将在函数返回前使用。
 * 常量可以延后初始化。
 
-*Swift 2.0*
+##### Swift 2.0
 
 * 增加 guard 关键字，用于解可选项值。
 * defer 关键字用来延迟执行，即使抛出错误了都会在最后执行。
@@ -35,7 +37,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * characters 加上 count，用来替代 count()。
 * #available 用来检查系统版本。
 
-*Swift 2.1*
+##### Swift 2.1
 
 * 字符串插值可以包含字符串字面符号。
 
@@ -50,7 +52,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 废弃字符串化的选择器，选择器不再能写成字符串了。
 * 元组可直接比较是否相等。
 
-*Swift 3.0*
+##### Swift 3.0
 
 官方博客介绍：[Swift 3.0 Released!](https://swift.org/blog/swift-3.0-released/)、[Swift 3.0 Preview 1 Released!](https://swift.org/blog/swift-3.0-preview-1-released/)、[Swift 3.0 Release Process](https://swift.org/blog/swift-3.0-release-process/)
 
@@ -61,7 +63,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 枚举的属性使用小写开头。
 * 引入 C 函数的属性。
 
-*Swift 3.1*
+##### Swift 3.1
 
 官方博客介绍：[Swift 3.1 Released!](https://swift.org/blog/swift-3.1-released/)、[Swift 3.1 Release Process](https://swift.org/blog/swift-3.1-release-process/)
 
@@ -69,7 +71,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 泛型适用于嵌套类型。
 * 类型的扩展可以使用约束条件，比如扩展数组时，加上元素为整数的约束，这样的扩展就只会对元素为整数的数组有效。
 
-*Swift 4.0*
+##### Swift 4.0
 
 官方博客介绍：[Swift 4.0 Released!](https://swift.org/blog/swift-4.0-released/)、[Swift 4 Release Process](https://swift.org/blog/swift-4.0-release-process/)
 
@@ -80,7 +82,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 集合加入 ..<10 这样语法的单边切片。提案 [SE-0172 One-sided Ranges](https://github.com/apple/swift-evolution/blob/master/proposals/0172-one-sided-ranges.md)
 * 字典新增 mapValues，可 map 字典的值。通过 grouping 可对字典进行分组生成新字典，键和值都可以。从字典中取值，如果键对应无值，则使用通过 default 指定的默认值。提案 [SE-0165 Dictionary & Set Enhancements](https://github.com/apple/swift-evolution/blob/master/proposals/0165-dict.md)
 
-*Swift 4.1*
+##### Swift 4.1
 
 官方博客介绍：[Swift 4.1 Released!](https://swift.org/blog/swift-4.1-released/)、[Swift 4.1 Release Process](https://swift.org/blog/swift-4.1-release-process/)
 
@@ -94,7 +96,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 关联类型可以创建递归约束，提案见 [SE-0157 Support recursive constraints on associated types](https://github.com/apple/swift-evolution/blob/master/proposals/0157-recursive-protocol-constraints.md)
 * targetEnvironment 环境的判断，比如模拟器。提案见 [SE-0190 Target environment platform condition](https://github.com/apple/swift-evolution/blob/master/proposals/0190-target-environment-platform-condition.md) 。
 
-*Swift 4.2*
+##### Swift 4.2
 
 官方博客介绍：[Swift 4.2 Released!](https://swift.org/blog/swift-4.2-released/)、[Swift 4.2 Release Process](https://swift.org/blog/4.2-release-process/)
 
@@ -107,7 +109,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 更简单更安全的哈希协议，引入新的 Hasher 结构，通过 combine() 方法为哈希值添加更多属性，调用 finalize() 方法生成最终哈希值。提案 [SE-0206 Hashable Enhancements](https://github.com/apple/swift-evolution/blob/master/proposals/0206-hashable-enhancements.md)
 * 集合增加 allSatisfy() 用来判断集合中的元素是否都满足了一个条件。提案 [SE-0207 Add an allSatisfy algorithm to Sequence](https://github.com/apple/swift-evolution/blob/master/proposals/0207-containsOnly.md)
 
-*Swift 5.0*
+##### Swift 5.0
 
 官方博客介绍：[Swift 5 Released!](https://swift.org/blog/swift-5-released/)、[Swift 5.0 Release Process](https://swift.org/blog/5.0-release-process/)
 
@@ -120,7 +122,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 扁平化 try?。提案 [SE-0230 Flatten nested optionals resulting from 'try?'](https://github.com/apple/swift-evolution/blob/master/proposals/0230-flatten-optional-try.md)
 * isMultiple(of:) 方法检查一个数字是否是另一个数字的倍数。提案见 [SE-0225 Adding isMultiple to BinaryInteger](https://github.com/apple/swift-evolution/blob/master/proposals/0225-binaryinteger-iseven-isodd-ismultiple.md)
 
-*Swift 5.1*
+##### Swift 5.1
 
 官方博客介绍：[Swift 5.1 Released!](https://swift.org/blog/swift-5.1-released/)、[Swift 5.1 Release Process](https://swift.org/blog/5.1-release-process/)
 
@@ -134,14 +136,14 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 枚举里有 none 的 case 编译器会提示换成 Optional.none。
 * 引入未初始化数组。提案 [SE-0245 Add an Array Initializer with Access to Uninitialized Storage](https://github.com/apple/swift-evolution/blob/master/proposals/0245-array-uninitialized-initializer.md)
 
-*Swift 5.2*
+##### Swift 5.2
 
 官方博客介绍：[Swift 5.2 Released!](https://swift.org/blog/swift-5.2-released/)、[Swift 5.2 Release Process](https://swift.org/blog/5.2-release-process/)
 
 * 自定义类型中实现了 callAsFunction() 的话，该类型的值就可以直接调用。提案 [SE-0253 Callable values of user-defined nominal types](https://github.com/apple/swift-evolution/blob/master/proposals/0253-callable.md)
 * 键路径表达式作为函数。提案 [SE-0249 Key Path Expressions as Functions](https://github.com/apple/swift-evolution/blob/master/proposals/0249-key-path-literal-function-expressions.md)
 
-*Swift 5.3*
+##### Swift 5.3
 
 官方博客介绍：[Swift 5.3 released!](https://swift.org/blog/swift-5.3-released/)、[Swift 5.3 Release Process](https://swift.org/blog/5.3-release-process/)
 
@@ -160,7 +162,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 新增 Float16 类型，即半精度浮点类型。提案 [SE-0277 Float16](https://github.com/apple/swift-evolution/blob/master/proposals/0277-float16.md)
 
 
-*Swift 5.4*
+##### Swift 5.4
 
 官方博客介绍：[Swift 5.4 Released!](https://swift.org/blog/swift-5.4-released/)
 
@@ -171,7 +173,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * 嵌套函数可以重载，嵌套函数可以在声明函数之前调用他。
 * 属性包装支持局部变量。
 
-*Swift 5.5*
+##### Swift 5.5
 
 官方博客介绍：[Swift 5.5 Released!](https://swift.org/blog/swift-5.5-released/)
 
@@ -191,7 +193,45 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 * CGFloat 和 Double 之间可以隐式转换。提案 [SE-0307 Allow interchangeable use of CGFloat and Double types](https://github.com/apple/swift-evolution/blob/main/proposals/0307-allow-interchangeable-use-of-double-cgfloat-types.md)
 * Codable 支持关联值枚举。提案 [SE-0295 Codable synthesis for enums with associated values](https://github.com/apple/swift-evolution/blob/main/proposals/0295-codable-synthesis-for-enums-with-associated-values.md)
 
-上面各个版本的语法更新的内容和更多代码的示例都可以在 Swift 小册子里查看，内容力求更全，描述力求更简洁，more big, more small。不想下载 app 也可以查看[《戴铭的 Swift 小册子4.0》](https://ming1016.github.io/2021/11/23/daiming-swift-pamphlet/)这篇，内容也同步做了更新和补充（内容达十五万字，值得你收藏和分享）。我对小册子内容查看样式视觉做了更新，排版用了赫蹏（hètí），字体是霞鹜文楷，更新了代码高亮风格，内容看起来更舒服。还有 icon 也进行替换，不用再对着枯燥的 SFSymbol 和我先前临时从以前图里随便挑的那条小狗 App icon 看了。
+##### Swift 5.6
+
+[5.6 官方博客介绍](https://www.swift.org/blog/swift-5.6-released/)
+
+* 使用 any 注释此类类型，使存在类型的影响在语言中明确。提案 [SE-0335 Introduce existential any](https://github.com/apple/swift-evolution/blob/main/proposals/0335-existential-any.md)
+* 类型占位符。[SE-0315 Type placeholders (formerly, "Placeholder types")](https://github.com/apple/swift-evolution/blob/main/proposals/0315-placeholder-types.md)
+* 新增 CodingKeyRepresentable 协议将非字符串和整数类型自定义表现。提案 [SE-0320 Allow coding of non String / Int keyed Dictionary into a KeyedContainer](https://github.com/apple/swift-evolution/blob/main/proposals/0320-codingkeyrepresentable.md)
+* 增加 Unavailability 用来在检查不可用时可以做些事情。[SE-0290 Unavailability Condition](https://github.com/apple/swift-evolution/blob/main/proposals/0290-negative-availability.md)
+* 增加了 `@preconcurrency` 属性。提案 [SE-0337 Incremental migration to concurrency checking](https://github.com/apple/swift-evolution/blob/main/proposals/0337-support-incremental-migration-to-concurrency-checking.md)
+* actor 的 init 和 deinit。[SE-0327 On Actors and Initialization](https://github.com/apple/swift-evolution/blob/main/proposals/0327-actor-initializers.md)
+
+Package Manage 的一些提案
+
+* [SE-0303 Package Manager Extensible Build Tools](https://github.com/apple/swift-evolution/blob/main/proposals/0303-swiftpm-extensible-build-tools.md)
+* [SE-0305 Package Manager Binary Target Improvements](https://github.com/apple/swift-evolution/blob/main/proposals/0305-swiftpm-binary-target-improvements.md)
+* [SE-0325 Additional Package Plugin APIs](https://github.com/apple/swift-evolution/blob/main/proposals/0325-swiftpm-additional-plugin-apis.md)
+* [SE-0332 Package Manager Command Plugins](https://github.com/apple/swift-evolution/blob/main/proposals/0332-swiftpm-command-plugins.md)
+
+
+##### Swift 5.7
+
+* 标准库多了个 `Regex<Output>` 类型，Regex 语法与 Perl、Python、Ruby、Java、NSRegularExpression 和许多其他语言兼容。可以用 `let regex = try! Regex("a[bc]+")` 或 `let regex = /a[bc]+/` 写法来使用。[SE-0350 Regex Type and Overview](https://github.com/apple/swift-evolution/blob/main/proposals/0350-regex-type-overview.md) 引入 Regex 类型。[SE-0351 Regex builder DSL](https://github.com/apple/swift-evolution/blob/main/proposals/0351-regex-builder.md) 使用 result builder 来构建正则表达式的 DSL。[SE-0354 Regex Literals](https://github.com/apple/swift-evolution/blob/main/proposals/0354-regex-literals.md) 简化的正则表达式。[SE-0357 Regex-powered string processing algorithms](https://github.com/apple/swift-evolution/blob/main/proposals/0357-regex-string-processing-algorithms.md) 提案里有基于正则表达式的新字符串处理算法。
+* [SE-0347 Type inference from default expressions](https://github.com/apple/swift-evolution/blob/main/proposals/0347-type-inference-from-default-exprs.md) 扩展 Swift 泛型参数类型的默认值能力。
+* [SE-0341 Opaque Parameter Declarations](https://github.com/apple/swift-evolution/blob/main/proposals/0341-opaque-parameters.md) 使用 some 参数简化泛型参数声明。[SE-0328 Structural opaque result types](https://github.com/apple/swift-evolution/blob/main/proposals/0328-structural-opaque-result-types.md) 扩大不透明结果返回类型可以使用的范围。[SE-0360 Opaque result types with limited availability](https://github.com/apple/swift-evolution/blob/main/proposals/0360-opaque-result-types-with-availability.md) 可用性有限的不透明结果类型，比如 `if #available(macOS 13.0, *) {}` 就可以根据系统不同版本返回不同类型，新版本出现新类型的 View 就可以和以前的 View 类型区别开。
+* [SE-0309 Unlock existentials for all protocols](https://github.com/apple/swift-evolution/blob/main/proposals/0309-unlock-existential-types-for-all-protocols.md) 改进了 existentials 和 泛型的交互。这样就可以更方便的检查 Any 类型的两个值是否相等.
+* [SE-0346 Lightweight same-type requirements for primary associated types](https://github.com/apple/swift-evolution/blob/main/proposals/0346-light-weight-same-type-syntax.md) 引入一种新语法，用于符合泛型参数并通过相同类型要求约束关联类型。[SE-0358 Primary Associated Types in the Standard Library](https://github.com/apple/swift-evolution/blob/main/proposals/0358-primary-associated-types-in-stdlib.md) 引入主要关联类型概念，并将其带入了标准库。这些关联类型很像泛型，允许开发者将给定关联类型的类型指定为通用约束。
+* [SE-0353 Constrained Existential Types](https://github.com/apple/swift-evolution/blob/main/proposals/0353-constrained-existential-types.md) 基于 SE-0309 和 SE-0346 提案，在 existential 类型的上下文中重用轻量关联类型的约束。
+* [SE-0352 Implicitly Opened Existentials](https://github.com/apple/swift-evolution/blob/main/proposals/0352-implicit-open-existentials.md)  允许 Swift 在很多情况下使用协议调用泛型函数。
+* 新增 [SE-0338 Clarify the Execution of Non-Actor-Isolated Async Functions](https://github.com/apple/swift-evolution/blob/main/proposals/0338-clarify-execution-non-actor-async.md) 通过收紧可发送性检查的规则来避免潜在的数据竞争。
+* [SE-0343 Concurrency in Top-level Code](https://github.com/apple/swift-evolution/blob/main/proposals/0343-top-level-concurrency.md) 这个提案主要是更好地支持命令行工具的开发，可以直接将 concurrency 代码写到 main.swift 文件里。
+* [SE-0340 Unavailable From Async Attribute](https://github.com/apple/swift-evolution/blob/main/proposals/0340-swift-noasync.md) 提供 noasync 语法以允许我们将类型和函数标记为在异步上下文不可用。
+* [SE-0336 Distributed Actor Isolation](https://github.com/apple/swift-evolution/blob/main/proposals/0336-distributed-actor-isolation.md) 和 [SE-0344 Distributed Actor Runtime](https://github.com/apple/swift-evolution/blob/main/proposals/0344-distributed-actor-runtime.md) 是两个 Distributed Actors 的相关提案。
+* [SE-0345 if let shorthand for shadowing an existing optional variable](https://github.com/apple/swift-evolution/blob/main/proposals/0345-if-let-shorthand.md) 引入的新语法，用于 unwrapping optinal。
+* [SE-0326](https://github.com/apple/swift-evolution/blob/main/proposals/0326-extending-multi-statement-closure-inference.md) 提高了 Swift 对闭包使用参数和类型推断的能力。
+* [SE-0348 buildPartialBlock for result builders](https://github.com/apple/swift-evolution/blob/main/proposals/0348-buildpartialblock.md)  简化了实现复杂 result buiders 所需的重载。
+* [SE-0356 Swift Snippets](https://github.com/apple/swift-evolution/blob/main/proposals/0356-swift-snippets.md)  代码片段用于示例文档的提案。
+* 内存管理相关提案包括 [SE-0349 Unaligned Loads and Stores from Raw Memory](https://github.com/apple/swift-evolution/blob/main/proposals/0349-unaligned-loads-and-stores.md) 、[SE-0334 Pointer API Usability Improvements](https://github.com/apple/swift-evolution/blob/main/proposals/0334-pointer-usability-improvements.md) 、[SE-0333 Expand usability of withMemoryRebound](https://github.com/apple/swift-evolution/blob/main/proposals/0333-with-memory-rebound.md) 。
+
+上面各个版本的语法更新的内容和更多代码的示例都可以在 Swift 小册子里查看，内容力求更全，描述力求更简洁，more big, more small。不想下载 app 也可以查看[《戴铭的 Swift 小册子5.0》](https://ming1016.github.io/2021/11/23/daiming-swift-pamphlet/)这篇，内容也同步做了更新和补充（内容达十五万字，值得你收藏和分享）。我对小册子内容查看样式视觉做了更新，排版用了赫蹏（hètí），字体是霞鹜文楷，更新了代码高亮风格，内容看起来更舒服。还有 icon 也进行替换，不用再对着枯燥的 SFSymbol 和我先前临时从以前图里随便挑的那条小狗 App icon 看了。
 
 ![](/uploads/swift-evolutionary-path/02.png)
 ![](/uploads/swift-evolutionary-path/03.png)

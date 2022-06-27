@@ -72,6 +72,8 @@ struct POM: Hashable, Identifiable {
 
 接下来详细的说下 SwiftUI 的视图组件的使用，这次的幻灯片程序用到的技术，除了解释执行代码的功能，其它基本都来自下面的内容。
 
+已更新 WWDC22 内容。
+
 ## SwiftUI 组件
 
 
@@ -111,7 +113,7 @@ struct POM: Hashable, Identifiable {
 
 基本用法
 
-![](/uploads/develop-with-swiftui/g01.png)
+![](https://user-images.githubusercontent.com/251980/154473546-94ba6f9f-2ce3-44ef-a7c6-60d86df8c90f.png)
 
 ```swift
 // MARK: - Text
@@ -590,9 +592,10 @@ struct V: View {
 }
 ```
 
+
 #### Label
 
-![](/uploads/develop-with-swiftui/g02.png)
+![](https://user-images.githubusercontent.com/251980/154474725-d696d50b-9da7-4a0d-808f-07894a9597cb.png)
 
 ```swift
 struct PlayLabelView: View {
@@ -689,7 +692,7 @@ extension LabelStyle where Self == BorderOnlyTitleLabelStyle {
 
 #### TextEditor
 
-![](/uploads/develop-with-swiftui/g03.png)
+![](https://user-images.githubusercontent.com/251980/154667163-e906dfd4-074e-4c04-9c80-94af86df4ba6.png)
 
 对应的代码如下：
 
@@ -933,7 +936,7 @@ SwiftUI 中用 NSView，可以通过 NSViewRepresentable 来包装视图，这�
 
 #### TextField
 
-![](/uploads/develop-with-swiftui/g04.png)
+![](https://user-images.githubusercontent.com/251980/154916174-2e9b1bd8-992a-485e-803a-07da59d0c7e3.png)
 
 使用方法如下：
 
@@ -1039,10 +1042,14 @@ struct PClearTextStyle: TextFieldStyle {
 
 可以通过 keyboardType 修改器来指定。
 
+支持多行，使用 Axis.vertical 以允许多行。TextField 超过行限制可以变成滚动视图。
+
+今年 TextField 可以嵌到 `.alert` 里了。
+
 
 #### Button
 
-![](/uploads/develop-with-swiftui/g05.png)
+![](https://user-images.githubusercontent.com/251980/155062538-108a79b4-3e5c-417b-867a-3f7e58316664.png)
 
 ```swift
 struct PlayButtonView: View {
@@ -1288,10 +1295,45 @@ extension Color {
 }
 ```
 
+`.buttonStyle` 可组合，示例如下：
+```swift
+struct PButtonStyleComposition: View {
+    @State private var isT = false
+    var body: some View {
+        Section("标签") {
+            VStack(alignment: .leading) {
+                HStack {
+                    Toggle("Swift", isOn: $isT)
+                    Toggle("SwiftUI", isOn: $isT)
+                }
+                HStack {
+                    Toggle("Swift Chart", isOn: $isT)
+                    Toggle("Navigation API", isOn: $isT)
+                }
+            }
+            .toggleStyle(.button)
+            .buttonStyle(.bordered)
+        }
+    }
+}
+```
 
-#### ProgressView
+Tap Location 可以获取点击的位置，示例代码如下：
+```swift
+Rectangle()
+    .fill(.green)
+    .frame(width: 50, height: 50)
+    .onTapGesture(coordinateSpace: .global) { location in
+        print("Tap in \(location)")
+    }
+```
 
-![](/uploads/develop-with-swiftui/g06.jpeg)
+其中 coordinateSpace 指定为 `.global` 表示位置是相对屏幕左上角，默认是相对当前视图的左上角的位置。
+
+
+#### 进度
+
+![](https://user-images.githubusercontent.com/251980/155676571-726c15d1-e4a2-4493-8fb0-c37c1c61c88c.jpeg)
 
 用 ProgressViewStyle 协议，可以创建自定义的进度条视图。在 WatchOS 上会多一个 Guage 视图。
 
@@ -1394,10 +1436,39 @@ struct PCProgressStyle2: ProgressViewStyle {
 }
 ```
 
+SwiftUI 引入一个新显示进度的视图 Gauge。
+
+简单示例如下：
+```swift
+struct PGauge: View {
+    @State private var progress = 0.45
+    var body: some View {
+        Gauge(value: progress) {
+            Text("进度")
+        } currentValueLabel: {
+            Text(progress.formatted(.percent))
+        } minimumValueLabel: {
+            Text(0.formatted(.percent))
+        } maximumValueLabel: {
+            Text(100.formatted(.percent))
+        }
+        
+        Gauge(value: progress) {
+            
+        } currentValueLabel: {
+            Text(progress.formatted(.percent))
+                .font(.footnote)
+        }
+        .gaugeStyle(.accessoryCircularCapacity)
+        .tint(.cyan)
+    }
+}
+```
+
 
 #### Image
 
-![](/uploads/develop-with-swiftui/g07.png)
+![](https://user-images.githubusercontent.com/251980/155683776-0f0acdee-c7c1-44e3-a68b-38f778863821.png)
 
 ```swift
 struct PlayImageView: View {
@@ -1458,7 +1529,7 @@ struct PlayControlGroupView: View {
 
 #### GroupBox
 
-![](/uploads/develop-with-swiftui/g08.png)
+![](https://user-images.githubusercontent.com/251980/155317172-dc137c38-64d0-415a-8412-e3f479f2bd91.png)
 
 ```swift
 struct PlayGroupBoxView: View {
@@ -1501,7 +1572,7 @@ struct PCGroupBoxStyle: GroupBoxStyle {
 
 Stack View 有 VStack、HStack 和 ZStack
 
-![](/uploads/develop-with-swiftui/g09.jpeg)
+![](https://user-images.githubusercontent.com/251980/155077158-f6efd3bb-4b82-48ac-b5e6-792dd833dfda.jpeg)
 
 ```swift
 struct PlayStackView: View {
@@ -1538,9 +1609,349 @@ struct PlayStackView: View {
 ```
 
 
-#### NavigationView
+#### Advanced layout control
 
-![](/uploads/develop-with-swiftui/g10.jpeg)
+session [Compose custom layouts with SwiftUI](https://developer.apple.com/videos/play/wwdc2022-10056) 
+
+提供了新的 Grid 视图来同时满足 VStack 和 HStack。还有一个更低级别 Layout 接口，可以完全控制构建应用所需的布局。另外还有 ViewThatFits 可以自动选择填充可用空间的方式。
+
+Grid 示例代码如下：
+```swift
+Grid {
+    GridRow {
+        Text("One")
+        Text("One")
+        Text("One")
+    }
+    GridRow {
+        Text("Two")
+        Text("Two")
+    }
+    Divider()
+    GridRow {
+        Text("Three")
+        Text("Three")
+            .gridCellColumns(2)
+    }
+}
+```
+
+`gridCellColumns()`  modifier 可以让一个单元格跨多列。
+
+ViewThatFits 的新视图，允许根据适合的大小放视图。ViewThatFits 会自动选择对于当前屏幕大小合适的子视图进行显示。Ryan Lintott 的[示例效果](https://twitter.com/ryanlintott/status/1534706352177700871) ，对应示例代码 [LayoutThatFits.swift](https://gist.github.com/ryanlintott/d03140dd155d0493a758dcd284e68eaa) 。
+
+新的 Layout 协议可以观看 Swift Talk 第 308 期 [The Layout Protocol](https://talk.objc.io/episodes/S01E308-the-layout-protocol) 。
+
+通过符合 Layout 协议，我们可以自定义一个自定义的布局容器，直接参与 SwiftUI 的布局过程。新的 ProposedViewSize 结构，它是容器视图提供的大小。 `Layout.Subviews` 是布局视图的子视图代理集合，我们可以在其中为每个子视图请求各种布局属性。
+```swift
+public protocol Layout: Animatable {
+  static var layoutProperties: LayoutProperties { get }
+  associatedtype Cache = Void
+  typealias Subviews = LayoutSubviews
+
+  func updateCache(_ cache: inout Self.Cache, subviews: Self.Subviews)
+
+  func spacing(subviews: Self.Subviews, cache: inout Self.Cache) -> ViewSpacing
+
+  /// We return our view size here, use the passed parameters for computing the
+  /// layout.
+  func sizeThatFits(
+    proposal: ProposedViewSize, 
+    subviews: Self.Subviews, 
+    cache: inout Self.Cache // 👈🏻 use this for calculated data shared among Layout methods
+  ) -> CGSize
+  
+  /// Use this to tell your subviews where to appear.
+  func placeSubviews(
+    in bounds: CGRect, // 👈🏻 region where we need to place our subviews into, origin might not be .zero
+    proposal: ProposedViewSize, 
+    subviews: Self.Subviews, 
+    cache: inout Self.Cache
+  )
+  
+  // ... there are more a couple more optional methods
+}
+```
+
+下面例子是一个自定义的水平 stack 视图，为其所有子视图提供其最大子视图的宽度：
+```swift
+struct MyEqualWidthHStack: Layout {
+  /// Returns a size that the layout container needs to arrange its subviews.
+  /// - Tag: sizeThatFitsHorizontal
+  func sizeThatFits(
+    proposal: ProposedViewSize,
+    subviews: Subviews,
+    cache: inout Void
+  ) -> CGSize {
+    guard !subviews.isEmpty else { return .zero }
+
+    let maxSize = maxSize(subviews: subviews)
+    let spacing = spacing(subviews: subviews)
+    let totalSpacing = spacing.reduce(0) { $0 + $1 }
+
+    return CGSize(
+      width: maxSize.width * CGFloat(subviews.count) + totalSpacing,
+      height: maxSize.height)
+  }
+
+  /// Places the stack's subviews.
+  /// - Tag: placeSubviewsHorizontal
+  func placeSubviews(
+    in bounds: CGRect,
+    proposal: ProposedViewSize,
+    subviews: Subviews,
+    cache: inout Void
+  ) {
+    guard !subviews.isEmpty else { return }
+
+    let maxSize = maxSize(subviews: subviews)
+    let spacing = spacing(subviews: subviews)
+
+    let placementProposal = ProposedViewSize(width: maxSize.width, height: maxSize.height)
+    var nextX = bounds.minX + maxSize.width / 2
+
+    for index in subviews.indices {
+      subviews[index].place(
+        at: CGPoint(x: nextX, y: bounds.midY),
+        anchor: .center,
+        proposal: placementProposal)
+      nextX += maxSize.width + spacing[index]
+    }
+  }
+
+  /// Finds the largest ideal size of the subviews.
+  private func maxSize(subviews: Subviews) -> CGSize {
+    let subviewSizes = subviews.map { $0.sizeThatFits(.unspecified) }
+    let maxSize: CGSize = subviewSizes.reduce(.zero) { currentMax, subviewSize in
+      CGSize(
+        width: max(currentMax.width, subviewSize.width),
+        height: max(currentMax.height, subviewSize.height))
+    }
+
+    return maxSize
+  }
+
+  /// Gets an array of preferred spacing sizes between subviews in the
+  /// horizontal dimension.
+  private func spacing(subviews: Subviews) -> [CGFloat] {
+    subviews.indices.map { index in
+      guard index < subviews.count - 1 else { return 0 }
+      return subviews[index].spacing.distance(
+        to: subviews[index + 1].spacing,
+        along: .horizontal)
+    }
+  }
+}
+```
+
+自定义 layout 只能访问子视图代理 `Layout.Subviews` ，而不是视图或数据模型。我们可以通过 LayoutValueKey 在每个子视图上存储自定义值，通过 `layoutValue(key:value:)` modifier 设置。
+```swift
+private struct Rank: LayoutValueKey {
+  static let defaultValue: Int = 1
+}
+
+extension View {
+  func rank(_ value: Int) -> some View { // 👈🏻 convenience method
+    layoutValue(key: Rank.self, value: value) // 👈🏻 the new modifier
+  }
+}
+```
+
+然后，我们就可以通过 Layout 方法中的 `Layout.Subviews` 代理读取自定义 `LayoutValueKey` 值：
+```swift
+func placeSubviews(
+  in bounds: CGRect,
+  proposal: ProposedViewSize,
+  subviews: Subviews,
+  cache: inout Void
+) {
+  let ranks = subviews.map { subview in
+    subview[Rank.self] // 👈🏻
+  }
+
+  // ...
+}
+```
+
+要在布局之间变化使用动画，需要用 AnyLayout，代码示例如下：
+```swift
+struct PAnyLayout: View {
+    @State private var isVertical = false
+    var body: some View {
+        let layout = isVertical ? AnyLayout(VStack()) : AnyLayout(HStack())
+        layout {
+            Image(systemName: "star").foregroundColor(.yellow)
+            Text("Starming.com")
+            Text("戴铭")
+        }
+        Button("Click") {
+            withAnimation {
+                isVertical.toggle()
+            }
+        } // end button
+    } // end body
+}
+```
+
+同时 Text 和图片也支持了样式布局变化，代码示例如下：
+```swift
+struct PTextTransitionsView: View {
+    @State private var expandMessage = true
+    private let mintWithShadow: AnyShapeStyle = AnyShapeStyle(Color.mint.shadow(.drop(radius: 2)))
+    private let primaryWithoutShadow: AnyShapeStyle = AnyShapeStyle(Color.primary.shadow(.drop(radius: 0)))
+
+    var body: some View {
+        Text("Dai Ming Swift Pamphlet")
+            .font(expandMessage ? .largeTitle.weight(.heavy) : .body)
+            .foregroundStyle(expandMessage ? mintWithShadow : primaryWithoutShadow)
+            .onTapGesture { withAnimation { expandMessage.toggle() }}
+            .frame(maxWidth: expandMessage ? 150 : 250)
+            .drawingGroup()
+            .padding(20)
+            .background(.cyan.opacity(0.3), in: RoundedRectangle(cornerRadius: 6))
+    }
+}
+```
+
+
+
+#### Navigation
+
+控制导航启动状态、管理 size class 之间的 transition 和响应 deep link。
+
+Navigation bar 有新的默认行为，如果没有提供标题，导航栏默认为 inline  title 显示模式。使用 `navigationBarTitleDisplayMode(_:)` 改变显示模式。如果 navigation bar  没有标题、工具栏项或搜索内容，它就会自动隐藏。使用 `.toolbar(.visible)` modifier 显示一个空 navigation bar。
+
+参考：
+- [Migrating to New Navigation Types](https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types?changes=latest_minor) 官方迁移指南
+- [NavigationStack](https://developer.apple.com/documentation/swiftui/navigationstack?changes=latest_minor)
+- [NavigationSplitView](https://developer.apple.com/documentation/swiftui/navigationsplitview)
+- [The SwiftUI cookbook for navigation](https://developer.apple.com/videos/play/wwdc2022/10054/)
+
+NavigationStack 的示例：
+```swift
+struct PNavigationStack: View {
+    @State private var a = [1, 3, 9] // 深层链接
+    var body: some View {
+        NavigationStack(path: $a) {
+            List(1..<10) { i in
+                NavigationLink(value: i) {
+                    Label("第 \(i) 行", systemImage: "\(i).circle")
+                }
+            }
+            .navigationDestination(for: Int.self) { i in
+                Text("第 \(i) 行内容")
+            }
+            .navigationTitle("NavigationStack Demo")
+        }
+    }
+}
+```
+
+这里的 path 设置了 stack 的深度路径。
+
+NavigationSplitView 两栏的例子：
+```swift
+struct PNavigationSplitViewTwoColumn: View {
+    @State private var a = ["one", "two", "three"]
+    @State private var choice: String?
+    
+    var body: some View {
+        NavigationSplitView {
+            List(a, id: \.self, selection: $choice, rowContent: Text.init)
+        } detail: {
+            Text(choice ?? "选一个")
+        }
+    }
+}
+```
+
+NavigationSplitView 三栏的例子：
+```swift
+struct PNavigationSplitViewThreeColumn: View {
+    struct Group: Identifiable, Hashable {
+        let id = UUID()
+        var title: String
+        var subs: [String]
+    }
+    
+    @State private var gps = [
+        Group(title: "One", subs: ["o1", "o2", "o3"]),
+        Group(title: "Two", subs: ["t1", "t2", "t3"])
+    ]
+    
+    @State private var choiceGroup: Group?
+    @State private var choiceSub: String?
+    
+    @State private var cv = NavigationSplitViewVisibility.automatic
+    
+    var body: some View {
+        NavigationSplitView(columnVisibility: $cv) {
+            List(gps, selection: $choiceGroup) { g in
+                Text(g.title).tag(g)
+            }
+            .navigationSplitViewColumnWidth(250)
+        } content: {
+            List(choiceGroup?.subs ?? [], id: \.self, selection: $choiceSub) { s in
+                Text(s)
+            }
+        } detail: {
+            Text(choiceSub ?? "选一个")
+            Button("点击") {
+                cv = .all
+            }
+        }
+        .navigationSplitViewStyle(.prominentDetail)
+    }
+}
+```
+
+`navigationSplitViewColumnWidth() ` 是用来自定义宽的，`navigationSplitViewStyle` 设置为 `.prominentDetail` 是让 detail 的视图尽量保持其大小。
+
+SwiftUI 新加了个[功能](https://developer.apple.com/documentation/swiftui/presentedwindowcontent/toolbar(_:in:))可以配置是否隐藏 Tabbar，这样在从主页进入下一级时就可以选择不显示底部标签栏了，示例代码如下：
+```swift
+ContentView().toolbar(.hidden, in: .tabBar)
+```
+
+相比较以前 NavigationView 增强的是 destination 可以根据值的不同类型展示不同的目的页面，示例代码如下：
+```swift
+struct PNavigationStackDestination: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                NavigationLink(value: "字符串") {
+                    Text("字符串")
+                }
+                NavigationLink(value: Color.red) {
+                    Text("红色")
+                }
+            }
+            .navigationTitle("不同类型 Destination")
+            .navigationDestination(for: Color.self) { c in
+                c.clipShape(Circle())
+            }
+            .navigationDestination(for: String.self) { s in
+                Text("\(s) 的 detail")
+            }
+        }
+    }
+}
+```
+
+对 toolbar 的自定义，示例如下：
+```swift
+.toolbar(id: "toolbar") {
+    ToolbarItem(id: "new", placement: .secondaryAction) {
+        Button(action: {}) {
+            Label("New Invitation", systemImage: "envelope")
+        }
+    }
+}
+.toolbarRole(.editor)
+```
+
+以下是废弃的 NavigationView 的用法。
+
+![](https://user-images.githubusercontent.com/251980/155517358-4e5d54b8-0284-4fde-bf09-4b5e22e0e9a5.jpeg)
 
 对应代码如下：
 
@@ -1676,7 +2087,7 @@ toolbar 的位置设置可选项如下：
 
 #### List
 
-![](/uploads/develop-with-swiftui/g11.jpeg)
+![](https://user-images.githubusercontent.com/251980/155293565-d85080c1-2304-491b-be72-20aa921f7067.jpeg)
 
 List 除了能够展示数据外，还有下拉刷新、过滤搜索和侧滑 Swipe 动作提供更多 Cell 操作的能力。
 
@@ -1910,6 +2321,36 @@ final class PLVM: ObservableObject {
 }
 ```
 
+list 支持 Section footer。
+
+list 分隔符可以自定义，使用  `HorizontalEdge.leading` 和 `HorizontalEdge.trailing` 。
+
+list 不使用 UITableView 了。
+
+今年 list 还新增了一个 [EditOperation](https://developer.apple.com/documentation/swiftui/editoperations) 可以自动生成移动和删除，新增了 edits 参数，传入 `[.delete, .move]` 数组即可。这也是一个演示如何更好扩展和配置功能的方式。
+
+`.searchable` 支持 token 和 scope，示例如下：
+```swift
+struct PSearchTokensAndScopes: View {
+    enum AttendanceScope {
+        case inPerson, online
+    }
+    @State private var queryText: String
+    @State private var queryTokens: [InvitationToken]
+    @State private var scope: AttendanceScope
+    
+    var body: some View {
+        invitationCountView()
+            .searchable(text: $queryText, tokens: $queryTokens, scope: $scope) { token in
+                Label(token.diplayName, systemImage: token.systemImage)
+            } scopes: {
+                Text("In Person").tag(AttendanceScope.inPerson)
+                Text("Online").tag(AttendanceScope.online)
+            }
+    }
+}
+```
+
 
 #### LazyVStack 和 LazyHStack
 
@@ -1943,7 +2384,7 @@ struct PLHSRowView: View {
 
 #### LazyVGrid 和 LazyHGrid
 
-![](/uploads/develop-with-swiftui/g12.jpeg)
+![](https://user-images.githubusercontent.com/251980/155708552-35396dcd-f120-4498-a793-a65abd68c0a6.jpeg)
 
 列的设置有三种，这三种也可以组合用。
 
@@ -2009,6 +2450,33 @@ struct PlayLazyVGridAndLazyHGridView: View {
             }
             .padding()
         }
+    }
+}
+```
+
+
+#### table
+
+今年 iOS 和 iPadOS 也可以使用去年只能在 macOS 上使用的 Table了，据 digital lounges 里说，iOS table 的性能和 list 差不多，table 默认为 plian list。我想 iOS 上加上 table 只是为了兼容 macOS 代码吧。
+
+table 使用示例如下：
+```swift
+Table(attendeeStore.attendees) {
+    TableColumn("Name") { attendee in
+        AttendeeRow(attendee)
+    }
+    TableColumn("City", value: \.city)
+    TableColumn("Status") { attendee in
+        StatusRow(attendee)
+    }
+}
+.contextMenu(forSelectionType: Attendee.ID.self) { selection in
+    if selection.isEmpty {
+        Button("New Invitation") { addInvitation() }
+    } else if selection.count == 1 {
+        Button("Mark as VIP") { markVIPs(selection) }
+    } else {
+        Button("Mark as VIPs") { markVIPs(selection) }
     }
 }
 ```
@@ -2097,9 +2565,23 @@ private struct OffsetPreferenceKey: PreferenceKey {
 }
 ```
 
+新增 modifier
+```swift
+ScrollView {
+    ForEach(0..<300) { i in
+        Text("\(i)")
+            .id(i)
+    }
+}
+.scrollDisabled(false)
+.scrollDismissesKeyboard(.interactively)
+.scrollIndicators(.visible)
+```
+
+
 #### 浮层
 
-![](/uploads/develop-with-swiftui/g13.png)
+![](https://user-images.githubusercontent.com/251980/156135869-7451bbc9-95b9-445f-8721-66f0aedbed70.png)
 
 浮层有 HUD、ContextMenu、Sheet、Alert、ConfirmationDialog、Popover、ActionSheet 等几种方式。这些方式实现代码如下：
 
@@ -2254,6 +2736,27 @@ struct PHUD<V: View>: View {
 }
 ```
 
+SwiftUI 新推出的 `presentationDetents()` modifier 可以创建一个可以定制的 bottom sheet。示例代码如下：
+```swift
+struct PSheet: View {
+    @State private var isShow = false
+    var body: some View {
+        Button("显示 Sheet") {
+            isShow.toggle()
+        }
+        .sheet(isPresented: $isShow) {
+            Text("这里是 Sheet 的内容")
+                .presentationDetents([.medium, .large])
+        }
+    }
+}
+```
+
+detent 默认值是 `.large`。也可以提供一个百分比，比如 `.presentationDetents([.fraction(0.7)])`，或者直接指定高度 `.presentationDetents([.height(100)])`。
+
+presentationDragIndicator modifier 可以用来显示隐藏拖动标识。
+
+
 
 #### TabView
 
@@ -2320,9 +2823,156 @@ struct PlayTabView: View {
 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) 可以实现 UIPageViewController 的效果，如果要给小白点加上背景，可以多添加一个 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always)) 修改器。
 
 
+#### Swift Charts
+
+可视化数据，使用 SwiftUI 语法来创建。还可以使用 ChartRenderer 接口将图标渲染成图。
+
+官方文档 [Swift Charts](https://developer.apple.com/documentation/Charts)
+
+入门参看 [Hello Swift Charts](https://developer.apple.com/videos/play/wwdc2022/10136/)
+
+Apple 文章 [Creating a chart using Swift Charts](https://developer.apple.com/documentation/Charts/Creating-a-chart-using-Swift-Charts)
+
+高级定制和创建更精细图表，可以看这个 session [Swift Charts: Raise the bar](https://developer.apple.com/videos/play/wwdc2022/10137) 这个 session 也会提到如何在图表中进行交互。这里是 session 对应的代码示例 [Visualizing your app’s data](https://developer.apple.com/documentation/charts/visualizing_your_app_s_data) 。
+
+图表设计的 session，[Design an effective chart](https://developer.apple.com/videos/play/wwdc2022-110340) 和 [Design app experiences with charts](https://developer.apple.com/videos/play/wwdc2022-110342) 。
+
+下面是一个简单的代码示例：
+```swift
+import Charts
+
+struct PChartModel: Hashable {
+    var day: String
+    var amount: Int = .random(in: 1..<100)
+}
+
+extension PChartModel {
+    static var data: [PChartModel] {
+        let calendar = Calendar(identifier: .gregorian)
+        let days = calendar.shortWeekdaySymbols
+        return days.map { day in
+            PChartModel(day: day)
+        }
+    }
+}
+
+struct PlayCharts: View {
+    var body: some View {
+        Chart(PChartModel.data, id: \.self) { v in
+            BarMark(x: .value("天", v.day), y: .value("数量", v.amount))
+            
+        }
+        .padding()
+    }
+}
+
+struct PSwiftCharts: View {
+    struct CData: Identifiable {
+        let id = UUID()
+        let i: Int
+        let v: Double
+    }
+    
+    @State private var a: [CData] = [
+        .init(i: 0, v: 2),
+        .init(i: 1, v: 20),
+        .init(i: 2, v: 3),
+        .init(i: 3, v: 30),
+        .init(i: 4, v: 8),
+        .init(i: 5, v: 80)
+    ]
+    
+    var body: some View {
+        Chart(a) { i in
+            LineMark(x: .value("Index", i.i), y: .value("Value", i.v))
+            BarMark(x: .value("Index", i.i), yStart: .value("开始", 0), yEnd: .value("结束", i.v))
+                .foregroundStyle(by: .value("Value", i.v))
+        } // end Chart
+    } // end body
+}
+```
+
+BarMark 用于创建条形图，LineMark 用于创建折线图。SwiftUI Charts 框架还提供 PointMark、AxisMarks、AreaMark、RectangularMark 和 RuleMark 用于创建不同类型的图表。注释使用 `.annotation` modifier，修改颜色可以使用 `.foregroundStyle` modifier。`.lineStyle` modifier 可以修改线宽。
+
+AxisMarks 的示例如下：
+```swift
+struct MonthlySalesChart: View {
+    var body: some View {
+        Chart(data, id: \.month) {
+            BarMark(
+                x: .value("Month", $0.month, unit: .month),
+                y: .value("Sales", $0.sales)
+            )
+        }
+        .chartXAxis {
+            AxisMarks(values: .stride(by: .month)) { value in
+                if value.as(Date.self)!.isFirstMonthOfQuarter {
+                    AxisGridLine().foregroundStyle(.black)
+                    AxisTick().foregroundStyle(.black)
+                    AxisValueLabel(
+                        format: .dateTime.month(.narrow)
+                    )
+                } else {
+                    AxisGridLine()
+                }
+            }
+        }
+    }
+}
+```
+
+可交互图表示例如下：
+```swift
+struct InteractiveBrushingChart: View {
+    @State var range: (Date, Date)? = nil
+    
+    var body: some View {
+        Chart {
+            ForEach(data, id: \.day) {
+                LineMark(
+                    x: .value("Month", $0.day, unit: .day),
+                    y: .value("Sales", $0.sales)
+                )
+                .interpolationMethod(.catmullRom)
+                .symbol(Circle().strokeBorder(lineWidth: 2))
+            }
+            if let (start, end) = range {
+                RectangleMark(
+                    xStart: .value("Selection Start", start),
+                    xEnd: .value("Selection End", end)
+                )
+                .foregroundStyle(.gray.opacity(0.2))
+            }
+        }
+        .chartOverlay { proxy in
+            GeometryReader { nthGeoItem in
+                Rectangle().fill(.clear).contentShape(Rectangle())
+                    .gesture(DragGesture()
+                        .onChanged { value in
+                            // Find the x-coordinates in the chart’s plot area.
+                            let xStart = value.startLocation.x - nthGeoItem[proxy.plotAreaFrame].origin.x
+                            let xCurrent = value.location.x - nthGeoItem[proxy.plotAreaFrame].origin.x
+                            // Find the date values at the x-coordinates.
+                            if let dateStart: Date = proxy.value(atX: xStart),
+                               let dateCurrent: Date = proxy.value(atX: xCurrent) {
+                                range = (dateStart, dateCurrent)
+                            }
+                        }
+                        .onEnded { _ in range = nil } // Clear the state on gesture end.
+                    )
+            }
+        }
+    }
+}
+```
+
+社区做的更多 Swift Charts 范例 [Swift Charts Examples](https://github.com/jordibruin/Swift-Charts-Examples) 。
+
+
+
 #### Toggle
 
-![](/uploads/develop-with-swiftui/g14.png)
+![](https://user-images.githubusercontent.com/251980/156289124-bde3c73e-2a81-4043-8682-ae55a820f1aa.png)
 
 Toggle 可以设置 toggleStyle，可以自定义样式。使用示例如下
 
@@ -2381,7 +3031,7 @@ struct PCToggleStyle: ToggleStyle {
 
 #### Picker
 
-![](/uploads/develop-with-swiftui/g15.jpeg)
+![](https://user-images.githubusercontent.com/251980/156298284-2fb37b3e-55f0-4918-ba8e-74f747bf3171.jpeg)
 
 有 Picker 视图，还有颜色和时间选择的 ColorPicker 和 DatePicker。
 
@@ -2449,6 +3099,58 @@ struct PlayPickerView: View {
 }
 ```
 
+选择多个日期
+
+MultiDatePicker 视图会显示一个日历，用户可以选择多个日期，可以设置选择范围。示例如下：
+```swift
+struct PMultiDatePicker: View {
+    @Environment(\.calendar) var cal
+    @State var dates: Set<DateComponents> = []
+    var body: some View {
+        MultiDatePicker("选择个日子", selection: $dates, in: Date.now...)
+        Text(s)
+    }
+    var s: String {
+        dates.compactMap { c in
+            cal.date(from:c)?.formatted(date: .long, time: .omitted)
+        }
+        .formatted()
+    }
+}
+```
+
+PhotosPick
+
+支持图片选择，示例代码如下：
+```swift
+import PhotosUI
+import CoreTransferable
+
+struct ContentView: View {
+    @ObservedObject var viewModel: FilterModel = .shared
+    
+    var body: some View {
+        NavigationStack {
+            Gallery()
+                .navigationTitle("Birthday Filter")
+                .toolbar {
+                    PhotosPicker(
+                        selection: $viewModel.imageSelection,
+                        matching: .images
+                    ) {
+                        Label("Pick a photo", systemImage: "plus.app")
+                    }
+                    Button {
+                        viewModel.applyFilter()
+                    } label: {
+                        Label("Apply Filter", systemImage: "camera.filters")
+                    }
+                }
+        }
+    }
+}
+```
+
 
 #### Slider
 
@@ -2477,6 +3179,102 @@ struct PlayStepperView: View {
         } // end Stepper
     }
 }
+```
+
+
+#### Form
+
+Form 今年也得到了增强，示例如下：
+```swift
+Form {
+    Section {
+        LabeledContent("Location") {
+            AddressView(location)
+        }
+        DatePicker("Date", selection: $date)
+        TextField("Description", text: $eventDescription, axis: .vertical)
+            .lineLimit(3, reservesSpace: true)
+    }
+    
+    Section("Vibe") {
+        Picker("Accent color", selection: $accent) {
+            ForEach(Theme.allCases) { accent in
+                Text(accent.rawValue.capitalized).tag(accent)
+            }
+        }
+        Picker("Color scheme", selection: $scheme) {
+            Text("Light").tag(ColorScheme.light)
+            Text("Dark").tag(ColorScheme.dark)
+        }
+#if os(macOS)
+        .pickerStyle(.inline)
+#endif
+        Toggle(isOn: $extraGuests) {
+            Text("Allow extra guests")
+            Text("The more the merrier!")
+        }
+        if extraGuests {
+            Stepper("Guests limit", value: $spacesCount, format: .number)
+        }
+    }
+    
+    Section("Decorations") {
+        Section {
+            List(selection: $selectedDecorations) {
+                DisclosureGroup {
+                    HStack {
+                        Toggle("Balloons 🎈", isOn: $includeBalloons)
+                        Spacer()
+                        decorationThemes[.balloon].map { $0.swatch }
+                    }
+                    .tag(Decoration.balloon)
+                    
+                    HStack {
+                        Toggle("Confetti 🎊", isOn: $includeConfetti)
+                        Spacer()
+                        decorationThemes[.confetti].map { $0.swatch }
+                    }
+                    .tag(Decoration.confetti)
+                    
+                    HStack {
+                        Toggle("Inflatables 🪅", isOn: $includeInflatables)
+                        Spacer()
+                        decorationThemes[.inflatables].map { $0.swatch }
+                    }
+                    .tag(Decoration.inflatables)
+                    
+                    HStack {
+                        Toggle("Party Horns 🥳", isOn: $includeBlowers)
+                        Spacer()
+                        decorationThemes[.noisemakers].map { $0.swatch }
+                    }
+                    .tag(Decoration.noisemakers)
+                } label: {
+                    Toggle("All Decorations", isOn: [
+                        $includeBalloons, $includeConfetti,
+                        $includeInflatables, $includeBlowers
+                    ])
+                    .tag(Decoration.all)
+                }
+#if os(macOS)
+                .toggleStyle(.checkbox)
+#endif
+            }
+            
+            Picker("Decoration theme", selection: themes) {
+                Text("Blue").tag(Theme.blue)
+                Text("Black").tag(Theme.black)
+                Text("Gold").tag(Theme.gold)
+                Text("White").tag(Theme.white)
+            }
+#if os(macOS)
+            .pickerStyle(.radioGroup)
+#endif
+        }
+    }
+    
+}
+.formStyle(.grouped)
 ```
 
 
@@ -2509,6 +3307,53 @@ struct PlayKeyboard: View {
     }
 }
 ```
+
+
+#### Transferable
+
+Transferable 协议使数据可以用于剪切板、拖放和 Share Sheet。
+
+可以在自己应用程序之间或你的应用和其他应用之间发送或接受可传输项目。
+
+支持 SwiftUI 来使用。
+
+官方文档 [Core Transferable](https://developer.apple.com/documentation/CoreTransferable)
+
+session [Meet Transferable](https://developer.apple.com/videos/play/wwdc2022-10062)
+
+新增一个专门用来接受 Transferable 的按钮视图 PasteButton，使用示例如下：
+```swift
+struct PPasteButton: View {
+    @State private var s = "戴铭"
+    var body: some View {
+        TextField("输入", text: $s)
+            .textFieldStyle(.roundedBorder)
+        PasteButton(payloadType: String.self) { str in
+            guard let first = str.first else { return }
+            s = first
+        }
+    }
+}
+```
+
+
+
+#### ShareLink
+
+ShareLink 视图可以让你轻松共享数据。示例代码如下：
+```swift
+struct PShareLink: View {
+    let url = URL(string: "https://ming1016.github.io/")!
+    var body: some View {
+        ShareLink(item: url, message: Text("戴铭的博客"))
+        ShareLink("戴铭的博客", item: url)
+        ShareLink(item: url) {
+            Label("戴铭的博客", systemImage: "swift")
+        }
+    }
+}
+```
+
 
 
 ### 视觉
@@ -2567,7 +3412,7 @@ extension View {
 
 #### Effect
 
-![](/uploads/develop-with-swiftui/g16.jpeg)
+![](https://user-images.githubusercontent.com/251980/156332122-66813e4e-851c-4207-8cb9-b41ea0365008.jpeg)
 
 ```swift
 struct PlayEffect: View {
@@ -2621,10 +3466,28 @@ struct PlayEffect: View {
 * .thickMaterial
 * .ultraThickMaterial
 
+Gradient 和 Shadow 的 2022 的更新
+
+下面是个简单示例：
+```swift
+struct PGradientAndShadow: View {
+    var body: some View {
+        Image(systemName: "bird")
+            .frame(width: 150, height: 150)
+            .background(in: Rectangle())
+            .backgroundStyle(.cyan.gradient)
+            .foregroundStyle(.white.shadow(.drop(radius: 1, y: 3.0)))
+            .font(.system(size: 60))
+    }
+}
+```
+
+Paul Hudson 使用 Core Motion 做了一个阴影随设备倾斜而变化的效果，非常棒，[How to use inner shadows to simulate depth with SwiftUI and Core Motion](https://www.hackingwithswift.com/articles/253/how-to-use-inner-shadows-to-simulate-depth-with-swiftui-and-core-motion) 。
+
+
+
 
 #### Animation
-
-![](/uploads/develop-with-swiftui/g17.jpeg)
 
 SwiftUI 里实现动画的方式包括有 .animation 隐式动画、withAnimation 和 withTransaction 显示动画、matchedGeometryEffect Hero 动画和 TimelineView 等。
 
@@ -3075,6 +3938,10 @@ struct PCCanvasPathView: View {
 }
 ```
 
+
+#### SF Symbol
+
+SF Symbol 支持变量值，可以通过设置 variableValue 来填充不同部分，比如 wifi 图标，不同值会亮不同部分，`Image(systemName: "wifi", variableValue: 0.5)` 。
 
 
 
