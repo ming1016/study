@@ -1841,6 +1841,8 @@ session 有：
 - [Bring your driver to iPad with DriverKit](https://developer.apple.com/videos/play/wwdc2022-110373)
 - [Create macOS or Linux virtual machines](https://developer.apple.com/videos/play/wwdc2022/10002/)
 
+虚机的应用可见 [insidegui/VirtualBuddy](https://github.com/insidegui/VirtualBuddy) 这个开源项目。
+
 ## 网络
 
 session [Reduce networking delays for a more responsive app](https://developer.apple.com/videos/play/wwdc2022-10078) 和 [Build device-to-device interactions with Network Framework](https://developer.apple.com/videos/play/wwdc2022-110339)

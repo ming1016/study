@@ -142,7 +142,7 @@ xcrun llvm-cov show ./mainCoverage -instr-profile=my.profdata
     7|      1|}
     8|       |
     9|      0|void foo() {
-   10|      0|	return;
+   10|      0|  return;
    11|      0|}
 ```
 
@@ -256,12 +256,12 @@ __sanitizer_cov_trace_pc_guard(&guard_variable)
   #import <dlfcn.h>
 
   void __sanitizer_cov_trace_pc_guard_init(uint32_t *start,
-					   uint32_t *stop) {
+             uint32_t *stop) {
       static uint64_t N;
       if (start == stop || *start) return;
       printf("INIT: %p %p\n", start, stop);
       for (uint32_t *x = start; x < stop; x++)
-	  ,*x = ++N;
+    ,*x = ++N;
   }
 
   void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
@@ -304,6 +304,8 @@ SanitizerCoverage 本身是一个 llvm pass，代码在 llvm 工程的 llvm-proj
 先把 llvm 装到本地。
 
 ### 安装 LLVM
+
+#### 手动
 使用 homebrew，命令如下：
 
 ```shell
@@ -396,7 +398,7 @@ LLVM Pass 可以对 LLVM IR 进行优化。优化表现在 Pass 可以对 IR 进
 
 替换存在指令：
 - llvm::ReplaceInstWithInst() 函数
-  - ~#include "llvm/Transforms/Utils/BasicBlockUtils.h"~
+  - `#include "llvm/Transforms/Utils/BasicBlockUtils.h"`
 
 直接改指令
 - llvm::User::setOperand() 成员函数
@@ -465,6 +467,46 @@ pass 生成的插件分为动态和静态的。静态插件不需要在运行时
 
 做自己 pass 前可以先了解下 llvm 内部的 [pass](https://llvm.org/docs/Passes.html) 示例，可以先从两个最基本的 [Hello](https://github.com/llvm/llvm-project/blob/release/13.x/llvm/lib/Transforms/Hello) 和 [Bye](https://github.com/llvm/llvm-project/tree/release/13.x/llvm/examples/Bye) 来。比较实用的是一些做优化的 pass，这些 pass 也是学习写 pass ，了解编译器如何工作的重要资源。许多 pass 都实现了编译器开发理论中著名的概念。比如优化 memcpy 调用（比如用 memset 替换）的 [memcpyopt](https://github.com/llvm/llvm-project/blob/release/14.x/llvm/lib/Transforms/Scalar/MemCpyOptimizer.cpp) 、简化 CFG [IRTransforms](https://github.com/llvm/llvm-project/tree/release/13.x/llvm/examples/IRTransforms)、总是内联用 alwaysinline 修饰的函数的 [always-inline](https://github.com/llvm/llvm-project/blob/release/14.x/llvm/lib/Transforms/IPO/AlwaysInliner.cpp) 、死代码消除的 [dce](https://github.com/llvm/llvm-project/blob/release/14.x/llvm/lib/Transforms/Scalar/DCE.cpp) 和删除未使用的循环的 [loop-deletion](https://github.com/llvm/llvm-project/blob/release/14.x/llvm/lib/Transforms/Scalar/LoopDeletion.cpp)。
 
+#### Xcode 开发模式
+在下好的 LLVM 源码中找到 `llvm/lib/Transforms` 目录，创建一个 MingPass 目录，在这个目录下创建 `MingPass.cpp` 和 `MingPass.exports` ，还有 cmake 文件 `CMakeLists.txt` ，`CMakeLists.txt` 内容写成：
+```makefile
+if( NOT LLVM_REQUIRES_RTTI )
+if( NOT LLVM_REQUIRES_EH )
+  set(LLVM_EXPORTED_SYMBOL_FILE ${CMAKE_CURRENT_SOURCE_DIR}/MingPass.exports)
+endif()
+endif()
+
+if(WIN32 OR CYGWIN)
+set(LLVM_LINK_COMPONENTS Core Support)
+endif()
+
+set(LLVM_LINK_COMPONENTS Demangle)
+
+add_llvm_library( LLVMMingPass MODULE BUILDTREE_ONLY
+MingPass.cpp
+
+DEPENDS
+intrinsics_gen
+PLUGIN_TOOL
+opt
+)
+```
+
+在 `llvm/lib/Transforms/CMakelists.txt` 里加上 `add_subdirectory(MingPass)` 。`MingPass.cpp` 里编写实际的 pass 代码。
+
+使用 `cmake -G "Xcode"` 构建 LLVM 工程，打开 `LLVM.xcodeproj` ，选择 MingPass 这个 target，使用 `command+b` 进行编译，会生成 `MingPass.dylib` 产物。
+
+下载和 Xcode 对应 clang 版本。在工程中创建 `Config.xcconfig` 文件，内容如下：
+```makefile
+LLVM_DIR = $HOME/Downloads/PTest/LLVMSource
+PASS_DYLIB = $(LLVM_DIR)/build_dir/build_xcode/Debug/lib/LLVMMingPass.dylib
+OTHER_CFLAGS = $(inherited) -Xclang -load -Xclang $(PASS_DYLIB)
+OTHER_CPLUSPLUSFLAGS = $(inherited) -Xclang -load -Xclang $(PASS_DYLIB)
+COMPILER_INDEX_STORE_ENABLE = NO
+CC = $(LLVM_DIR)/clang-13.0.0/bin/clang
+CXX = $(LLVM_DIR)/clang-13.0.0/bin/clang++
+```
+
 #### 自制插入指令 pass
 
 接下来，怎么在运行时插入指令来获取我们需要代码使用情况。完整代码可以在这里 [MingPass](https://github.com/ming1016/DaiMingCreationToolbox/tree/main/Project/UseCompiler/MingPass) 拉下代码参考进行修改调试。
@@ -499,19 +541,19 @@ pass 生成的插件分为动态和静态的。静态插件不需要在运行时
       FunctionCallee logFunc = F.getParent()->getOrInsertFunction("runtimeLog", funcType);
     
       for (auto &BB : F) {
-	  for (auto &I : BB) {
-	      if (auto *op = dyn_cast<BinaryOperator>(&I)) {
-		  IRBuilder<> builder(op);
+    for (auto &I : BB) {
+        if (auto *op = dyn_cast<BinaryOperator>(&I)) {
+      IRBuilder<> builder(op);
                 
-		  // 在 op 后面加入新指令
-		  builder.SetInsertPoint(&BB, ++builder.GetInsertPoint());
-		  // 在函数中插入新指令
-		  Value* args[] = {op};
-		  builder.CreateCall(logFunc, args);
+      // 在 op 后面加入新指令
+      builder.SetInsertPoint(&BB, ++builder.GetInsertPoint());
+      // 在函数中插入新指令
+      Value* args[] = {op};
+      builder.CreateCall(logFunc, args);
 
-		  return true;
-	      } // end if
-	  }
+      return true;
+        } // end if
+    }
       }
       return false;
   }
@@ -587,7 +629,7 @@ IR 指令
 - ptrtoint：将指针转成整数。
 - inttoptr：将整数值转成指针类型。
 
-ir 库的 header 地址在 ~include/llvm/IR~ ，源文件在 ~lib/IR~ ，文档 [llvm Namespace Reference](https://llvm.org/doxygen/namespacellvm.html)。所有类和函数都在 llvm 命名空间里。
+ir 库的 header 地址在 `include/llvm/IR` ，源文件在 `lib/IR` ，文档 [llvm Namespace Reference](https://llvm.org/doxygen/namespacellvm.html)。所有类和函数都在 llvm 命名空间里。
 
 主要基础类的说明如下：
 - llvm::Module：ir 的容器类的最高级。
@@ -612,7 +654,7 @@ ir 库的 header 地址在 ~include/llvm/IR~ ，源文件在 ~lib/IR~ ，文档 
       - llvm::FCmpInst (Instructions.h)
     - llvm::UnaryInstruction (InstrTypes.h)
       - llvm::CastInst (Instrtypes.h)
-	- llvm::BitCastInst (Instructions.h)
+  - llvm::BitCastInst (Instructions.h)
 - llvm::Type：代表所有的 IR 数据类型，包括原始类型，结构类型和函数类型。
 
 ##### 全局变量
@@ -1413,13 +1455,13 @@ lambda 函数是一个匿名函数，它可以自由引用包含函数中的局�
 这里的问题是 lambda 函数引用了调用者的一个局部变量，即 a，即使 lambda 函数是它自己的函数。这可以通过将局部变量作为隐式参数传递给 lambda 函数来轻松解决：
 ```asm
   define internal i32 @lambda(i32 %a, i32 %x) {
-	  %1 = add i32 %a, %x
-	  ret i32 %1
+    %1 = add i32 %a, %x
+    ret i32 %1
   }
 
   define i32 @foo(i32 %a) {
-	  %1 = call i32 @lambda(i32 %a, i32 10)
-	  ret i32 %1
+    %1 = call i32 @lambda(i32 %a, i32 10)
+    ret i32 %1
   }
 ```
 
@@ -1501,7 +1543,7 @@ lambda 函数是一个匿名函数，它可以自由引用包含函数中的局�
   int main()
   {
       foreach (int i in foo())
-	  printf("Value: %d\n", i);
+    printf("Value: %d\n", i);
 
       return 0;
   }
@@ -1758,17 +1800,17 @@ define i32 @main() nounwind {
   public:
       Foo()
       {
-	  _length = 0;
+    _length = 0;
       }
 
       size_t GetLength() const
       {
-	  return _length;
+    return _length;
       }
 
       void SetLength(size_t value)
       {
-	  _length = value;
+    _length = value;
       }
 
   private:
@@ -1949,9 +1991,9 @@ define i32 @main() nounwind {
   @vtable.button = private unnamed_addr constant
       { void (%Button*)*, i64, i64, void (%Button*)* }
       {
-	  void (%Button*)* @"core::ptr::drop_in_place<test::Button>",
-	  i64 32, i64 8,
-	  void (%Button*)* @"<test::Button as test::Draw>::draw"
+    void (%Button*)* @"core::ptr::drop_in_place<test::Button>",
+    i64 32, i64 8,
+    void (%Button*)* @"<test::Button as test::Draw>::draw"
       }
 ```
 
@@ -1963,7 +2005,7 @@ define i32 @main() nounwind {
   class Base {
     public:
       void SetA(int value) {
-	_a = value;
+  _a = value;
       }
     private:
       int _a;
@@ -1972,8 +2014,8 @@ define i32 @main() nounwind {
   class Derived: public Base {
     public:
       void SetB(int value) {
-	SetA(value);
-	_b = value;
+  SetA(value);
+  _b = value;
       }
     protected:
       int _b;
@@ -2022,7 +2064,7 @@ define i32 @main() nounwind {
   public:
       void SetA(int value)
       {
-	  _a = value;
+    _a = value;
       }
 
   private:
@@ -2034,8 +2076,8 @@ define i32 @main() nounwind {
   public:
       void SetB(int value)
       {
-	  SetA(value);
-	  _b = value;
+    SetA(value);
+    _b = value;
       }
 
   private:
@@ -2049,8 +2091,8 @@ define i32 @main() nounwind {
   public:
       void SetC(int value)
       {
-	  SetB(value);
-	  _c = value;
+    SetB(value);
+    _c = value;
       }
 
   private:
@@ -2297,13 +2339,13 @@ new X(Y,Z) 形式的调用是相同的，除了 X 和 Z 作为参数传递给构
       LLVMLinkInMCJIT();
       LLVMInitializeNativeTarget();
       if (LLVMCreateExecutionEngineForModule(&engine, module, &error) != 0) {
-	  fprintf(stderr, "Could not create execution engine: %s\n", error);
-	  return;
+    fprintf(stderr, "Could not create execution engine: %s\n", error);
+    return;
       }
       if (error)
       {
-	  LLVMDisposeMessage(error);
-	  return;
+    LLVMDisposeMessage(error);
+    return;
       }
     
       long long x = 5;
@@ -2321,8 +2363,8 @@ new X(Y,Z) 形式的调用是相同的，除了 X 和 Z 作为参数传递给构
     
       // 生成 bitcode 文件
       if (LLVMWriteBitcodeToFile(module, "sum.bc") != 0) {
-	  fprintf(stderr, "Could not write bitcode to file\n");
-	  return;
+    fprintf(stderr, "Could not write bitcode to file\n");
+    return;
       }
     
       LLVMDisposeBuilder(builder);
@@ -2333,7 +2375,7 @@ new X(Y,Z) 形式的调用是相同的，除了 X 和 Z 作为参数传递给构
 ### Swift 调用 LLVM 接口
 llvm 的接口还可以通过 swift 来调用。
 
-先创建一个 module.modulemap 文件，创建 LLVMC.h 和 LLVMC.c 文件，自动生成 SwiftLLVMCase-Bridging-Header.h。设置 header search paths 为 llvm 所在路径 ~/usr/local/opt/llvm/include~ ，library search paths 设置为 ~/usr/local/opt/llvm/lib~ 。将 ~/usr/local/opt/llvm/lib/libLLVM.dylib~ 加到 Linked Frameworks and Libraries 里。
+先创建一个 module.modulemap 文件，创建 LLVMC.h 和 LLVMC.c 文件，自动生成 SwiftLLVMCase-Bridging-Header.h。设置 header search paths 为 llvm 所在路径 `/usr/local/opt/llvm/include` ，library search paths 设置为 `/usr/local/opt/llvm/lib` 。将 `/usr/local/opt/llvm/lib/libLLVM.dylib` 加到 Linked Frameworks and Libraries 里。
 
 module.modulemap 内容
 ```c
@@ -2440,11 +2482,11 @@ ret i32 %2
   func giveMeNumber(_ isBig : Bool) -> Int {
       let re : Int
       if !isBig {
-	  // the fibonacci series (sort of)
-	  re = 3
+    // the fibonacci series (sort of)
+    re = 3
       } else {
-	  // the fibonacci series (sort of) backwards
-	  re = 4
+    // the fibonacci series (sort of) backwards
+    re = 4
       }
       return re
   }
@@ -2486,8 +2528,8 @@ ret i32 %2
       bd.positionAtEnd(of: mergeBB)
       let phi = bd.buildPhi(FloatType.double, name: "phi_example")
       phi.addIncoming([
-	  (thenVal, thenBB),
-	  (elseVal, elseBB)
+    (thenVal, thenBB),
+    (elseVal, elseBB)
       ])
       // 赋值给本地变量
       bd.buildStore(phi, to: local)
@@ -2525,7 +2567,29 @@ merge:                                            ; preds = %else, %then
 
 这里有完整代码 [SwiftLLVMCase](https://github.com/ming1016/DaiMingCreationToolbox/tree/main/Project/UseCompiler/SwiftLLVMCase)。
 
-## 解释执行 bitcode（IR）
+## 动态执行代码
+
+### DYLD_INSERT_LIBRARIES
+DYLD_INSERT_LIBRARIES 是一个环境变量，可以插入你的代码到没有源码的程序进程中。比如下面的代码：
+```shell
+DYLD_INSERT_LIBRARIES=@path/Frameworks/Interposing.framework/Interpos
+```
+这样就可以在 `+load` 方法中添加自己的代码。SwiftUI Preview 也是使用的这种方法。如下：
+```shell
+DYLD_INSERT_LIBRARIES=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot//System/Library/PrivateFrameworks/PreviewsInjection.framework/PreviewsInjection
+```
+dyld 有机会修改一个二进制地址用来指向你定义的函数地址。在 Mach-O 里新增一个用来记录替换函数和函数地址的 `(__DATA,__interpose)`。对应宏定义：
+```c
+#define DYLD_INTERPOSE(_replacement,_replacee) \
+   __attribute__((used)) static struct{ const void* replacement; const void* replacee; } _interpose_##_replacee \
+            __attribute__ ((section ("__DATA,__interpose"))) = { (const void*)(unsigned long)&_replacement, (const void*)(unsigned long)&_replacee };
+
+#endif
+```
+dyld 还包含了一个 dyld_dynamic_interpose 函数用以在运行时插入函数。
+
+
+### 解释执行 bitcode（IR）
 IR 的表现形式有三种，一种是内存中的对象集，一种是文本语言，一种是二进制编码字节 bitcode。
 
 对于 Intel 芯片可以通过 [Pin](https://www.intel.com/content/www/us/en/developer/articles/tool/pin-a-dynamic-binary-instrumentation-tool.html)，arm 架构可以用 [DynamoRIO](https://github.com/DynamoRIO/dynamorio)，目前 DynamoRIO 只支持 Window、Linux 和 Android 系统，对 macOS 的支持还在进行中。另一种方式是通过基于 llvm 的 interpreter 开发来实现解释执行 bitcode，llvm 用很多 C++ 的接口在内存中操作，将可读的文本文件解析到内存中，编译过程文本的 IR 不会生成，只会生成一种紧凑的二进制表示，也就是 bitcode。下面具体说下怎么做。
@@ -2542,7 +2606,7 @@ cmake -G Ninja -DLLVM_ENABLE_FFI:BOOL=ON ../llvm
 ```c++
   // 使用 public 访问内部
   class PInterpreter : public llvm::ExecutionEngine,
-		       public llvm::InstVisitor<llvm::Interpreter> {
+           public llvm::InstVisitor<llvm::Interpreter> {
       public:
       llvm::GenericValue ExitValue;
       llvm::DataLayout TD;
@@ -2569,15 +2633,15 @@ cmake -G Ninja -DLLVM_ENABLE_FFI:BOOL=ON ../llvm
     
       // 入口
       virtual int runMain(std::vector<std::string> args,
-			  char * const *envp = 0);
+        char * const *envp = 0);
     
       // 遵循 ExecutionEngine 接口
       llvm::GenericValue runFunction(
-	  llvm::Function *F,
-	  const std::vector<llvm::GenericValue> &ArgValues
+    llvm::Function *F,
+    const std::vector<llvm::GenericValue> &ArgValues
       );
       void *getPointerToNamedFunction(const std::string &Name,
-				      bool AbortOnFailure = true);
+              bool AbortOnFailure = true);
       void *recompileAndRelinkFunction(llvm::Function *F);
       void freeMachineCodeForFunction(llvm::Function *F);
       void *getPointerToFunction(llvm::Function *F);
@@ -2592,8 +2656,8 @@ cmake -G Ninja -DLLVM_ENABLE_FFI:BOOL=ON ../llvm
       public:
       MingInterpreter(Module *M) : MInterpreter(M) {};
       virtual void execute(Instruction &I) {
-	  I.print(errs());
-	  MInterpreter::execute(I);
+    I.print(errs());
+    MInterpreter::execute(I);
       }
   };
 ```
