@@ -1,0 +1,120 @@
+base_info:
+  title: 戴铭的博客
+  author: 戴铭
+  url: https://ming1016.github.io/
+
+style:
+  # Theme primary color
+  primary_color: "#0066CC"
+
+  # Avatar (You can use local image or image external link)
+  avatar: /img/ming.jpeg
+
+  # Favicon (You can use local image or image external link)
+  favicon: /img/logo-starming.png
+
+  # Article image align position, value: left | center
+  article_img_align: left
+
+  # Left side width
+  left_side_width: 260px
+
+  # Content area max width
+  content_max_width: 920px
+
+  # Mouse hover
+  hover:
+    shadow: false # shadow effect when the mouse hover
+    scale: false # scale effect when the mouse hover
+
+  # First screen
+  first_screen:
+    enable: true
+    background_img:  # You can use local image or image external link
+    description: 混乱中的有序
+
+  # Scroll style settings
+  scroll:
+    progress_bar:
+      enable: false
+    percent:
+      enable: false
+
+social_contact:
+  enable: true
+  links:
+    github: https://github.com/ming1016               # your GitHub URL
+    weixin:               # your WeChat QR-Code URL
+    qq:                   # your QQ QR-Code URL
+    weibo: https://weibo.com/allstarming               # your WeiBo URL
+    zhihu: https://www.zhihu.com/people/starming               # your ZhiHu URL
+    twitter: https://twitter.com/daiming_cn             # your twitter URL
+    facebook:             # your facebook URL
+    email:  mailto:ming1016@foxmail.com               # your email
+
+menu:
+  Home: /
+  Archives: /archives
+  Categories: /categories
+  # Tags: /tags
+  # Links: /links
+  About: /about
+  # ...
+
+home_article:
+  category:
+    enable: true     # show category in home page article block
+    limit: 3          # max number of categories shown in home page article block
+  tag:
+    enable: true     # show tags in home page article block
+    limit: 5          # max number of tags shown in home page article block
+
+post:
+  # Post word count
+  # Dependencies: hexo-wordcount (npm install hexo-wordcount)
+  # See: https://github.com/willin/hexo-wordcount
+  word_count:
+    enable: true
+    wordcount: true  # word count, one article
+    min2read: true   # time to read, one article
+
+  # Author label
+  author_label:
+    enable: true
+    auto: true  # if true, show Lv1, Lv2, Lv3... , If false, show custom label
+    # label array item can be one or more
+    custom_label_list: [ "作者" ]
+
+toc:
+  enable: true
+
+  # Automatically add list number to toc.
+  number: true
+
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: true
+
+  # If true, open TOC every time when you enter the article page
+  init_open: true
+
+copyright_info:
+  enable: true
+
+website_count:
+  # busuanzi
+  # See: http://ibruce.info/2015/04/04/busuanzi/
+  busuanzi_count:
+    enable: true
+    site_uv: true
+    site_pv: true
+    page_pv: true
+
+rss:
+  enable: true
+
+lazyload:
+  enable: false 
+
+footer:
+  since: 2014      # the starting year of your website, Can be null
+  icp: 鄂ICP备17011999号 京公网安备 7011999号           # ICP record number of your website, Can be null
