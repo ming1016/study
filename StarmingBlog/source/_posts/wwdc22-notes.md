@@ -8,7 +8,7 @@ banner_img: /uploads/wwdc22-notes/05.png
 
 ## 第一天
 
-今年是 WWDC 的第39个年头了。今年的 WWDC.playground 活动()是 SwiftGG、T 沙龙和老司机技术一起会和社区开发者们一起聊聊这次 WWDC。WWDC.playground 活动在节日期间每天都会有直播，我会和 61、13 他们参加 6月11日晚上8点那场直播。
+今年是 WWDC 的第39个年头了。今年的 WWDC.playground 活动()是 SwiftGG、T 沙龙和老司机技术一起会和社区开发者们一起聊聊这次 WWDC。WWDC.playground 活动在节日期间每天都会有直播，我会和 61、13 他们参加 6月11日晚上8点那场直播。现在那场直播的录播已经放了出来，地址是 [WWDC22.playground - Day 5：回顾 WWDC22](https://www.bilibili.com/video/BV1iY4y1J7eV)
 
 下面我整理了一份今年 WWDC 的指南，也算提供个方便的入口吧。
 

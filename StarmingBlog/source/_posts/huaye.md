@@ -1,5 +1,5 @@
 ---
-title: 花野
+title: 【小说】花野
 date: 2018-01-04 19:27:32
 tags: Novel
 categories: My-novel

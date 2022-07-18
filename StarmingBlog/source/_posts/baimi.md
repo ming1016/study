@@ -1,5 +1,5 @@
 ---
-title: 白芈
+title: 【小说】白芈
 date: 2018-01-04 19:24:38
 tags: [Novel]
 categories: My-novel

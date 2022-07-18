@@ -10,7 +10,7 @@ banner_img: /uploads/use-llvm/03.png
 
 本篇还会持续更新，增加更多用 llvm 干的事情，直到本句话被删掉为止。欢迎关注本篇。
 
-目前在做一些编译相关调研。先前写过篇《[深入剖析 iOS 编译 Clang / LLVM](https://ming1016.github.io/2017/03/01/deeply-analyse-llvm/)》和《[深入剖析 iOS 编译 Clang / LLVM 直播的 Slides](https://ming1016.github.io/2017/04/01/slides-of-deeply-analyse-llvm/)》，内容偏理论。本篇着重对 LLVM 的使用，理论内容会很少，主要是说下如何使用 llvm 来做些事情，会有详细的操作步骤和工程示例。
+目前在做一些编译相关调研。先前写过篇《[深入剖析 iOS 编译 Clang / LLVM](https://ming1016.github.io/2017/03/01/deeply-analyse-llvm/)》和《[深入剖析 iOS 编译 Clang / LLVM 直播的 Slides](https://ming1016.github.io/2017/04/01/slides-of-deeply-analyse-llvm/)》，内容偏理论。本篇着重对 LLVM 的使用，理论内容会很少，主要是说下如何使用 llvm 来做些事情，会有详细的操作步骤和工程示例。本文对应的幻灯片见 《[使用 LLVM 分享的幻灯片](https://ming1016.github.io/2022/07/08/slides-of-use-llvm/)》。
 
 ## 代码新陈代谢
 昨天看了昨天和今天 WWDC22 的 session，看到了苹果为包体积也做了很多工作，甚至不惜改 C ABI的 call convention 来达到此目的。

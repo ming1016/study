@@ -1,0 +1,109 @@
+{
+  "main": {
+    "id": "dac245ccf870d0f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab6bd4a4c7f45354",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_posts/white-dragon-class.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "efb79d375b202fac",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2bd698863164547",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d0c52a89fc1910d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "03ba4a720c8efc00",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 247
+  },
+  "right": {
+    "id": "c0bd06b7cca2f4bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "214ff6188b523c82",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "443ce07657f93441",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/white-dragon-class.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "759755c464236c5f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/white-dragon-class.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 246
+  },
+  "active": "ab6bd4a4c7f45354",
+  "lastOpenFiles": [
+    "_posts/white-dragon-class.md",
+    "_posts/tenth-middle-school.md",
+    "_posts/japan-travel.md",
+    "_posts/baimi.md",
+    "_posts/huaye.md",
+    "_posts/assembleview.md",
+    "_posts/acfun-swift-practice.md"
+  ]
+}
