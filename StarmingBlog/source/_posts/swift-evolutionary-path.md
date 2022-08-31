@@ -238,7 +238,7 @@ Package Manage 的一些提案
 
 另
 
-小册子现在可以直接下载 dmg 使用了，4.3下载地址：[戴铭的开发小册子4.3.dmg.zip](https://github.com/KwaiAppTeam/SwiftPamphletApp/files/8055673/4.3.dmg.zip)
+小册子现在可以直接下载 dmg 使用了，4.3下载地址：[戴铭的小册子4.3.dmg.zip](https://github.com/KwaiAppTeam/SwiftPamphletApp/files/8055673/4.3.dmg.zip)
 
 ![](/uploads/swift-evolutionary-path/04.png)
 

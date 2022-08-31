@@ -10,7 +10,7 @@ banner_img: /uploads/develop-macos-with-swiftui-combine-concurrency-aysnc-await-
 
 为啥写这篇文章，简单说，这些日子以来，总觉着做事还是专注些好，于是也逐步减少了很多信息消费，缩减了些欲望吧。目前更加关注怎么能够让开发更快乐些，相信有了这个方向，其他事情就更容易见招拆招了，面对的挑战也不再是挑战，而是激发自己斗志的辅助工具，其实不用在乎那些看似权威的做法和打法，只要是没让你开心的，肯定是有改进空间的。思路和方向才是最重要的，比如[《大侦探波洛》](https://search.douban.com/movie/subject_search?search_text=%E5%A4%A7%E4%BE%A6%E6%8E%A2%E6%B3%A2%E7%BD%97&cat=1002)，每次破案之前波洛就已经通过利害关系找好了方向，他的推理都是基于认定的方向去寻找素材。 
 
-开心不是因为没有挑战，没有困难，没有煎熬，而是因为找到了方向，这个方向就是，快乐的 Coding，开心的工作，为了达成这个目标那些艰难挑战也就不算什么了。对于 Coding，经过实操，我觉得声明式 UI 响应式编程范式就是很好的提升工作愉悦程度的方式。代码在 GitHub 上，链接：https://github.com/KwaiAppTeam/SwiftPamphletApp 。后面我会详细跟你说说这个应用如何开发的及相关知识点，希望你也能够感受下这种 Happy 的开发模式。 
+开心不是因为没有挑战，没有困难，没有煎熬，而是因为找到了方向，这个方向就是，快乐的 Coding，开心的工作，为了达成这个目标那些艰难挑战也就不算什么了。对于 Coding，经过实操，我觉得声明式 UI 响应式编程范式就是很好的提升工作愉悦程度的方式。代码在 GitHub 上，链接：https://github.com/ming1016/Brochure 。后面我会详细跟你说说这个应用如何开发的及相关知识点，希望你也能够感受下这种 Happy 的开发模式。 
 
 这之前，我想先说下为什么我觉得快乐是很件重要的事情。这段时间，我接受了好几次采访，有关于工程师文化方面的，还有《时尚COSMOPOLITAN》杂志的采访，记者会问到一些以前的事情，在聊过往事情时我发现原来快乐才是每天自己存在着的最根本的原动力。为了能够让自己能够一直活着，就不要偏离快乐。摄影师是任欣羽，参与过《一代宗师》的拍摄，还是《时尚芭莎》的模特。以下是时尚 COSMOPOLITAN 的采访内容： 
 
@@ -60,7 +60,7 @@ banner_img: /uploads/develop-macos-with-swiftui-combine-concurrency-aysnc-await-
 
 ## 看看做出来的样子 
 
-这是个 macOS 应用（https://github.com/KwaiAppTeam/SwiftPamphletApp）《戴铭的 Swift 小册子》，能够方便的查看 Swift 语法，还有一些主要库的使用指南，内容还在完善中，选择的库主要就是开发小册子应用使用到的 SwitUI、Combine、Swift Concurrency。小册子应用目前在 GitHub 上已有[一千多 Star](https://github.com/KwaiAppTeam/SwiftPamphletApp)（感谢有爱😄❤️），成为我第三个过千的仓库，现已移至[快手 App 团队账号](https://github.com/KwaiAppTeam)下继续迭代完善。 
+这是个 macOS 应用（https://github.com/ming1016/Brochure）《戴铭的小册子》，能够方便的查看 Swift 语法，还有一些主要库的使用指南，内容还在完善中，选择的库主要就是开发小册子应用使用到的 SwitUI、Combine、Swift Concurrency。 
 
 ![](/uploads/develop-macos-with-swiftui-combine-concurrency-aysnc-await-actor/14.png)
 
@@ -418,7 +418,7 @@ struct FixAwfulPerformanceStyle: ButtonStyle {
 }
 ```
 
-这是社区 [@Kam-To](https://github.com/Kam-To) 提的一个 [PR](https://github.com/KwaiAppTeam/SwiftPamphletApp/pull/104)，是解的 macOS 上的一个性能问题，也就是在 List 中直接使用 Button，在列表快速滚动时，流畅度会有损伤，加上上面的 ButtonStyle 代码就好了。 
+这是社区 [@Kam-To](https://github.com/Kam-To) 提的一个 PR，是解的 macOS 上的一个性能问题，也就是在 List 中直接使用 Button，在列表快速滚动时，流畅度会有损伤，加上上面的 ButtonStyle 代码就好了。 
 
 ![](/uploads/develop-macos-with-swiftui-combine-concurrency-aysnc-await-actor/22.png)
 
@@ -592,7 +592,7 @@ struct WebUIView : NSViewRepresentable {
 
 - [iOS-Weekly](https://github.com/SwiftOldDriver/iOS-Weekly) 老司机 iOS 周报 
 - [awesome-swift](https://github.com/matteocrippa/awesome-swift)
-- [SwiftPamphletApp](https://github.com/KwaiAppTeam/SwiftPamphletApp) 戴铭的 Swift 小册子 
+- [Brochure](https://github.com/ming1016/Brochure) 戴铭的小册子 
 
 #### 封装易用功能 
 
