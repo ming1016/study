@@ -60,7 +60,7 @@ banner_img: /uploads/develop-macos-with-swiftui-combine-concurrency-aysnc-await-
 
 ## 看看做出来的样子 
 
-这是个 macOS 应用（https://github.com/ming1016/Brochure）《戴铭的小册子》，能够方便的查看 Swift 语法，还有一些主要库的使用指南，内容还在完善中，选择的库主要就是开发小册子应用使用到的 SwitUI、Combine、Swift Concurrency。 
+这是个 macOS 应用《[戴铭的小册子](https://github.com/ming1016/Brochure)》，能够方便的查看 Swift 语法，还有一些主要库的使用指南，内容还在完善中，选择的库主要就是开发小册子应用使用到的 SwitUI、Combine、Swift Concurrency。 
 
 ![](/uploads/develop-macos-with-swiftui-combine-concurrency-aysnc-await-actor/14.png)
 
