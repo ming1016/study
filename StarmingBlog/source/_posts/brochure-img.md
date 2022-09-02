@@ -3,7 +3,6 @@ title: Brochure 图片
 date: 2015-01-11 08:15:24
 tags: [Painting]
 categories: Programming
-banner_img: /uploads/draw-practice-with-pencil-during-14-to-15/16.jpg
 ---
 ![](/uploads/brochure-img/1.png)
 ![](/uploads/brochure-img/2.png)
