@@ -102,7 +102,7 @@ public class AstCache {
         }
 
         if (node != null) {
-            serialize(node);
+            saveToCache(node);
         }
 
         return node;
@@ -127,7 +127,7 @@ public class AstCache {
 
 
     // package-private for testing
-    void serialize(@NotNull Node ast) {
+    void saveToCache(@NotNull Node ast) {
         String path = getCachePath(_.getSHA(ast.file), new File(ast.file).getName());
         ObjectOutputStream oos = null;
         FileOutputStream fos = null;
