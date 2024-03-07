@@ -1,0 +1,133 @@
+{
+  "main": {
+    "id": "6f893c1695150a87",
+    "type": "split",
+    "children": [
+      {
+        "id": "b8b22b9126b3211a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "build-static-analysis-program-smck-use-swift.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "caa11ecb6035d1a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "369e3e3888c74fb2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4541ea5b0b2f9929",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "57539adfdd4b29e7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a5a145ebbe367c7a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5a0273a9d39f76b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "f483f357ef230cc1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "997520736950641e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "build-static-analysis-program-smck-use-swift.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6d76ddb5f6fc5c8c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "build-static-analysis-program-smck-use-swift.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "de9c3611e922c224",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "164a635efb56026a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "build-static-analysis-program-smck-use-swift.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b8b22b9126b3211a",
+  "lastOpenFiles": []
+}
