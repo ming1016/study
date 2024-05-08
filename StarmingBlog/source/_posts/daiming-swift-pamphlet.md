@@ -5,7 +5,7 @@ tags: [iOS, Apple, Swift]
 categories: Programming
 banner_img: https://user-images.githubusercontent.com/251980/152918704-9522eb27-9304-4788-b4ed-72ffb170e1bc.png
 ---
-update：内容已更新到 5.0 版本。新增 WWDC22 内容。
+update：内容已更新到 6.0 版本，程序已上架 macOS 苹果商店，[点击安装](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)。使用 WWDC23 技术重构。6.0版本介绍见[戴铭的开发小册子6.0](https://ming1016.github.io/2024/05/08/swiftpamphletapp6/)。
 
 > 新dyld源码透出近期苹果出新系统必然，依苹果 taste，势必要用好技术抛落后技术。漫漫长假我完善了Swift手册内容，字数达到十五万字，内容已压缩压缩再压缩，求全存简，more big, so small 。满满诚意，望有用、值得收藏、求转发。
 >
