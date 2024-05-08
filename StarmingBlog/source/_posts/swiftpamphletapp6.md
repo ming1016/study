@@ -3,7 +3,7 @@ title: 戴铭的开发小册子6.0
 date: 2024-05-08 21:05:31
 tags: [App]
 categories: App
-banner_img: https://raw.githubusercontent.com/ming1016/STMAssembleView/master/STMAssembleView/as.png
+banner_img: /uploads/swiftpamphletapp6/05.png
 ---
 
 最近更新了下“戴铭的开发小册子”，解决了以前的几个问题。
