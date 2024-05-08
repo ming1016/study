@@ -76,6 +76,7 @@ deploy:
   branch: master
 
 feed:
+  enable: true
   type: atom
   path: atom.xml
   limit: 10

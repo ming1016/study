@@ -8,11 +8,11 @@ banner_img: /uploads/draw-in-2021/30.png
 
 2021年画的画，选了50张，有在纸上画的，白板上画的，还有给文章配的图。
 
-![](/uploads/draw-in-2021/01.jpeg)
+
 ![](/uploads/draw-in-2021/02.jpg)
-![](/uploads/draw-in-2021/03.jpg)
+
 ![](/uploads/draw-in-2021/04.jpg)
-![](/uploads/draw-in-2021/54.png)
+
 ![](/uploads/draw-in-2021/05.png)
 ![](/uploads/draw-in-2021/06.png)
 ![](/uploads/draw-in-2021/07.jpg)
@@ -40,7 +40,7 @@ banner_img: /uploads/draw-in-2021/30.png
 ![](/uploads/draw-in-2021/29.png)
 ![](/uploads/draw-in-2021/30.png)
 ![](/uploads/draw-in-2021/31.png)
-![](/uploads/draw-in-2021/32.jpg)
+
 ![](/uploads/draw-in-2021/33.png)
 ![](/uploads/draw-in-2021/34.png)
 ![](/uploads/draw-in-2021/35.png)
@@ -48,12 +48,12 @@ banner_img: /uploads/draw-in-2021/30.png
 ![](/uploads/draw-in-2021/37.png)
 ![](/uploads/draw-in-2021/38.png)
 ![](/uploads/draw-in-2021/39.png)
-![](/uploads/draw-in-2021/40.png)
+
 ![](/uploads/draw-in-2021/41.png)
-![](/uploads/draw-in-2021/42.png)
+
 ![](/uploads/draw-in-2021/55.png)
 ![](/uploads/draw-in-2021/51.jpeg)
-![](/uploads/draw-in-2021/52.jpeg)
+
 ![](/uploads/draw-in-2021/53.jpeg)
 ![](/uploads/draw-in-2021/43.jpg)
 ![](/uploads/draw-in-2021/44.jpeg)
@@ -62,6 +62,6 @@ banner_img: /uploads/draw-in-2021/30.png
 ![](/uploads/draw-in-2021/47.jpg)
 ![](/uploads/draw-in-2021/48.png)
 ![](/uploads/draw-in-2021/49.jpg)
-![](/uploads/draw-in-2021/50.jpg)
+
 
 

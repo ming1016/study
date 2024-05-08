@@ -8,7 +8,7 @@ banner_img: /uploads/swift-evolutionary-path/04.png
 
 已更新到 Swift 5.7。
 
-本篇主要是对[《A站 的 Swift 实践》](https://ming1016.github.io/2021/05/22/acfun-swift-practice/)文章中的一幅配图做了详细的扩展，能够更加全面和详细了解 Swift 语言的发展，文章中提到的 Swift 各版本的语法示例代码，及本文内容都可以在[戴铭的小册子](https://github.com/ming1016/Brochure)里对应栏目里找到，这个假期我也对 Swift 小册子里栏目内容进行了些更新和补充。《A站 的 Swift 实践》文章的那个演进配图如下：
+本篇主要是对[《A站 的 Swift 实践》](https://ming1016.github.io/2021/05/22/acfun-swift-practice/)文章中的一幅配图做了详细的扩展，能够更加全面和详细了解 Swift 语言的发展，文章中提到的 Swift 各版本的语法示例代码，及本文内容都可以在[戴铭的开发小册子](https://github.com/ming1016/SwiftPamphletApp)里对应栏目里找到，这个假期我也对 Swift 小册子里栏目内容进行了些更新和补充。《A站 的 Swift 实践》文章的那个演进配图如下：
 
 ![](/uploads/swift-evolutionary-path/01.png)
 
@@ -238,7 +238,7 @@ Package Manage 的一些提案
 
 另
 
-小册子现在可以直接下载 dmg 使用了，4.3下载地址：[戴铭的小册子4.3.dmg.zip](https://github.com/KwaiAppTeam/SwiftPamphletApp/files/8055673/4.3.dmg.zip)
+小册子现在可以直接下载 dmg 使用了，4.3下载地址：[戴铭的小册子4.3.dmg.zip](https://github.com/ming1016/SwiftPamphletApp/files/8055673/4.3.dmg.zip)
 
 ![](/uploads/swift-evolutionary-path/04.png)
 
