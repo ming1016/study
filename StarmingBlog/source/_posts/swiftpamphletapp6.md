@@ -1,5 +1,5 @@
 ---
-title: 戴铭的开发小册子6.0
+title: 戴铭的开发小册子6.0，使用SwiftUI、SwiftData、Observable、NavigationSplitView 进行了重构
 date: 2024-05-08 21:05:31
 tags: [App]
 categories: App
@@ -16,7 +16,7 @@ banner_img: /uploads/swiftpamphletapp6/05.png
 
 这三个问题解决后，可以将更多精力花在内容的更新增加以及 App 使用体验上了。
 
-目前戴铭的开发小册子已经上架方便日后更新，[点击安装](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)
+目前戴铭的开发小册子已经上架方便日后更新，[点击安装](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)，或在 macOS 应用商店搜我的名字戴铭。
 
 
 ![](/uploads/swiftpamphletapp6/01.png)
@@ -28,3 +28,19 @@ banner_img: /uploads/swiftpamphletapp6/05.png
 ![](/uploads/swiftpamphletapp6/04.png)
 
 ![](/uploads/swiftpamphletapp6/05.png)
+
+内容主要包含
+
+- Apple 技术知识点以及示例
+- 历年 WWDC
+
+功能主要包含
+
+- 手册书签收藏
+- 资料收集整理
+- 离线保存资料
+- 知识点和资料关联
+- 手册、WWDC和资料可搜索
+- Github 开发者和仓库信息添加管理
+
+知识点目前主要有 Swift 基础语法，SwiftUI，SwiftData，小组件等知识内容。其他内容还在迭代新增和更新中。
