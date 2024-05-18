@@ -1,7 +1,7 @@
 ---
 title: 小册子之如何使用 SwiftData 开发 SwiftUI 应用
 date: 2024-05-18 00:17:12
-tags: [SwiftUI, SwiftData]
+tags: [SwiftUI]
 categories: App
 banner_img: /uploads/pamphlet-series-swiftdata/01.png
 ---
