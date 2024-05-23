@@ -1,12 +1,12 @@
 ---
-title: 小册子之 List、Lazy 容器、ScrollView、Grid 和 Table 数据集合视图
+title: 小册子之 List、Lazy 容器、ScrollView、Grid 和 Table 数据集合 SwiftUI 视图
 date: 2024-05-18 09:06:54
 tags: [SwiftUI]
 categories: App
 banner_img: /uploads/pamphlet-series-listdataview/01.png
 ---
 
-以下内容已整理到小册子中，小册子代码在 [Github](https://github.com/ming1016/SwiftPamphletApp) 上，可以在 macOS 应用商店安装[“戴铭的开发小册子”](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)应用查看。
+以下内容已整理到小册子中，小册子代码在 [Github](https://github.com/ming1016/SwiftPamphletApp) 上，本文会随着系统更新和我更多的实践而新增和更新，你可以购买[“戴铭的开发小册子”](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)应用(98元)，来跟踪查看本文内容新增和更新。
 
 ## ForEach
 
