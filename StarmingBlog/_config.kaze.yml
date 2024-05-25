@@ -69,8 +69,8 @@ footer:
   # Record config
   # please put the gov image in ${yoursite}/img/beian.png
   RecordInfo: "京ICP备2024068292号-1" # your Record info such as '某ICP备xxx号'
-  #govRecordInfo: "京公网安备 7011999号" # your gov record info such as '某公网安备xxx号'
-  govRecordUrl: "http://beian.miit.gov.cn/" # your gov record url
+  govRecordInfo: "京公网安备11010802044427" # your gov record info such as '某公网安备xxx号'
+  govRecordUrl: "https://beian.mps.gov.cn/#/query/webSearch?code=11010802044427" # your gov record url
   #------------------------
   # pv / uv statistics config
   #------------------------

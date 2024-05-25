@@ -8,6 +8,16 @@ banner_img: /uploads/pamphlet-series-layout/01.png
 
 以下内容已整理到小册子中，小册子代码在 [Github](https://github.com/ming1016/SwiftPamphletApp) 上，本文会随着系统更新和我更多的实践而新增和更新，你可以购买[“戴铭的开发小册子”](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)应用(98元)，来跟踪查看本文内容新增和更新。
 
+本文属于小册子系列中的一篇，已发布系列文章有：
+
+- [小册子之如何使用 SwiftData 开发 SwiftUI 应用](https://starming.com/2024/05/18/pamphlet-series-swiftdata/)
+- [小册子之简说 Widget 小组件](https://starming.com/2024/05/18/pamphlet-series-widget/)
+- [小册子之 List、Lazy 容器、ScrollView、Grid 和 Table 数据集合 SwiftUI 视图](https://starming.com/2024/05/18/pamphlet-series-listdataview/)
+- 【本篇】[小册子之详说 Navigation、ViewThatFits、Layout 协议等布局 SwiftUI 组件](https://starming.com/2024/05/18/pamphlet-series-layout/)
+- [小册子之 Form、Picker、Toggle、Slider 和 Stepper 表单相关 SwiftUI 视图](https://starming.com/2024/05/18/pamphlet-series-form/)
+- [小册子之 SwiftUI 动画](https://starming.com/2024/05/25/pamphlet-series-animation/)
+
+
 ## Navigation导航
 
 ### Navigation
