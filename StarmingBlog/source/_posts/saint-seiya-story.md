@@ -3,12 +3,14 @@ title: 圣斗士星矢的前世今生，车田正美的坚持，城户光政的�
 date: 2024-07-20 07:33:51
 tags: [Podcast,Manga]
 categories: Podcast
-banner_img: /uploads/saint-seiya-story/01.jpeg
+banner_img: /uploads/saint-seiya-story/01.JPG
 ---
 
 ## 前言
 
-我最近和家人们一起做了一个播客，名叫[《铭莉双收》](https://www.xiaoyuzhoufm.com/podcast/668b45c5094e5a1fbfd51135)，本文内容是对最新一期播客的一个补充，欢迎大家订阅收听。
+我最近和家人们一起做了一个播客，名叫[《铭莉双收》](https://www.xiaoyuzhoufm.com/podcast/668b45c5094e5a1fbfd51135)，本文内容是对最新一期播客“[还有人看圣斗士星矢吗？](https://www.xiaoyuzhoufm.com/episode/669cb59a8fcadceb90cdae80)”的一个补充，欢迎大家订阅收听。
+
+![](/uploads/saint-seiya-story/01.JPG)
 
 提到圣斗士星矢，大部分人都是通过90年央视播出的《圣斗士星矢》这部动画片看到的。后来200多个地方电台每年轮番播放，我也是那时看了一遍又一遍。再后来圣斗士的风潮就结束了，被龙珠和灌篮高手等动画片所替代。
 
@@ -70,7 +72,6 @@ banner_img: /uploads/saint-seiya-story/01.jpeg
 
 ND 是继续着正篇讲的，里面纱织穿越到了前圣战，目的是毁掉哈迪斯之剑，以拯救被哈迪斯之剑伤害的星矢。LC 完全是讲的发生在正篇之前的事情，但是人物和 ND 不完全一样。
 
-![](/uploads/saint-seiya-story/02.jpeg)
 
 ## 正篇前发生的事情
 
@@ -101,7 +102,8 @@ ND 是继续着正篇讲的，里面纱织穿越到了前圣战，目的是毁�
 
 正篇中最出彩是黄金圣斗士和冥斗士，这也是圣斗士星矢IP最核心的部分，直到现在，即便圣斗士新作品无人问津，但是黄金圣斗士和冥斗士的手办依然火爆。
 
-![](/uploads/saint-seiya-story/01.jpeg)
+![](/uploads/saint-seiya-story/02.jpeg)
+![](/uploads/saint-seiya-story/03.jpeg)
 
 ## 黄金圣斗士排名
 
