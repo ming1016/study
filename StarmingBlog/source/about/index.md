@@ -9,29 +9,15 @@ date: 2022-04-15 11:01:20
 
 ## 简介
 
-极客时间《[iOS开发高手课](https://time.geekbang.org/column/intro/100024501)》和纸书《[跟戴铭学iOS编程](https://item.jd.com/12827000.html)》作者。有大量亿级 App 工程架构、性能优化相关实战经验。我的[博客](https://ming1016.github.io/)、[GitHub](https://github.com/ming1016)、[微博](https://weibo.com/allstarming)、[Twitter](https://twitter.com/daiming_cn)。
+极客时间《[iOS开发高手课](https://time.geekbang.org/column/intro/100024501)》和纸书《[跟戴铭学iOS编程](https://item.jd.com/12827000.html)》作者。[博客](https://ming1016.github.io/)、[GitHub](https://github.com/ming1016)、[微博](https://weibo.com/allstarming)、[Twitter](https://twitter.com/daiming_cn)、[播客(铭莉双收)](https://www.xiaoyuzhoufm.com/podcast/668b45c5094e5a1fbfd51135)、[播客RSS](https://feed.xyzfm.space/4fw9n8q79hdk)。
+
+## APP
+
+《[戴铭的开发小册子](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)》、《[颜气](https://apps.apple.com/cn/app/颜气/id6504629708)》
 
 ## 经历
 
-快手（资深技术专家）、阿里（高级技术专家）、滴滴（技术专家）、事业单位（主管）、创业（全栈）
-
-## 采访
-
-* 《时尚COSMOPOLITAN》杂志
-* CCTV 9
-* InfoQ
-
-## 分享
-
-* 清华大学讲课《解释器》
-* 苹果加速器活动分享《[SwiftUI practice for macOS](https://ming1016.github.io/2022/03/25/develop-with-swiftui/)》
-* SwiftGG 和快手中学合办的 WWDC 沙龙活动《聊一聊SwiftUI》
-* @Swift 大会《[Swift 写解释器](https://ming1016.github.io/2018/09/17/produce-slides-of-third-at-swift-conference/)》
-* GIAC《[Swift 将 Web 代码转成60帧满帧原生应用的方案及实践](https://ming1016.github.io/2018/01/10/slides-of-giac-how-to-use-swift-transfer-web-to-60-frame-native-code/)》
-* APMCon 中国应用性能管理大会《[深入剖析 iOS 性能优化](https://ming1016.github.io/2017/06/20/deeply-ios-performance-optimization/)》
-* GMTC全球移动技术大会《[滴滴出行iOS端瘦身实践](https://ming1016.github.io/2017/06/12/gmtc-ios-slimming-practice/)》
-* @Swift 大会《[学习 iOS 编译原理能做哪些有意思的事情](https://ming1016.github.io/2017/05/27/slides-of-learn-what-interesting-things-you-can-do-with-iOS-compilation/)》
-* SegmentFault D-Day 《[深入剖析AutoLayout](https://ming1016.github.io/2021/07/13/deeply-analyse-autolayout-slides/)》
+快手（资深技术专家）、阿里（高级技术专家）、滴滴（技术专家）、事业单位
 
 ## 博客
 
@@ -41,6 +27,20 @@ date: 2022-04-15 11:01:20
 * 画：《[2021年画的](https://ming1016.github.io/2022/02/26/draw-in-2021/)》、《[2020年涂图](https://ming1016.github.io/2020/05/04/draw-in-2020/)》、《[2019年涂图](https://ming1016.github.io/2019/12/06/draw-in-2019/)》、《[18年上半年procreate的练习图图](https://ming1016.github.io/2018/09/14/draw-with-procreate-in-ipad-during-pre-half-in-20182/)》、《[15，16年iPad上使用Procreate画的](https://ming1016.github.io/2016/09/20/draw-with-procreate-in-ipad-during-15-to-16/)》、《[15年用iPad上的备忘录画的](https://ming1016.github.io/2015/11/02/draw-with-note-in-ipad-during-15/)、《[整理了画的权利的游戏里的角色，有龙女，小恶魔等等](https://ming1016.github.io/2015/04/02/draw-game-of-thrones-with-pencil-during-14/)》、《[14和15年间的铅笔画练习](https://ming1016.github.io/2015/03/12/draw-practice-with-pencil-during-14-to-15/)》
 
 
+## 采访媒体
 
+* 《时尚COSMOPOLITAN》杂志、CCTV 9、InfoQ
+
+## 分享
+
+* 清华大学分享《解释器》
+* 苹果加速器活动分享《[SwiftUI practice for macOS](https://ming1016.github.io/2022/03/25/develop-with-swiftui/)》
+* SwiftGG 和快手中学合办的 WWDC 沙龙活动《聊一聊SwiftUI》
+* @Swift 大会《[Swift 写解释器](https://ming1016.github.io/2018/09/17/produce-slides-of-third-at-swift-conference/)》
+* GIAC《[Swift 将 Web 代码转成60帧满帧原生应用的方案及实践](https://ming1016.github.io/2018/01/10/slides-of-giac-how-to-use-swift-transfer-web-to-60-frame-native-code/)》
+* APMCon 中国应用性能管理大会《[深入剖析 iOS 性能优化](https://ming1016.github.io/2017/06/20/deeply-ios-performance-optimization/)》
+* GMTC全球移动技术大会《[滴滴出行iOS端瘦身实践](https://ming1016.github.io/2017/06/12/gmtc-ios-slimming-practice/)》
+* @Swift 大会《[学习 iOS 编译原理能做哪些有意思的事情](https://ming1016.github.io/2017/05/27/slides-of-learn-what-interesting-things-you-can-do-with-iOS-compilation/)》
+* SegmentFault D-Day 《[深入剖析AutoLayout](https://ming1016.github.io/2021/07/13/deeply-analyse-autolayout-slides/)》
 
 
