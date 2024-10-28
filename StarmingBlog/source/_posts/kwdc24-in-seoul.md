@@ -1,9 +1,9 @@
 ---
 title: 我在韩国首尔 KWDC24 做的技术分享
-date: 2024-09-05 16:36:12
+date: 2024-10-28 10:58:45
 tags: [iOS, Performance optimization]
 categories: Programming
-banner_img: /uploads/kwdc24-in-seoul/01.png
+banner_img: /uploads/kwdc24-in-seoul/44.png
 ---
 
 韩国朋友真是太热情了。下面是这次分享的内容，文章后面我还会记录些这次首尔的见闻。
@@ -341,7 +341,7 @@ KWDC 这次是在一所大学举办的。
 
 ![](/uploads/kwdc24-in-seoul/03.jpeg)
 
-iOSConfSG 2025 组织团队负责人 Vina Melody 也来了，我分享结束后跟他们沟通了下明年我去新加坡 iOSConf 分享的内容。
+[iOSConfSG 2025](https://www.iosconf.sg) 组织团队负责人 Vina Melody 也来了，我分享结束后跟他们沟通了下明年我去新加坡 iOSConf 分享的内容。
 
 ![](/uploads/kwdc24-in-seoul/04.JPG)
 
@@ -349,15 +349,15 @@ iOSConfSG 2025 组织团队负责人 Vina Melody 也来了，我分享结束后�
 
 ![](/uploads/kwdc24-in-seoul/05.JPG)
 
-freddi 是喵神的同事，在福岡。
+[freddi](https://x.com/___freddi___) 是喵神的同事，在福岡。
 
 ![](/uploads/kwdc24-in-seoul/06.JPG)
 
-River 是韩国的一名独立开发者，开发了很有品味的 APP。她不喜欢 KPOP，但她父母好像是从事表演的。
+River 是韩国的一名独立开发者，开发了很有品味的 APP Cherish。她不喜欢 KPOP，但她父母好像是从事表演的。
 
 ![](/uploads/kwdc24-in-seoul/07.JPG)
 
-台湾最知名的 iOS Youtuber Jane 这次也来了。
+台湾最知名的 iOS Youtuber [Jane](https://x.com/janechao_dev) 这次也来了。
 
 ![](/uploads/kwdc24-in-seoul/08.JPG)
 
@@ -373,6 +373,6 @@ River 是韩国的一名独立开发者，开发了很有品味的 APP。她不�
 
 ![](/uploads/kwdc24-in-seoul/11.jpeg)
 
-和 giginet 聊了点技术问题，他在 Try Swift 的组织团队中，也是喵神的同事。
+和 [giginet](https://x.com/giginet) 聊了点技术问题，他也是喵神的同事。
 
 
