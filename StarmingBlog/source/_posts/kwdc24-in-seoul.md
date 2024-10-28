@@ -3,7 +3,7 @@ title: 我在韩国首尔 KWDC24 做的技术分享
 date: 2024-10-28 10:58:45
 tags: [iOS, Performance optimization]
 categories: Programming
-banner_img: /uploads/kwdc24-in-seoul/44.png
+banner_img: /uploads/kwdc24-in-seoul/32.png
 ---
 
 韩国朋友真是太热情了。下面是这次分享的内容，文章后面我还会记录些这次首尔的见闻。
