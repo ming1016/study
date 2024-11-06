@@ -1,5 +1,5 @@
 ---
-title: 看完这篇全网最全日本传统颜色的介绍，你就能够更懂日本
+title: 全网最全的日本传统颜色指南，看完你会更懂日本
 date: 2024-11-04 12:10:09
 tags: [App,color,japan]
 categories: App
@@ -10,9 +10,9 @@ banner_img: /uploads/introduction-japanese-colors/53.jpg
 
 你可以通过[这个地址](https://apps.apple.com/cn/app/%E9%A2%9C%E6%B0%94/id6504629708)下载颜气 APP，或者直接搜索我的名字“戴铭”来找到它。
 
-开发2.0 Widget、WeatherKit 相关技术也都整理到了[小册子](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)中。
-
 ![](/uploads/introduction-japanese-colors/yanqi.jpg)
+
+开发2.0 Widget、WeatherKit 相关技术也都整理到了[小册子](https://apps.apple.com/cn/app/%E6%88%B4%E9%93%AD%E7%9A%84%E5%BC%80%E5%8F%91%E5%B0%8F%E5%86%8C%E5%AD%90/id1609702529?mt=12)中。
 
 在开发这款 APP 的过程中，我查阅了大量资料，深入了解了日本传统颜色的丰富内涵。接下来，我将与大家分享这些知识。我将从日本历史的角度出发，跨越绳纹时代、弥生时代、古坟时代、飞鸟时代、奈良时代、平安时代、镰仓时代、战国时代，一直到日本传统色彩的巅峰——江户时代，介绍这些时代中诞生的色彩及其意义与用途。同时，我会结合宗教、习俗、自然与人文的和谐共生，探讨这些色彩如何与日本人的生活息息相关。最后，我将通过日本文学艺术作品、美食、传统工艺、服饰及建筑中对色彩的运用，从全新的视角来了解日本的古代艺术。
 
