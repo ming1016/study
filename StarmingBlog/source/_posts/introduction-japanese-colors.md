@@ -3,7 +3,7 @@ title: 全网最全的日本传统颜色指南，看完你会更懂日本
 date: 2024-11-04 12:10:09
 tags: [App,color,japan]
 categories: App
-banner_img: /uploads/introduction-japanese-colors/53.jpg
+banner_img: /uploads/introduction-japanese-colors/29.jpg
 ---
 
 最近，我的颜气 APP 迎来了激动人心的升级，现在已正式发布 2.0 版本，审核也顺利通过，心情格外愉悦！在这一版本中，我新增了小组件功能，用户无需打开程序即可直接查看色彩。同时，小组件还可以显示重要节日和节气的提醒，增加天气信息及当日步数，完美地将日本传统色彩融入你的日常生活。
