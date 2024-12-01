@@ -15,7 +15,7 @@ menus:
   tags: /tags
   categories: /categories
   about: /about
-  friends: 
+  friends: /friends
 
 about:
   description: 联系我
