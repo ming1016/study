@@ -6,7 +6,7 @@ categories: Programming
 banner_img: /uploads/ios-conf-sg-25-share/34.png
 ---
 
-大会前，vina 跟我说 iOS Conf SG 的受众很大，她希望能够讲些可以让大家更加兴奋，可以在日常工作中应用的内容。因此，我也是专门写了些 Demo 和工具，共三个，[1](https://github.com/ming1016/AppLaunchDemo)，[2](https://github.com/ming1016/DevTools)，[3](https://github.com/ming1016/RSSReader)。那些难理解的内容我都去掉了。这次的画也是我花费时间最长的一次，学习了些时尚杂志的设计和布局。有些来不及调配色的图，我就参考媳妇买的巧克力包装配色。
+大会前，vina 跟我说 iOS Conf SG 的受众很大，她希望能够讲些可以让大家更加兴奋，可以在日常工作中应用的内容。因此，我也是专门写了些 Demo 和工具，共三个，[1](https://github.com/ming1016/AppLaunchDemo)，[2](https://github.com/ming1016/DevTools)，[3](https://github.com/ming1016/RSSReader)。那些难理解的内容我都去掉了。这次的画的图也是我花费时间最长的一次，学习了些时尚杂志的设计和布局。有些来不及调配色的图，我就参考媳妇买的巧克力包装配色。
 
 下面是分享的内容。
 
