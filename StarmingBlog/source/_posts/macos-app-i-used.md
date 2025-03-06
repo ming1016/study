@@ -1,78 +1,35 @@
 ---
-title: 我用过的 macOS 应用
-date: 2015-05-28 09:25:27
-tags: [macOS, APP]
-categories: APP
+title: 2025 年我正在使用的 macOS 应用 
+date: 2025-02-18 12:56:27
+tags: [macOS, App]
+categories: macOS
 ---
-# 写作笔记
-## Bear
-视觉效果最好，没有云存储，没有大纲
-## MWeb
-有大纲
-## Evernote
-有云存储，云同步，不过订阅才能够多于2台设备同步
-## 有道云笔记
-字体大小没法自定义
-## Papers
-pdf 整理
-## 有道词典
-翻译
-## 系统邮件
-配合喵神 iOS 的 Mail Me 收集临时灵感和资料
-## Reeder
-博客跟踪
 
-# 视觉
-## keynote
-整理演示
-## Photoshop
-编辑裁剪图片大小
-## Pixave
-管理图片素材
-## Sip
-屏幕取色
+这篇文章是10年前写的，如今使用的应用已经完全不同了。于是我更新了下：
 
-# 开发
-## Xcode
-苹果程序
-## VSCode
-js
-## AppCode
-使用里面的检查功能，不过不够准确
-## Sublime Text
-干净的编辑器
-## Cornerstone
-svn
-## Transmit
-ftp 上传
-## iTerm
-终端
-## Dash
-手册查找
-## Reaveal
-调试视图
-## SourceTree
-Git 管理
-## Graphviz
-查看代码写的流程图 dot 格式
+- 信息：
+    - 新闻：Follow、微信、小红书
+    - 翻译：沉浸式翻译、网易有道翻译
+    - 播客：小宇宙
+    - 视频：哔哩哔哩、YouTube、迅雷、DaVinci、IINA
+    - 电子书：可达漫画、微信阅读、Calibre
+    - 浏览器：Safari、Firefox
+- 创作
+    - 知识管理：戴铭的小册子、Obsidian
+    - 图片管理：Eagle、照片
+    - AI：Ollama、AnythingLLM
+    - 写作：Sublime、备忘录、便笺、Bear、MindNode
+- 开发
+    - IDE：Xcode、VSCode、Cursor
+    - Git：Fork、GitHub Desktop
+    - FTP：Cyberduck、FileZilla
 
-# 通讯
-## 钉钉
-工作聊
-## 微信
-微信好友聊
+以下是我2015年整理的一份，可以感慨下时势变迁：
 
-# 娱乐
-## 网易云音乐
-听歌
-## mpv
-视频
-## VLC
-开源
-## Thunder
-下载
-## The Unarchiver
-解压
-## 百度网盘
-空间大
-
+```
+- 写作笔记：Bear、MWeb、Evernote、有道云笔记、Papers、有道词典、系统邮件、Reeder
+- 视觉：keynote、Photoshop、Pixave、Sip
+- 开发：Xcode、VSCode、AppCode、Sublime Text、Cornerstone、Transmit、iTerm、Dash、Reaveal、SourceTree、Graphviz
+- 通讯：钉钉、微信
+- 娱乐：网易云音乐、mpv、VLC、Thunder、The Unarchiver、百度网盘
+```
