@@ -29,7 +29,7 @@ banner_img: /uploads/letsvision25-ai-improve-ios-skill/08.jpg
 | ---- | ------------------ | ------------ | ------ | -------------- |
 | 本地推理 | Ollama+Deepseek-r1 | 32B参数平衡性能/显存 | 代码审查   | LM Studio      |
 | 知识管理 | AnythingLLM        | 支持PDF/代码库索引  | 技术文档检索 | OpenWebUI      |
-| 云端开发 | Cursor+Claude3.5   | 实时联网/多文件分析   | 全栈调试   | VSCode+Copilot |
+| 云端开发 | Cursor+Claude3.7   | 实时联网/多文件分析   | 全栈调试   | VSCode+Copilot |
 
 推荐在 Xcode 中配置 Copilot 双面板布局：左侧编写业务逻辑，右侧自动生成单元测试用例。对于 CoreData 等 ORM 操作，尝试用"逆向Prompt"技巧：先让AI生成代码，再要求它解释可能出现的问题。
 
