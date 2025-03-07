@@ -8,7 +8,7 @@ banner_img: /uploads/letsvision25-ai-improve-ios-skill/08.jpg
 
 ![](/uploads/letsvision25-ai-improve-ios-skill/01.jpg)
 
-以下是我在上海举行的 Let's Vision 25 上分享的内容。
+之前在 KWDC 和 iOS Conf SG 用英文做过[性能优化进化](https://starming.com/2024/10/28/kwdc24-in-seoul/)和[启动优化](https://starming.com/2025/01/21/ios-conf-sg-25-share/)的技术分享。以下是我这次在上海举行的 Let's Vision 25 大会上分享的内容。
 
 ## 前言
 
