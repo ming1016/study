@@ -347,7 +347,7 @@ iOS 上小组件的开放带火了一批定制化应用：[Widgetsmith](https://
 
 Mac 端，[Notion](https://www.notion.so/) 在国内的使用者越来越多，“All-in-One”的知识管理理念开始深入人心；[Craft](https://www.craft.do/) 在年底发布，以原生 Swift 开发、精美的设计和流畅的体验，成为 Notion 的有力竞争者；[Obsidian](https://obsidian.md/) 以本地 Markdown 文件 + 双向链接的方式，吸引了一批注重数据所有权的用户。效率工具方面，[Raycast](https://www.raycast.com/)（年底公开测试）开始挑战 [Alfred](https://www.alfredapp.com/) 的地位，凭借现代化的设计和丰富的扩展生态迅速积累口碑；[Rectangle](https://rectangleapp.com/)（开源的窗口管理工具）成为很多人 [Spectacle](https://github.com/eczarny/spectacle) 的替代品；[CleanShot X](https://cleanshot.com/) 让截图和录屏变得更加优雅。远程协作工具也几乎成了“上班必备”：[Zoom](https://www.zoom.com/)、[Microsoft Teams](https://www.microsoft.com/microsoft-teams)、[Slack](https://slack.com/)、[Figma](https://www.figma.com/)、[Miro](https://miro.com/) 这些软件在 2020 频繁出现在屏幕共享里。开发工具方面，[Fig](https://fig.io/)（终端自动补全，后被 AWS 收购）开始在开发者圈子里流行；[TablePlus](https://tableplus.com/)、[Proxyman](https://proxyman.com/) 继续是数据库和网络调试的首选。
 
-## 2021年：并发与元宇宙狂潮
+## 2021年：并发与元宇宙
 
 如果用两个关键词概括 2021：一个是“元宇宙”点燃的想象力与泡沫；另一个是 Swift 5.5 让并发从“写法问题”升级为“语言级范式切换”。
 
