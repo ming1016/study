@@ -105,7 +105,7 @@ public class Analyzer {
 
 
     // main entry to the analyzer
-    public void analyze(String path) {
+    public void loadDir(String path) {
         String upath = _.unifyPath(path);
         File f = new File(upath);
         projectDir = f.isDirectory() ? f.getPath() : f.getParent();
@@ -114,7 +114,7 @@ public class Analyzer {
 
 
     // main entry to the analyzer (for JSONDump only)
-    public void analyze(List<String> paths) {
+    public void loadFile(List<String> paths) {
         for (String path : paths) {
             loadFileRecursive(path);
         }
